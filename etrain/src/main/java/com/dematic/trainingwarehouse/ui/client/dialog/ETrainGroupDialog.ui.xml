@@ -1,0 +1,127 @@
+
+
+
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:d="urn:import:com.dematic.wms.app.base.ui.client.scomponent.datagrid"
+	xmlns:m="urn:import:com.dematic.wms.app.base.ui.client.scomponent">
+
+	<m:AppSplitLayoutPanel>
+
+		<m:center>
+			<d:QueryServiceGrid ui:field="groupGrid"
+				selectAtStart="true">
+				<d:columns>
+					<d:class
+						name="com.dematic.trainingwarehouse.ui.shared.dto.ETrainGroupDto">
+						<d:column name="groupName" />
+						<d:column name="description" />
+						<d:column name="modUser" />
+						<d:column name="modDate" />
+						<d:column name="createUser" />
+						<d:column name="createDate" />
+						<d:column name="primaryKey" visible="false" />
+						<d:column name="version" visible="false" />
+
+						<d:column name="permissionCount" columnName="permission_count" />
+					</d:class>
+				</d:columns>
+				<!-- <d:sql>select * from ETRAIN_GROUP</d:sql> -->
+				<d:sql>
+
+					select ETRAIN_GROUP.*, (select count(*) from
+					ETRAIN_PERMISSION where
+					ETRAIN_GROUP = ETRAIN_GROUP.PK) as
+					permission_count from
+					ETRAIN_GROUP
+
+				</d:sql>
+
+			</d:QueryServiceGrid>
+
+
+		</m:center>
+
+
+		<!--********************************************** -->
+		<m:south size="50%">
+
+			<m:STabLayoutPanel tabTitles="permissions,users">
+
+				<d:DtoAdministrationGrid ui:field="permissionGrid"
+					attributeInMaster="groupGrid.permissions">
+					<d:columns>
+
+						<d:class
+							name="com.dematic.trainingwarehouse.ui.shared.dto.ETrainPermissionDto">
+
+							<d:column name="permissionName" />
+
+							<d:column name="description" />
+
+							<d:column name="adminOnly" />
+
+							<d:column name="modDate" />
+
+							<d:column name="modUser" />
+
+							<d:column name="createDate" />
+
+							<d:column name="createUser" />
+
+							<d:column name="primaryKey" />
+
+							<d:column name="version" />
+
+						</d:class>
+
+					</d:columns>
+
+				</d:DtoAdministrationGrid>
+
+
+				<d:DtoAdministrationGrid ui:field="usersGrid"
+					attributeInMaster="groupGrid.users">
+					<d:unavailableCommands>
+						<d:unavailableCommand key="create" />
+						<d:unavailableCommand key="delete" />
+						<d:unavailableCommand key="duplicate" />
+					</d:unavailableCommands>
+					<d:columns>
+						<d:class
+							name="com.dematic.trainingwarehouse.ui.shared.dto.ETrainUserDto">
+							<d:column name="locale" />
+							<d:column name="timeOfLastLogout" />
+							<d:column name="password.primaryKey" />
+							<d:column name="version" />
+							<d:column name="timeOfLastLogin" />
+							<d:column name="terminalId" />
+							<d:column name="description" />
+							<d:column name="userName" />
+							<d:column name="hostName" />
+							<d:column name="modUser" />
+							<d:column name="createDate" />
+							<d:column name="numberOfFailedLoginAttemps" />
+							<d:column name="passwordChangeable" />
+							<d:column name="emailAddress" />
+							<d:column name="createUser" />
+							<d:column name="mobileTelephoneNumber" />
+							<d:column name="modDate" />
+							<d:column name="primaryKey" />
+							<d:column name="telephoneNumber" />
+							<d:column name="fullName" />
+							<d:column name="locked" />
+							<d:column name="loggedOn" />
+						</d:class>
+					</d:columns>
+
+				</d:DtoAdministrationGrid>
+
+			</m:STabLayoutPanel>
+		</m:south>
+		<!--********************************************** -->
+
+	</m:AppSplitLayoutPanel>
+
+
+</ui:UiBinder>

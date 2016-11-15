@@ -1,0 +1,458 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2008. All rights reserved.
+
+  $Id: RepackingOperationDialog.html 27545 2014-05-05 09:58:11Z bernardy $
+-->
+  <title>Repacking</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)">
+  <meta name="keywords" content="Dematic, Dematic iQ">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content="WCS-TPL_HelpDialogMain.Web">
+  <meta name="author" content="author">
+  <style type="text/css" media="screen">@import url(../../../../../../../../../../../../common/style_screen.css);</style>
+  <style type="text/css" media="print">@import url(../../../../../../../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "itl/doc/en/user/WebHelp/dialogs/itl/unpacking/ui/client/dialog/repacking/RepackingOperationDialog.html";
+  </script>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../../../../../../../index.html?page=source%2Fitl%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fdialogs%2Fitl%2Funpacking%2Fui%2Fclient%2Fdialog%2Frepacking%2FRepackingOperationDialog.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../../../../../../../index.html?page=source%2Fitl%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fdialogs%2Fitl%2Funpacking%2Fui%2Fclient%2Fdialog%2Frepacking%2FRepackingOperationDialog.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+    <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+    
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../../../../../../../index.html"><img class="upLinkImg" id="uplinkO_img" border="0" title="Warehouse-internal Processes" src="../../../../../../../../../../../../common/img/move_overview.gif"></a>
+          <a class="upLink" id="uplinkP" href="../../../../../../../process/Replenishment.html"><img class="upLinkImg" id="uplinkP_img" border="0" title="Replenishment" src="../../../../../../../../../../../../common/img/move_up.gif"></a>
+        </td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+  
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+            <a class="naviBar" href="#Screen">Screen</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#FieldDescriptions">Fields</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#ButtonDescriptions">Buttons</a>
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Top navigation bar end -->
+  
+  <!-- Map title -->
+  <h1 id="maptitle">Repacking</h1>
+
+  <!-- Block: Purpose -->
+  <div class="block" id="block_purpose">
+    <!-- Content start -->
+    <h5><a name="Purpose"></a>Purpose</h5>
+    <p>This Repacking screen supports spontaneous <a href="../../../../../../../usecases/Unpacking.html">Repacking</a> of Inventory Units onto other Load Units or inserts. After a Source Load Unit scan, the appropriate data displays. 
+    With a Destination Load Unit scan, the destination of subsequent booking is defined. If one of these two Load Units contained Inserts or further stacked Load Units, 
+    it is possible to deal with a single Insert/Load Unit. With Repacking, the desired quantity of selected Inventory Unit of Source is booked onto the selected Destination.</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Screen -->
+  <div class="block" id="block_screen">
+    <!-- Navigation line start -->
+    <a name="Screen"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#top">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#FieldDescriptions">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#ButtonDescriptions">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Screen</h5>
+    <p><img border="0" src="img/RepackingOperationDialog.png"></p>
+    <!-- Content end -->
+  </div>
+
+
+  <!-- Block: Fields -->
+  <div class="block" id="block_fielddescriptions">   
+    <!-- Navigation line start -->
+    <a name="FieldDescriptions"></a>   
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#Screen">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#ButtonDescriptions">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#ButtonDescriptions">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Fields</h5>
+    
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription" style="width:106px">Field</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <p class="tableBodyText"><b>Source</b></p></td>
+        </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">Source Load Unit</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Scan field for the <strong>Source </strong>Load Unit. Left section displays Source Load Unit data.</p>
+		</td>
+      </tr>
+      <tr>
+		<td>
+          <p class="tableBodyText">Inventory</p>
+        </td>
+		<td>
+          <p class="tableBodyText">All Inventory Units located directly on the scanned Source Load Unit. For selection, 
+          Client and SKU ID display. Selection change is only possible if multiple Inventory Units exist. If Inserts or stacked Load Units are located on scanned Source Load Unit, only Inventory Units  
+          located on selected Insert or selected stacked Load Unit are selectable. Selection can be changed in Load Unit View of Source.</p>
+        </td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Inventory Unit</p></td>
+        <td><p class="tableBodyText">Unique Identification of the Inventory Unit</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Client</p></td>
+        <td><p class="tableBodyText">Client of the SKU of the Inventory Unit.</p></td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">SKU</p>
+		</td>
+        <td>
+          <p class="tableBodyText">Stock Keeping Unit ID of the Inventory Unit.</p>
+        </td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Batch</p></td>
+        <td><p class="tableBodyText">Batch of the Inventory Unit.</p>	</td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Best Before Date</p></td>
+        <td><p class="tableBodyText">Best Before Date of the Inventory Unit.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Quantity</p></td>
+        <td><p class="tableBodyText">Quantity of the Inventory Unit in Base Quantity Units.</p>	</td>
+      </tr>
+      <tr>
+		<td>
+          <p class="tableBodyText">Unit</p>
+        </td>
+		<td>
+          <p class="tableBodyText">Base Quantity Unit of displayed quantity. Quantity to be repacked can be in 
+			Base or Pick Quantity Units.</p>
+        </td>
+      </tr>
+      <tr>
+		<td>
+          <p class="tableBodyText">Load Unit View</p>
+        </td>
+		<td>
+          <p class="tableBodyText">Graphical view of Inserts or stacked Load Units on Source Load Unit only displays if the related Load Unit Type 
+          is compartmentalized, i.e. configured with a layout for geometrical Stacking (LU type with grid sizes greater than 0). Load Units are depicted as follows:
+          </p>
+          <p class="tableBodyText">- <b>white</b>: not yet stacked LU on raster</p>
+          <p class="tableBodyText">- <b>red</b>: LU is selected</p>
+          <p class="tableBodyText">- <b>green</b>: free and not selected</p>
+          <p class="tableBodyText">- <b>yellow</b>: occupied and not selected.</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <p class="tableBodyText"><b>Target (Destination)</b></p></td>
+        </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">Target Load Unit</p>
+		</td>
+		<td>
+          <p class="tableBodyText">Scan field for the <strong>Destination </strong>Load Unit. Middle section displays Destination Load Unit data.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">Load Unit Type</p>
+		</td>
+        <td>
+          <p class="tableBodyText">Enter/Select from drop down list the Load Unit Type of current Destination Load Unit.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">Unpacking of a Dispatch Load Unit requests the <strong>creation of a new Dispatch Load Unit</strong>. The type will be defined by the <strong>
+                type of the new Load Unit</strong>. In case of multiple DLU Types exists for the used Load Unit Type the system <strong>applies any </strong>
+                without providing a specific selection logic. This is done for example if a Pick Container that is represented as a DLU as well is manually 
+                repacked in a new Load Unit.</p></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+		<td>
+          <p class="tableBodyText">Load Unit View</p>
+        </td>
+		<td>
+          <p class="tableBodyText">Graphical view of Inserts or stacked Load Units on Destination Load Unit is only displays if the related Load Unit Type is compartmentalized, i.e. configured with a layout for geometrical 
+			Stacking (LU type with grid sizes greater than 0). Load Units are depicted as follows:
+			</p>
+			<p class="tableBodyText">- <b>white</b>: not yet stacked LU on raster</p>
+          <p class="tableBodyText">- <b>red</b>: LU is selected</p>
+          <p class="tableBodyText">- <b>green</b>: free and not selected</p>
+          <p class="tableBodyText">- <b>yellow</b>: occupied and not selected.</p>
+        </td>
+      </tr>
+      </table>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Buttons -->
+  <div class="block" id="block_buttondescriptions">   
+    <!-- Navigation line start -->
+    <a name="ButtonDescriptions"></a>   
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#FieldDescriptions">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right.gif">&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right_end.gif">
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Special Buttons</h5>
+    
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Button</p>
+        <th>
+          <p class="columnDescription">Description</p>
+      </tr>
+      <tr>
+		<td>
+          <p class="tableBodyText"><b>Source</b></p>
+          <p class="tableBodyText">F2: Finish</p>
+          <p class="tableBodyText">
+          <img border="0" src="img/button_f2_finish.png"></p>
+        </td>
+		<td>
+          <p class="tableBodyText">Remove Source Load Unit from the display. A new Source Load Unit can be 
+          scanned for the next Unpack action.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">The Load Unit gets an inbound transport automatically if required depending on configuration topic &quot;<strong>itl-unpacking:UnpackingWorkstation.automatedPutaway</strong>&quot;.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+		<td>
+          <p class="tableBodyText"><b>Target</b></p>
+          <p class="tableBodyText">F3: New</p>
+          <p class="tableBodyText">
+          <img border="0" src="img/button_f3_new.png"></p>
+        </td>
+		<td>
+          <p class="tableBodyText">Create a new Destination Load Unit of selected 
+			Load Unit Type. Only activated if 
+          Load Unit Type is selected from list.</p>
+          <p class="tableBodyText">The Load Unit is created on Workstation&#39;s Location immediately.</p>
+        </td>
+      </tr>
+      <tr>
+		<td>
+          <p class="tableBodyText"><b>Target</b></p>
+          <p class="tableBodyText">F4: Print</p>
+          <p class="tableBodyText">
+          <img border="0" src="img/button_f4_print.png"></p>
+        </td>
+		<td>
+          <p class="tableBodyText">Print a Load Unit Label for the Destination Load Unit.</p>
+        </td>
+      </tr>
+      <tr>
+		<td>
+          <p class="tableBodyText"><b>Target</b></p>
+          <p class="tableBodyText">F5: Finish</p>
+          <p class="tableBodyText">
+          <img border="0" src="img/button_f5_finish.png"></p>
+        </td>
+		<td>
+          <p class="tableBodyText">Remove Destination Load Unit from the display. A new Destination Load Unit 
+          can be scanned for the next Unpack action.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">The Load Unit gets an inbound transport automatically if required depending on configuration topic &quot;<strong>itl-unpacking:UnpackingWorkstation.automatedPutaway</strong>&quot;.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+		<td>
+          <p class="tableBodyText"><b>Quantity based</b></p>
+          <p class="tableBodyText">Quantity</p>
+          <p class="tableBodyText">Unit</p>
+        </td>
+		<td>
+          <p class="tableBodyText">Enter the quantity of displayed Quantity 
+			Units to be repacked. 
+          </p>
+          <p class="tableBodyText">The quantity to be repacked can be selected in Base or 
+			Pick Quantity Units.</p>
+        </td>
+      </tr>
+      <tr>
+		<td>
+          <p class="tableBodyText"><b>Quantity based</b></p>
+          <p class="tableBodyText">F6: Unpack</p>
+          <p class="tableBodyText">
+          <img border="0" src="img/button_f6_unpack.png"></p>
+        </td>
+		<td>
+          <p class="tableBodyText">Book entered quantity for Repacking from the Inventory Unit of the Source Load Unit onto the Destination Load Unit or Insert.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">Only activated if the entered quantity is less or equal the available quantity of selected Inventory Unit.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <!-- Content end -->
+  </div>
+
+  <!-- Footer start -->
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">© Dematic GmbH 2008. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar"><a href="#top">top</a> | <a href="javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

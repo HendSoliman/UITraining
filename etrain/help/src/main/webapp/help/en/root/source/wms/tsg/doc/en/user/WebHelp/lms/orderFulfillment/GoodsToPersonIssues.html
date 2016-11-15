@@ -1,0 +1,1111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml">
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2008. All rights reserved.
+
+  $Id: GoodsToPersonIssues.html 27545 2014-05-05 09:58:11Z bernardy $
+-->
+    <title>Goods-To-Person Picking: General Exceptions</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)">
+  <meta name="keywords" content="Dematic, Dematic iQ">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content="WCS-TPL_TroubleShootingGuide.Web">
+  <meta name="author" content="author">
+  <style type="text/css" media="screen">@import url(../../../../../../../../common/style_screen.css);</style>
+    <style type="text/css" media="print">@import url(../../../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "wms/tsg/doc/en/user/WebHelp/lms/orderFulfillment/GoodsToPersonIssues.html";
+  </script>
+<style type="text/css">
+.style2 {
+  margin-left:40pt;
+  list-style-type:upper-roman
+}
+.style3 {
+  margin-left:40pt;
+}
+.style6 {
+  list-style-type:upper-roman;
+  text-decoration:underline;
+}
+.style7 {
+  font-weight:normal;
+}
+.style8 {
+  text-decoration:underline;
+}
+</style>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../../../index.html?page=source%2Fwms%2Ftsg%2Fdoc%2Fen%2Fuser%2FWebHelp%2Flms%2ForderFulfillment%2FGoodsToPersonIssues.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../../../index.html?page=source%2Fwms%2Ftsg%2Fdoc%2Fen%2Fuser%2FWebHelp%2Flms%2ForderFulfillment%2FGoodsToPersonIssues.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+    <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../../index.html">
+          <img class="upLinkImg" id="uplinkO_img" border="0" title="Document Overview" src="../../../../../../../../common/img/move_overview.gif"></a>
+          <a class="upLink" id="uplinkP" href="Index.html">
+          <img class="upLinkImg" id="uplinkP_img" border="0" title="Order Fulfillment Exceptions" src="../../../../../../../../common/img/move_up.gif"></a>
+        </td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+            <a class="naviBar" href="#BriefDescription">Brief Description</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#ProblemAnalysis">Problem Analysis</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Possiblereasons">Possible Reasons</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#DetailedDescription">Detailed Description</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Troubleshooting">Trouble Shooting</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Sources">Sources</a>
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Top navigation bar end -->
+
+  <!-- Map title -->
+  <h1 id="maptitle">Goods-To-Person Picking: General Exceptions</h1>
+
+  <!-- Block: Symptom -->
+  <div class="block" id="block_symptom">
+    <!-- Content start -->
+    <h5><a name="Symptom"></a>Symptom</h5>
+    <p>An <strong>active Order with included Goods-To-Person Picking operations (!) could not get completed </strong>because of an assigned Pick Order could not be correctly executed or completed.</p>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">Picking processes could be very complex and are mostly project specific with respect to the details. Thus only the main and most applicable issues are described below.</p>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Content start -->
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Brief Description -->
+  <div class="block" id="block_briefdescription">
+    <!-- Navigation line start -->
+    <a name="BriefDescription"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#ProblemAnalysis">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Sources">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Brief Description</h5>
+    <p>The further execution of an active Order <strong>with included picking operations (!)</strong> is not possible although the previous operational steps 
+    are already finished. The possible trouble shooting steps depend on various data sets in the <strong>Order Fulfillment </strong>as well as the <strong>Pick Controller
+    </strong>arena. </p>
+    <p>Within this topic the following 3 main conditions which are characterized through the state of the related <strong>Pick Job</strong>(s) of 
+    the <strong>Order </strong>are distinguished and separately described.</p>
+    <p>The related <strong>Pick Job </strong>of the 
+    executing Pick Controller could either be </p>
+    <ol class="style2">
+      <li>not yet assigned to any Pickstation</li>
+      <li>currently running at a Pickstation</li>
+      <li>yet finished but (at least) one Pick Container is missing at it&#39;s destination (e.g. the shipping area).</li>
+    </ol>
+    <p>&nbsp;</p>
+    <p><strong>Most important dialogs for analysis and trouble shooting support:</strong></p>
+    <ul class="listBullet1">
+      <li>
+        <a href="../../../../../../../../oco/doc/en/user/WebHelp/dialogs/oco/general/ui/client/dialog/retrievaladmin/RetrievalOverviewDialog.html">Dialog Retrieval Administration</a> 
+        (primarily)</li>
+      <li>
+        <a href="../../../../../../../../pic/doc/en/user/WebHelp/dialogs/pic/goods2person/ui/client/dialog/pstanalysis/PickStationAnalysisOverviewDialog.html">Dialog Pickstation Analysis</a>.
+      </li>
+    </ul>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Problem Analysis -->
+  <div class="block" id="block_problemanalysis">
+    <!-- Navigation line start -->
+    <a name="ProblemAnalysis"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#BriefDescription">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Possiblereasons">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Sources">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Problem Analysis</h5>
+    <p>The problem analysis is done by the analysis of the specific conditions of the involved data sets of the subsystems
+    <a href="../../../../../../../../orp/doc/en/user/WebHelp/process/OrderFulfillment.html">Order Fulfillment (ORF)</a> and 
+    <a href="../../../../../../../../pic/doc/en/user/WebHelp/index.html">Pick Controller (PIC)</a>.<br>
+    The following data sets are relevant within the described trouble shootings:</p>
+    <ul class="listBullet1">
+      <li>
+      <a href="../../../../../../../../orp/doc/en/user/WebHelp/dialogs/orp/pickrequest/ui/client/dialog/pickorder/PickOrderOverviewDialog.html">Pick Order</a> (ORF) (with related 
+      <a href="../../../../../../../../orp/doc/en/user/WebHelp/dialogs/orp/pickrequest/ui/client/dialog/pickorder/PickContainerOverviewDialog.html">Pick Container</a>)</li>
+      <li>
+      <a href="../../../../../../../../pic/doc/en/user/WebHelp/dialogs/pic/general/ui/client/dialog/pick/PickOverviewDialog.html">Picks</a></li>
+      <li>
+      <a href="../../../../../../../../pic/doc/en/user/WebHelp/dialogs/pic/general/ui/client/dialog/pickmission/PickMissionOverviewDialog.html">Pick Missions</a> (with related 
+      <a href="../../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/loadunit/ui/client/dialog/admin/LoadUnitOverviewDialog.html">Source Load Units</a>)</li>
+      <li>
+      <a href="../../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/workstation/ui/client/dialog/workstation/WorkstationOverviewDialog.html">
+      Workstations</a></li>
+    </ul>
+    <p>&nbsp;</p>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Step</p>
+        </th>
+        <th>
+          <p class="columnDescription">Action</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">1.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Start the
+        <a href="../../../../../../../../oco/doc/en/user/WebHelp/dialogs/oco/general/ui/client/dialog/retrievaladmin/RetrievalOverviewDialog.html">Dialog Retrieval Administration</a>.</p>
+          <p class="tableBodyText">Use the superior filter and enter the <strong>Order ID </strong>that belongs to the active Order which should be analyzed.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">2.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Take a detailed look at the different panels to <strong>identify the specific situation </strong>with focus on the <strong>following data</strong>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">3.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">First panel (for further data description refer to
+          <a href="../../../../../../../../oco/doc/en/user/WebHelp/dialogs/oco/general/ui/client/dialog/retrievaladmin/RetrievalOverviewDialog.html#SpecialButtons">
+          Orders/ Pick Orders</a>):</p>
+          <ul class="tableListBullet1">
+            <li><strong>Pick Order Status</strong></li>
+            <li><strong>Pick Order Configuration Status </strong>(only in case of involved <strong>serial picking </strong>with a preceding Pick Zone) (use the context menu 
+            navigation to
+            <a href="../../../../../../../../orp/doc/en/user/WebHelp/dialogs/orp/pickrequest/ui/client/dialog/pickorder/PickOrderOverviewDialog.html">Dialog 
+            Pick Order</a>).</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">4.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Third panel (for further data description refer to
+          <a href="../../../../../../../../oco/doc/en/user/WebHelp/dialogs/oco/general/ui/client/dialog/retrievaladmin/RetrievalOverviewDialog.html#SpecialButtons">Picks / Pick Missions / Pick Walks</a>):</p>
+          <ul class="tableListBullet1">
+            <li><strong>Pick Status</strong></li>
+            <li><strong>Pick Mission Status</strong></li>
+            <li><strong>Mission Blocked</strong></li>
+            <li><strong>Job Blocked</strong>.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">5.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Second panel (for further data description refer to
+      <a href="../../../../../../../../oco/doc/en/user/WebHelp/dialogs/oco/general/ui/client/dialog/retrievaladmin/RetrievalOverviewDialog.html#SpecialButtons">Full Load Unit Retrievals / Pick Container / Dispatch Load Units</a>)</p>
+          <p class="tableBodyText">Only in case of <strong>all Pick Orders</strong> are in status &quot;<strong>finished</strong>&quot;:</p>
+          <ul class="tableListBullet1">
+            <li><strong>&nbsp;Pick Container Status</strong>.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">6.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">In case of a <strong>missing Source Load Unit</strong> at the Pickstation start the
+        <a href="../../../../../../../../pic/doc/en/user/WebHelp/dialogs/pic/goods2person/ui/client/dialog/pstanalysis/PickStationAnalysisOverviewDialog.html">Dialog Pickstation Analysis</a>.</p>
+          <p class="tableBodyText">Filter the appropriate <strong>Pickstation </strong>and analyze the Load Unit match in the lower grid.</p>
+        </td>
+      </tr>
+      </table>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Possible Reasons -->
+  <div class="block" id="block_possiblereasons">
+    <!-- Navigation line start -->
+    <a name="Possiblereasons"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#ProblemAnalysis">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#DetailedDescription">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Sources">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Possible Reasons</h5>
+    <p>The possible reasons depend on the different situations of the corresponding data sets (Pick Order, Pick, Pick Mission, Pick Job).</p>
+    <ol class="listNumber">
+      <li class="style6"><strong>Pick Job is not yet assigned to any Pickstation</strong></li>
+    </ol>
+        <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Reason</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">1.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Pick Order is not yet released (no Picks or Pick Jobs exist)</p>
+		</td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">2.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Pick Order is in configuration status &quot;incomplete&quot; (no Picks or Pick Jobs exist)</p>
+		</td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">3.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Picks exist in status &quot;created&quot; (no Pick Missions or Pick Jobs exist)</p>
+		</td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">4.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Pick Missions exist in status &quot;released&quot; (no Pick Jobs exist)</p>
+		</td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">5.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Blocking situation of the Pick Job respectively the related Pick Missions</p>
+		</td>
+      </tr>
+      </table>
+    <p>&nbsp;</p>
+    <ol class="listNumber">
+      <li class="style6" value="2"><strong>Pick Job is currently running at a Pickstation</strong></li>
+    </ol>
+        <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Reason</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">1.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Missing Source Load Unit at the Pickstation</p>
+		</td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">2.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Pick Mission (Pick Job) is executed completely but remains in status &quot;active&quot; or &quot;complete&quot;</p>
+		</td>
+      </tr>
+      </table>
+    <p>&nbsp;</p>
+    <ol class="listNumber">
+      <li class="style6" value="3"><strong>Pick Job is yet finished but (at least) one Pick Container is missing at it&#39;s destination (e.g. the shipping area)</strong></li>
+    </ol>
+        <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Reason</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">1.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Pick Order is finished and (at least one) Pick Container is in status &quot;picked&quot;</p>
+		</td>
+      </tr>
+      </table>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Detailed Description -->
+  <div class="block" id="block_detaileddescription">
+    <!-- Navigation line start -->
+    <a name="DetailedDescription"></a>
+    <table class ="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#Possiblereasons">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Troubleshooting">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Sources">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Detailed Description</h5>
+    <p>In case of the further execution of an active Order <strong>with included picking operations </strong>is not possible various data sets in the <strong>Order 
+    Fulfillment </strong>as well as the <strong>Pick Controller </strong>arena characterize the different reasons and required trouble shooting steps. </p>
+    <p>After first executing the described
+    <a href="#ProblemAnalysis">Problem Analysis</a> the relevant conditions of the involved data sets are well known. Below the different conditions are 
+    described in general including only the main details.</p>
+    <ol class="listNumber">
+      <li class="style6"><strong>Pick Job is not yet assigned to any Pickstation</strong></li>
+    </ol>
+    <p>With the Order release the Inventory reservation respectively Load Unit allocation takes place. For the pick portion Pick Orders are created and directly 
+    released in case of the <strong>Release Mode of the related Task </strong>is configured as &quot;<strong>automatically</strong>&quot;. <br>
+    Otherwise the accordant and required preceding event 
+    or schedule plan needs to be analyzed separately. (<strong>Reason 1</strong>)</p>
+    <p>In case of involved <strong>serial picking </strong>with a preceding Pick Zone the release mode of the assigned Task is &quot;triggered&quot; and the pick 
+    operations of the preceding Pick Zone have not yet finished. In the related Dispo Zone of the preceding Pick Zone only <strong>aggregated reservations
+    </strong>with not yet created Pick Orders exist. (This is only the case if the related Dispo Zone has a &quot;<strong>two phase</strong>&quot; reservation mode (e.g. 
+    for Multishuttle Retrieval Optimizations) otherwise the serial picking Tasks have the release mode &quot;dependent (complete)&quot; and will be automatically released 
+    when the picking Tasks of the preceding Pick Zone are confirmed.)<br>
+    The preceding serial picking step will proceed by execution of the reservation of <strong>available Inventory Units </strong>and is done by a special <strong>running demon</strong>. (<strong>Reason 2</strong>)</p>
+    <p>In case of the allocated Source Load Unit of a Pick is <strong>not residing on a location within a configured Pick Controller or Picking Zone</strong> while the Pick is 
+    created the <strong>Pick </strong>remains in status &quot;<strong>created</strong>&quot;. Not until the Load Unit arrives at a bin location within an appropriate Zone the Pick 
+    proceed it&#39;s life cycle. (<strong>Reason  3</strong>)</p>
+    <p>In case of the Pick Missions are assigned to a Pick Job only on demand of a Pickstation as late as possible (&quot;<strong>late binding</strong>&quot;) a 
+    Pickstation needs to provide <strong>free capacity </strong>for further workload (free Pick Job Queue entry or free Put Location in case of configured 
+    &quot;Continuous change of Pick Container&quot;). The Pick Mission must match the allowed type of workload of the Pickstation (<strong>Service and Processing 
+    Qualifier</strong>). (<strong>Reason 
+    4</strong>)</p>
+    <p>A Pick Mission (and thus the related Pick Job as well) is &quot;<strong>blocked</strong>&quot; in case of at least one required Source Load Unit is <strong>
+    currently not stored</strong>. In case the Pickstations are configured to consider this blocking flag all Source Load Units of the analyzed and blocked Pick 
+    Mission need to get stored before this Pick Mission could proceed. (<strong>Reason 5</strong>)</p>
+    <p>&nbsp;</p>
+    <ol class="listNumber">
+      <li class="style6" value="2"><strong>Pick Job is currently running at a Pickstation</strong></li>
+    </ol>
+    <p>Due to a <strong>required Load Unit sequence </strong>a specific Source Load Unit of a currently running Pick Job is expected at the Source Location of 
+    the Pickstation but <strong>not yet arrived </strong>and a <strong>different Load Unit </strong>was scanned and currently active in the Picking Dialog. 
+    Various exceptional cases of the transport execution are possible reasons for this. (<strong>Reason 1</strong>)</p>
+    <p>With the <strong>confirmation of each single pick operation </strong>in the Picking Dialog the related Pick is confirmed to the Order Fulfillment Subsystem. With 
+    the last Pick the Pick Mission proceed to status &quot;complete&quot;. With <strong>confirmation of pushing away a completed Pick Container </strong>the Pick Mission 
+    proceed to status &quot;finished&quot;. The Pick Job proceed accordingly with respect to all of it&#39;s Pick Missions. In case of <strong>any exception occur with one of 
+    this operations </strong>the 
+    Picker is informed directly in the Picking Dialog with an appropriate error message and is not able to continue his work. All known reasons for this exceptional situations 
+    based on an incorrect manual booking in the system. (<strong>Reason 2</strong>)</p>
+    <p>&nbsp;</p>
+    <ol class="listNumber">
+      <li class="style6" value="3"><strong>Pick Job is yet finished but (at least) one Pick Container is missing at it&#39;s destination (e.g. the shipping area)</strong></li>
+    </ol>
+    <p>A Pick Order is finished at a Pickstation with confirmation of the last Pick of the last Pick Order Line. The Pick Container remains in status &quot;picked&quot; 
+    until it has arrived at the Destination Location of the related Pick Order Line. (<strong>Reason 1</strong>)</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Trouble Shooting -->
+  <div class="block" id="block_troubleshooting">
+    <!-- Navigation line start -->
+    <a name="Troubleshooting"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#DetailedDescription">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Sources"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Sources">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Trouble Shooting</h5>
+    <ol class="listNumber">
+      <li class="style6"><strong>Pick Job is not yet assigned to any Pickstation</strong></li>
+    </ol>
+    <table>
+      <tr>
+        <th colspan="2">
+          <p class="columnDescription">Solution for Reason 1: <span class="style7">Pick Order is not yet released (no Picks or Pick Jobs exist)</span></p>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <p class="columnDescription">Step</p>
+        </th>
+        <th>
+          <p class="columnDescription">Action</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">1.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">For the analysis of the <strong>failed precondition </strong>of the Pick Order release select the pending Pick Order in 
+          the
+          <a href="../../../../../../../../oco/doc/en/user/WebHelp/dialogs/oco/general/ui/client/dialog/retrievaladmin/RetrievalOverviewDialog.html">Dialog Retrieval Administration</a> and 
+          start the
+            <a href="../../../../../../../../orp/doc/en/user/WebHelp/dialogs/orp/pickrequest/ui/client/dialog/pickorder/PickOrderOverviewDialog.html">Dialog 
+            Pick Order</a> (context menu).</p>
+          <p class="tableBodyText">In the Dialog Pick Order start the
+            <a href="../../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/task/ui/client/dialog/task/TaskOverviewDialog.html">
+			Dialog Task Administration</a> (context menu).</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">2.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">The executive Task dependencies are listed in the appropriate specific panel. </p>
+          <p class="tableBodyText">Perform a separate problem analysis for the <strong>reference of the previous dependant task</strong>. </p>
+          <p class="tableBodyText">In case there is no problem identifiable for the previous task no further trouble shooting is necessary and just the referenced <strong>Pick Order </strong>or respectively 
+          <strong>Full Load Unit 
+          Retrieval </strong>need to be <strong>executed</strong>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">3.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">In case of the previous task represents a Pick Order and the problem of this Pick Order couldn&#39;t be solved 
+          the <strong>Pick Order </strong>or respectively the appropriate <strong>Pick Order Line</strong>(s) could be <strong>cancelled</strong>. <br>
+          Switch to the
+        <a href="../../../../../../../../oco/doc/en/user/WebHelp/dialogs/oco/general/ui/client/dialog/retrievaladmin/RetrievalOverviewDialog.html">Dialog Retrieval Administration</a> 
+          and use the related button for the mentioned Pick Order or Pick Order Line respectively.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">4.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">In case of the previous task represents a <strong>Full Load Unit Retrieval </strong>and the related problem couldn&#39;t be 
+          solved the Full Load Unit Retrieval could be <strong>cancelled</strong>. Switch to the
+        <a href="../../../../../../../../oco/doc/en/user/WebHelp/dialogs/oco/general/ui/client/dialog/retrievaladmin/RetrievalOverviewDialog.html">Dialog Retrieval Administration</a> 
+          and use the related button for the mentioned Full Load Unit Retrieval.&nbsp;</p>
+        </td>
+      </tr>
+      </table>
+    <p>&nbsp;</p>
+    <table>
+      <tr>
+        <th colspan="2">
+          <p class="columnDescription">Solution for Reason 2: <span class="style7">Pick Order is in configuration status &quot;incomplete&quot; (no Picks or Pick Jobs exist)</span></p>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <p class="columnDescription">Step</p>
+        </th>
+        <th>
+          <p class="columnDescription">Action</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">1.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">The allocation of the Inventory Units (consuming the aggregated reservations of the Order) is done in the <strong>second 
+          phase </strong>of a &quot;two phase reservation&quot;. A special &quot;area related transport workload&quot; demon controls when the <strong>workload 
+          </strong>of the related area <strong>falls below a configured limit</strong> and initiates further outbound transports by replacing the aggregated 
+          reservations to reservations of Inventory Units.&nbsp; </p>
+          <p class="tableBodyText">Start the
+          <a href="../../../../../../../../app/doc/en/user/WebHelp/dialogs/app/cron/ui/client/dialog/CronjobOverviewDialog.html">Cron Jobs Screen</a> 
+          and ensure that the <span lang="EN-US">&quot;<strong>FillAreaTransportWorkloadDemon</strong>&quot; for the assigned area </span>is up and running.</p>
+          <p class="tableBodyText">Relevant for the decision of assignment of new workload is the Control Data Parameter &quot;<em><strong>OrderFulfillment.FillAreaTransportWorkloadDemonIdleThreshold</strong></em>&quot;.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">2.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">In case of the first step of the serial picking was clarified (and cancelled) anyway and the existing <strong>&quot;incomplete&quot; 
+          Pick Order still exists </strong>it must be deleted with use of the button &quot;<strong>Remove </strong>(delete) the <strong>selected</strong> <strong>Pick Orders</strong>&quot;.</p>
+        </td>
+      </tr>
+      </table>
+    <p>&nbsp;</p>
+    <table>
+      <tr>
+        <th colspan="2">
+          <p class="columnDescription">Solution for Reason 3: <span class="style7">Picks exist in status &quot;created&quot; (no Pick Jobs exist)</span></p>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <p class="columnDescription">Step</p>
+        </th>
+        <th>
+          <p class="columnDescription">Action</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">1.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">In the
+        <a href="../../../../../../../../oco/doc/en/user/WebHelp/dialogs/oco/general/ui/client/dialog/retrievaladmin/RetrievalOverviewDialog.html">Dialog Retrieval Administration</a> 
+          select the Pick in status &quot;<strong>created</strong>&quot; and start the
+			<a href="../../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/loadunit/ui/client/dialog/admin/LoadUnitOverviewDialog.html">
+			Dialog Load Unit Administration</a> (context menu).</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">2.</p>
+        </td>
+        <td>
+          <p class="tableBodyText"><strong>Clarify the Source Load Unit </strong>and initiate the <strong>inbound transport </strong>into the appropriate storage area.</p>
+          <p class="tableBodyText">Further trouble shooting hints for that are provided in the related trouble shooting guide for the
+          <a href="../materialFlowManagement/Index.html">Transport Execution Exceptions</a>. </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">3.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">In case of the Source Load Unit could not get clarified (e.g. because it was lost) the related <strong>Pick Order Line
+          </strong>must be <strong>cancelled</strong>. <br>
+          Switch to the
+        <a href="../../../../../../../../oco/doc/en/user/WebHelp/dialogs/oco/general/ui/client/dialog/retrievaladmin/RetrievalOverviewDialog.html">Dialog Retrieval Administration</a> 
+          and use the context menu (first entry &quot;<strong>Show Pick Order Lines</strong>&quot;) of the yet selected Pick to switch to the Pick Order panel and 
+          automatically select the related Pick Order Lines. <br>
+          Use the button &quot;<b>Cancel</b> the <b>selected Pick Order Lines</b>&quot;.</p>
+        </td>
+      </tr>
+      </table>
+    <p>&nbsp;</p>
+    <table>
+      <tr>
+        <th colspan="2">
+          <p class="columnDescription">Solution for Reason 4: <span class="style7">Pick Missions exist in status &quot;released&quot; (no Pick Jobs exist)</span></p>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <p class="columnDescription">Step</p>
+        </th>
+        <th>
+          <p class="columnDescription">Action</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">1.</p> 
+        </td>
+        <td>
+          <p class="tableBodyText">In the
+        <a href="../../../../../../../../oco/doc/en/user/WebHelp/dialogs/oco/general/ui/client/dialog/retrievaladmin/RetrievalOverviewDialog.html">Dialog Retrieval Administration</a> 
+          select the <strong>Pick Walk </strong>in status &quot;<strong>released</strong>&quot; and start the
+          <a href="../../../../../../../../pic/doc/en/user/WebHelp/dialogs/pic/person2goods/ui/client/dialog/pickwalk/PickWalkOverviewDialog.html">Pick Walks</a> (context menu).</p>
+          <p class="tableBodyText">In case of &quot;late binding&quot; select the <strong>Pick Mission </strong>in status &quot;<strong>released</strong>&quot; and start the
+          <a href="../../../../../../../../pic/doc/en/user/WebHelp/dialogs/pic/general/ui/client/dialog/pickmission/PickMissionOverviewDialog.html">Dialog 
+          Pick Missions</a> (context menu).</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">2.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Start the
+          <a href="../../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/workstation/ui/client/dialog/workstation/WorkstationOverviewDialog.html">
+      Workstations</a> screen and ensure that at least one Pickstation in the mentioned Picking Zone exists with the following conditions:</p>
+          <ul class="tableListBullet1">
+            <li><strong>Service Qualifier&nbsp;</strong>matches the condition of the Pick Job/Pick Mission (refer to
+<a href="../../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/workstation/ui/client/dialog/workstation/WorkstationCapabilityOverviewDialog.html">Workstation 
+Capabilities</a>)</li>
+            <li><strong>Processing Qualifier </strong>matches the condition of the Pick Job/Pick Mission </li>
+            <li>at least one <strong>Pick Job Queue entry </strong>in status &quot;<strong>free</strong>&quot; (refer to
+      <a href="../../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/workstation/ui/client/dialog/workstation/WorkstationQueueEntryOverviewDialog.html">Dialog Workstation Queue Entries</a>)</li>
+            <li>in case of the Pickstation is configured for &quot;<strong>Continuous change of Pick Container</strong>&quot; (refer to
+      <a href="../../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/workstation/ui/client/dialog/workstation/WorkstationLocationOverviewDialog.html">Dialog Workstation Locations</a>) 
+            the number of currently &quot;active&quot; Pick Missions must be less than the number of &quot;available&quot; Locations of type &quot;work&quot; (i.e. at least one Pick Location 
+            is not occupied by a Pick Container).</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">3.</p>
+        </td>
+        <td>
+          The <strong>Load Unit Saturation Limit </strong>of the Pickstation must not be exceeded. That means the number of currently ordered Source Load Units 
+          must not exceed the &quot;LU Saturation&quot; of the Pickstation.<br>
+          Start the
+        <a href="../../../../../../../../pic/doc/en/user/WebHelp/dialogs/pic/goods2person/ui/client/dialog/pstanalysis/PickStationAnalysisOverviewDialog.html">Dialog Pickstation Analysis</a>, 
+          execute a filter in the lower grid &quot;Load Unit match&quot; for the column &quot;<strong>Status (Transport)</strong>&quot; with the values &quot;<strong>released</strong>&quot; 
+          and &quot;<strong>active</strong>&quot; and sum up the <strong>loaded rows</strong>.</td>
+      </tr>
+      </table>
+    <p>&nbsp;</p>
+    <table>
+      <tr>
+        <th colspan="2">
+          <p class="columnDescription">Solution for Reason 5: <span class="style7">Blocking situation of the Pick Job respectively the related Pick Missions</span></p>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <p class="columnDescription">Step</p>
+        </th>
+        <th>
+          <p class="columnDescription">Action</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">1.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">In the
+        <a href="../../../../../../../../oco/doc/en/user/WebHelp/dialogs/oco/general/ui/client/dialog/retrievaladmin/RetrievalOverviewDialog.html">Dialog Retrieval Administration</a> 
+          select the <strong>Pick Mission</strong> with enabled flag &quot;Mission blocked&quot; and start the
+          <a href="../../../../../../../../pic/doc/en/user/WebHelp/dialogs/pic/general/ui/client/dialog/pickmission/PickMissionOverviewDialog.html">Dialog 
+          Pick Missions</a> (context menu). </p>
+          <p class="tableBodyText">All Source Load Units are listed in the lower
+<a href="../../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/loadunit/ui/client/dialog/admin/LoadUnitOverviewDialog.html">Dialog Load Units</a> and 
+          the currently not stored Load Units are listed at the top of the list.&nbsp;</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">2.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Only in case of one of the currently not stored Load Units is in any <strong>exceptional situation </strong>(e.g. located at 
+          a Clarification Station) clarify it and initiate the inbound transport into the appropriate storage area.</p>
+          <p class="tableBodyText">Further trouble shooting hints for that are provided in the related trouble shooting guide for the
+          <a href="../materialFlowManagement/Index.html">Transport Execution Exceptions</a>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">3.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">In case of <strong><span class="style8">all</span><em> </em></strong>assigned Source Load Units are stored and the &quot;<strong>Mission blocked</strong>&quot; flag is <strong>still enabled
+          </strong>the button &quot;<strong>Remove the block flag</strong>&quot; could be executed for the selected Pick Mission.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">Be aware of the possible extensive implications in case of a &quot;Mission blocked&quot; flag will be removed by mistake.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      </table>
+    <p>&nbsp;</p>
+    
+    <ol class="style3" start="2">
+      <li class="style6"><strong>Pick Job is currently running at a Pickstation</strong></li>
+    </ol>
+    <table>
+      <tr>
+        <th colspan="2">
+          <p class="columnDescription">Solution for Reason 1: <span class="style7">Missing Source Load Unit at the Pickstation</span></p>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <p class="columnDescription">Step</p>
+        </th>
+        <th>
+          <p class="columnDescription">Action</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">1.</p>
+        </td>
+        <td>
+          <p class="tableBodyText"><strong>Clarify the missing Source Load Unit</strong>.</p>
+          <p class="tableBodyText">Further trouble shooting hints for that are provided in the related trouble shooting guide for the
+          <a href="../materialFlowManagement/Index.html">Transport Execution Exceptions</a>. &nbsp;</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">2.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">In case of the Source Load Unit is finally missing within the required sequence the <strong>Source Load Unit</strong> could 
+          be <strong>cancelled and skipped </strong>within this Pick Job.</p>
+          <p class="tableBodyText">This must be done by the Picker in the
+          <a href="../../../../../../../../pic/doc/en/user/WebHelp/dialogs/pic/goods2person/ui/client/dialog/pickingDialog/SourcePutStep.html">
+          Picking Dialog</a> with the appropriate button &quot;<strong>Cancel Reservation</strong>&quot; (in case the Picker has the appropriate access rights).</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">3.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">In case of the picking operation could not executed anyway for a few Picks the related <strong>Pick Order Lines</strong> 
+          could be <strong>cancelled</strong> <br>
+          with use of the button &quot;<b>Cancel</b> the <b>selected Pick Order Lines</b>&quot; in the
+        <a href="../../../../../../../../oco/doc/en/user/WebHelp/dialogs/oco/general/ui/client/dialog/retrievaladmin/RetrievalOverviewDialog.html">Dialog Retrieval Administration</a>.</p>
+        </td>
+      </tr>
+      </table>
+    <p>&nbsp;</p>
+    <table>
+      <tr>
+        <th colspan="2">
+          <p class="columnDescription">Solution for Reason 2: <span class="style7">Pick Mission (Pick Job) is executed completely but remains in status &quot;active&quot; or &quot;complete&quot;</span></p>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <p class="columnDescription">Step</p>
+        </th>
+        <th>
+          <p class="columnDescription">Action</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">1.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">For any reason the Picker is informed directly in the 
+          <a href="../../../../../../../../pic/doc/en/user/WebHelp/dialogs/pic/goods2person/ui/client/dialog/pickingDialog/PickingOperationDialog.html">Picking Dialog</a><strong> </strong>and is not able to continue his work.
+          <br>
+          The necessary trouble shooting steps of this situation strongly depends on the details of the <strong>error message </strong>in the dialog.</p>
+          <p class="tableBodyText">Possible steps are listed below and provided in the
+        <a href="../../../../../../../../oco/doc/en/user/WebHelp/dialogs/oco/general/ui/client/dialog/retrievaladmin/RetrievalOverviewDialog.html">Dialog Retrieval Administration</a>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">2.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Before any trouble shooting can be executed the specific <strong>reason mentioned in the error message </strong>must be 
+          analyzed and <strong>clarified</strong>.&nbsp;</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">Because of this specific exceptional situations normally based on any (incorrect) manual booking in the system overall hints 
+                for analysis and trouble shooting could not provided here.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">3.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">In case of all Picks are normally executed but some were not booked <br>
+          the button &quot;<b>Book Pick(s)</b> with code OK&quot; could be executed.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">4.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">In case of the Pick Container was pushed away successfully but was not booked <br>
+          the button &quot;<b>Confirm Pick Container</b>&quot; could be executed.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">5.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">In case of the picking operation could not executed anyway the related Pick Order Lines could be cancelled <br>
+          with use of the button &quot;<b>Cancel</b> the <b>selected Pick Order Lines</b>&quot;.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">6.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">In case of the Pick Container arrived but not booked at the appropriate destination <br>
+          the button &quot;<b>Confirm</b> the <b>transport</b> of selected <b>Load Units </b>at the defined destination&quot; could be executed.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">7.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">In case of various problems were solved anyway and the Pick Job was finished but not booked <br>
+          the button &quot;<b>Remove </b>the <b>selected Pick Job from</b> the Pick Job <b>Queue</b>&quot; could be executed.</p>
+        </td>
+      </tr>
+    </table>
+
+    <p>&nbsp;</p>
+    <ol class="style3" start="3">
+      <li class="style6"><strong>Pick Job is yet finished but (at least) one Pick Container is missing at it&#39;s destination (e.g. the shipping area)</strong></li>
+    </ol>
+    <table>
+      <tr>
+        <th colspan="2">
+          <p class="columnDescription">Solution for Reason 1: <span class="style7">Pick Order is finished and (at least one) Pick Container is in status &quot;picked&quot;</span></p>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <p class="columnDescription">Step</p>
+        </th>
+        <th>
+          <p class="columnDescription">Action</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">1.</p>
+        </td>
+        <td>
+          <p class="tableBodyText"><strong>Clarify </strong>the <strong>Pick Container </strong>and <strong>continue the transport </strong>to it&#39;s destination.</p>
+          <p class="tableBodyText">Further trouble shooting hints for that are provided in the related trouble shooting guide for the
+          <a href="../materialFlowManagement/Index.html">Transport Execution Exceptions</a>. &nbsp;</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">2.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">In case of the Pick Container has already arrived at the Destination Location of the related Pick Order Lines <br>
+          the button &quot;<b>Confirm</b> the <b>transport</b> of selected <b>Load Units </b>at the defined destination&quot; in the
+        <a href="../../../../../../../../oco/doc/en/user/WebHelp/dialogs/oco/general/ui/client/dialog/retrievaladmin/RetrievalOverviewDialog.html">Dialog Retrieval Administration</a> 
+          could be executed.&nbsp;</p>
+        </td>
+      </tr>
+      </table>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Sources -->
+  <div class="block" id="block_sources">
+    <!-- Navigation line start -->
+    <a name="Sources"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#Troubleshooting">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right.gif">&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right_end.gif">
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Sources</h5>
+    <ul class="listBullet1">
+      <li>
+        <a href="../../../../../../../../oco/doc/en/user/WebHelp/dialogs/oco/general/ui/client/dialog/retrievaladmin/RetrievalOverviewDialog.html">Dialog Retrieval Administration</a></li>
+      <li>
+        <a href="../../../../../../../../pic/doc/en/user/WebHelp/dialogs/pic/goods2person/ui/client/dialog/pstanalysis/PickStationAnalysisOverviewDialog.html">Dialog Pickstation Analysis</a></li>
+      <li>
+        <a href="../../../../../../../../orp/doc/en/user/WebHelp/dialogs/orp/pickrequest/ui/client/dialog/pickorder/PickOrderOverviewDialog.html">Dialog Pick Order</a></li>
+      <li>
+        <a href="../../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/task/ui/client/dialog/task/TaskOverviewDialog.html">Dialog Task Administration</a></li>
+      <li>
+        <a href="../../../../../../../../app/doc/en/user/WebHelp/dialogs/app/cron/ui/client/dialog/CronjobOverviewDialog.html">Cron Jobs Screen</a></li>
+      <li>
+		<a href="../../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/loadunit/ui/client/dialog/admin/LoadUnitOverviewDialog.html">Dialog Load Unit Administration</a></li>
+      <li>
+        <a href="../materialFlowManagement/Index.html">Transport Execution Exceptions</a></li>
+      <li>
+        <a href="../../../../../../../../pic/doc/en/user/WebHelp/dialogs/pic/person2goods/ui/client/dialog/pickwalk/PickWalkOverviewDialog.html">Pick Walks</a></li>
+      <li>
+        <a href="../../../../../../../../pic/doc/en/user/WebHelp/dialogs/pic/general/ui/client/dialog/pickmission/PickMissionOverviewDialog.html">Dialog Pick Missions</a></li>
+      <li>
+        <a href="../../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/workstation/ui/client/dialog/workstation/WorkstationOverviewDialog.html">
+      Workstations</a></li>
+      <li>
+        <a href="../../../../../../../../pic/doc/en/user/WebHelp/dialogs/pic/goods2person/ui/client/dialog/pickingDialog/SourcePutStep.html">
+        Picking Dialog State: Scan next Source Load Unit</a></li>
+      <li>
+        <a href="../../../../../../../../pic/doc/en/user/WebHelp/dialogs/pic/goods2person/ui/client/dialog/pickingDialog/PickingOperationDialog.html">Picking Dialog</a>.</li>
+    </ul>
+    <!-- Content end -->
+  </div>
+
+  <!-- Footer start -->
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">&copy; Dematic GmbH 2008. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar"><a href="#top">top</a> | <a href="javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

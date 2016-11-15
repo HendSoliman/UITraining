@@ -1,0 +1,205 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2008. All rights reserved.
+
+  $Id: Stocktaking.html 27545 2014-05-05 09:58:11Z bernardy $
+-->
+    <title>Stocktaking</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)">
+  <meta name="keywords" content="Dematic, Dematic iQ">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Language" content="en-us">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content=".Web">
+  <style type="text/css" media="screen">@import url(../../../../../../common/style_screen.css);</style>
+    <style type="text/css" media="print">@import url(../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "itl/doc/en/user/WebHelp/process/Stocktaking.html";
+  </script>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../index.html?page=source%2Fitl%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fprocess%2FStocktaking.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../index.html?page=source%2Fitl%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fprocess%2FStocktaking.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+    <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../index.html"><img class="upLinkImg" id="uplinkO_img" border="0" title="Warehouse-internal Processes" src="../../../../../../common/img/move_overview.gif"></a>
+        </td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Top navigation bar end -->
+
+  <!-- Map title -->
+  <h1 id="maptitle">Stocktaking</h1>
+
+  <!-- Block: Overview -->
+  <div class="block" id="block_overview">
+
+    <!-- Content start -->
+    <h5><a name="Overview"></a>Overview</h5>
+    <p><b>Stocktaking </b>determines the stock levels of material, products, merchandise, resources and other assets for an entire organizational 
+    unit of a company. This includes checking and assessment of stock levels on a defined effective date. Typical methods are 
+    <b>Perpetual Stocktaking </b>or <b>End-of-Period Stocktaking</b>.</p>
+    <p>The central subsystem, STT supports many <b>stocktaking processes</b>. For a detailed introduction, see
+          <a href="../general/StocktakingTermsAndDefinitions.html">Terms and Definitions</a>. In principle, the following 
+	Stocktaking processes are 
+    supported:</p>
+    <ul class="listBullet1">
+      <li><b>End-of-Period Stocktaking </b>(supported by tracking the &quot;Last Stocktaking Date&quot; of the configured stocktaking object which thus can be identified 
+      as already finished (counted) within a mentioned period)</li>
+      <li><b>Perpetual Stocktaking ad hoc explicit during first storing</b> (determination of the stock level executes during the first storing of Inventory into a considered Location)</li>
+      <li><b>Perpetual Stocktaking ad hoc explicit during picking</b> (determination of the stock level executes during a Pick operation, respectively during Retrieval operation, 
+      provided that the current stock level at the considered Location is zero or nearly zero after the Pick)</li>
+      <li><b>Perpetual Stocktaking implicit during receiving</b> (counting of Inventory can be caused by other reasons, e.g. while Receiving or clearing of faults. 
+      If Inventory is implicitly counted and confirmed, this is booked as implicit Stocktaking)</li>
+      <li><b>Perpetual Stocktaking with an explicit planned Counting Order </b>(determination of the stock level executes incrementally for the considered group of 
+      Locations during the complete accounting year by generating periodic Counting instructions for a subset of the considered Locations or SKUs. 
+      Each Stocktaking object is counted, at most, one time inside the considered period).</li>
+    </ul>
+    <br>
+    <p>This subsystem controls stocktaking fulfillment and execution. Stocktaking is initiated by <b>Stocktaking Orders</b> that are managed by the 
+    <a href="../../../../../../orp/doc/en/user/WebHelp/index.html">Order Management</a> Subsystem.</p>
+    <table class="noteTable" id="table3">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">For configuration purposes, see the related topic in the
+          <a href="../../../../../../wms/wag/doc/en/user/WebHelp/stocktaking/index.html">Warehouse Administration Guide</a>.</p>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <p class="MsoBodyText">Main responsibilities of Stocktaking:</p>
+    <ul class="listBullet1">
+      <li>Fulfillment of Stocktaking Orders and creation of <b>Counting Orders</b></li>
+      <li><strong>Online execution </strong>of Counting Orders</li>
+    </ul>
+    <ul class="listBullet2">
+      <li>at a Goods-to-Person Workstation and </li>
+      <li>with mobile support in Person-to-Goods Zones</li>
+    </ul>
+    <ul class="listBullet1">
+      <li><strong>Offline execution </strong>of Counting Orders with use of Counting Lists</li>
+    </ul>
+    <ul class="listBullet1">
+      <li>Configuration for different supported stocktaking types</li>
+      <li>Booking and confirmation of Counting results. </li>
+    </ul>
+    <br>
+    <table id="table1">
+      <tr>
+        <th><p class="columnDescription">Chapter</p></th>
+        <th><p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <tr>
+		<td><p class="tableBodyText" style="width:225px"><a href="../general/StocktakingTermsAndDefinitions.html">Stocktaking - Terms and Definitions</a></p></td>
+		<td><p class="tableBodyText">Provides business entity definitions and Stocktaking terminology.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText"><a href="../dialogs/itl/stocktakingorderfulfillment/ui/client/dialog/stocktakingzone/StocktakingZoneConfigOverviewDialog.html">Stocktaking Zone Configurations</a></p></td>
+		<td><p class="tableBodyText">A Stocktaking Zone represents all Locations grouped based on (comparably) 
+		Stocktaking processes and describes all criteria needed for planning and executing a Stocktaking Request for the group of Locations. Each Location can only be assigned to one Stocktaking Zone.</p></td>
+      </tr>
+      <tr>
+		<td><p class="tableBodyText"><a href="../dialogs/itl/countingrequest/ui/client/dialog/countingconfirmation/CountingConfirmationHandlingOverviewDialog.html">Counting Confirmation Handling</a></p></td>
+		<td><p class="tableBodyText">This screen is for configuring bookings and every type of handling based on a counting confirmation. 
+		For each required combination of Stocktaking Zone and error codes, an appropriate confirmation handling is assigned.</p></td>
+      </tr>
+      <tr>
+		<td><p class="tableBodyText"><a href="../dialogs/itl/countingrequest/ui/client/dialog/countingorder/CountingOrderOverviewDialog.html">Counting Orders</a></p></td>
+		<td><p class="tableBodyText">A Counting Order is a collection of counting, weighing, metering or estimating 
+		instructions at the fulfillment level based on a Stocktaking Order. One Counting Order instruction always refers to a concrete Inventory Unit, respectively Location, 
+		inside the considered Stocktaking Zone and defines the details for quantity determination of the considered Stocktaking object.</p></td>
+      </tr>
+      <tr>
+		<td><p class="tableBodyText"><a href="../dialogs/itl/countingexecution/ui/client/dialog/counting/CountingOperationDialog.html">Counting Operation</a></p></td>
+		<td><p class="tableBodyText">Used to perform Counting operations for a specific Counting Order. It provides all functionality for counting purposes at <b>Goods-to-Person Workstations </b>for any Load Unit Types. 
+		Features include detailed instructions and information for the counting operation, additional information regarding ordered Source Load Units, and confirmation of the Counting operation.</p></td>
+      </tr>
+      <tr>
+		<td><p class="tableBodyText"><a href="../dialogsrf/RFCountingDialog.html">RF-Counting</a></p></td>
+		<td><p class="tableBodyText">Perform Counting operations for Counting Orders in manual areas with <strong>Person-To-Goods</strong> configuration on RF-Terminal.</p></td>
+      </tr>
+      <tr>
+		<td><p class="tableBodyText"><a href="../usecases/Stocktaking.html">Execution of Stocktaking</a></p></td>
+		<td><p class="tableBodyText">Describes the process of <b> <i>Perpetual Stocktaking with an explicit planned Counting Order</i></b>. This consists of Stocktaking Order creation, 
+		release of this Order, automatic creation of related Counting Orders, execution of the Counting process, and a final booking of Counting results.</p></td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer start -->
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">© Dematic GmbH 2008. All Rights Reserved.  </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar"><a href="#top">top</a> | <a href="javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

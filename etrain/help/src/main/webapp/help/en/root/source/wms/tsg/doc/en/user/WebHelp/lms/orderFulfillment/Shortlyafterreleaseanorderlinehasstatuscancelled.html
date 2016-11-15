@@ -1,0 +1,552 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2008. All rights reserved.
+
+  $Id: Shortlyafterreleaseanorderlinehasstatuscancelled.html 27545 2014-05-05 09:58:11Z bernardy $
+-->
+    <title>Order Line cancelled with Release</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)">
+  <meta name="keywords" content="Dematic, Dematic iQ">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content="WCS-TPL_TroubleShootingGuide.Web">
+  <meta name="author" content="author">
+  <style type="text/css" media="screen">@import url(../../../../../../../../common/style_screen.css);</style>
+    <style type="text/css" media="print">@import url(../../../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "wms/tsg/doc/en/user/WebHelp/lms/orderFulfillment/Shortlyafterreleaseanorderlinehasstatuscancelled.html";
+  </script>
+<style type="text/css">
+.style1 {
+  padding:2pt 3pt;
+  background-color:#D6DBE7; /* B&W Scheme: background-color:#FFFFFF; Color Scheme: background-color:#D6DBE7;  */;
+  font-size:12.0pt; /* JH-rendering: font-size:12pt; Native rendering: font-size:10pt; */;
+  font-weight:normal;
+  vertical-align:top;
+  border-collapse:collapse;
+  border-width:0px;
+  white-space:normal;
+}
+.style2 {
+  padding:2pt 3pt;
+  background-color:#D6DBE7; /* B&W Scheme: background-color:#FFFFFF; Color Scheme: background-color:#D6DBE7;  */;
+  font-size:12.0pt; /* JH-rendering: font-size:12pt; Native rendering: font-size:10pt; */;
+  font-weight:normal;
+  vertical-align:top;
+  border-collapse:collapse;
+  border-width:0px;
+  border-style:none;
+  white-space:normal;
+}
+</style>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../../../index.html?page=source%2Fwms%2Ftsg%2Fdoc%2Fen%2Fuser%2FWebHelp%2Flms%2ForderFulfillment%2FShortlyafterreleaseanorderlinehasstatuscancelled.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../../../index.html?page=source%2Fwms%2Ftsg%2Fdoc%2Fen%2Fuser%2FWebHelp%2Flms%2ForderFulfillment%2FShortlyafterreleaseanorderlinehasstatuscancelled.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+    <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../../index.html">
+          <img class="upLinkImg" id="uplinkO_img" border="0" title="Document Overview" src="../../../../../../../../common/img/move_overview.gif"></a>
+          <a class="upLink" id="uplinkP" href="Index.html">
+          <img class="upLinkImg" id="uplinkP_img" border="0" title="Order Fulfillment Exceptions" src="../../../../../../../../common/img/move_up.gif"></a>
+        </td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+            <a class="naviBar" href="#Briefdescription">Brief Description</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Possiblereasons">Possible Reasons</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Detaildescription">Detail description</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Troubleshooting">Trouble Shooting</a>
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Top navigation bar end -->
+
+  <!-- Map title -->
+  <h1 id="maptitle">Order Line cancelled with Release</h1>
+
+  <!-- Block: Symptom -->
+  <div class="block" id="block_symptom">
+    <!-- Content start -->
+    <h5><a name="Symptom"></a>Symptom</h5>
+    <p>Shortly after releasing the corresponding task of a pending order the state of the state of one ore more Order Lines switches to CANCELLED.&nbsp;</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Brief Description -->
+  <div class="block" id="block_briefdescription">
+    <!-- Navigation line start -->
+    <a name="Briefdescription"></a>
+    <table class ="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Possiblereasons">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Troubleshooting">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Brief Description</h5>
+    <p>When the corresponding task of an order is released the system tries to satisfy the requested retrieval described via the given criteria. Depending on the current situation inside the warehouse it could be that the requested inventory respectively load unit isn't available. Hence the 
+    Order Line change it's status to CANCELLED.&nbsp;</p>
+    <p><strong>Most important dialogs for analysis and trouble shooting support:</strong>&nbsp;</p>
+    <ul class="listBullet1">
+      <li>
+      <a href="../../../../../../../../orp/doc/en/user/WebHelp/dialogs/orp/orderfulfillment/ui/client/dialog/retrievalanalysis/RetrievalAnalysisOverviewDialog.html">Dialog Retrieval Analysis</a>.</li>
+    </ul>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Possible Reasons -->
+  <div class="block" id="block_possiblereasons">
+    <!-- Navigation line start -->
+    <a name="Possiblereasons"></a>
+    <table class ="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#Briefdescription">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Detaildescription">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Troubleshooting">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Possible Reasons</h5>
+    <p>Depending on the used criterion of the Order Line the following reasons are possible for the described symptom:</p>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription"><b>Criterion</b></p>
+        </th>
+        <th>
+          <p class="columnDescription"><b>Reason</b></p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p>Inventory</p>
+        </td>
+        <td>
+          <p>Insufficient available stock of the SKU inside the warehouse.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Parameter</p>
+        </td>
+        <td>
+          <p>No or not enough the parameters fitting load units are available inside the warehouse.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Load unit</p>
+        </td>
+        <td>
+          <p>The load unit is not available inside the warehouse.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Location</p>
+        </td>
+        <td>
+          <p>No load units are available for the given location.</p>
+        </td>
+      </tr>
+    </table>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Detail description -->
+  <div class="block" id="block_detaildescription">
+    <!-- Navigation line start -->
+    <a name="Detaildescription"></a>
+    <table class ="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#Possiblereasons">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Troubleshooting">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Troubleshooting">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Detail description</h5>
+    <p>When a new order is submitted into the order management it is required to release the order for processing.  A new order has status "PENDING". After an order is released the status of one or more 
+    Order Lines switches from RELEASED to CANCELLED. Maybe also the status of the order changes to FINISHED. </p>
+    <p>Depending on the used criterion the cause of the above mentioned reason is different. </p>
+    <p><b>Inventory criterion
+</b></p>
+    <p>If the given criterion of the Order Line is the inventory criteria then the available stock of the given SKU must fit to the specified <i>quantity base</i> relative to the given over- and underdelivery tolerance percentage. Because no picking is possible furthermore the available quantity of the specified stock must be distributed on fitting subsets of load units containing the asked SKU. </p>
+    <p>Causes for insufficient available stock of a SKU could be:</p>
+    <ul class="listBullet1">
+      <li>Not enough free quantity of the requested  SKU/batch is inside the warehouse.</li>
+      <li>One or more locations storing load units with the requested stock have a long term lock for output and the remaining stock is to less or not in fitting subsets existent.
+      </li>
+      <li>One or more aisles have a long term lock for output and the remaining stock is to less or not in fitting subsets existent. </li>
+      <li>There is no transport way to the given destination available for one or more load units containing a part of the required inventory and the remaining 
+      stock is too less or not in fitting subsets existent.<br>
+      Note: The transport way is relative to the current location of a load unit while the retrieval strategy is collecting the required stock. The load unit type must fit to the 
+      type of the destination location.</li>
+      <li>The SKU or a requested batch of the SKU is locked.  (For example while quality assurance checks)</li>
+      <li>One or more inventory units have a lock and the remaining stock is too less or not in fitting subsets existent.</li>
+    </ul>
+    <p><b>Parameter criterion
+</b></p>
+    <p>If the given criterion of the Order Line is a parameter criteria then the parameters of one or more available load units must match the specified parameters of the parameter criterion. </p>
+    <p>Causes for a system state when no or not enough the parameters fitting load units are available inside the warehouse could be:</p>
+    <ul class="listBullet1">
+      <li>No load unit inside the warehouse has the criterion matching parameters.</li>
+      <li>All locations storing load units with the requested parameters have a long term lock for output. </li>
+      <li>All aisles storing load units with the requested parameters have a long term lock for output.</li>
+      <li>There is no transport way to the given destination available for all load units fitting the required parameters.<br>
+      Note: The transport way is relative to the current location of a load unit while the retrieval strategy is collecting the required stock. The load unit type must fit to the 
+      type of the destination location.</li>
+    </ul>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="style1">
+          <p class="style2" style="width:1063px">If the Order Line specifies that all (and not only one) load units matching the given parameters are requested, then the retrieval strategy will collect all available load units matching the criteria. Matching load units in locked aisles or on locked locations are not collected and will stay on their current locations. The 
+          Order Line status will only switch into CANCELLED if less then one load unit was found.  </p>
+        </td>
+      </tr>
+    </table>
+    <p><b>Load unit criterion
+</b></p>
+    <p>If the given criterion of the Order Line is a load unit then causes for a system state when the load unit is not available inside the warehouse could be:</p>
+    <ul class="listBullet1">
+      <li>The requested load unit doesn't exist inside the warehouse.</li>
+      <li>The location storing the requested load units has a long term lock for output. </li>
+      <li>The aisle storing the requested load units has a long term lock for output. </li>
+      <li>There is no transport way to the given destination available for the load unit. <br>
+    Note: The transport way is relative to the current location of a load unit to the requested destination. The load unit type must fit to the type of the destination location. 
+      </li>
+    </ul>
+    <p><b>Location criterion
+</b></p>
+    <p>If the given criterion of the Order Line is a location criterion then the resulting load units must be inside the requested location. Such a location can be a location (=bin), an aisle, an area or a facility.  </p>
+    <p>Causes for a system state when no load units of the given location are available could be:</p>
+    <ul class="listBullet1">
+      <li>No load unit is inside the given location.</li>
+      <li>All locations (=bins) storing load units inside the given location (aisle, area or facility) of the criterion have a long term lock for output. </li>
+      <li>The location which is specified as criterion is long term locked for output. </li>
+      <li>There is no transport way to the given destination available for all load units which are stored in the given location. <br>
+      Note: The transport way is relative to the current location of a load unit while the retrieval strategy is collecting the required load units. The load 
+      unit type must fit to the type of the destination location.</li>
+    </ul>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar" style="width:801px">The Order Line status will only switch into CANCELLED if less then one load unit in the specified location was found.&nbsp;</p>
+        </td>
+      </tr>
+    </table>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Trouble Shooting -->
+  <div class="block" id="block_troubleshooting">
+    <!-- Navigation line start -->
+    <a name="Troubleshooting"></a>
+    <table class ="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#Detaildescription">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right.gif">&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right_end.gif">
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Trouble Shooting</h5>
+    <table>
+      <tr>
+        <th colspan="2">          <p class="columnDescription"><b>Determine what exactly happened</b></p>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <p class="columnDescription">Step</p>
+        </th>
+        <th>
+          <p class="columnDescription">Action</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">1</p>
+        </td>
+        <td>
+          <p class="tableBodyText">The status of the Order Line should be CANCELLED.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">2</p>
+        </td>
+        <td>
+          <p class="tableBodyText">The cancel reason of the Order Line has a hint about cancellation because of the retrieval strategy.</p>
+        </td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Reason</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">1a</p>
+        </td>
+        <td>
+          <p class="tableBodyText">If the status of the Order Line is not "CANCELLED" then the corresponding Order Line isn't cancelled. </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">2a</p>
+        </td>
+        <td>
+          <p class="tableBodyText">If the status is "CANCELLED" and the cancel reason has no hint about cancellation because of retrieval strategy <br>
+          then the task of the order or the Order Line was cancelled via the GUI by an user.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">2b</p>
+        </td>
+        <td>
+          <p class="tableBodyText">If the status is "CANCELLED" and the cancel reason has a hint about cancellation because of retrieval strategy <br>
+          then one oft the above mentioned reasons are responsible for the cancellation.</p>
+        </td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <table>
+      <tr>
+        <th colspan="2">
+          <p class="columnDescription">Solution for Reason 1a:</p>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <p class="columnDescription">Step</p>
+        </th>
+        <th>
+          <p class="columnDescription">Action</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">1</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Nothing to do.</p>
+        </td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <table>
+      <tr>
+        <th colspan="2">
+          <p class="columnDescription">Solution for Reason 2a:</p>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <p class="columnDescription">Step</p>
+        </th>
+        <th>
+          <p class="columnDescription">Action</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">1</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Find out the user who cancelled the Order / Order Line and discuss a solution. However you have to create a new order for the cancelled 
+          Order Lines.</p>
+        </td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <table>
+      <tr>
+        <th colspan="2">
+          <p class="columnDescription">Solution for Reason 2b:</p>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <p class="columnDescription">Step</p>
+        </th>
+        <th>
+          <p class="columnDescription">Action</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">1</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Depending on the used criterion the cause of the above mentioned reason is different. Find out the used criterion of the 
+          Order Line.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">2</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Check possible reasons for the criteria described in the "detail section" of this chapter and follow one ore more possibilities:</p>
+          <ul class="tableListBullet1">
+            <li>Unlock corresponding SKUs or batches .</li>
+            <li>Unlock corresponding locations (bins, aisles) with long term locks for output. </li>
+            <li>Insert missing area access entries for load unit types and areas.</li>
+            <li>Check available quantity of unreserved and unlocked inventory for the requested SKU (and Batch).</li>
+            <li>Check for existing load units matching the given parameters, location or load unit ID of the criteria.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">3</p>
+        </td>
+        <td>
+          <p class="tableBodyText"> Create a new order for the cancelled Order Lines and try again.</p>
+        </td>
+      </tr>
+    </table>
+    <!-- Content end -->
+  </div>
+
+  <!-- Footer start -->
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">&copy; Dematic GmbH 2008. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar"><a href="#top">top</a> | <a href="javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

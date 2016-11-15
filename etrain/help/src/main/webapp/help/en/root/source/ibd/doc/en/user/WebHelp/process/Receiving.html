@@ -1,0 +1,212 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2008. All rights reserved.
+
+  $Id: Receiving.html 28189 2014-05-19 10:04:45Z u02440 $
+-->
+  <title>Receiving</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+  <meta name="keywords" content="Dematic, Dematic iQ" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta http-equiv="Content-Language" content="en-us">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content=".Web">
+  <style type="text/css" media="screen">@import url(../../../../../../common/style_screen.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "ibd/doc/en/user/WebHelp/process/Receiving.html";
+  </script>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../index.html?page=source%2Fibd%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fprocess%2FReceiving.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../index.html?page=source%2Fibd%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fprocess%2FReceiving.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+  <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../index.html"><img class="upLinkImg" id="uplinkO_img" border="0" title="Inbound Processes" src="../../../../../../common/img/move_overview.gif"></a>
+        </td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Top navigation bar end -->
+
+  <!-- Map title -->
+  <h1 id="maptitle">Receiving</h1>
+
+  <!-- Block: Overview -->
+  <div class="block" id="block_overview">
+
+    <!-- Content start -->
+    <h5><a name="Overview"></a>Overview</h5>
+    <p>Receiving provides the components responsible for managing goods receiving in a warehouse. There are different ways to create inventory within the Dematic iQ<sup><small>®</small></sup>:</p>
+    <ul class="listBullet1">
+      <li><b>Inventory is created </b>within a receiving process covered by <b>Receiving </b>based on</li>
+      <ul class="listBullet2">
+        <li><b>Advices</b></li>
+        <li><b>Shipments of Purchase Orders</b></li>
+      </ul>
+      <li>Inventory is created within a correction booking (e.g. caused by unexpected Inventory or Stocktaking). This is not covered here. </li>
+    </ul>
+    <p>A warehouse can receive <b>internal or external deliveries</b>. Goods may come from different sources, such as suppliers or production. Or they may be a return. 
+    An external delivery is usually due to a Purchase Order. Purchase Order management and booking a PO against the internal delivery is an ERP System task (host system). 
+    Dematic iQ<sup><small>&reg; </small></sup>only provides an overview of the existing Purchase Orders. An internal delivery is usually due to a Production Order or similar.</p>
+    <p>The <b>operational receiving process</b> is fulfilled by a user at a <strong>Receiving Workstation </strong>or <strong>automatically </strong>with a telegram from the underlying conveyor control 
+    (e.g. with goods from a production site). Receiving in a Receiving Area is also possible using an <strong> RF-Terminal</strong>.</p>
+    <p><b><u>Advice based Receiving</u></b></p>
+    <p>The host system <b>creates an </b><a href="../dialogs/ibd/receivinggeneral/ui/client/dialog/adviceadmin/AdviceOverviewDialog.html">Advice</a> for the delivered goods after an acknowledgement of the goods receipt to the host 
+    system (external goods receipt of the supplier or internal goods receipt from production). Advices are transmitted automatically to the Dematic iQ<sup><small>&reg;</small></sup> using the host Interface.</p>
+    <p><b><u>Receiving based on Deliveries</u></b></p>
+    <p>The receiving process could be executed based on single <strong><em>Deliveries</em></strong> of a Shipment which could be assigned to <em><strong>Purchase Orders</strong></em> (or Advices as well). Purchase Orders and Deliveries are transmitted automatically to the Dematic iQ<sup><small>&reg;</small></sup> as well.</p>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">Goods receipts without an provided Advice or Delivery are not supported by Dematic iQ<sup><small>&reg;</small></sup>. In case of handling manually unplanned goods receipts an Advice must be created.</p>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <p><b>Basic functions</b> and responsibilities of the Receiving subsystem:</p>
+    <ul class="listBullet1">
+      <li>Management of <b>Advices</b>, <b>Advice Lines,</b> <b>Advice Line Load Units</b>.</li>
+      <li>Management of <strong>Purchase Orders</strong>, <strong>Purchase Order Lines</strong>, <strong>Shipments</strong>, <strong>Deliveries</strong>, <strong>Receipts</strong> and <strong>Receipt Load Units</strong>.</li>
+      <li>Management of Full Load Unit Receiving processes (receiving of Full Load Units from production and from a Supplier) including Inventory and Load Unit creation.</li>
+      <li>Management of <strong>Quantity Based Receiving processes</strong> in automated or manual Areas - <strong> <a href="../dialogs/ibd/receivinggeneral/ui/client/dialog/receiving/ReceivingOperationDialog.html">Receiving Workstation</a> </strong>
+      or <strong> <a href="../dialogsrf/UnloadingDialog.html">RF-Terminals</a> </strong>- with deposition of single parts onto different Load Units.</li>
+    </ul>
+    <br>
+    <table>
+      <tr>
+        <th><p class="columnDescription">Section</p></th>
+        <th><p class="columnDescription">Description</p></th>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText"><a href="../general/IntroductiontoShipmentAdministration.html">Introduction to Shipment Administration</a></p></td>
+        <td><p class="tableBodyText">Description of <strong>Shipments </strong>and <strong>Purchase Orders</strong>.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Purchase Orders</p></td>
+        <td><p class="tableBodyText">A <strong>Purchase Order</strong> is an order that requests the shipment of goods from a supplier. A Purchase Order can be delivered in <strong>one or multiple Shipments</strong>.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Shipments</p></td>
+        <td><p class="tableBodyText">The screen is used to administrate the <strong>Shipments </strong>and <strong>Shipment Claims </strong>and allows for register new Shipments and<strong> assign Deliveries and Docks </strong>to a Shipment.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Deliveries</p></td>
+        <td><p class="tableBodyText">The screen is used to administrate the <strong>Deliveries </strong>and related <strong>Receipts, </strong>view the assigned <strong>Receipt Load Units </strong>and allows for changing the not yet completed Deliveries.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Receipt Overview</p></td>
+        <td><p class="tableBodyText">This screen shows all <strong>Receipts </strong>joining <strong>Shipments</strong>, <strong>Deliveries</strong> and <strong>Receipt Load Units</strong>.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Shipment Claim Types</p></td>
+        <td><p class="tableBodyText">A Claim Type classifies the claim reason and assigns a configuration for processing.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText"><a href="../general/IntroductiontoAdviceAdministration.html">Introduction to Advice Administration</a></p></td>
+        <td><p class="tableBodyText">Description of <strong>Advices</strong>.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText"><a href="../dialogs/ibd/receivinggeneral/ui/client/dialog/adviceadmin/AdviceOverviewDialog.html">Advices</a></p></td>
+        <td><p class="tableBodyText">Administration of <strong>Advices, Advice Lines </strong>and <strong>Advice Line Load Units</strong>.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Advices (Archive)</p></td>
+        <td><p class="tableBodyText">In the Advice Administration (Archive) screens only corresponding archived data are considered.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText"><a href="../dialogs/ibd/receivinggeneral/ui/client/dialog/adviceoverview/AdviceQueryDialog.html">Advice Overview</a></p></td>
+        <td><p class="tableBodyText">The <strong>Advice Overview </strong>displays Advice Lines and all already assigned Load Units of an Advice Line.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText"><a href="../usecases/CreateAdviceWithQuickAdviceBuilderDialog.html">Quick Advice Creation</a></p></td>
+        <td><p class="tableBodyText">With the manual<b> &quot;quick &amp; easy&quot; Advice creation</b> the Advice is completed in a single step, with minimal user input, and is released immediately. It can consist of one or multiple Advice Lines.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText"><a href="../usecases/QuantityBasedReceiving.html">Quantity based Receiving </a></p></td>
+		<td><p class="tableBodyText">Provides all functionality for deposit of delivered Inventory in single parts onto Load Units and initiates concluding inbound transports in automated or manual Areas at 
+		<strong>Receiving Workstations </strong>or with support of <strong>RF-Terminals</strong> ordered to given <strong>Advices or Deliveries</strong>.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText"><a href="../usecases/FullLoadUnitReceivingUseCase.html">Full Load Unit Receiving</a></p></td>
+		<td><p class="tableBodyText">Describes Full Load Unit Receiving in automated or manual Areas at a <strong>Receiving Workstation</strong>. Provides all functionality for Receiving <strong>fully advised Load Units </strong>and initiating concluding inbound transports.</p></td>
+      </tr>
+    </table>
+    <!-- Content end -->
+  </div>
+
+  <!-- Footer start -->
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">&copy; Dematic GmbH 2010. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar"><a href="#top">top</a> | <a href="javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

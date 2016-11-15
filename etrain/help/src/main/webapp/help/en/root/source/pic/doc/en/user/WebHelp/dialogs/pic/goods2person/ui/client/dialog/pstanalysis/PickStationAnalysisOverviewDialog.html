@@ -1,0 +1,348 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2008. All rights reserved.
+
+  $Id: PickStationAnalysisOverviewDialog.html 27545 2014-05-05 09:58:11Z bernardy $
+-->
+  <title>Pickstation Analysis</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)">
+  <meta name="keywords" content="Dematic, Dematic iQ">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content="WCS-TPL_HelpDialogMain.Web">
+  <meta name="author" content="author">
+  <style type="text/css" media="screen">@import url(../../../../../../../../../../../../common/style_screen.css);
+</style>
+  <style type="text/css" media="print">@import url(../../../../../../../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "pic/doc/en/user/WebHelp/dialogs/pic/goods2person/ui/client/dialog/pstanalysis/PickStationAnalysisOverviewDialog.html";
+  </script>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../../../../../../../index.html?page=source%2Fpic%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fdialogs%2Fpic%2Fgoods2person%2Fui%2Fclient%2Fdialog%2Fpstanalysis%2FPickStationAnalysisOverviewDialog.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../../../../../../../index.html?page=source%2Fpic%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fdialogs%2Fpic%2Fgoods2person%2Fui%2Fclient%2Fdialog%2Fpstanalysis%2FPickStationAnalysisOverviewDialog.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+  <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+    
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../../../../../../../index.html"><img class="upLinkImg" id="uplinkO_img" border="0" title="Overview Pick Controller (PIC)" src="../../../../../../../../../../../../common/img/move_overview.gif"></a>
+          <a class="upLink" id="uplinkP" href="../../../../../../../menu/GoodstoMandialogs.html"><img class="upLinkImg" id="uplinkP_img" border="0" title="Goods-to-Person Screens" src="../../../../../../../../../../../../common/img/move_up.gif"></a>
+        </td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+  
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+            <a class="naviBar" href="#DialogScreen">Screen</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Subdialogs">Sub-Screens</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#FieldDescriptions">Fields</a>
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Top navigation bar end -->
+  
+  <!-- Map title -->
+  <h1 id="maptitle">Pickstation Analysis</h1>
+
+  <!-- Block: Purpose -->
+  <div class="block" id="block_purpose">
+    <!-- Content start -->
+    <h5><a name="Purpose"></a>Purpose</h5>
+    <p>This screen shows the current situation for Pickstations. All <strong>Picks </strong>and related <strong>Source Base Load Units</strong> are displayed in 
+    ascending order <strong>regarding the current transport</strong> to the selected Pickstation</p>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">If failed initiation of the Transport Requests for the Source Load Units of a Pick Mission the Pickstation will <strong>not be 
+          supplied </strong>with new assignable Pick Missions. In this case, a <strong>specific alarm </strong>is raised because <strong>not all Load Units
+          </strong>of a Pick Mission <strong>could be requested </strong>(due to exceptional transport situation of the Load Unit). Be aware of these specific
+          <strong>Pick Controller Alarms </strong>(PIC-0002/PIC-0007).</p>
+        </td>
+      </tr>
+    </table>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">Once a Pick is booked, the related entry no longer displays. The list must be refreshed to display the current situation.</p>
+        </td>
+      </tr>
+    </table>
+    <table class="noteTable" id="table3">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">For specific configuration purposes refer to the related topic in the 
+          <a href="../../../../../../../../../../../../wms/wag/doc/en/user/WebHelp/picking/index.html">Warehouse Administration Guide</a>.</p>
+        </td>
+      </tr>
+    </table>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Screen -->
+  <div class="block" id="block_dialogscreen">   
+    <!-- Navigation line start -->
+    <a name="DialogScreen"></a>   
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#top">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Subdialogs">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#FieldDescriptions">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Screen</h5>
+    <p>
+      <img border="0" src="img/PickStationAnalysisDialog.png">
+    </p>
+    <!-- Content end -->
+  </div>
+
+
+  <!-- Block: Sub-Screens -->
+  <div class="block" id="block_subdialogs">
+    <!-- Navigation line start -->
+    <a name="Subdialogs"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#DialogScreen">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#FieldDescriptions">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#FieldDescriptions">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Sub-Screens</h5>
+    <ul class="listBullet1">
+      <li>
+      <a href="../../../../../../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/workstation/ui/client/dialog/workstation/WorkstationDetailDialog.html">Detail Dialog Workstation</a>.</li>
+    </ul>
+    <!-- Content end -->
+  </div>
+
+
+  <!-- Block: Fields -->
+  <div class="block" id="block_fielddescriptions">   
+    <!-- Navigation line start -->
+    <a name="FieldDescriptions"></a>   
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#Subdialogs"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right.gif">&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right_end.gif">
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Fields</h5>
+    <p>For upper section field descriptions, see the
+    <a href="../../../../../../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/workstation/ui/client/dialog/workstation/WorkstationDetailDialog.html">Detail Dialog Workstation</a>.</p>
+    <table>
+      <tr>
+        <th><p class="columnDescription">Field</p></th>
+        <th><p class="columnDescription">Description</p></th>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Load Unit</p></td>
+        <td><p class="tableBodyText">Unique ID of the Load Unit the inventory to be picked is booked on.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Sequence/Workstation Queue</p></td>
+        <td><p class="tableBodyText">Sequences assigned Pick Missions. Each removal of a Pick Mission shifts the following entries one step forward.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Group Sequence/Transport Request</p></td>
+        <td><p class="tableBodyText">Order between whole groups for arriving at the final destination.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Sequence Number/Transport Request</p></td>
+        <td><p class="tableBodyText">Order in which Load Units of the assigned group should arrive at the final destination.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Sequence/Pick</p></td>
+        <td><p class="tableBodyText">Processing order of Picks within the Pick Mission or Pick Walk.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Detailed Location</p></td>
+        <td><p class="tableBodyText">Location the Load Unit is currently booked on.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Source Detailed Location</p></td>
+        <td><p class="tableBodyText">Location the transport of the Load Unit was started.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Destination Detailed Location</p></td>
+        <td><p class="tableBodyText">Location the transport of the Load Unit ends.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Pick Mission</p></td>
+        <td><p class="tableBodyText">Parts of one or more Pick Orders assigned to one Pick Controller for fulfillment. Represents the workload of all Picks to be picked into <strong>exactly one Pick Container</strong>. 
+        Provides additional data to Pick Orders specific for picking.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">ID/Pick</p></td>
+        <td><p class="tableBodyText">Item of a Pick Mission. Defines the primary action of picking inventory from Pick Face to Pick Container. Provides additional data to one Pick Order 
+          Line which is specific for picking. One Pick Order Line could be completed by multiple Picks.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Status/Pick</p></td>
+        <td><p class="tableBodyText">Current execution state of the Pick:</p>
+          <ul class="tableListBullet1">
+            <li><b>active</b> (Pick Mission execution already started and all Picks of the Pick Mission proceed to this status) </li>
+            <li><b>complete</b> (Pick was executed by the Picker, but not yet confirmed to the Order Fulfillment System) </li>
+          </ul>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">Additional statuses (created, pending, released, confirmed, cancelled, finished) do not display.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Primary Key/Pick Order</p></td>
+        <td><p class="tableBodyText">Parts of customer or Shipping Orders assigned to a Picking subsystem for fulfillment.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Primary Key/Pick Order Line</p></td>
+        <td><p class="tableBodyText">Item of a Pick Order.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Primary Key/Order</p></td>
+        <td><p class="tableBodyText">Unique Order ID of the Pick Order related Order.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Primary Key/Order Line</p></td>
+        <td><p class="tableBodyText">Order Line assigned to the Pick Order related Order.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Status/Transport Request</p></td>
+        <td><p class="tableBodyText">See <a href="../../../../../../../../../../../../mfc/doc/en/user/WebHelp/dialogs/mfc/core/ui/transportorder/client/dialog/TransportOrderDetailDialog.html">Detail Dialog Transport Order</a>.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Process Status/Transport Order</p>
+        </td>
+        <td><p class="tableBodyText">See <a href="../../../../../../../../../../../../mfc/doc/en/user/WebHelp/dialogs/mfc/core/ui/transportorder/client/dialog/TransportOrderDetailDialog.html">Detail Dialog Transport Order</a>.</p></td>
+      </tr>
+    </table>
+    <!-- Content end -->
+	</div>
+
+  <!-- Footer start -->
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">© Dematic GmbH 2008. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar"><a href="#top">top</a> | <a href="javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

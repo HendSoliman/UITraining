@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <script type="text/javascript" src="files/dcd_buttons.js"></script>
+  <title>Editing Help Topics</title>
+  <style type="text/css">
+    body {
+    background-color:#FFFFFF;
+    font-family:Arial;
+    margin-left:5px; 
+    margin-right:5px; 
+    margin-top:0px; 
+    margin-bottom:3px;
+	}
+  h1  {
+    font-size:16.0pt;
+    color:#F6B800;
+    margin-bottom:0px;
+    padding-bottom:0px;
+    }
+  h5  {
+    font-size:12.0pt;
+    margin-top:0px;
+    padding-top:5px;
+    margin-bottom:0px;
+    padding-bottom:5px;
+    }
+  p   {
+    font-size:10.0pt;
+    margin-left:0pt;
+    margin-top:0px; 
+    margin-bottom:10px;
+    }
+  ul {
+    font-size:10.0pt;
+    margin-top:0px;
+    margin-bottom:0px;
+    margin-left:0pt;
+    padding-left:20pt;
+    }
+  li {
+    margin-bottom:5px;
+    margin-left:0pt;
+    }
+  
+  ul.listBullet1 {
+    margin-left:0pt;
+    list-style-type:disc
+    }
+
+  ul.listBullet2 {
+    margin-left:11pt;
+    list-style-type:square
+    }
+	
+  </style>
+</head>
+
+<body>
+  <h1>Editing Help Topics</h1>
+  <h5>Purpose</h5>
+    <p>This seems to be the first time you have used the &lt;Edit&gt; button to edit a help topic.</p>
+    <p>Here you find information how to prepare the infrastructure necessary for help authoring.</p>
+  <h5>Prerequisites</h5>
+    <ul class="listBullet1">
+      <li>An <b>HTML editor</b> must be installed on this computer.<br>
+          Recommended HTML editors are</li>
+    </ul>
+    <ul class="listBullet2">
+      <li>Microsoft FrontPage</li>
+      <li>Microsoft SharePoint Designer<br>
+      &nbsp;</li>
+    </ul>
+    <ul class="listBullet1">
+      <li><b>DocHTML</b> shall be installed
+        if extensive editing is intended.<br>
+        Minor corrections can also be done without this tool.<br>
+        DocHTML facilitates document editing conforming to Dematic iQ standards.<br>
+        DocHTML can be installed from
+        <a href="http://wcsrdit1/repos/wcs/tools/internal/DocHTML/trunk/release">here</a>.<br>
+        <br>
+      </li>
+      <li><b>HTMLEdit</b> must be installed.<br>
+        This little tool allows opening an HTML editor out of a browser window.<br>
+        HTMLEdit can be installed from 
+      <a href="http://wcsrdit1/repos/wcs/tools/internal/HTMLEdit/trunk/release/HTMLEdit.exe">here</a>.</li>
+    </ul>
+    <p>&nbsp;</p>
+    <p>
+      <input type="checkbox" id="editOK" name="editOK" value="editOK" onchange="dcd_toggleEditOk(document,'editOK')"> 
+      <b><font size="3" color="#FF0000">Infrastructure is installed. Do not show this hint again.</font></b>
+    </p>
+    <p>&nbsp;</p>
+    <h5>Background</h5>
+    <p>Calling a program such as an HTML editor out of the browser is normally not possible because of security reasons.<br>
+      Therefore, the installation of an additional tool on your computer is required to allow direct editing.</p>
+    <p>Dematic iQ Web Help uses the following procedure:</p>
+    <p>The edit button <img border="0" src="files/w_button_modify.gif" width="26" height="26"> is linked with a URL htmledit:&lt;document URL&gt;.<br>
+      The protocol <i>htmledit</i> is a protocol similar to other protocols such as <i>http</i> but specific to Dematic iQ Web Help. <br>
+      It is not known to be used by any other program.</p>
+    <p>In order to launch an HTML editor on the local machine, it is necessary to register a protocol handler for the <i>htmledit</i> protocol, which specifies the 
+      program to be started.<br>
+      Such protocol handlers may be defined manually through the Windows Explorer (Extras -&gt; Options -&gt; File Types) with file type URL: &lt;protocol&gt; without file 
+      extension.<br>
+      Since the Web Browser transfers the whole URL (including &quot;htmledit:&quot;) to the program specified in the protocol handler, the editor can not be launched directly 
+      with this URL but the URL of the document must be extracted first. This is done by a small command script using string functions of Windows Scripting Host.</p>
+    <p>The whole infrastructure can be set up automatically using the 
+    <a href="http://wcsrdit1/repos/wcs/tools/internal/HTMLEdit/trunk/release/HTMLEdit.exe">HTMLEdit installer</a>.</p>
+    <p>This solution does not impose any security conflicts since the user himself determines how the specific protocol is handled.<br>
+      There is no usage of ActiveX.</p>
+</body>
+</html>

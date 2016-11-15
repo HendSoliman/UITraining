@@ -1,0 +1,37 @@
+
+
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" 
+xmlns:g="urn:import:com.google.gwt.user.client.ui"
+ xmlns:d="urn:import:com.dematic.wms.app.base.ui.client.scomponent">
+
+   <d:SDetailDialogPanel className="com.dematic.trainingwarehouse.ui.shared.dto.ETrainPermissionDto">
+
+      <d:id>
+
+         <d:SAttributePanel>
+
+            <d:SLabelPanel name="permissionName"/>
+
+         </d:SAttributePanel>
+
+      </d:id>
+
+      <d:details>
+
+         <d:SAttributePanel title="details">
+
+            <d:SLabelPanel name="description"/>
+
+            <d:newLine/>
+
+            <d:SLabelPanel name="adminOnly"/>
+
+         </d:SAttributePanel>
+
+      </d:details>
+
+   </d:SDetailDialogPanel>
+
+</ui:UiBinder>

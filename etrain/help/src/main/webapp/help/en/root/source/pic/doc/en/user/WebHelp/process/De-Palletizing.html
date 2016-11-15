@@ -1,0 +1,1097 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2008. All rights reserved.
+
+  $Id: De-Palletizing.html 27545 2014-05-05 09:58:11Z bernardy $
+-->
+  <title>De-Palletizing</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)">
+  <meta name="keywords" content="Dematic, Dematic iQ">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content="WCS-TPL_HelpProcess.Web">
+  <meta name="author" content="author">
+  <style type="text/css" media="screen">@import url(../../../../../../common/style_screen.css);
+</style>
+  <style type="text/css" media="print">@import url(../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "pic/doc/en/user/WebHelp/process/De-Palletizing.html";
+  </script>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../index.html?page=source%2Fpic%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fprocess%2FDe-Palletizing.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../index.html?page=source%2Fpic%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fprocess%2FDe-Palletizing.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+  <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+    
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../index.html"><img class="upLinkImg" id="uplinkO_img" border="0" title="Overview Pick Controller (PIC)" src="../../../../../../common/img/move_overview.gif"></a>
+          <a class="upLink" id="uplinkP" href="../../../../../../wms/doc/en/user/WebHelp/process/AMCAP.html">
+          <img class="upLinkImg" id="uplinkP_img" border="0" title="AMCAP" src="../../../../../../common/img/move_up.gif"></a>
+        </td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+  
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+            <a class="naviBar" href="#DePalletizingProcess">De-Palletizing Process</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Workstationdetermination">Workstation determination</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#DemonsCronjobsandEvents">Demons, Cronjobs and Events</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Facts">Facts</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#AlarmsandExceptions">Alarms and Exceptions</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#AutomaticDePalletizing">Automatic De-Palletizing</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#ManualDePalletizing">Manual De-Palletizing</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#PartialDePalletizing">Partial De-Palletizing</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#PreventiveCalibration">Preventive Calibration</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Dialogs">Dialogs</a>
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Navigation bar end -->
+
+  <!-- Map title -->
+  <h1 id="maptitle">De-Palletizing</h1>
+
+  <!-- Block: Purpose -->
+  <div class="block" id="block_purpose">
+    <!-- Content start -->
+    <h5><a name="Purpose"></a>Purpose</h5>
+    <p>De-Palletizing is the process where products are transferred from a pallet to a conveyor to produce a flow of singulated trackable uniquely identified 
+    items.</p>
+    <p>The De-Palletizing in ACMAP scope is used for fill the Multishuttle Buffer. It uses the standard Lookahead Replenishment for trigger this process.</p>
+    <p>In AMCAP scenario it is tried to use the automatic de-palletizing. But in in some case it is not possible to de-palletize products automatically. For 
+    example the first layer is not complete, or the product is generally not suitable for automatic de-palletizing. Such decisions has to be made during the 
+    teach-in phase. As soon a product was qualified for automatic de-palletizing and the first layer is complete the system will initiate automatic 
+    de-palletizing otherwise manual de-palletizing has to use.</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: De-Palletizing Process -->
+  <div class="block" id="block_depalletizingprocess">
+    <!-- Navigation line start -->
+    <a name="DePalletizingProcess"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Workstationdetermination"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Dialogs"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>De-Palletizing Process</h5>
+    <p>The de-palletizing in DCD is part of PIC and use the standard PIC entities like PickMissions and Picks. Thereby each PickMission represents one 
+    source load unit (pallet) and for each SKU on it one pick with the quantity is created. The basic decision between automatic and manual de-palletizing is 
+    made during the creation of the pick missions. Thereby following checks are performed:</p>
+    <ul class="listBullet1">
+      <li>First of all the flag &quot;isAutoDepalletize&quot;, which is set during the teach-in is checked. If at least one item on the pallet exists, where is flag 
+      is not set, the complete pallet is to de-palletized at a manual de-palletizing station.</li>
+      <li>Also in the case, when the pallet is too high for the automatic de-palletizing, a manual de-palletizing station is used. A pallet is too high, when 
+      the current height is greater than the configured maximum height of its load unit type.</li>
+      <li>Afterwards the top layer is checked and when it is not complete, a manual de-palletizing station is used. This check is done on the SKU, which is on 
+      the top of the pallet. The quantity of this SKU must be completely dividable with the quantity of one layer of this SKU. This information about the 
+      quantity per layer is on the SKULUCapacity entity connected for the current SKU quantity unit. There is a mapping configuration from the pallet&#39;s load 
+      unit type to the layer load unit type, which is described in detail
+      <a href="../../../../../../wms/cng/doc/en/user/WebHelp/lms/CDPropertiesAndBatches/SystemProperties/controlDataProperties_LUT.html">here</a>.</li>
+    </ul>
+    <p>After the workstation with the type &quot;AMCAP Depal&quot; or &quot;Manual Depal&quot; is found the PickMission (e.g. the source pallet) is assigned to it and requested to 
+    the workstation.</p>
+    <ul class="listBullet1">
+      <li>For automatic de-palletizers the source pallet is requested to the workstation location of type &quot;De-Wrap&quot;.</li>
+      <li>For manual de-palletizers the source pallet is requested to the workstation location of type &quot;Virtual&quot;.</li>
+    </ul>
+    <p>On arrival at the requested workstation location of type De-Wrap (only for automatic de-palletizers) the first step is to check and dewrap of requested 
+    layers. Also here there are differences of automatic and manual de-palletizers. In case of a automatic de-palletizer the pallets arrives at a location, 
+    which is before the actual de-palletizing location. This is the previously mentioned workstation location of type &quot;De-Wrap&quot;. Here the operator has to check 
+    the pallet, whether it can be de-palletized automatically or not. He/she has the possibility directly start the automatic de-palletizing process or send the 
+    pallet to the clarification station for further checks or send it to a manual de-palletizing station. Also a reroute, e.g. try to find another automatic 
+    workstation can be triggered at this position. If during reroute no another automatic de-palletizer can be found, the pallet is send back to the bulk 
+    storage.<br>
+    For the de-wrap dialog description see:
+    <a href="../dialogs/pic/amcapdepal/ui/client/dialog/dewrap/DeWrapOperationDialog.html">De-Wrap dialog</a>.</p>
+    <p>On the other hand the arrival at a manual de-palletizing station has to be confirmed manually (via FLS) or automatic (via MFC) on a one of the 
+    workstation locations of type &quot;Source&quot;. Because the decision on which of the available source locations the pallet is to de-palletized as next is by the 
+    operator (or an underlying system like MFC), the workstation locations of type &quot;Virtual&quot; and of type &quot;Source&quot; must be in the same group.<br>
+    As soon the pallet is booked on one of the available source locations, the further processing is done by the
+    <a href="../dialogs/pic/manualdepal/ui/client/dialog/manualdepal/ManualDepalOperationDialog.html">Manual De-Palletizing Dialog</a>.</p>
+    <p>This overview described generally the process from replenishment to start of de-palletizing:</p>
+    <p class="style1"><img alt="" src="img/DePalletizingOverview.gif" style="float:left"></p>
+    <p>&nbsp;</p>
+  </div>
+
+  <!-- Block: Workstation determination -->
+  <div class="block" id="block_workstationdetermination">
+    <!-- Navigation line start -->
+    <a name="Workstationdetermination"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#DePalletizingProcess"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#DemonsCronjobsandEvents"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Dialogs"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Workstation determination</h5>
+    <p>The decision between automatic and manual de-palletizer is made at pick mission creation. Thereby the service qualifier of the pick mission is set to &quot;Amcap 
+    Depal&quot; or to &quot;Manual Depal&quot;. Afterwards it is clear on which type of workstation a pick mission is to process.</p>
+    <p>There are 3 positions where the concrete workstation for a pick mission is determined.</p>
+    <ol class="listNumber">
+      <li>At pick mission release.</li>
+      <li>With a specific demon &quot;AssignPickMissionsToDepalletizersDemon&quot;.</li>
+      <li>Reassignment due to workstation shutdown.</li>
+    </ol>
+    <p class="style2">Thereby all available and release pick missions are considered, which have no assignment to a workstation yet. Here the assignment is only 
+    the setting of the pick mission attribute &quot;lastAssignedTerminal&quot;, where the ID of the workstation is saved. The actual assignment, where the pick mission is 
+    put into the queue of the workstation is done later.</p>
+    <p class="style2">The determination starts with following parameters:</p>
+    <ul class="listBullet1">
+      <li>&nbsp;List of pick missions, where lastAssignedTerminal is not yet set.</li>
+      <li>List of the depalletizer stations of the correct type, e.g. for pick missions with service qualifier &quot;Amcap Depal&quot; only workstations of type &quot;Amcap 
+      Depal&quot; for pick missions with service qualifier &quot;Manual Depal&quot; only workstations of type &quot;Manual Depal&quot;.</li>
+    </ul>
+    <p>From the given pick missions and depalletizer stations (workstations) such assignment is chosen, which fits best. This is done as follow:</p>
+    <ol class="listNumber">
+      <li>For all in the pick mission available SKU the demand in different aisles is determined.</li>
+      <li>For each pick mission the number of available layers is determined.</li>
+      <li class="style2">For the each combination of pick mission and de-palletizer workstation the iATCost and a weight is calculated:<ol class="listNumber">
+        <li class="style2">With iATCost the minimum inter aisle transfers for current combination</li>
+        <li class="style2">The weight is calculated with a relation between the number of layers and the iATCost (#layers/iATCost).</li>
+      </ol>
+      </li>
+      <li class="style2">The assignment of the given pick missions is done in the order of the less workload of the workstations, e.g. workstations with no 
+      assignment is considered first and then the workstations with complete assignment.<br>
+      With this all workstations are filled with the best pick missions, which are for it.</li>
+    </ol>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">This is a general algorithm and can be easily overwritten by projects. </p>
+        </td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Demons, Cronjobs and Events -->
+  <div class="block" id="block_demonscronjobsandevents">
+    <!-- Navigation line start -->
+    <a name="DemonsCronjobsandEvents"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#Workstationdetermination"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Facts"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Dialogs"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Demons, Cronjobs and Events</h5>
+    <p>Following demons are used for the de-palletizing process.</p>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Demon / Cronjob</p>
+        </th>
+        <th>
+          Description</th>
+        <th>
+          Configuation</th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">LookAheadReplenishmentDemon</p>
+        </td>
+        <td>
+          This is actually a standard lookahead demon and not part of de-palletizing. But this is mentioned here, because this is the first step to start 
+          de-palletizing. This demon looks at the demand of the orders with service qualifier &quot;RapidPal&quot; (in AMCAP scope), which is not yet available in the 
+          Multishuttle buffer and create a replenishment order for the missing demand.<br>
+          The new created replenishment orders have the service qualifier &quot;Amcap Depal&quot; and later it is changed to &quot;Manual Depal&quot; if the pallet cannot be 
+          de-palletized manually. Because the order can have many pallets in it, changing the service qualifier is not possible at this stage. Thus changing 
+          service qualifier is only on the level of the pick missions.</td>
+        <td>
+          See
+          <a href="../../../../../../itl/doc/en/user/WebHelp/process/Replenishment.html">Replenishment</a> for details.</td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">AssignPickMissionsToDepalletizersDemonDepal</p>
+        </td>
+        <td>
+          <p class="tableBodyText">The assignment of pick missions to de-palletizers is normally done during the pick missions are released. In some cases this assignment cannot be done, e.g. if 
+no de-palletizing workstations are available. This demon triggers the assignment of such pick missions to de-palletizers, which are already released but the 
+attribute &quot;lastAssignedTerminal&quot; is not yet filled.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">Here the assignment means the setting of the attribute lastAssignedTerminal of the pick missions. The actual assignment 
+                for execution, e.g. putting in the workstation queue is done as soon as at least one queue entry is free for the determined workstation. <br></p>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td>
+          <font SIZE="2">
+          <p ALIGN="LEFT">The primary key of the pick zone configuration must be provided. This is the configuration of the zone, where de-palletizing is to 
+          perform.</p>
+          </font>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">SendToDepalletizerDemon</p>
+        </td>
+        <td>
+          <p class="tableBodyText">This demon should be only used for test purpose. In the production installation there is no need for this demon.</p>
+          <p class="tableBodyText">This demon looks at the workstation location of type &quot;De-Wrap&quot; and send all pallets which are booked at this location to the 
+          location of type &quot;source&quot;, where the de-palletizing for this pallet starts.</p>
+        </td>
+        <td>
+          For each workstation, one instance of this demon is needed.<br>
+          The workstation primary key is to provide in the configuration.</td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">DepalAggregationCronjob</p>
+        </td>
+        <td>
+          <p class="tableBodyText">This cronjob is not defined in de-palletizing module and using the standard AggregationCronjob. It is mentioned here to give 
+          an overview about the aggregations configuration used by de-palletizing.</p>
+          <p class="tableBodyText">Following aggregation configurations are available:</p>
+          <ul class="tableListBullet1">
+            <li>OCO_AGG_DEPAL_LAYER_DURATION_AGG (Duration of each layer)</li>
+            <li>OCO_AGG_DEPAL_DURATION_AGG (Duration of de-palletizing on the packaging type level)</li>
+            <li>OCO_AGG_DEPAL_THROUGHPUT_AGG (For each de-palletizers number of pallets, number of layers and number of items de-palletized)</li>
+            <li>OCO_AGG_DEPAL_AVAILABILITY_AGG (The availability of each de-palletizer component. For manual de-palletizer only the workstation availibity. But 
+            for automatic de-palletizers also the availability of robot and stripper plate is available)</li>
+            <li>OCO_AGG_DEPAL_SKU_PROBLEM_AGG (During automatic de-palletizing occurred exceptions for SKUs) </li>
+            <li>OCO_AGG_DEPAL_SKU_AGG (Number how often a SKU was de-palletized) </li>
+            <li>OCO_AGG_DEPAL_BARCODE_ERR_AGG (Barcode errors happened at manual de-palletizing stations)</li>
+          </ul>
+        </td>
+        <td>
+          &nbsp;</td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">DepalPurgerCronjob</p>
+        </td>
+        <td>
+          <p class="tableBodyText">This cronjob is not defined in de-palletizing module and using the standard PurgerCronjob. This is used to remove the older 
+          entries created by the de-palletizer module. These are generally only some facts.</p>
+        </td>
+        <td>
+          &nbsp;</td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <p>There are not events thrown by the de-palletizer module (events which are only between background and ui are not mentioned here).</p>
+    <p>In Following such events are listed, which are handled by the de-palletizer module:</p>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Event</p>
+        </th>
+        <th>
+          Description</th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">WorkstationReleasedEvent</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Only setting the status of the manual de-palletizing stations status. This is only for internally usage.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">WorkstationLockedEvent</p>
+        </td>
+        <td>
+          <p class="tableBodyText">As soon a workstation is locked, the pallets are rerouted to another available de-palletizers.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText" style="direction:ltr">PickOrderLineCanceledEvent</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Only necessary on manual de-palletizing stations. If all lines are cancelled and the pick order is finished and the source 
+          pallet is not empty, then it stores the pallet in the bulk storage.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">WorkstationFeedQueueEvent</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Looks for pick missions where the lastAssignedTerminal is equal to the workstation id for which this feed event was thrown. 
+          Such pick missions are put into the free queue entries of the workstation.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          TransportConfirmedEvent</td>
+        <td>
+          During automatic de-palletizing the number of upcoming packages are announced in advance. In the case there are more packages as announced such 
+          packages are transported to the clarification location with a specific clarification code. Such packages are removed automatically using this event.</td>
+      </tr>
+      <tr>
+        <td>
+          RequestDonorEvent</td>
+        <td>
+          For workstations with type &quot;Amcap Depal&quot; and &quot;Manual Depal&quot; the source pallets of the assigned pick missions are requested.<br>
+          For automatic de-palletizing to the &quot;De-Wap&quot; location.<br>
+          For manual de-palletizing to the &quot;Virtual&quot; location.</td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Facts -->
+  <div class="block" id="block_facts">
+    <!-- Navigation line start -->
+    <a name="Facts"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#DemonsCronjobsandEvents"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#AlarmsandExceptions"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Dialogs"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Facts</h5>
+    <p>Following Facts are written by the de-palletizer module:</p>
+    <table>
+      <tr>
+        <th>
+          Fact</th>
+        <th>
+          Description</th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">DepalDurationFact</p>
+        </td>
+        <td>
+          <p class="tableBodyText">On confirmation of a pick this fact is written thereby following values are persisted:</p>
+          <ul class="tableListBullet1">
+            <li>PickId</li>
+            <li>ServiceQualifier (Automatic or manual de-palletizing)</li>
+            <li>PackagingType</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">DepalThroughputFact</p>
+        </td>
+        <td>
+          <p class="tableBodyText">This is also written at pick confirmation and contains information about the number of pallets, number of layers and number 
+          of items de-palletized.</p>
+          <ul class="tableListBullet1">
+            <li>PickMissionId</li>
+            <li>WorkstationId</li>
+            <li>Pallets (Number of pallets de-palletized)</li>
+            <li>Layers (Number of layers de-palletized)</li>
+            <li>Items (Number of items de-palletized)</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">DepalAvailabilityFact</p>
+        </td>
+        <td>
+          <p class="tableBodyText">On status change the new status is written. Status of the workstation and for automatic de-palletizers the status of the 
+          robot and stripper plate.</p>
+          <ul class="tableListBullet1">
+            <li>WorkstationId</li>
+            <li>Component (Workstation, Robot or Stripper Plate)</li>
+            <li>Status</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          DepalSKUProblemFact</td>
+        <td>
+          <p class="tableBodyText">Only for automatic de-palletizers. This is written with the confirmation from the de-palletizer with an error.</p>
+            <ul class="tableListBullet1">
+              <li>SKU</li>
+              <li>EventCode (On of the error code, which can be sent by the de-palletizer with the confirmation; for a detailed description see:
+              <a href="../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/depalletizing/ui/client/dialog/depalletizing/DepalletizerMissionDetailDialog.html">
+              DepalletizerMissionDetailDialog</a><br>
+</li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          DepalBarcodeErrorFact</td>
+        <td>
+          <p class="tableBodyText">For each no read of the barcode at the manual de-palletizer one entry is written.</p>
+            <ul class="tableListBullet1">
+              <li>SKU</li>
+              <li>PackagingType<br></li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          DepalLayerDurationFact</td>
+        <td>
+          <p class="tableBodyText">At pick confirmation the duration of each layer is written.</p>
+            <ul class="tableListBullet1">
+              <li>PickId</li>
+              <li>LayerNo (because more than one layers per pick possible)</li>
+              <li>ConfirmationTime<br></li>
+            </ul>
+        </td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <!-- Content end -->
+  </div>
+  <!-- Block: Alarms and Exceptions -->
+  <div class="block" id="block_alarmsandexceptions">
+    <!-- Navigation line start -->
+    <a name="AlarmsandExceptions"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#Facts"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#AutomaticDePalletizing"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Dialogs"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Alarms and Exceptions</h5>
+    <p>Following alarms can be raised:</p>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Alarm</p>
+        </th>
+        <th>
+          ID</th>
+        <th>
+          Description</th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">DepalletizerAssignmentAlarm</p>
+        </td>
+        <td>
+          <p class="tableBodyText">PIC_AMC_0001</p>
+        </td>
+        <td>
+          Alarm which is thrown when no manual de-palletizing station could be assigned.</td>
+      </tr>
+      </table>
+    <p>&nbsp;</p>
+    <p>Following exceptions can be thrown:</p>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Exception</p>
+        </th>
+        <th>
+          ID</th>
+        <th>
+          Thrown when ...</th>
+        <th>
+          Handling</th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">DepalletizerAssignmentException</p>
+        </td>
+        <td>
+          PIC-AMC-0001</td>
+        <td>
+          <p class="tableBodyText">A pick mission could not be assigned to any de-palletizer while sending the pallet from a de-wrap station to a manual de-palletizer.</p>
+        </td>
+        <td>
+          Check that at least one manual de-palletizing workstation is available and configured.</td>
+      </tr>
+      <tr>
+        <td>
+          DeWrapNotConfigureException</td>
+        <td>
+          PIC-AMC-0002</td>
+        <td>
+          <p class="tableBodyText">When the de-wrap configuration is not available.</p>
+        </td>
+        <td class="style2">
+          Check the configuration. How the configuration i<span class="style3">s to provide is described in
+          <a href="../../../../../../wms/cng/doc/en/user/WebHelp/lms/CDPropertiesAndBatches/SystemProperties/controlDataProperties_DEWRAP.html">ControlData: 
+          DEWRAP</a>.</span></td>
+      </tr>
+      <tr>
+        <td>
+          LayerLUTypeNotConfigException</td>
+        <td>
+          PIC-AMC-0003</td>
+        <td>
+          <p class="tableBodyText">For the source pallet load unit type no mapping to the layer load unit type exists. The layer load unit type is necessary to 
+          find the SKULUCapacity data for it.</p>
+        </td>
+        <td>
+          Check the configuration. How the configuration is to provide is described in
+          <a href="../../../../../../wms/cng/doc/en/user/WebHelp/lms/CDPropertiesAndBatches/SystemProperties/controlDataProperties_LUT.html">ControlData: LUT</a>.</td>
+      </tr>
+      <tr>
+        <td>
+          NoWorkstationFoundException</td>
+        <td>
+          PIC-AMC-0006</td>
+        <td>
+          Not i<span class="style3">n use</span></td>
+        <td>
+          &nbsp;</td>
+      </tr>
+      <tr>
+        <td>
+          SKULUCapacityNotConfigException</td>
+        <td>
+          PIC-AMC-0004</td>
+        <td>
+          For the layer no SKULUCapacity is configured.</td>
+        <td>
+          Check the SKULUCapacities for the current SKU quantity unit. If for the layer load unit type no configuration exists, add it.</td>
+      </tr>
+      <tr>
+        <td>
+          WrongWorkstationTypeException</td>
+        <td>
+          PIC-AMC-0005</td>
+        <td>
+          Pallet with the pick mission service qualifier &quot;Amcap Depal&quot; arrives at manual de-palletizer or with service qualifier &quot;Manual Depal&quot; arrives at 
+          automatic de-palletizer.</td>
+        <td>
+          Check the workstation types and correct these.</td>
+      </tr>
+      <tr>
+        <td>
+          NoManualDepalLocationFoundException</td>
+        <td>
+          PIC-MANUAL-DEPAL-0002</td>
+        <td>
+          For the scanned location alias in the manual de-palletizing dialog no location can be found.</td>
+        <td>
+          Check and update the location alias configured for the source locations of the manual de-palletizing stations.</td>
+      </tr>
+      <tr>
+        <td>
+          WrongSkuQuantityUnitException</td>
+        <td>
+          PIC-MANUAL-DEPAL-0001</td>
+        <td>
+          Not i<span class="style3">n use</span></td>
+        <td>
+          &nbsp;</td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <!-- Content end -->
+  </div>
+  
+  <!-- Block: Automatic De-Palletizing -->
+  <div class="block" id="block_automaticdepalletizing">
+    <!-- Navigation line start -->
+    <a name="AutomaticDePalletizing"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#AlarmsandExceptions"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#ManualDePalletizing"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Dialogs"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Automatic De-Palletizing</h5>
+    <p>As described above the decision, whether a pallet can be de-palletized automatically or manually is made during release of the order. And in the case of 
+    automatic de-palletizing the pallets are send to a location in front of the de-palletizer, where the de-wrap process is performed. Afterwards the pallet is 
+    ready for automatic de-palletizing.</p>
+    <p>The communication with the underlying de-palletizing system is via DCI telegrams, which can be tracked with in the Message Manager dialog of DCD. For a 
+    general overview these telegrams are described here briefly:</p>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Telegram</p>
+        </th>
+        <th>
+          Direction</th>
+        <th>
+          Description</th>
+      </tr>
+      <tr>
+        <td>
+          DEMI</td>
+        <td>
+          DCD -&gt; Depal</td>
+        <td>
+          <p class="tableBodyText">This is a &quot;De-Palletizer Mission&quot; and used to start a de-palletizing process. All information necessary for a de-palletizing, 
+          e.g. the height of the pallet, the layers to pick, the pick program to use, and many other information are provided within this telegram to the de-palletizer.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">DELL</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Depal -&gt; DCD</p>
+        </td>
+        <td>
+          <p class="tableBodyText">The &quot;De-Palletizer Layer Left&quot; telegram is send from the de-palletizer as soon a layer is picked and the robot moves from the 
+          pallet to the destination, where to drop this layer (stripper plate).</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">DENO</p>
+        </td>
+        <td>
+          Depal -&gt; DCD</td>
+        <td>
+          <p class="tableBodyText">The &quot;De-Palletizer Notification&quot; telegram is send as soon the de-palletizer has dropped the layer on the destination 
+          (stripper plate).</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          DERP</td>
+        <td>
+          Depal -&gt; DCD</td>
+        <td>
+          Each DEMI i<span class="style3">s completed with a DERP, which is the &quot;De-Palletizer Response&quot;. Within this telegram also errors during de-palletizing 
+          are send.</span></td>
+      </tr>
+    </table>
+    <p>For some details see also the
+    <a href="../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/depalletizing/ui/client/dialog/depalletizing/DepalletizerMissionDetailDialog.html">
+    De-Palletizing Mission Dialog</a>.</p>
+    <p>The communication to and from de-palletizer is completely encapsulate in MFC. The interaction with an overlying system (like LMS) is throw some specific 
+    interfaces &quot;DepalletizerInitiator&quot; and &quot;DepalletizerExecutor&quot;.</p>
+    <ul class="listBullet1">
+      <li>DepalletizierInitiator for get any response from the de-palletizer.</li>
+      <li>DepalletizerExectuor to send any message to the de-palletizer.</li>
+    </ul>
+    <p>&nbsp;</p>
+    <!-- Content end -->
+  </div>
+  
+  <!-- Block: Manual De-Palletizing -->
+  <div class="block" id="block_manualdepalletizing">
+    <!-- Navigation line start -->
+    <a name="ManualDePalletizing"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#AutomaticDePalletizing"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#PartialDePalletizing"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Dialogs"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Manual De-Palletizing</h5>
+    <p>Here a briefly overview about the process is given. For details see:
+    <a href="../dialogs/pic/manualdepal/ui/client/dialog/manualdepal/ManualDepalOperationDialog.html">Manual De-Palletizing Dialog</a>.</p>
+    <p><img alt="" src="img/ManualDepalletizingStation.jpg"></p>
+    <p>The pallets for manual de-palletizing are transported to a virtual location of the workstation. With the booking at a concrete source location the dialog 
+    can start the de-palletizing process. Thereby depended on the configuration one to many source locations can be used.</p>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">Because of dialog layout 5 locations can be visible. If more than 5 locations are configured, the dialog layout has to be 
+          adjusted.</p>
+        </td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <p>After de-wrapping and other pre-checks on the pallet the actual de-palletizing process is started. Thereby for each item following procedure is used:</p>
+    <ul class="listBullet1">
+      <li>The operator put the item from the pallet and put it on the moveable conveyor.</li>
+      <li>The item is conveyed throw a barcode scanner, which read all available barcodes on it.<br>
+      Up to 5 barcodes can be read from scanner.</li>
+      <li>All barcodes are send to DCD and the system looks for the open pick. </li>
+      <li>If the pick can be found, it is confirmed and the dialog is updated. Otherwise interaction and manual search is necessary.</li>
+    </ul>
+    <p>The communication with the barcode scanner is also with DCI. Here a short description of the telegrams:</p>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Telegram</p>
+        </th>
+        <th>
+          Direction</th>
+        <th>
+          Description</th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">BARP</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Scanner -&gt; DCD</p>
+        </td>
+        <td>
+          <p class="tableBodyText">This &quot;Barcode Response&quot; is send with an unique location of the current workstation and up to 5 barcodes. The location is 
+          fixed within the scanner and not changeable.</p>
+        </td>
+      </tr>
+      </table>
+    <p>&nbsp;</p>
+    <p>The current position of the cart can be determined within the dialog. Therefore two DCI telegrams are used:</p>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Telegram</p>
+        </th>
+        <th>
+          Direction</th>
+        <th>
+          Description</th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">STRP</p>
+        </td>
+        <td>
+          Dialog -&gt; PLC</td>
+        <td>
+          <p class="tableBodyText">Ask PLC about the current position. As deviceId the front position of the workstation is used, e.g. the work location.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">STPO</p>
+        </td>
+        <td>
+          PLC -&gt; Dialog</td>
+        <td>
+          This is the response on STRP and contains for the given deviceId the current position in mm.</td>
+      </tr>
+      </table>
+    <p>The returned position is used for determine the actual source location of the cart. For the position range configuration see:
+    <a href="../../../../../../wms/cng/doc/en/user/WebHelp/lms/CDPropertiesAndBatches/SystemProperties/controlDataProperties_MANDEPAL.html">pic-manualdepal.xml</a></p>
+    <!-- Content end -->
+  </div>
+  
+  <!-- Block: Partial De-Palletizing -->
+  <div class="block" id="block_partialdepalletizing">
+    <!-- Navigation line start -->
+    <a name="PartialDePalletizing"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#ManualDePalletizing"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#PreventiveCalibration"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Dialogs"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Partial De-Palletizing</h5>
+    <p>This function can be used to de-palletize a pallet partially. For example if a pallet has many layers and de-wrapping of all layers at once can cause the 
+    fall of the items, the operator at the De-Wrap station can select how many layers are de-wrapped in one process. If not the complete number of layers are 
+    entered, which are actually to de-palletized, the pallet is send back to the de-wrap location of the current workstation for the next round.</p>
+    <p>This function can be parameterized for each workstation in the
+    <a href="../dialogs/pic/amcapdepal/ui/client/dialog/depalletizerstation/DepalletizerStationDetailDialog.html">De-Palletizing Station dialog</a>.</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Preventive Calibration -->
+  <div class="block" id="block_preventivecalibration">
+    <!-- Navigation line start -->
+    <a name="PreventiveCalibration"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#PartialDePalletizing"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Dialogs"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Dialogs"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Preventive Calibration</h5>
+    <p>In periods where the workload for a de-palletizer is low, it is possible to do preventive calibration. For this purpose, pallets with new products can be 
+    brought to the de-palletizer for calibration of the picking program.</p>
+    <p>The operator at the de-wrap station is informed, that the current pallet is for preventive calibration, that he/she de-wrap only the first layer. After 
+    the calibration the pallet returns to the de-wrap location, where the operator is requested to wrap the pallet. Afterwards the pallet is stored into the 
+    bulk area.</p>
+    <p>The preventive calibration starts only, if following fulfills:</p>
+    <ol class="listNumber">
+      <li>If for a palletizing quantity unit and load unit type no de-palletizing program exists.</li>
+      <li>The SKU, where (1) is fulfilled, is on the top of the pallet (in case of rainbow pallets).</li>
+    </ol>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">The exact determination is to adjust by project and therefore project specific. The
+          <a href="../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/sku/ui/client/dialog/palletizingquantityunit/LoadUnitTypeParametersDetailDialog.html">
+          Palletizing Quantity Unit Dialog</a> provides a general function to start preventive calibration. In this general solution more than needed pallets 
+          are considered.</p>
+        </td>
+      </tr>
+    </table>
+    <p>See also:
+    <a href="../../../../../../pac/doc/en/user/WebHelp/usecases/determiningTheDePalletizingProgram.html">Determining the De-Palletizing Programm</a></p>
+    <p></p>
+    <!-- Content end -->
+  </div>
+  
+  <!-- Block: Dialogs -->
+  <div class="block" id="block_dialogs">
+    <!-- Navigation line start -->
+    <a name="Dialogs"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#PreventiveCalibration"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif">&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif">
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Dialogs</h5>
+    <p>Following dialogs are involved in this process:</p>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Dialog</p>
+        </th>
+        <th>
+          Description</th>
+      </tr>
+      <tr>
+        <td>
+          <a href="../dialogs/pic/amcapdepal/ui/client/dialog/depalletizerstation/DepalletizerStationOverviewDialog.html">De-Palletizer Station</a></td>
+        <td>
+          <p class="tableBodyText" style="direction:ltr">Additional configuration for de-palletizer workstations are done within this dialog.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">
+          <a href="../dialogs/pic/amcapdepal/ui/client/dialog/dewrap/DeWrapOperationDialog.html">De-Wrap</a></p>
+        </td>
+        <td>
+          <p class="tableBodyText">The de-wrap process before a pallet can be de-palletized automatically in supported on a de-wrap station, where this dialog 
+          provides the functionality for this process.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">
+          <a href="../dialogs/pic/manualdepal/ui/client/dialog/manualdepal/ManualDepalOperationDialog.html">Manual Depalletizing</a></p>
+        </td>
+        <td>
+          <p class="tableBodyText">This dialog provides the complete functionality for manual de-palletizing workstations.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/depalletizing/ui/client/dialog/depalletizing/DepalletizerMissionOverviewDialog.html">
+          De-Palletizer Mission</a></td>
+        <td>
+          The communication with the automatic de-palletizer in tracked in this dialog. Because the telegrams are deleted after the de-palletizing process i<span class="style1">s 
+          complete, this dialog shows only the current active or available missions for the de-palletizer (DEMIs).</span></td>
+      </tr>
+    </table>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">Beside these specific dialog many other standard dialogs are used for tracking and information process. For example the message 
+          manager dialog, pick mission dialog, the palletizing quantity unit dialog, cron job dialog, alarm monitor, etc. </p>        </td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <!-- Content end -->
+  </div>
+  
+  <!-- Footer start -->
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">© Dematic GmbH 2012. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar"><a href="#top">top</a> | <a href="javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

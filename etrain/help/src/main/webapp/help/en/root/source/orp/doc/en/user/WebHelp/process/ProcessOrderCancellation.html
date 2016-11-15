@@ -1,0 +1,429 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:m="http://schemas.microsoft.com/office/2004/12/omml">
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2008. All rights reserved.
+
+  $Id: ProcessOrderCancellation.html 27545 2014-05-05 09:58:11Z bernardy $
+-->
+    <title>Process: Order Cancellation &amp; Abort</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)">
+  <meta name="keywords" content="Dematic, Dematic iQ">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content="WCS-TPL_HelpProcess.Web">
+  <meta name="author" content="author">
+  <style type="text/css" media="screen">@import url(../../../../../../common/style_screen.css);</style>
+    <style type="text/css" media="print">@import url(../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "orp/doc/en/user/WebHelp/process/ProcessOrderCancellation.html";
+  </script>
+<style type="text/css">
+</style>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../index.html?page=source%2Forp%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fprocess%2FProcessOrderCancellation.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../index.html?page=source%2Forp%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fprocess%2FProcessOrderCancellation.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+    <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+    
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../index.html"><img class="upLinkImg" id="uplinkO_img" border="0" title="Order Management" src="../../../../../../common/img/move_overview.gif"></a>
+          <a class="upLink" id="uplinkP" href="../usecases/index.html"><img class="upLinkImg" id="uplinkP_img" border="0" title="Use Case/Process Overview" src="../../../../../../common/img/move_up.gif"></a>
+        </td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+  
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+            <a class="naviBar" href="#Description">Description</a>
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Navigation bar end -->
+
+  <!-- Map title -->
+  <h1 id="maptitle">Process: Order Cancellation &amp; Abort</h1>
+
+  <!-- Block: Purpose -->
+  <div class="block" id="block_purpose">
+    <!-- Content start -->
+    <h5><a name="Purpose"></a>Purpose</h5>
+    <p>This topic describes the mechanisms in the Logistics Manager that applies in the order cancellation process.</p>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">The <strong>abort process </strong>is different to the cancellation in terms of the <strong>already picked parts </strong>which will be shipped anyway. <br>
+          The differences are noted separately below.</p>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <p>The following <strong>configuration topics </strong>are used in this process:</p>
+    <ul class="listBullet1">
+      <li>orp-order:orderClient.maxStatusForCancellation</li>
+      <li>orp-order:orderClient.cancellationOfHostOrdersAllowed</li>
+      <li>orp-order:orderCustomer.isCancellationAfterLoadingAllowed.</li>
+    </ul>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Description -->
+  <div class="block" id="block_description">
+    <!-- Navigation line start -->
+    <a name="Description"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif">&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif">
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Description</h5>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Step</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p></th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">1.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">The system checks whether Order Cancellation/Abort is <strong>allowed</strong> by checking the Control Data parameters described above.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">2.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">If <strong>Sortation Orders </strong>have been delegated to the Sortation System a Cancellation Request is sent.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">Since the relation between Order and Sortation Order is highly project specific it might be required to change the Service OrderProcessor.cancelOrder.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">3.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">If the Order has a Wave assigned the <strong>Wave is unassigned </strong>from the Order.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">4.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">If <strong>Route determination </strong>for the order has been done through an external Transport Management System a cancellation information 
+          is sent to the TMS depending on the appropriate configuration.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">Project specific extension is necessary!</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">5.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">The following process is executed for each <strong>Order Line separately</strong>. In principle the following different conditions of an Order Line are considered specifically:</p>
+            <ul class="tableListBullet1">
+              <li>5.1: Load Unit (Pick Container or Full Load Unit Retrieval) of the Order Line is already <strong>loaded, shipped or confirmed </strong>(to the 
+              external Host)</li>
+              <li>5.2: Load Unit of the Order Line is already (partially) <strong>picked </strong>(or retrieved) but not yet loaded, shipped or confirmed</li>
+              <li>5.3: Order Line is <strong>not yet picked </strong>(or retrieved).<br></li>
+            </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">5.1</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Load Unit of the Order Line is already <strong>loaded, shipped or confirmed:</strong></p>
+          <p class="tableBodyText">An Order Line having <strong>Full Load Unit Retrievals </strong>or <strong>Pick Order Lines </strong>in status &quot;<strong>complete</strong>&quot; will be 
+          <strong>left undone </strong>if the <strong>reservation status of </strong>a 
+          related Load Unit is &quot;<strong>Load Unit confirmed</strong>&quot;, &quot;<strong>Load Unit loaded</strong>&quot; or &quot;<strong>Load Unit shipped</strong>&quot;.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">5.2</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Load Unit of the Order Line is already (partially) <strong>picked </strong>(or retrieved) but not yet loaded, shipped or 
+          confirmed.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">In case of <strong>abort</strong>: The first steps regarding the rollback of the reservation will be <strong>skipped</strong>.</p>
+              </td>
+            </tr>
+          </table>
+          <p class="tableBodyText">The <strong>Reservation Status </strong>of the considered <strong>Load Unit</strong> of the Order Line is &quot;<strong>Load Unit picked</strong>&quot;:</p>
+          <ul class="tableListBullet1">
+            <li>The <strong>Inventory Units </strong>of the Pick Container (or Full Load Unit Retrieval) that are assigned to the current Order Line changes from 
+            &quot;picked&quot; to &quot;<strong>free</strong>&quot; inventory.</li>
+            <li>The &quot;<strong>Dispo Quantity</strong>&quot; and the &quot;<strong>Current Quantity</strong>&quot; of the Order Line are adjusted accordingly.</li>
+            <li>Associated <strong>Dispatch Load Units </strong>are deleted in order to prevent loading.</li>
+            <li>All existing<strong> transports</strong> stay <strong>unchanged</strong>.</li>
+            <li>The <strong>Order Line</strong> is set to <strong>&quot;cancelled&quot;</strong>. 
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">In case of <strong>abort</strong>: The Order Line status remains unchanged.</p>
+              </td>
+            </tr>
+          </table>
+            </li>
+            <li><strong>Cancellation Reason</strong> is set to <strong>&quot;Operator&quot; </strong>in case of system initiated cancellation and set to <strong>&quot;Host&quot;</strong> 
+            in case of Host requested cancellation.</li>
+          </ul>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">Putaway operations for cancelled Full Load Unit Retrievals and for Pick Container are <strong>not initiated automatically
+                </strong>since this is highly project specific. Not all possible current Locations of Load Units may serve as Source Locations of transports. These 
+                Load Units should be stored manually at the appropriate Inbound stations of the warehouse.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">5.3</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Order Line is <strong>not yet picked </strong>(or retrieved):</p>
+          <ul class="tableListBullet1">
+            <li>For all <strong>Full Load Unit Retrievals</strong> (of the Order Line):</li>
+          </ul>
+          <ul class="tableListBullet2">
+            <li><strong>Inventory Unit Reservations</strong> of the Full Load Unit Retrievals are <strong>unreserved</strong>.</li>
+            <li>The <strong>status</strong> of Full Load Unit Retrievals are set to<strong> &quot;cancelled&quot;</strong>.</li>
+            <li><strong>Transport Requests</strong> are tried to be <strong>cancelled</strong>.</li>
+            <li>The &quot;<strong>Dispo Quantity</strong>&quot; and the &quot;<strong>Current Quantity</strong>&quot; of the Order Line is adjusted accordingly.</li>
+          </ul>
+          <ul class="tableListBullet1">
+            <li>For all <strong>Pick Order Lines</strong> (of the Order Line):</li>
+          </ul>
+          <ul class="tableListBullet2">
+            <li>Pick Order Lines in <strong>status &quot;pending&quot;</strong> are set to <strong>&quot;cancelled&quot;</strong>.</li>
+            <li>For Pick Order Lines in status <strong>&quot;released&quot; or &quot;active&quot;</strong> a <strong>Cancellation Request</strong> is sent to the
+            <strong>Pick Controller</strong>.</li>
+            <li>When the <strong>Pick Controller notifies</strong> about<strong> successful cancellation</strong>:</li>
+          </ul>
+          <ol class="tableListLetter">
+            <li><strong>Inventory Unit Reservations</strong> of the related Pick Order Lines are <strong>unreserved</strong>.</li>
+            <li><strong>Transport Requests</strong> are tried to be <strong>cancelled</strong>.</li>
+            <li>If the <strong>Current Base Quantity</strong> of the <strong>Pick Order Line</strong> is <strong>greater than zero</strong> the status of the Pick Order Line is set to
+            <strong>&quot;complete&quot;</strong> otherwise to 
+            <strong>&quot;cancelled&quot;</strong>.</li>
+            <li>The &quot;<strong>Dispo Quantity</strong>&quot; and the &quot;<strong>Current Quantity</strong>&quot; of the Order Line is adjusted accordingly.</li>
+            <li>The <strong>status</strong> of the Pick Order Line is set to <strong>&quot;cancelled&quot;.</strong></li>
+          </ol>
+          <ul class="tableListBullet1">
+            <li>The <strong>Order Line</strong> is set to <strong>&quot;cancelled&quot;.</strong></li>
+            <li><strong>Cancellation Reason</strong> is set to <strong>&quot;Operator&quot; </strong>in case of LMS initiated cancellation and set to <strong>&quot;Host&quot;</strong> 
+            in case of Host requested cancellation.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">6.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">The destination of all <strong>Dispatch Load Units </strong>of this Order is deleted.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">Skipped in case of <strong>abort</strong>.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">7.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">If the Order is assigned to a Load the Order is <strong>unassigned from the Load </strong>and all <strong>Dispatch Load Units </strong>that are assigned to cancelled Order Lines are <strong>removed from the Load</strong>.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">Skipped in case of <strong>abort</strong>.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">8.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">The <strong>Order </strong>status is set to &quot;<strong>complete</strong>&quot; when all Order Lines are in status <strong>&quot;complete&quot; or 
+          &quot;cancelled&quot;</strong>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">9.</p>
+       </td>
+        <td>
+          <p class="tableBodyText">After changing the Order to <strong>&quot;complete&quot;</strong>:</p>
+          <ul class="tableListBullet1">
+          <li><p class="tableBodyText">If the owner of the Order is &quot;<strong>Host</strong>&quot; the status is set to <strong>&quot;to confirm&quot;</strong> and a <strong>confirmation</strong> is <strong>sent</strong> to the <strong>host</strong>.<br>
+             If the <strong>confirmation</strong> was <strong>successful</strong> the status is set to <strong>&quot;finished&quot;</strong>.</p></li>
+            <li><strong>Otherwise </strong>it is directly set to status <strong>&quot;finished&quot;</strong>.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">10.</p></td>
+        <td><p class="tableBodyText">When the <strong>Order status</strong> is set to <strong>&quot;finished&quot; </strong>the <strong>Inventory Management</strong> is <strong>notified</strong> about the finish of the Order.<br>
+          (Shipped Inventory Units are <strong>deleted </strong>while cancelled parts are reset to &quot;free&quot; inventory.)</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">Attention: In case of only parts of Dispatch Load Units are cancelled, these parts need to be <strong>removed </strong>from 
+                the Load Unit <strong>organizationally</strong>.</p>
+              </td>
+            </tr>
+          </table>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">Skipped in case of <strong>abort</strong>.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <!-- Content end -->
+  </div>
+  <!-- Footer start -->
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">© Dematic GmbH 2008. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar"><a href="#top">top</a> | <a href="javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

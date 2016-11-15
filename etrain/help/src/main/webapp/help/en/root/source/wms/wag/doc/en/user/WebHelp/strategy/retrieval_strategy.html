@@ -1,0 +1,369 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2010. All rights reserved.
+
+  $Id: retrieval_strategy.html 27545 2014-05-05 09:58:11Z bernardy $
+-->
+    <title>Retrieval Strategy</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)">
+  <meta name="keywords" content="Dematic, Dematic iQ">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content="WCS-TPLD_Overview.Web">
+  <meta name="author" content="author">
+  <style type="text/css" media="screen">@import url(../../../../../../../common/style_screen.css);</style>
+    <style type="text/css" media="print">@import url(../../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "wms/wag/doc/en/user/WebHelp/strategy/retrieval_strategy.html";
+  </script>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../../index.html?page=source%2Fwms%2Fwag%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fstrategy%2Fretrieval_strategy.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../../index.html?page=source%2Fwms%2Fwag%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fstrategy%2Fretrieval_strategy.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+    <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+    
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../index.html">
+          <img class="upLinkImg" id="uplinkO_img" border="0" title="Warehouse Administration Guide" src="../../../../../../../common/img/move_overview.gif"></a>
+          <a class="upLink" id="uplinkP" href="index.html">
+          <img class="upLinkImg" id="uplinkP_img" border="0" title="Strategy Related Resources" src="../../../../../../../common/img/move_up.gif"></a>
+        </td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+  
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+            <a class="naviBar" href="#Screens">Screens</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#ClassicRetrievalStrategies">Classic Retrieval Strategies</a>
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Top navigation bar end -->
+
+  <!-- Map title -->
+  <h1 id="maptitle">Retrieval Strategy</h1>
+
+  <!-- Block: Configuration -->
+  <div class="block" id="block_configuration">
+
+    <!-- Content start -->
+    <h5><a name="Configuration"></a>Configuration</h5>
+    <p>Retrieval Strategies can be configured in terms of assigning order sequences to strategy aspects. </p>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">It is recommended to load the strategy configuration of the demo project. This configuration should then be adapted to the requirements of the project.</p>
+        </td>
+      </tr>
+    </table>
+    <table class="noteTable" id="table2">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">Configuration topic &quot;<strong>cor-retrieval:Retrieval.</strong><b>ispreferFullLoadUnits</b>&quot; determines if the retrieval 
+          strategy tries to select Full Load Unit Retrievals before it tries to select Picks. A strict FIFO can only be achieved when this parameter is set to 
+          false.</p>
+        </td>
+      </tr>
+    </table>
+        <table class="noteTable" id="table2">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">All retrieval strategies prefer by default <strong>partially free bins</strong> as obligatory <strong>lowest &#39;order by&#39; criteria</strong>. This 
+          empties bins whenever 
+          possible and <strong>allowed </strong>by all <strong>configured retrieval strategies</strong>.<br>
+          This is done with respect to the location fill level (expressed by the reservation capacity of the location).</p>
+        </td>
+      </tr>
+    </table>
+        <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">For palletizing orders Retrieval executes an implicit strategy to avoid <strong>consecutive requests being retrieved from same subgroup</strong> to optimize lift workload. See <strong>
+          &quot;cor:retrieval.Retrieval.lastRetrievedPalletizingSubgroupsListMaxCapacity&quot;</strong>.</p>
+          <p class="noteTextPar">For palletizing orders other strategies are considered secondary.</p>
+        </td>
+      </tr>
+    </table>
+    <p class="noteTextPar"> 
+    <!-- Content end -->
+    </p>
+  </div>
+
+  <!-- Block: Screens -->
+  <div class="block" id="block_screens">
+    <!-- Navigation line start -->
+    <a name="Screens"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#ClassicRetrievalStrategies">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#ClassicRetrievalStrategies">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Screens</h5>
+    <ul class="listBullet1">
+      <li>
+      <a href="../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/retrieval/ui/client/dialog/retrievalstrategy/RetrievalStrategyOverviewDialog.html">
+      Retrieval Strategies</a>.</li>
+    </ul>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Classic Retrieval Strategies -->
+  <div class="block" id="block_classicretrievalstrategies">
+    <!-- Navigation line start -->
+    <a name="ClassicRetrievalStrategies"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#Screens"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_right.gif">&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_right_end.gif">
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Retrieval Strategies</h5>
+    <table id="table1">
+      <tr>
+        <th>
+          <p class="columnDescription">Order By</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">Batch</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Matching inventory is sorted by the Batch of the Inventory Unit.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">Best Before Date Retrieval</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Matching inventory is sorted by the Best Before Date with preference to the oldest date.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">First In First Out Retrieval</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Matching inventory is sorted by the FIFO date of the Inventory Unit with preference to the oldest date.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">Group Fill Level</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Consideration of the fill level of the Groups (aisles) with preference to the aisle with the highest fill level.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">Group Inventory Balance</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Balancing of SKUs over the Groups (aisles). A specific discriminating aspect of Inventory is also considered (e.g. batch). If yet allocated and order related 
+          Inventory, this aspect is the Order ID. For Inventory Balance principles, see the
+          <a href="../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/strategygeneral/ui/client/dialog/inventorybalance/InventoryBalanceOverviewDialog.html">
+          Inventory Balance Dialog</a>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">Group Transports</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Prefer Groups (aisles) with lower number of currently planned outbound transports.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">Hot Zone</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Prefers Inventory Units from locations that are flagged as Hot. For more information, see 
+          <a href="../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/storage/ui/client/dialog/location/LocationDetailDialog.html">Detail Dialog Location</a>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">Pick Quantity Optimization</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Matching inventory is sorted by the free quantity on the Inventory Unit.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">Quantity Match</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Prefers Inventory Units that have exactly the free quantity requested. Then Inventory Units with more quantity free than 
+          requested with a lower free quantity are preferred. For the remaining inventory units, a higher free quantity is preferred,
+          e.g. Requested Quantity = 100,<br>
+          Quantities of Existing Inventory Units: 80, 90, 99, 100, 101, 105, 110. <br>
+          This
+          leads to the following sortation: 100, 101, 105, 110, 99, 90, 80</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">Reservation Count</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Matching inventory is sorted by the number of reservations on the Base Load Unit with preference to fewer reservations. This helps to reduce 
+          concurrent accesses to Inventory Units and thus, Load Units.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">Subgroup Fill Level Balance</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Consideration of the fill level of the Subgroups (Levels) with preference to the Level with the highest fill level.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">Subgroup Inventory Balance</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Balancing of SKUs over the Subgroups (Levels). Furthermore a specific discriminating aspect of Inventory is considered 
+          (e.g. batch). If yet allocated and order related Inventory, this aspect is the Order ID.&nbsp; For Inventory Balance principles, see the
+          <a href="../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/strategygeneral/ui/client/dialog/inventorybalance/InventoryBalanceOverviewDialog.html">
+          Inventory Balance Dialog</a>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">Subgroup Transports</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Prefer Subgroups (Levels) with lower number of currently planned outbound transports.</p>
+        </td>
+      </tr>
+    </table>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">Project specific Retrieval strategies can be introduced by extending the Retrieval database views. If this is insufficient, project specific Retrieval strategies must be implemented.</p>
+        </td>
+      </tr>
+    </table>
+    
+    <!-- Content end -->
+  </div>
+
+    <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">© Dematic GmbH 2009. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar"><a href="#top">top</a> | <a href="javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

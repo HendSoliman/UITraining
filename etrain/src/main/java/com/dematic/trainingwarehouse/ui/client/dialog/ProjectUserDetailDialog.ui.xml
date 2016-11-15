@@ -1,0 +1,40 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:d="urn:import:com.dematic.wms.app.base.ui.client.scomponent">
+
+	<d:SDetailDialogPanel
+		className="com.dematic.trainingwarehouse.ui.shared.dto.ProjectUserDto">
+		<d:id>
+			<d:SAttributePanel>
+				<d:SLabelPanel name="userName" />
+			</d:SAttributePanel>
+		</d:id>
+		<d:details>
+			<d:SAttributePanel title="details">
+				<d:SLabelPanel name="fullName" expandX="100%" />
+				<!-- d:SLabelPanel name="localeId" / -->
+				<d:newLine />
+				<d:SLabelPanel name="description" expandX="100%" />
+				<d:newLine />
+				<d:SLabelPanel name="projectAttribute" />
+				<d:newLine />
+				<d:SAttributePanel title="contactInfo">
+					<d:SLabelPanel name="emailAddress" />
+					<d:newLine />
+					<d:SLabelPanel name="telephoneNumber" />
+					<d:SLabelPanel name="mobileTelephoneNumber" />
+				</d:SAttributePanel>
+				<d:newLine />
+				<d:SAttributePanel title="passwordInfo">
+					<d:SLabelPanel name="password" isPassword="true" />
+					<d:SLabelPanel name="passwordConfirmation"
+						isPassword="true" />
+					<d:newLine />
+				</d:SAttributePanel>
+				<d:newLine />
+				<d:SLabelPanel ui:field="loggedOn" editable="false" />
+				<d:SLabelPanel ui:field="locked" />
+			</d:SAttributePanel>
+		</d:details>
+	</d:SDetailDialogPanel>
+</ui:UiBinder>

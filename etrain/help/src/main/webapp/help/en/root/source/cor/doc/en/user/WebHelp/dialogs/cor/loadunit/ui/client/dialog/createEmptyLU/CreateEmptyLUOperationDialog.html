@@ -1,0 +1,453 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2008. All rights reserved.
+
+  $Id: CreateEmptyLUOperationDialog.html 27545 2014-05-05 09:58:11Z bernardy $
+-->
+    <title>Create Empty Load Units</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)">
+  <meta name="keywords" content="Dematic, Dematic iQ">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content="WCS-TPL_HelpDialogMain.Web">
+  <meta name="author" content="author">
+  <style type="text/css" media="screen">@import url(../../../../../../../../../../../../common/style_screen.css);</style>
+    <style type="text/css" media="print">@import url(../../../../../../../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "cor/doc/en/user/WebHelp/dialogs/cor/loadunit/ui/client/dialog/createEmptyLU/CreateEmptyLUOperationDialog.html";
+  </script>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../../../../../../../index.html?page=source%2Fcor%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fdialogs%2Fcor%2Floadunit%2Fui%2Fclient%2Fdialog%2FcreateEmptyLU%2FCreateEmptyLUOperationDialog.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../../../../../../../index.html?page=source%2Fcor%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fdialogs%2Fcor%2Floadunit%2Fui%2Fclient%2Fdialog%2FcreateEmptyLU%2FCreateEmptyLUOperationDialog.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+    <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+    
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../../../../../../../index.html"><img class="upLinkImg" id="uplinkO_img" border="0" title="Logistics Core Functions" src="../../../../../../../../../../../../common/img/move_overview.gif"></a>
+          <a class="upLink" id="uplinkP" href="../../../../../../../menu/LoadUnitManagement.html"><img class="upLinkImg" id="uplinkP_img" border="0" title="Load Unit Management" src="../../../../../../../../../../../../common/img/move_up.gif"></a>
+</td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+  
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+            <a class="naviBar" href="#MainFunctions">Functions</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Overview">Overview</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Screen">Screen</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#FieldDescriptions">Fields</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#ButtonDescriptions">Buttons</a>
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Top navigation bar end -->
+  
+  <!-- Map title -->
+  <h1 id="maptitle">Create Empty Load Units</h1>
+
+  <!-- Block: Purpose -->
+  <div class="block" id="block_purpose">
+    <!-- Content start -->
+    <h5><a name="Purpose"></a>Purpose</h5>
+    <p>This dialog is used for the <strong>creation of empty Load Units</strong> with arbitrary <strong>Compartments </strong>(Inserts). The allowed stackable Load Unit Types 
+    (of the Compartment) for the scanned 
+    Load Unit are provided by the dialog as a list and the user 
+    can easily put these onto the Base Load Unit using <strong>Drag &amp; Drop functionality</strong>. Further any empty <strong>compartment can be deleted</strong> within this dialog 
+    and the <strong>store functionality</strong> allows to initiate a putaway transport for the Base Load Unit.</p>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">The dialog displays only the Load Unit Types that are yet stackable on the Base Load Unit. Hence it is possible, that some 
+          types are not available although they are defined as allowed stackable Load Unit Types.</p>
+        </td>
+      </tr>
+    </table>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Functions -->
+  <div class="block" id="block_mainfunctions">   
+    <!-- Navigation line start -->
+    <a name="MainFunctions"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#top">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Overview">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#ButtonDescriptions">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+    
+    <!-- Content start -->
+    <h5>Functions</h5>
+    <ul class="listBullet1">
+      <li><strong>Create </strong>an empty Load Unit (with no inventory booked on)
+      <li><strong>Load </strong>any yet existing Load Unit
+      <li><strong>Stack </strong>Load Units (put compartments on the Base Load Unit) using 
+    </ul>
+    <ul class="listBullet2">
+      <li><strong>Drag &amp; Drop </strong>functionality (for a single put)
+      <li><strong>Fill Up </strong>mechanism (for automatic multiple puts)
+    </ul>
+    <ul class="listBullet1">
+      <li><strong>Delete </strong>any empty compartment (also the empty Base Load Unit can be deleted)
+      <li><strong>Store </strong>the Base Load Unit with all its compartments.
+    </ul>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Overview -->
+  <div class="block" id="block_overview">   
+    <!-- Navigation line start -->
+    <a name="Overview"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#MainFunctions">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Screen">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#ButtonDescriptions">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Overview</h5>
+    <table>
+      <tr>
+        <th><p class="columnDescription">Frame</p></th>
+        <th><p class="columnDescription">Description</p></th>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText"><strong>Attributes</strong></p></td>
+        <td><p class="tableBodyText">All relevant Base Load Unit related data is located in this frame. A <strong>scan field for the Base Load Unit </strong>and <strong>allowed Load Unit Types 
+          </strong>for creating compartments are main fields in this frame. Further the <strong>Load Unit Type of the Base Load Unit </strong>is shown in a separate field.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText"><strong>Load Unit Widget</strong></p></td>
+        <td><p class="tableBodyText">The current <strong>structure of the Base Load Unit</strong> is shown in this frame.<br>
+        The Base Load Unit respectively the Compartments will be depicted as follows:</p>
+          <ul class="tableListBullet1">
+            <li><strong>white</strong>: not yet stacked Compartments on the raster of the Base Load Unit
+            <li><strong>red</strong>: Base Load Unit or Compartment is currently selected
+            <li><strong>green</strong>: occupied with a not selected empty Compartment which is <strong>still removable</strong>
+            <li><strong>yellow</strong>: occupied with a not empty (and not selected) Compartment (inventory inside!) and thus <strong>not removable</strong>.
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText"><strong>Actions</strong></p></td>
+        <td><p class="tableBodyText">Only the currently allowed functions are enabled in the appropriate state of the dialog operation. The other buttons are disabled.</p></td>
+      </tr>
+    </table>
+    <br>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">Further details on Load Units are provided in the description of the
+          <a href="../admin/LoadUnitDetailDialog.html">Load Unit Detail Dialog</a>.</p>
+        </td>
+      </tr>
+    </table>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Screen -->
+  <div class="block" id="block_screen">   
+    <!-- Navigation line start -->
+    <a name="Screen"></a>   
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#Overview">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#FieldDescriptions">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#ButtonDescriptions">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Screen</h5>
+    <p><strong>Initial State </strong>of the dialog (before the scan of a Base Load Unit)</p>
+    <p><img border="0" src="img/CreateEmptyLUDialog_INIT.png"></p>
+    <p>With a <strong>loaded Base Load Unit</strong></p>
+    <p class="screenshot"><img src="img/CreateEmptyLUDialog_SHOW.png"></p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Fields -->
+  <div class="block" id="block_fielddescriptions">   
+    <!-- Navigation line start -->
+    <a name="FieldDescriptions"></a>   
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#Screen">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#ButtonDescriptions">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#ButtonDescriptions">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Fields</h5>
+    
+    <table>
+      <tr>
+        <th><p class="columnDescription">Field</p></th>
+        <th><p class="columnDescription">Description</p></th>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">ID</p></td>
+        <td><p class="tableBodyText">Scan or Input field for the <strong>(new) Base Load Unit</strong>. After the successful scan the Load Unit is loaded to the dialog and its structure is shown in the Load Unit Widget frame.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Load Unit Type</p></td>
+        <td><p class="tableBodyText">The Load Unit Type of the scanned Base Load Unit is displayed for information only.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText" style="width:156px">Stackable Load Unit Types</p></td>
+        <td><p class="tableBodyText">All Load Unit Types that are allowed to be stacked on the scanned Base Load Unit are listed. The allowed types of the Compartments must be set in 
+          the &quot;allowed Stack Load Unit Type&quot; of the Base Load Unit Type. All Load Unit Types which are not any longer stackable on the Base Load Unit due to the already occupied raster will be removed from the list.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar" style="width:457px">The Load Unit Types are displayed as a linked string of <br>
+                &quot;<strong>Load Unit Type Name</strong>&quot; - &quot;<strong>Raster 
+                Size x</strong>&quot; - &quot;<strong>Raster Size y</strong>&quot;.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Buttons -->
+  <div class="block" id="block_buttondescriptions">   
+    <!-- Navigation line start -->
+    <a name="ButtonDescriptions"></a>   
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#FieldDescriptions">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right.gif">&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right_end.gif">
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Special Buttons</h5>
+    
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Button</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <tr>
+        <td><img src="img/CreateEmptyLUDialog_OK_BUTTON.png"></td>
+        <td><p class="tableBodyText">This function is only <strong>available in the initial state</strong>. It is used for loading any yet existing Load Unit or creating a new Load Unit. 
+             If a new Load Unit should be created the operator is asked for the used Load Unit Type. After selection a new Load Unit with the <strong>scanned ID</strong>, the selected <strong>Load Unit Type </strong>
+             and the <strong>Location </strong>of the assigned workstation is created.</p>
+          <p class="tableBodyText">Each scanned but already existent Load Unit will be <strong>booked onto this location </strong>immediately.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">If the dialog is not running at a specific workstation the new created Load Unit has no location set. Before the initiation of any transport operation the location must be set anyway.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="img/CreateEmptyLUDialog_DELETE_BUTTON.png"><br></td>
+        <td><p class="tableBodyText">This function removes the selected empty Base Load Unit or selected empty Compartment from the system. <strong>Only empty Load Units are allowed to be deleted</strong>. 
+        If the Base Load Unit is deleted the dialog proceeds with the initial state.</p>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="img/CreateEmptyLUDialog_PUT_BUTTON.png"></td>
+        <td><p class="tableBodyText"><strong>Puts the selected Load Unit Type </strong>onto the next possible free position of the Base Load Unit.</p></td>
+      </tr>
+      <tr>
+        <td><img src="img/CreateEmptyLUDialog_FILL_UP_BUTTON.png"></td>
+        <td><p class="tableBodyText">The Base Load Unit will be <strong>completely filled up </strong>with the selected Load Unit Type.</p></td>
+      </tr>
+      <tr>
+        <td><img src="img/CreateEmptyLUDialog_CLEAR_ALL_BUTTON.png"></td>
+        <td><p class="tableBodyText">This function removes all <strong>empty Compartments </strong>from the Base Load Unit.</p></td>
+      </tr>
+      <tr>
+        <td><img src="img/CreateEmptyLUDialog_PRINT_LABEL_BUTTON.png"></td>
+        <td><p class="tableBodyText">With this function a <strong>Load Unit Label </strong>is printed for the Base Load Unit.</p></td>
+      </tr>
+      <tr>
+        <td><img src="img/CreateEmptyLUDialog_STORE_BUTTON.png"></td>
+        <td><p class="tableBodyText">Initiation of an <strong>Inbound Transport </strong>of the Base Load Unit into the Warehouse.</p>
+          <p class="tableBodyText">The dialog proceeds with the initial state of the dialog.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">If the dialog is not running at a specific workstation the new created Load Unit has no location set. 
+                Before the initiation of any transport operation the location must be set anyway.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText"><img src="img/CreateEmptyLUDialog_FINISH_BUTTON.png"></p></td>
+        <td><p class="tableBodyText">In case of <strong>storage </strong>of the Base Load Unit is <strong>not required </strong>this function can be used to <strong>
+          go back to the initial state</strong> for the execution of another Base Load Unit.</p>
+        </td>
+      </tr>
+      </table>
+    <!-- Content end -->
+  </div>
+
+  <!-- Footer start -->
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">© Dematic GmbH 2008. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar"><a href="#top">top</a> | <a href="../../../../../../../common/javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

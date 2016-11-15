@@ -1,0 +1,806 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2008. All rights reserved.
+
+  $Id: RetrievalOverviewDialog.html 27545 2014-05-05 09:58:11Z bernardy $
+-->
+  <title>Retrieval Administration</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)">
+  <meta name="keywords" content="Dematic, Dematic iQ">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content="WCS-TPL_HelpDialogMain.Web">
+  <meta name="author" content="author">
+  <style type="text/css" media="screen">@import url(../../../../../../../../../../../../common/style_screen.css);</style>
+  <style type="text/css" media="print">@import url(../../../../../../../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "oco/doc/en/user/WebHelp/dialogs/oco/general/ui/client/dialog/retrievaladmin/RetrievalOverviewDialog.html";
+  </script>
+</head>
+
+<body>
+  <p><br>
+  </p>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../../../../../../../index.html?page=source%2Foco%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fdialogs%2Foco%2Fgeneral%2Fui%2Fclient%2Fdialog%2Fretrievaladmin%2FRetrievalOverviewDialog.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../../../../../../../index.html?page=source%2Foco%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fdialogs%2Foco%2Fgeneral%2Fui%2Fclient%2Fdialog%2Fretrievaladmin%2FRetrievalOverviewDialog.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+  <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+    
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../../../../../../../index.html"><img class="upLinkImg" id="uplinkO_img" border="0" title="Operations Control" src="../../../../../../../../../../../../common/img/move_overview.gif"></a>
+        </td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+  
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+            <a class="naviBar" href="#DialogScreen">Screen</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#SuperiorFilters">Superior Filters</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#InformationPanel">Information Panel</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Subdialogs">Sub-Screens</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#SpecialButtons">Special Buttons</a>
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Top navigation bar end -->
+  
+  <!-- Map title -->
+  <h1 id="maptitle">Retrieval Administration</h1>
+
+  <!-- Block: Purpose -->
+  <div class="block" id="block_purpose">
+    <!-- Content start -->
+    <h5><a name="Purpose"></a>Purpose</h5>
+    <p>This a <strong>special service </strong>screen to fix various problems in the warehouse. It provides a detailed overview about all main retrieval data of 
+    Logistics Manager and Pick Controller and <b>superior filters</b>, which filter all data within all levels in the context of the specific filter.<br>
+    For a fast overview, the <strong>number of result sets </strong>is provided for the open/finished Pick Order Lines, Full Load Unit Retrievals (FLRs), 
+    Pick Container (PC) and Dispatch Load Units (DLU).</p>
+    <p>Using the <b>context menu</b> of each grid, related data in the other grids can be selected.<br>
+    The first grid displays the <strong>Pick Order Line </strong>with data from Order, Order Line and Pick Order. Orders which are not yet started 
+    display as well. The second grid provides data for <strong>FLRs, PCs and DLUs</strong>. The third grid provides <strong>Pick related data;</strong> Picks, 
+    Pick Missions and Pick Walks combined with Pick Orders and Orders.</p>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">To <strong>hide all provided actions </strong>in this dialog, there is a predefined User Group called &quot;RetrievalInformationDialog&quot;, 
+          which can be assigned to Users that shall not have permission for these actions</p>
+        </td>
+      </tr>
+    </table>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Screen -->
+  <div class="block" id="block_dialogscreen">   
+    <!-- Navigation line start -->
+    <a name="DialogScreen"></a>   
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#top">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#SuperiorFilters">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#SpecialButtons">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Screen</h5>
+    <p><strong>Orders / Pick Orders</strong></p>
+    <p><img border="0" src="img/RetrievalAdminDialog_Orders.png"></p>
+    <p><strong>Full Load Unit Retrievals / Pick Container / Dispatch Load Units</strong></p>
+    <p class="screenshot"><img src="img/RetrievalAdminDialog_FullLURet.png"></p>
+    <p><strong>Picks / Pick Missions / Pick Walks</strong></p>
+    <p class="screenshot"><img src="img/RetrievalAdminDialog_Picks.png"></p>
+    <!-- Content end -->
+  </div>
+
+
+  <!-- Block: Superior Filters -->
+  <div class="block" id="block_superiorfilters">
+    <!-- Navigation line start -->
+    <a name="SuperiorFilters"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#DialogScreen">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#InformationPanel">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#SpecialButtons">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Superior Filters</h5>
+    <p>&quot;Superior filters&quot; allow data selection in all grids.</p>
+    <p class="screenshot"><img src="img/RetrievalAdminDialog_OverviewPanel.png"></p>
+    <ol class="listNumber">
+      <li><b>Order:</b>&nbsp; valid Order ID is required.<br>
+      &gt; Filter all grids with this Order ID.</li>
+      <li><b>Load Unit</b>:&nbsp; valid Load Unit ID is required.<br>
+      <i><strong>Register Pick Order Line </strong>(first tab)</i><br>
+      &gt; OR-Conjunction on attributes: Source Load Unit, Source Base Load Unit and Pick Container <br>
+      <i><strong>Register FLR/PC/DLU</strong> (second tab)</i> <br>
+      &gt; OR-Conjunction on attributes: FLR Load Unit ID, Pick Container and Dispatch Load Unit<br>
+      <i><strong>Register Pick </strong>(third tab)</i><br>
+      &gt; OR-Conjunction on attributes: Source Load Unit, Source Base Load Unit and Pick Container&nbsp;</li>
+      <li><b>Pick Walk:</b>&nbsp; valid Pick Walk ID is required.<br>
+      <i><strong>Register Pick </strong>(third tab)</i><br>
+      &gt; Filter with this Pick Walk ID<br>
+      <i><strong>Register Pick Order Line and FLR/PC/DLU</strong> (first and second tab)</i> <br>
+      &gt; all available Orders according to the selected Picks can be entered.</li>
+    </ol>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Information Panel -->
+  <div class="block" id="block_informationpanel">
+    <!-- Navigation line start -->
+    <a name="InformationPanel"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#SuperiorFilters">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Subdialogs">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#SpecialButtons">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Information Panel</h5>
+    <p>This panel summarizes the number of shown objects with respect to the result set of the entered filter (can be 0 if an empty grid).</p>
+    <p class="screenshot"><img src="img/RetrievalAdminDialog_NumbersPanel.png"></p>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">Grid can also be empty due to incorrect filter criteria.</p>
+        </td>
+      </tr>
+    </table>
+    <!-- Content end -->
+  </div>
+
+
+  <!-- Block: Sub-Screens -->
+  <div class="block" id="block_subdialogs">
+    <!-- Navigation line start -->
+    <a name="Subdialogs"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#InformationPanel">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#SpecialButtons">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#SpecialButtons">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Sub-Screens</h5>
+    <ul class="listBullet1">
+      <li><a href="RetrievalPickOrderLineDetailDialog.html">Detail Dialog Order Line / Pick Order Line</a></li>
+      <li><a href="RetrievalFLRDetailDialog.html">Detail Dialog Full Load Unit Retrieval / Pick Container / Dispatch Load Unit</a></li>
+      <li><a href="RetrievalPickDetailDialog.html">Detail Dialog Pick / Pick Mission / Pick Walk</a>.</li>
+    </ul>
+    <!-- Content end -->
+  </div>
+
+
+  <!-- Block: Special Buttons -->
+  <div class="block" id="block_specialbuttons">   
+    <!-- Navigation line start -->
+    <a name="SpecialButtons"></a>   
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#Subdialogs">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right.gif">&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right_end.gif">
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Special Buttons</h5>
+    
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Button</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <img src="../../../../../../../../../../../../common/img/dialog/button_delete.gif"></td>
+        <td>
+          <p class="tableBodyText"><strong>Remove </strong>(delete) <strong>Pick Orders</strong>.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">Only Pick Orders with <strong>configuration status &quot;incomplete&quot; </strong>can be removed. <br>
+                Pick Orders of this kind only exist if <strong>serial picking </strong>required<strong> </strong>and any preceding Pick Zone is located in a 
+                Dispo Zone of <strong>reservation type &quot;two phase&quot;</strong> where Pick Orders are not created until the second phase. Pick Orders in subsequent 
+                Pick Zones are created directly. Thus, it is required to set each following Pick Order on hold until the preceding Pick Order has finished. This 
+                occurs through the configuration status which switches when the preceding Pick Orders of the serial picking process allows to proceed. Thus, the 
+                assigned Task has the release mode, &quot;triggered&quot;.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2"><b>Orders/ Pick Orders</b> (1st tab)</td>
+      </tr>
+      <tr>
+        <td class="group">
+          <p class="tableBodyText">
+        <img src="img/RetrievalAdminDialog_cancelOrdersActions.png"></p>
+        </td>
+        <td class="group">
+          <p class="tableBodyText"><strong>Cancel Order Actions</strong></p>
+        </td>
+      </tr>
+      <tr>
+        <td class="group" ><p class="tableBodyText">&nbsp;</p></td>
+        <td class="group">
+            <p class="tableBodyText"><b>Abort Orders</b>, see<b> </b> <a href="../../../../../../../../../../../../orp/doc/en/user/WebHelp/process/ProcessOrderCancellation.html">Process: Order Cancellation &amp; Abort</a> with respect to the special &quot;Abort&quot; notes.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCellGroup">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCellGroup">
+                <p class="noteTextPar"><strong>Replacement Dispo</strong> flag is <strong>not considered </strong>with this function.</p>
+              </td>
+            </tr>
+          </table>
+            <table class="tableNoteTable" id="table16">
+              </table>
+            <table class="tableNoteTable" id="table17">
+              <tr>
+                <td class="tableNoteCellGroup">
+                  <p class="notePar">&nbsp;INFO&nbsp;</p>
+                </td>
+                <td class="tableNoteTextCellGroup">
+                  <p class="noteTextPar">If refused Order Abort, can abort single Order Lines (described in Line screens<span lang="de">:</span>
+                  <a href="../../../../../../../../../../../../orp/doc/en/user/WebHelp/dialogs/orp/order/ui/client/dialog/order/OrderLineDialog.html">Order Lines</a>). </p>
+                </td>
+              </tr>
+            </table>
+        </td>
+      </tr>
+      <tr>
+        <td class="group"><p class="tableBodyText">&nbsp;</p></td>
+        <td class="group"><p class="tableBodyText"><b>Cancel Orders</b>, see 
+          <a href="../../../../../../../../../../../../orp/doc/en/user/WebHelp/process/ProcessOrderCancellation.html">Process: Order Cancellation &amp; Abort</a>.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCellGroup">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCellGroup">
+                <p class="noteTextPar"><strong>Replacement Dispo</strong> flag is <strong>not considered </strong>with this function.</p>
+              </td>
+            </tr>
+          </table>
+          <table class="tableNoteTable" id="table10">
+          </table>
+          <table class="tableNoteTable" id="table11">
+            <tr>
+              <td class="tableNoteCellGroup">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCellGroup">
+                <p class="noteTextPar">If refused Order Cancellation, can cancel single Order Lines (described in all single Order Line screens, e.g.
+                  <a href="../../../../../../../../../../../../orp/doc/en/user/WebHelp/dialogs/orp/order/ui/client/dialog/order/OrderLineDialog.html">
+                Order Lines</a>). </p>
+              </td>
+            </tr>
+            </table>
+        </td>
+      </tr>
+      <tr>
+        <td class="group" ><p class="tableBodyText">&nbsp;</p></td>
+        <td class="group">
+          <p class="tableBodyText"><b>Abort Order Lines</b>. Only possible for Order Lines that are &quot;<b>released</b>&quot; or &quot;<b>active</b>&quot;.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCellGroup">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCellGroup">
+                <p class="noteTextPar"><strong>Replacement Dispo</strong> flag is <strong>not considered </strong>for this function.</p>
+              </td>
+            </tr>
+          </table>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCellGroup">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCellGroup">
+                <p class="noteTextPar">All Abort conditions are the same as for Abort of an Order with consideration of the Full Load Unit Retrievals 
+                and the Pick Order Lines related to the selected Order Lines only.&nbsp;              </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td class="group"><p class="tableBodyText">&nbsp;</p></td>
+        <td class="group"><p class="tableBodyText"><b>Cancel Order Lines</b>. Only possible for Order Lines that are &quot;<b>released</b>&quot; or &quot;<b>active</b>&quot;.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCellGroup">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCellGroup">
+                <p class="noteTextPar"><strong>Replacement Dispo</strong> flag is <strong>not considered </strong>for this function.</p>
+              </td>
+            </tr>
+          </table>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCellGroup">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCellGroup">
+                <p class="noteTextPar">All Cancellation conditions are the same as for Cancellation of an Order with consideration of the Full Load Unit 
+                Retrievals and the Pick Order Lines related to the selected Order Lines only.&nbsp; </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td class="group"><p class="tableBodyText">&nbsp;</p></td>
+        <td class="group">
+          <p class="tableBodyText"><strong>Cancel (full) parts of the already picked quantities</strong> (provided by <strong>Pick Order Lines</strong> or
+          <strong>Full Load Unit Retrievals</strong>).</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCellGroup">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCellGroup">
+                <p class="noteTextPar">With this function the <strong>defined missing quantity </strong>of the selected Inventory Units will be <strong>deleted 
+                anyway </strong>
+                and the quantities of the Order Line are <strong>adjusted accordingly </strong>without consideration of the <strong>underdelivery tolerance </strong>of the Order.</p>
+              </td>
+            </tr>
+          </table>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCellGroup">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCellGroup">
+                <p class="noteTextPar">Only available for a <strong>single active Order Line</strong>.</p>
+              </td>
+            </tr>
+          </table>
+          <p class="tableBodyText">&nbsp;</p>
+          <p class="tableBodyText">The following screen lists the already picked inventory of the Order Line.</p>
+          <p class="tableBodyText"><img src="img/RetrievalAdminDialog_cancelPickedQuantity.png"></p>
+        </td>
+      </tr>
+      <tr>
+        <td class="group"><p class="tableBodyText"><img src="img/RetrievalAdminDialog_cancelPickOrdersActions.png"></p></td>
+        <td class="group">
+          <p class="tableBodyText"><strong>Cancel Pick Order Actions</strong></p>
+        </td>
+      </tr>
+      <tr>
+        <td class="group"><p class="tableBodyText">&nbsp;</p></td>
+        <td class="group">
+          <b>Cancel</b> <b>Pick Orders</b>. Only possible for Pick Orders that are &quot;<b>pending</b>&quot;, &quot;<b>released</b>&quot; or &quot;<b>active</b>&quot;. <br>
+          The <b>Replacement </b><strong>Dispo </strong>flag allows to trigger a new reservation for the canceled parts of the Pick Order. If not set, 
+          cancellation is performed with underdelivery without consideration of the <strong>underdelivery tolerance </strong>of the Order.&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="group"><p class="tableBodyText">&nbsp;</p></td>
+        <td class="group">
+          <p class="tableBodyText"><b>Cancel</b> <b>Pick Order Lines</b>. Only possible for Pick Order Lines that are &quot;<b>pending</b>&quot;, &quot;<b>released</b>&quot; or &quot;<b>active</b>&quot;.
+          <br>
+          The <b>Replacement </b><strong>Dispo </strong>flag allows to trigger a new reservation for the canceled parts of the Pick Order Line. If not set, 
+          cancellation is performed with underdelivery without consideration of the <strong>underdelivery tolerance </strong>of the Order.&nbsp;</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText"><img src="img/RetrievalAdminDialog_correctQuantity.png"></p>
+        </td>
+        <td>
+          <p class="tableBodyText"><a href="../../../../../../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/inventory/ui/client/dialog/admin/ChangeQuantityDetailDialog.html">Dialog Correct Quantity</a> opens to change the quantity of the selected Inventory Unit. Only available for not <b>yet completed Pick Order Lines</b>.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">If multiple Inventory Units refer to the selected Pick Order Line, the first one is used for correction.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText"><img src="img/RetrievalAdminDialog_sendToNextDestination.png"></p></td>
+        <td><p class="tableBodyText"><strong>Retrieve the Load Units </strong>of an order from the intermediate storage. The intermediate destination is deleted from the order. 
+          Thus all additional Load Units will be transported to the order destination.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText"><img src="img/RetrievalAdminDialog_closeWaves.png"></p></td>
+        <td>
+          <p class="tableBodyText"><strong>Close waves</strong> related to the selected lines.</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="group">
+          <p class="tableBodyText">
+          <img src="img/RetrievalAdminDialog_tidyActions.png"></p>
+        </td>
+        <td class="group">
+          <p class="tableBodyText"><strong>Tidy Actions</strong></p>
+        </td>
+      </tr>
+      <tr>
+        <td class="group">
+          <p class="tableBodyText">&nbsp;</p>
+        </td>
+        <td class="group">
+          <p class="tableBodyText"><strong>Tidy Orders</strong> related to selected lines tolerating inconsistent data and partially ignoring order states. All 
+          open activities belonging to the given orders are cancelled. If the orders are not yet in status FINISHED, they will be confirmed to the host system.&nbsp;</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="group">
+          <p class="tableBodyText">&nbsp;</p>
+        </td>
+        <td class="group">
+          <p class="tableBodyText"><strong>Tidy Order Lines</strong> related to selected lines tolerating inconsistent data. All open activities belonging to 
+          the given order lines are cancelled.&nbsp;</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="group">
+          <p class="tableBodyText">&nbsp;</p>
+        </td>
+        <td class="group">
+          <p class="tableBodyText"><strong>Tidy Pick Orders</strong> related to selected lines tolerating inconsistent data and partially ignoring pick order 
+          states. All open activities belonging to the given pick orders are cancelled. If the pick orders are not yet in status FINISHED, they will be 
+          confirmed to the host system.&nbsp;</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="group">
+          <p class="tableBodyText">&nbsp;</p>
+        </td>
+        <td class="group">
+          <p class="tableBodyText"><strong>Tidy Pick Order Lines</strong> related to selected lines tolerating inconsistent data. All open activities belonging 
+          to the given pick order line are cancelled.&nbsp;</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2"><b>Full Load Unit Retrievals / Pick Container / Dispatch Load Units</b> (2nd tab)</td>
+      </tr>
+      <tr>
+        <td>
+          <img src="img/RetrievalAdminDialog_cancelFLR.png"></td>
+        <td>
+          <p class="tableBodyText"><b>Cancel Full Load Unit Retrievals</b>. Only possible for Full Load Unit Retrievals that are &quot;<b>released</b>&quot;. Requests for 
+          cancellation are sent to the related underlying transport system.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">Cancellation for a single Full Load Unit Retrieval is refused if the Full Load Unit Retrieval Transport is already 
+                finished.</p>
+              </td>
+            </tr>
+          </table>
+          <table class="tableNoteTable" id="table12">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">With manual cancellation of a Full Load Unit Retrieval<b>, no Replacement Dispo </b>is initiated and the <strong>underdelivery tolerance </strong>
+                of the Order will not be considered!</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText"><img src="img/RetrievalAdminDialog_confirmFLR.png"></p>
+        </td>
+        <td>
+          <p class="tableBodyText" dir="ltr"><b>Confirm</b> <b>transport</b> of <b>Load Units </b>at the defined destination. Can be a Full Load Unit Retrieval 
+          (FLR), a Pick Container (PC) or a Dispatch Load Unit (DLU). Only available for <b>&quot;released&quot; FLRs</b> and <b>not yet &quot;completed&quot; PCs and DLUs</b>.</p>
+          <p class="tableBodyText" dir="ltr">Only LUs that fulfill the following the conditions are considered:</p>
+          <ul class="tableListBullet1">
+            <li>No yet arrived at final destination and</li>
+            <li>Existent Transport Order in MFC or</li>
+            <li>Existent Transport Request in LMS</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td class="group">
+          <p class="tableBodyText">
+          <img src="img/RetrievalAdminDialog_tidyActions.png"></p>
+        </td>
+        <td class="group">
+          <p class="tableBodyText"><strong>Tidy Actions</strong></p>
+        </td>
+      </tr>
+      <tr>
+        <td class="group">
+          <p class="tableBodyText">&nbsp;</p>
+        </td>
+        <td class="group">
+          <p class="tableBodyText"><strong>Tidy Full Load Unit Retrieval groups</strong> related to the selected lines tolerating inconsistent data. All open 
+          activities belonging to the given group are cancelled.&nbsp;(A Full Load Unit Retrieval group is defined by all Full Load Unit Retrievals of the 
+          related order.)</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="group">
+          <p class="tableBodyText">&nbsp;</p>
+        </td>
+        <td class="group">
+          <p class="tableBodyText"><strong>Tidy Full Load Unit Retrievals </strong> related to the selected lines tolerating inconsistent data. All open 
+          activities belonging to the given full load unit retrieval are cancelled.&nbsp;</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="group">
+          <p class="tableBodyText">&nbsp;</p>
+        </td>
+        <td class="group">
+          <p class="tableBodyText"><strong>Tidy Pick Containers</strong> related to the selected lines.&nbsp;</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2"><p class="tableBodyText"><b>Picks / Pick Missions / Pick Walks</b> (3rd tab)</p></td>
+      </tr>
+      <tr>
+        <td class="">
+          <p class="tableBodyText"><img src="img/RetrievalAdminDialog_releaseGroup.png"></p>
+        </td>
+        <td class="">
+          <p class="tableBodyText"><b>Release Picks</b>. Picks are released and immediately clustered to Pick Missions.</p>
+          <p class="tableBodyText"><span style="color:black">All selected entries must be in status (Pick) "<b>created</b>".</span></p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="img/RetrievalAdminDialog_printContentLists.png"></td>
+        <td>
+          <p class="tableBodyText"><b>Print Content List(s)</b> for all selected Pick Containers.</p>
+          <p class="tableBodyText">Selected Picks are assigned to a Pick 
+			Container through a Pick Mission.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText"><img src="img/RetrievalAdminDialog_bookPickOK.png"></p>
+        </td>
+        <td>
+          <p class="tableBodyText"><b>Book Pick(s)</b> with code OK. </p>
+          <p class="tableBodyText">Only available for <b>active </b>Picks with a valid Pick Container.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText"><img src="img/RetrievalAdminDialog_confirmPickContainer.png"></p>
+        </td>
+        <td>
+          <p class="tableBodyText"><b>Confirm Pick Container</b>. Only available if the Pick Mission is in status &quot;<b>complete</b>&quot; and the assigned Pick 
+          Container is <b>not confirmed yet</b>. Pick Container confirmation to the Order Fulfillment System finishes the Pick Mission and related Picks and 
+          proceeds with processing of the Pick Order and the Pick Container.&nbsp;</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText"><img src="img/RetrievalAdminDialog_removeBlock.png"></p>
+        </td>
+        <td>
+          <p class="tableBodyText"><strong>R</strong><b>emove block flag</b> of <b>Pick Missions. </b>Only available when this flag is set. Pick Missions then 
+          are available for processing.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar" dir="ltr">Handles concurrent requests of Load Units and ensures that each Load Unit is requested only once at a time. Be 
+                sure that no Load Unit of the selected Pick Missions is used by another Pick Mission which is not blocked.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText"><img src="img/RetrievalAdminDialog_removePJFromQueue.png"></p>
+        </td>
+        <td>
+          <p class="tableBodyText" dir="ltr"><b>Remove Pick Mission from</b> the <b>Queue of the Workstation</b>. Only possible for <b>single selection and 
+          &quot;queued&quot; or &quot;active&quot;</b> Pick 
+          Missions for <strong>Goods-to-Person Picking</strong>. Besides clearing the queue, the Pick Mission is set back to status &quot;released&quot;.</p>
+        </td>
+      </tr>
+<tr>
+        <td>
+          <p class="tableBodyText"><img src="img/RetrievalAdminDialog_cancelPick.png"></p>
+        </td>
+        <td>
+          <p class="tableBodyText" dir="ltr"><b>Cancel</b> <b>Pick</b>. Only possible for Picks in &quot;<b>active</b>&quot; status and assigned to a Person-To-Goods Pick 
+          Zone. Only one Pick can be cancelled at once (<b>single selection</b>).</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">Order Fulfillment System is informed about this cancellation <b>without </b>request of Replacement Dispo.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">
+          <img src="img/RetrievalAdminDialog_tidyPicks.png"></p>
+        </td>
+        <td>
+          <p class="tableBodyText"><strong>Tidies Picks</strong> belonging to the selected lines while tolerating inconsistent data. &nbsp;</p>
+        </td>
+      </tr>
+      </table>
+    <!-- Content end -->
+  </div>
+
+  <!-- Footer start -->
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">© Dematic GmbH 2008. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar"><a href="#top">top</a> | <a href="javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

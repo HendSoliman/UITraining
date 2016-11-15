@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='etrain_gwt_config'>
+  <!-- Other module inherits                                      -->
+  <inherits name='com.google.gwt.user.User'/>
+  <inherits name='com.dematic.wms.app.base.ui.phone.AppGWTPhone'/>
+  <inherits name='com.dematic.wms.app.base.ui.AppGWTGui'/>
+  <inherits name='com.dematic.wms.app.base.ui.AppGWTGuiTheme'/>
+  <!-- available browser variants: ie6,ie8,ie9,gecko (Firefox 1.0),gecko1_8 (Firefox 1.5 onwards),
+                                   safari (for safari and Chrome),opera -->
+  <set-property  name="user.agent" value="gecko1_8, safari"></set-property>
+
+  <!-- available modes: production,test -->
+  <set-property name="app.gwt_gui.mode" value="production" />
+
+  <set-configuration-property name="app.gwt_gui.frame_type" value="desktop"/>
+
+  <set-configuration-property name="app.gwt_gui.settingsDialogs" value="com.dematic.wms.app.base.ui.client.frame.settings.ChangePasswordPanel"/>
+  <extend-configuration-property name="app.gwt_gui.settingsDialogs" value="com.dematic.wms.app.base.ui.client.frame.settings.ChangeUserLocalePanel"/>
+</module>

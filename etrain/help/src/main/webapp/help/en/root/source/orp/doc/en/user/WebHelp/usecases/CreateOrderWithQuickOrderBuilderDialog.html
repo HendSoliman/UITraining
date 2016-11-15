@@ -1,0 +1,329 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2008. All rights reserved.
+
+  $Id: CreateOrderWithQuickOrderBuilderDialog.html 27545 2014-05-05 09:58:11Z bernardy $
+-->
+  <title>Manual &quot;Quick &amp; Easy&quot; Creation of an Order </title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+  <meta name="keywords" content="Dematic, Dematic iQ" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content="WCS-TPL_HelpUseCase.Web">
+  <meta name="author" content="author">
+  <style type="text/css" media="screen">@import url(../../../../../../common/style_screen.css);</style>
+  <style type="text/css" media="print">@import url(../../../../../../common/style_print.css);</style>
+    <link id="chm2webcss" rel="stylesheet" href="../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "orp/doc/en/user/WebHelp/usecases/CreateOrderWithQuickOrderBuilderDialog.html";
+  </script>
+  <script type="text/JavaScript" src="../../../../../../../files/dcd_buttons.js"></script>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../index.html?page=source%2Forp%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fusecases%2FCreateOrderWithQuickOrderBuilderDialog.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../index.html?page=source%2Forp%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fusecases%2FCreateOrderWithQuickOrderBuilderDialog.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+  <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+    
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../index.html"><img class="upLinkImg" id="uplinkO_img" border="0" title="Order Management" src="../../../../../../common/img/move_overview.gif"></a>
+          <a class="upLink" id="uplinkP" href="index.html"><img class="upLinkImg" id="uplinkP_img" border="0" title="Use Cases Overview" src="../../../../../../common/img/move_up.gif"></a>
+        </td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+  
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+            <a class="naviBar" href="#TriggersAndActors">Triggers and Actors</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#RequiredResources">Required Resources</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#WorkFlow">Work Flow</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Result">Result</a>
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Top navigation bar end -->
+  
+  <!-- Map title -->
+  <h1 id="maptitle">Manual &quot;Quick &amp; Easy&quot; Creation of an Order</h1>
+
+  <!-- Block: Brief Description -->
+  <div class="block" id="block_briefdescription">
+    <!-- Content start -->
+    <h5><a name="BriefDescription"></a>Description</h5>
+    <p>Manual<b> &quot;quick &amp; easy&quot; Order creation</b> occurs using the screen <a href="../dialogs/orp/order/ui/client/dialog/quickorder/QuickOrderOperationDialog.html">Quick Order Creation</a>.</p>
+    <p>The Order is completed in two steps, with minimal user input, and can be released immediately. The Order can consist of one Order Line if <b>
+    Inventory Criteria</b> is used, or of multiple Order Lines if <b>Load Unit Criteria </b>are used<b>.</b> Many Orders can be created in quick succession. This screen supports the following Order Types:</p>
+    <ul class="listBullet1">
+      <li><b>Shipping</b></li>
+      <li><b>Operator Retrieval</b></li>
+      <li><b>Stocktaking.</b></li>
+    </ul>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Triggers and Actors -->
+  <div class="block" id="block_triggersandactors">
+    <!-- Navigation line start -->
+    <a name="TriggersAndActors"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#RequiredResources">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Result"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Triggers and Actors</h5>
+    <p>A local user initiates this when:</p>
+    <ul class="listBullet1">
+      <li>a Shipping process for Inventory Units of one specific SKU should be executed.</li>
+      <li>a Shipping process for one or multiple Load Units should be executed.</li>
+      <li><b>no special properties </b>of <b>Order </b>or <b>Order Lines (Selection Criteria) </b>are required.</li>
+    </ul>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Required Resources -->
+  <div class="block" id="block_requiredresources">   
+    <!-- Navigation line start -->
+    <a name="RequiredResources"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#TriggersAndActors"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#WorkFlow"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Result"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Required Resources</h5>
+    <ul class="listBullet1">
+      <li><a href="../dialogs/orp/order/ui/client/dialog/quickorder/QuickOrderOperationDialog.html">Quick Order Creation</a>. Can be launched from the screen <a href="../dialogs/orp/order/ui/client/dialog/order/OrderOverviewDialog.html">Orders</a>.</li>
+    </ul>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Work Flow -->
+  <div class="block" id="block_workflow">   
+    <!-- Navigation line start -->
+    <a name="WorkFlow"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#RequiredResources"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Result"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Result"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Work Flow</h5>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Step</p>
+		</th>
+        <th>
+          <p class="columnDescription">Action</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">1.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Open the
+          <a href="../dialogs/orp/order/ui/client/dialog/order/OrderOverviewDialog.html">Orders</a> screen and click the button<br>
+            <img src="../dialogs/orp/order/ui/client/dialog/order/img/OrderAdminDialog_quickOrderBuilder.png"> (&quot;Quick Order Creation&quot;) in the upper grid.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">2.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">The screen <a href="../dialogs/orp/order/ui/client/dialog/quickorder/SetHeaderInformationStep.html">Set Order Header</a> opens.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">3.</p>
+        </td>
+		<td>
+          <p class="tableBodyText">Enter the desired header information and click "OK" or  "Create LU Order Lines".</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">4a.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">If "OK" was clicked, continue with assigning Inventory Criteria Order Lines to the Order.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">4b.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">If "Create LU Order Lines" was clicked, continue with assigning Load Unit Order Lines to the Order.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">5.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Click "Create and stay" or "OK".</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">6a.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">If "OK" was clicked, continue with Step 3.</p>
+        </td>
+      </tr>
+	  <tr>
+        <td>
+          <p class="tableBodyText">6b.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">If "Create and stay" was clicked, you stay on the current screen.</p>
+        </td>
+      </tr>
+    </table>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Result -->
+  <div class="block" id="block_result">   
+    <!-- Navigation line start -->
+    <a name="Result"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#WorkFlow"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif">&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif">
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Result</h5>
+      <ul class="listBullet1">
+        <li><b>Shipping Order </b>for desired selection criteria SKU or Load Units is created and available for release. </li>
+        <li><b>Operator Retrieval Order </b>for desired Load Units is created and available for release. </li>
+        <li><b>Stocktaking Order </b>for desired selection criteria SKU or Load Units is created and available for release. </li>
+      </ul>
+      <p>With release of the created Order, all relevant Inventory Units based on the selection criteria are identified by the system and considered for the 
+      subsequent order fulfillment process, which depends on the Order Type.</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Footer start -->
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">© Dematic GmbH 2008. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar"><a href="#top">top</a> | <a href="javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

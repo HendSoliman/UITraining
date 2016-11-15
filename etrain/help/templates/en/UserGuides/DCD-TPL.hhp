@@ -1,0 +1,22 @@
+[OPTIONS]
+Binary Index=No
+Compatibility=1.1 or later
+Compiled file=DCD-TPL.chm
+Contents file=DCD-TPL.hhc
+Default Window=Main
+Default topic=index.html
+Display compile notes=No
+Display compile progress=No
+Full-text search=Yes
+Index file=DCD-TPL.hhk
+Language=0x409 Englisch (USA)
+Title=DCD-TPL
+
+[WINDOWS]
+Main="DCD-TPL","DCD-TPL.hhc","DCD-TPL.hhk",,"index.html",,,,,0x1520,,0x204e,[0,0,900,850],0x0,0x0,,0,0,0,0
+
+
+[FILES]
+
+[INFOTYPES]
+

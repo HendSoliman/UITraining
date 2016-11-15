@@ -1,0 +1,379 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2008. All rights reserved.
+
+  $Id: Printcontentlists.html 7071 2012-10-13 21:34:21Z nagelsie $
+-->
+    <title>Pick Controller Workload</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)">
+  <meta name="keywords" content="Dematic, Dematic iQ">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content="WCS-TPL_HelpUseCase.Web">
+  <meta name="author" content="author">
+  <style type="text/css" media="screen">@import url(../../../../../../common/style_screen.css);
+</style>
+    <style type="text/css" media="print">@import url(../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "pic/doc/en/user/WebHelp/usecases/PickControllerWorkload.html";
+  </script>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../index.html?page=source%2Fpic%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fusecases%2FPickControllerWorkload.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../index.html?page=source%2Fpic%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fusecases%2FPickControllerWorkload.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+    <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../index.html">
+          <img class="upLinkImg" id="uplinkO_img" border="0" title="Overview Pick Controller (PIC)" src="../../../../../../common/img/move_overview.gif"></a>
+          <a class="upLink" id="uplinkP" href="index.html">
+          <img class="upLinkImg" id="uplinkP_img" border="0" title="Use Cases Overview" src="../../../../../../common/img/move_up.gif"></a>
+        </td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+            <a class="naviBar" href="#TriggersandActors">Triggers and Actors</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Prerequisites">Prerequisites</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#RequiredResources">Required Resources</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Workflow">Work Flow</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Result">Result</a>
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Top navigation bar end -->
+
+  <!-- Map title -->
+  <h1 id="maptitle">Pick Controller Workload</h1>
+
+  <!-- Block: Brief Description -->
+  <div class="block" id="block_briefdescription">
+    <!-- Content start -->
+    <h5><a name="BriefDescription"></a>Description</h5>
+    <p>The Pick Controller Workload is committed by the Order Processing subsystem of the Dematic iQ<sup><small>&reg;</small></sup> and initiated by the release of a Pick Order.<br>
+    Based on the Pick Order Lines new Picks are created and <strong>directly grouped to Pick Missions</strong>. Some Picks are intended for deferred grouping and will be handled time based later on.<br>
+    Pick Missions will be <strong>released </strong>for assignment to picking resources <strong>directly with creation</strong>.<br>
+    <strong>Goods-To-Person </strong>Pick Controller uses the <strong>Workstation Workload Management </strong>for assigning the Pick Missions to single Workstations.<br>
+    <strong>Person-To-Goods </strong>Pick Controller provide a <strong>pulling mechanism </strong>for assignment. When a Picker (Worker) requests new work a defined number of Pick Missions are grouped to a Pick Walk which then gets assigned for execution.</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Triggers and Actors -->
+  <div class="block" id="block_triggersandactors">
+    <!-- Navigation line start -->
+    <a name="TriggersandActors"></a>
+    <table class ="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Prerequisites"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Result">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Triggers and Actors</h5>
+    <ul class="listBullet1">
+      <li>A Pick Order is released by the Order Processing subsystem and handed over to the configured Pick Controller.</li>
+    </ul>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Prerequisites -->
+  <div class="block" id="block_prerequisites">
+    <!-- Navigation line start -->
+    <a name="Prerequisites"></a>
+    <table class ="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#TriggersandActors"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#RequiredResources"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Result">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Prerequisites</h5>
+    <ul class="listBullet1">
+      <li>Fully configured Pick Controller</li>
+      <li>Order and related Pick Orders assigned to the mentioned Pick Controller Zone are released successfully.</li>
+    </ul>
+  </div>
+
+  <!-- Block: Required Resources -->
+  <div class="block" id="block_requiredresources">
+    <!-- Navigation line start -->
+    <a name="RequiredResources"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#Prerequisites"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Workflow"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Result"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Required Resources</h5>
+    <ul class="listBullet1">
+      <li><a href="../../../../../../app/doc/en/user/WebHelp/dialogs/app/cron/ui/client/dialog/CronjobOverviewDialog.html">Cron Jobs</a>.</li>
+      <li><a href="../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/workstation/ui/client/dialog/workstation/WorkstationOverviewDialog.html">Workstations</a>.</li>
+    </ul>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Work Flow -->
+  <div class="block" id="block_workflow">
+    <!-- Navigation line start -->
+    <a name="Workflow"></a>
+    <table class ="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#RequiredResources"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Result"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Result">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Work Flow</h5>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Step</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">1.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Pick Controller creates Picks based on the Pick Order Lines of the released Pick Order with respect to the
+          <a href="../dialogs/pic/general/ui/client/dialog/pickzoneconfig/PickZoneConfigOverviewDialog.html">Pick Zone Configuration</a>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">2a.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Pick Controller directly groups the created Picks to Pick Missions.<br>
+          All defined types of Picks which are defined to be intended for deferred grouping are excluded.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">In the standard these are Picks with Service Qualifier &quot;BLOCK&quot;. </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">2b.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Picks that meet the condition for deferring are excluded from direct grouping to Pick Missions. This is done periodically by 
+          the &quot;<strong>HandleDeferredPicksDemon</strong>&quot; which must be up and running.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">To be checked in 
+                <a href="../../../../../../app/doc/en/user/WebHelp/dialogs/app/cron/ui/client/dialog/CronjobOverviewDialog.html">Cron Jobs</a>.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">3.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">The Pick Missions in status &quot;RELEASED&quot; are provided for assignment to Workstations or Workers.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">3a.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">For Goods-To-Person Pick Controller the Workstation Workload Management for assigning the Pick Missions to single 
+          Workstations is used (see
+          <a href="../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/workstation/ui/client/dialog/workstation/WorkstationQueueEntryOverviewDialog.html">Workstation Queue Entries</a>).<br>
+          This is either done by the &quot;<strong>FeedWorkstationDemon</strong>&quot; which must be up and running or based on <strong>events during picking
+          </strong>at the Workstation or when the <strong>Workstation is activated</strong>.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">The assignment is done only if the Workstations &quot;Request Size&quot; number of
+                <a href="../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/workstation/ui/client/dialog/workstation/WorkstationQueueEntryOverviewDialog.html">Workstation Queue Entries</a> 
+                are free. If so exactly &quot;Request Size&quot; number of Pick Missions will be assigned. Less Pick Missions will only be assigned if less are available.<br>
+                If any already assigned entry exists (if not enough Pick Missions could be assigned in any former run) the number will be filled up.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">3b.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">For Person-To-Goods Pick Controller the assignment is done directly on request. <br>
+          When a Picker requests new work a defined number of Pick Missions are grouped to a <strong>Pick Walk </strong>which then gets assigned to the Picker.</p>
+        </td>
+      </tr>
+    </table>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Result -->
+  <div class="block" id="block_result">
+    <!-- Navigation line start -->
+    <a name="Result"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#Workflow"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif">&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif">
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Result</h5>
+    <p>Picks are created and grouped to Pick Missions. The Pick Missions are released for assignment to Workstations or for grouping to Pick Walks for 
+    assignment to Worker.</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Footer start -->
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">&copy; Dematic GmbH 2008. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar"><a href="#top">top</a> | <a href="javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

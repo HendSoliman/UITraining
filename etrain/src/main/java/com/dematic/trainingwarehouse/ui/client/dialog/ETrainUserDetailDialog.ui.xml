@@ -1,0 +1,47 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:d="urn:import:com.dematic.wms.app.base.ui.client.scomponent">
+
+    <d:SDetailDialogPanel className="com.dematic.trainingwarehouse.ui.shared.dto.ETrainUserDto">
+        <d:id>
+            <d:SAttributePanel>
+                <d:SLabelPanel name="userName"/>
+            </d:SAttributePanel>
+        </d:id>
+        <d:details>
+            <d:SAttributePanel>
+                <d:SLabelPanel name="locale"/>
+                <d:newLine/>
+                <d:SLabelPanel name="timeOfLastLogout"/>
+                <d:newLine/>
+                <d:SLabelPanel name="password"/>
+                <d:newLine/>
+                <d:SLabelPanel name="timeOfLastLogin"/>
+                <d:newLine/>
+                <d:SLabelPanel name="terminalId"/>
+                <d:newLine/>
+                <d:SLabelPanel name="description"/>
+                <d:newLine/>
+                <d:SLabelPanel name="hostName"/>
+                <d:newLine/>
+                <d:SLabelPanel name="numberOfFailedLoginAttemps"/>
+                <d:newLine/>
+                <d:SLabelPanel name="passwordChangeable"/>
+                <d:newLine/>
+                <d:SLabelPanel name="emailAddress"/>
+                <d:newLine/>
+                <d:SLabelPanel name="mobileTelephoneNumber"/>
+                <d:newLine/>
+                <d:SLabelPanel name="telephoneNumber"/>
+                <d:newLine/>
+                <d:SLabelPanel name="fullName"/>
+                <d:newLine/>
+                <d:SLabelPanel name="locked"/>
+                <d:newLine/>
+                <d:SLabelPanel name="loggedOn"/>
+                <d:newLine/>
+            </d:SAttributePanel>
+        </d:details>
+    </d:SDetailDialogPanel>
+</ui:UiBinder>

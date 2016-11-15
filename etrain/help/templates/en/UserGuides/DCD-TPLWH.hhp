@@ -1,0 +1,38 @@
+[OPTIONS]
+[OPTIONS]
+Binary Index=No
+Compatibility=1.1 or later
+Compiled file=DCD-TPLWH.chm
+Contents file=DCD-TPLWH.hhc
+Default Window=Main
+Default topic=index.html
+Display compile notes=No
+Display compile progress=No
+Full-text search=Yes
+Index file=DCD-TPLWH.hhk
+Language=0x409 Englisch (USA)
+Title=DCD-TPLWH
+
+[WINDOWS]
+Main="DCD-TPLWH","DCD-TPLWH.hhc","DCD-TPLWH.hhk",,"index.html",,,,,0x1520,,0x204e,[0,0,900,850],0x0,0x0,,0,0,0,0
+
+
+[FILES]
+index.html
+general\DetailDocument.html
+general\OverviewDocument.html
+general\style_overview.html
+common\WCS-TPL_TroubleShootingIndex.html
+common\WCS-TPL_Frame.html
+common\WCS-TPL_FrameBlock.html
+common\WCS-TPL_Guide.html
+common\WCS-TPL_HelpDialogDetail.html
+common\WCS-TPL_HelpDialogFunction.html
+common\WCS-TPL_HelpDialogMain.html
+common\WCS-TPL_HelpMenu.html
+common\WCS-TPL_HelpProcess.html
+common\WCS-TPL_HelpUseCase.html
+common\WCS-TPL_TroubleShootingGuide.html
+
+[INFOTYPES]
+

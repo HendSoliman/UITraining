@@ -1,0 +1,405 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2008. All rights reserved.
+
+  $Id: CreateErgoPalShippingOrder.html 27545 2014-05-05 09:58:11Z bernardy $
+-->
+    <title>Creation and Processing of an ErgoPal Shipping Order</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)">
+  <meta name="keywords" content="Dematic, Dematic iQ">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content="WCS-TPL_HelpUseCase.Web">
+  <meta name="author" content="author">
+  <style type="text/css" media="screen">@import url(../../../../../../common/style_screen.css);</style>
+    <style type="text/css" media="print">@import url(../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "orp/doc/en/user/WebHelp/usecases/CreateErgoPalShippingOrder.html";
+  </script>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../index.html?page=source%2Forp%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fusecases%2FCreateErgoPalShippingOrder.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../index.html?page=source%2Forp%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fusecases%2FCreateErgoPalShippingOrder.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+    <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="table1">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+    
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../index.html"><img class="upLinkImg" id="uplinkO_img" border="0" title="Order Management" src="../../../../../../common/img/move_overview.gif"></a>
+          <a class="upLink" id="uplinkP" href="index.html"><img class="upLinkImg" id="uplinkP_img" border="0" title="Use Cases Overview" src="../../../../../../common/img/move_up.gif"></a>
+        </td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+  
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+            <a class="naviBar" href="#TriggersAndActors">Triggers and Actors</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Prerequisites">Prerequisites</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#RequiredResources">Required Resources</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#WorkFlow">Work Flow</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Result">Result</a>
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Top navigation bar end -->
+  
+  <!-- Map title -->
+  <h1 id="maptitle">Creation and Processing of an ErgoPal Shipping Order</h1>
+
+  <!-- Block: Brief Description -->
+  <div class="block" id="block_briefdescription">
+    <!-- Content start -->
+    <h5><a name="BriefDescription"></a>Description</h5>
+    <p>Shipping Orders of this type are manually palletized (picked) at a special ErgoPal (Ergonomic Palletizing) <a href="../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/workstation/ui/client/dialog/workstation/WorkstationDetailDialog.html">Workstation</a>.</p>
+    <p>During Order creation, the Service Qualifier must be set to, &quot;<strong>ERGOPAL</strong>&quot;. For all other aspects of Order creation, see &quot;<a href="CreateShippingOrder.html">Manual Creation of an Shipping Order</a>&quot;. </p>
+    <p>After the required pre-cubing planning step and the release of the Shipping Order, the system starts the specific Order Fulfillment process. <br>
+    The required configuration for the special <strong>
+    <a href="../process/order_pre_cubing_algo.html">Pre-Cubing planning step</a> </strong>is described in the <a href="#Prerequisites">Prerequisites</a> of this map.</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Triggers and Actors -->
+  <div class="block" id="block_triggersandactors">
+    <!-- Navigation line start -->
+    <a name="TriggersAndActors"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Prerequisites"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Result"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Triggers and Actors</h5>
+    <p>This is started by a local user when:</p>
+    <ul class="listBullet1">
+      <li>a shipping process for one or more Inventory Units of specific SKUs should be executed at an <strong>ErgoPal </strong>Workstation.</li>
+    </ul>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Prerequisites -->
+  <div class="block" id="block_prerequisites">   
+    <!-- Navigation line start -->
+    <a name="Prerequisites"></a>
+    <table class="naviLineTable" id="table4">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#TriggersAndActors">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#RequiredResources">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Result">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Prerequisites</h5>
+    <ul class="listBullet1">
+      <li>Desired and required Inventory must be available in the warehouse with exactly <strong>one case per Load Unit</strong>.</li>
+      <li>A <a href="../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/workstation/ui/client/dialog/workstation/WorkstationDetailDialog.html">Workstation</a> was configured with:
+        <ul class="listBullet1">
+        <li>Service set to &quot;ERGOPAL&quot;.</li>
+        <li>the Request Size of the Workstation is set to 1.</li>
+        <li>Two virtual Load Units, with identical IDs to those of the Source Locations of the Workstation, are booked on these locations.</li>
+      </ul>
+      </li>
+      <li>Two configuration topics must be configured (CL100 is the ID of the client used as an example).<br>
+      <table border="1">
+      <tr>
+        <td><strong>Configuration Topic</strong></td>
+         <td><b>Dimension</b></td>
+         <td><b>Value</b></td>
+        </tr>
+        <tr>
+          <td>orp-order:OrderClientOrderType.planning.orderPlanningStatusSequence</td>
+          <td>CLIENT_ORDERTYPE:<br>
+            CL100 SHIPPING</td>
+          <td>PRE_CUBING</td>
+        </tr>
+        <tr>
+          <td>orp-orderfulfillment:OrderFulfillmentServiceQualifier.pickToDispatchLoadUnits</td>
+          <td>SERVICE_QUALIFIER: ERGOPAL</td>
+          <td>true</td>
+        </tr>
+      </table>
+      </li>
+    <!-- Content end -->
+      <li><a href="../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/sku/ui/client/dialog/admin/SKUQuantityUnitDetailDialog.html">SKU</a>, 
+      <a href="../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/loadunit/ui/client/dialog/loadUnitType/LoadUnitTypeOverviewDialog.html">Load Unit Type</a> dimensions, preferred Fulfillment Zone and Preferred Fulfillment Handling Type must be configured correctly.</li>
+      <li>A <a href="../dialogs/orp/dispatchlu/ui/client/dialog/dispatchloadunittype/DispatchLoadUnitTypeOverviewDialog.html">Dispatch Load Unit Type</a> representing an Euro pallet must be configured.</li>
+      <li>A <a href="../dialogs/orp/precubing/ui/client/dialog/precubing/FulfillmentZoneConfigOverviewDialog.html">Fulfillment Zone</a> must be configured, as required by the planning step. Especially assign the needed Dispatch Load Unit Type</li>
+      <li>The used <a href="../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/storage/ui/client/dialog/dispozone/DispoZoneOverviewDialog.html">Disposition Zone</a> must not allow full load unit retrievals.</li>
+      <li>An appropriate <a href="../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/transportresource/ui/client/dialog/areaaccess/AreaAccessOverviewDialog.html">Area Access</a> has to be configured.</li>
+    </ul>
+    </div>
+
+  <!-- Block: Required Resources -->
+  <div class="block" id="block_requiredresources">   
+    <!-- Navigation line start -->
+    <a name="RequiredResources"></a>
+    <table class="naviLineTable" id="table5">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#Prerequisites">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#WorkFlow">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Result">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Required Resources</h5>
+      <ul class="listBullet1">
+        <li><a href="../dialogs/orp/order/ui/client/dialog/order/OrderOverviewDialog.html">Orders</a>.</li>
+      </ul>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Work Flow -->
+  <div class="block" id="block_workflow">   
+    <!-- Navigation line start -->
+    <a name="WorkFlow"></a>
+	<table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#RequiredResources"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Result"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Result"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Work Flow</h5>
+    <table id="table7">
+      <tr>
+        <th>
+          <p class="columnDescription">Step</p>
+        <th>
+          <p class="columnDescription">Action</p>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">1.</p>
+        </td>
+		<td>
+            <p class="noteTextPar">Open the
+            <a href="../dialogs/orp/order/ui/client/dialog/order/OrderOverviewDialog.html">Orders</a> screen 
+            and create an Order using the
+            <a href="CreateShippingOrder.html">Manual Creation of an Shipping Order</a>.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar"><strong>Service Qualifier</strong> must be &quot;<strong>ERGOPAL</strong>&quot;.</p>
+              </td>
+            </tr>
+          </table>
+          </td>
+      </tr>
+      <tr>
+        <td>
+          2.</td>
+		<td>
+            <a href="../index.html">Order Management </a>performs the <strong>Pre-Cubing </strong>planning step. View planning results in the screen
+            <a href="../dialogs/orp/precubing/ui/client/dialog/precubing/OrderPreCubingResultsOverviewDialog.html">Order Pre-Cubing Results</a>.</td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">3.</p>
+        </td>
+		<td>
+            The operator releases the Order manually on screen. <br>
+            If appropriately configured, the Order is released automatically after all required planning steps are finished.</td>
+      </tr>
+      <tr>
+        <td>
+          4.</td>
+        <td>
+          <p class="tableBodyText">&nbsp;<a href="../process/OrderFulfillment.html">Order Fulfillment</a> starts allocating the optimal required Inventory and creates Pick Orders accordingly.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">Considering Pre-Cubing results, <strong>one Pick Order is created for each planned pallet</strong>.<br></p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">5.</p>
+        </td>
+		<td>
+            The operator releases one or all Pick Orders of the Order manually on the <a href="../dialogs/orp/pickrequest/ui/client/dialog/pickorder/PickOrderOverviewDialog.html">Pick Orders</a>.<br>
+            If appropriately configured, Pick Orders are released automatically after creation.</td>
+      </tr>
+      <tr>
+        <td>
+          6.</td>
+        <td><p class="tableBodyText">The assigned <a href="../../../../../../pic/doc/en/user/WebHelp/index.html">Pick Controller</a> performs Pick Order execution with:</p>
+            <ul class="tableListBullet1">
+              <li>Creation of one Pick Job for each Pick Order</li>
+              <li>Assignment of Pick Jobs to available Pickstation(s), if free capacity.</li>
+              <li>Requesting required Source Load Units in correct sequence.</li>
+              <li>Automatic booking of Picks when the Source Load Unit arrives at the induction point of the source buffer of the station.</li>
+            </ul>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">Details operational handlings at the station (e.g. conveyors handling and resulting pallets are project 
+                specific. </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      </table>
+    <!-- Content end -->
+  </div>
+  
+  <!-- Block: Result -->
+  <div class="block" id="block_result">   
+    <!-- Navigation line start -->
+    <a name="Result"></a>
+	<table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#WorkFlow"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif">&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif">
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Result</h5>
+    <p>A Shipping Order with Inventory criteria is created and released. <br>
+    The subsequent order fulfillment process is executed at ErgoPal Pickstations. <br>
+    All planned result pallets of the Order are palletized and provided for further shipping processes.</p>
+  </div>
+ <!-- Footer start -->
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">© Dematic GmbH 2010. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar"><a href="#top">top</a> | <a href="javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

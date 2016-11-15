@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="WindowName" value="Main">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Style">
+		<param name="Name" value="Dematic iQ User Guide">
+		<param name="Local" value="general\style_overview.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Use Case">
+		<param name="Name" value="Dematic iQ User Guide">
+		<param name="Local" value="common\WCS-TPL_HelpUseCase.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Dialog">
+		<param name="Name" value="Dematic iQ User Guide">
+		<param name="Local" value="common\WCS-TPL_HelpDialogMain.html">
+		<param name="Name" value="Dematic iQ User Guide">
+		<param name="Local" value="common\WCS-TPL_HelpDialogFunction.html">
+		<param name="Name" value="Dematic iQ User Guide">
+		<param name="Local" value="common\WCS-TPL_HelpDialogDetail.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Troubleshooting Guide">
+		<param name="Name" value="Dematic iQ Trouble Shooting Guide">
+		<param name="Local" value="common\WCS-TPL_TroubleShootingGuide.html">
+		</OBJECT>
+</UL>
+</BODY></HTML>

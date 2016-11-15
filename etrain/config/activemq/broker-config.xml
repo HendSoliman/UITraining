@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"/>
+
+    <!--  shutdown hook is disabled as RAR classloader may be gone at shutdown -->
+    <broker xmlns="http://activemq.apache.org/schema/core" brokerName="dcdng" useJmx="true" useShutdownHook="false"
+            schedulerSupport="true">
+        <!-- broker xmlns="http://activemq.apache.org/schema/core" brokerName="dcdng" useJmx="true" useShutdownHook="false" schedulerSupport="false"-->
+
+        <managementContext>
+            <managementContext createConnector="false"/>
+        </managementContext>
+
+        <persistenceAdapter>
+            <kahaDB directory="${activemq.message.storage}" journalMaxFileLength="10mb"/>
+        </persistenceAdapter>
+
+        <transportConnectors>
+            <transportConnector name="standard" uri="${activemq.connector.address}" enableStatusMonitor="true" />
+        </transportConnectors>
+
+        <destinationInterceptors>
+            <mirroredQueue copyMessage="true" postfix=".Mirror" prefix=""/>
+        </destinationInterceptors>
+
+        <destinationPolicy>
+            <policyMap>
+                <policyEntries>
+                    <!-- Set the following policy on all queues using the '>' wildcard -->
+                    <!-- set maxPageSize="5000" -->
+                    <policyEntry queue=">" producerFlowControl="true" optimizedDispatch="false" maxPageSize="5000" queuePrefetch="1000">
+                        <deadLetterStrategy>
+                            <!--
+                              Use the prefix 'DLQ.' for the destination name, and make
+                              the DLQ a queue rather than a topic
+                            -->
+                            <individualDeadLetterStrategy queuePrefix="DLQ." useQueueForQueueMessages="true"
+                                                          processExpired="false" enableAudit="false"/>
+                        </deadLetterStrategy>
+                        <!--slowConsumerStrategy>
+                            <abortSlowConsumerStrategy/>
+                        </slowConsumerStrategy-->
+                        <!--pendingMessageLimitStrategy></pendingMessageLimitStrategy-->
+                    </policyEntry>
+                </policyEntries>
+            </policyMap>
+        </destinationPolicy>
+
+        <plugins>
+            <redeliveryPlugin fallbackToDeadLetter="true" sendToDlqIfMaxRetriesExceeded="true">
+                <redeliveryPolicyMap>
+                    <redeliveryPolicyMap>
+                        <redeliveryPolicyEntries>
+                            <redeliveryPolicy queue="EventQueue" maximumRedeliveries="1"
+                                              redeliveryDelay="1000"/>
+                        </redeliveryPolicyEntries>
+                        <defaultEntry>
+                            <redeliveryPolicy maximumRedeliveries="1"
+                                              redeliveryDelay="1000"/>
+                        </defaultEntry>
+                    </redeliveryPolicyMap>
+                </redeliveryPolicyMap>
+            </redeliveryPlugin>
+        </plugins>
+
+        <systemUsage>
+            <systemUsage sendFailIfNoSpace="true">
+                <memoryUsage>
+                    <memoryUsage limit="200 mb"/>
+                </memoryUsage>
+                <storeUsage>
+                    <storeUsage limit="1000 mb"/>
+                </storeUsage>
+                <tempUsage>
+                    <tempUsage limit="200 mb"/>
+                </tempUsage>
+            </systemUsage>
+        </systemUsage>
+    </broker>
+
+    <!-- Camel configuration -->
+    <bean id="poolConnectionFactory" class="org.apache.activemq.pool.PooledConnectionFactory">
+        <property name="maxConnections" value="5"/>
+        <property name="connectionFactory" ref="jmsConnectionFactory"/>
+    </bean>
+
+    <bean id="jmsConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+        <property name="brokerURL" value="vm://dcdng?create=false&amp;waitForStart=10000"/>
+    </bean>
+
+    <!-- setup spring jms TX manager -->
+    <bean id="jmsTransactionManager" class="org.springframework.jms.connection.JmsTransactionManager">
+        <property name="connectionFactory" ref="poolConnectionFactory"/>
+    </bean>
+
+    <bean id="activemq" class="org.apache.activemq.camel.component.ActiveMQComponent">
+        <property name="connectionFactory" ref="poolConnectionFactory"/>
+        <property name="transacted" value="true"/>
+        <property name="transactionManager" ref="jmsTransactionManager"/>
+    </bean>
+
+    <camelContext id="camel" xmlns="http://camel.apache.org/schema/spring">
+        <route id="rollbackRepeatFailureRoute">
+            <from uri="activemq:queue:RollbackRepeatFailureQueue?mapJmsMessage=false&amp;forceSendOriginalMessage=true"/>
+            <transacted/>
+            <recipientList stopOnException="true">
+                <simple>activemq:queue:DLQ.${header.jmsOriginalDestination}</simple>
+            </recipientList>
+        </route>
+    </camelContext>
+</beans>

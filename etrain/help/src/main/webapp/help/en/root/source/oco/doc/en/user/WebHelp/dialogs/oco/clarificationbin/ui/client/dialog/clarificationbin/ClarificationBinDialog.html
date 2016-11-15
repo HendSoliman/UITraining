@@ -1,0 +1,328 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2008. All rights reserved.
+
+  $Id: ClarificationBinDialog.html 27545 2014-05-05 09:58:11Z bernardy $
+-->
+  <title>Clarification Bin</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)">
+  <meta name="keywords" content="Dematic, Dematic iQ">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content="WCS-TPL_HelpDialogMain.Web">
+  <meta name="author" content="author">
+  <style type="text/css" media="screen">@import url(../../../../../../../../../../../../common/style_screen.css);</style>
+  <style type="text/css" media="print">@import url(../../../../../../../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "oco/doc/en/user/WebHelp/dialogs/oco/clarificationbin/ui/client/dialog/clarificationbin/ClarificationBinDialog.html";
+  </script>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../../../../../../../index.html?page=source%2Foco%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fdialogs%2Foco%2Fclarificationbin%2Fui%2Fclient%2Fdialog%2Fclarificationbin%2FClarificationBinDialog.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../../../../../../../index.html?page=source%2Foco%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fdialogs%2Foco%2Fclarificationbin%2Fui%2Fclient%2Fdialog%2Fclarificationbin%2FClarificationBinDialog.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+  <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+    
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../../../../../../../index.html"><img class="upLinkImg" id="uplinkO_img" border="0" title="Operations Control" src="../../../../../../../../../../../../common/img/move_overview.gif"></a>
+          <a class="upLink" id="uplinkP" href="../../../../../../../process/clarification.html"><img class="upLinkImg" id="uplinkP_img" border="0" title="Clarification" src="../../../../../../../../../../../../common/img/move_up.gif"></a>
+        </td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+  
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+            <a class="naviBar" href="#DialogScreen">Screen</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#FieldDescriptions">Fields</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#SpecialButtons">Special Buttons</a>
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Top navigation bar end -->
+  
+  <!-- Map title -->
+  <h1 id="maptitle">Clarification Bin</h1>
+
+  <!-- Block: Purpose -->
+  <div class="block" id="block_purpose">
+    <!-- Content start -->
+    <h5><a name="Purpose"></a>Purpose</h5>
+    <p>This screen is used to initiate <strong>inspection and clarification of locked Locations </strong>in error status. All Locations with an error status 
+    display. The table allows selection of Location(s) to initiate a 
+    <a href="../../../../../../../../../../../../mfc/doc/en/user/WebHelp/dialogs/mfc/core/ui/transportorder/client/dialog/TransportOrderOverviewDialog.html">
+    Transport</a> for the bins to the Clarification Station. <br>
+    Transports to a Clarification Station are called &quot;Clear Trips&quot;. All initiated Clear Trips display on the second tab in a Master-Detail view for Orders and related Order Lines. A Clear Trip Order can have one or more 
+    Order Lines. <br>
+    While creating Transports, an Order Line is created for every Load Unit located on the selected locked Locations.</p>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar"><b>Specialty for multi-divided bins while creating UFO Transports</b>:<br>
+          For each unoccupied Location position, an UFO Load Unit is generated. When the Location Type uses more than one raster number, there are several possibilities to fill the unoccupied positions of the Location with UFO Load Units. 
+          Creating Transports for Load Units that do not match the position and size of the Load Units in the bin can cause damage to the actually stored Load Units or to the transport systems. This operation is not allowed for multi-raster bins.
+          <br>For multi-raster bins with <strong>variable occupancies a special function is provided</strong>.</p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Block: Screen -->
+  <div class="block" id="block_dialogscreen">   
+    <!-- Navigation line start -->
+    <a name="DialogScreen"></a>   
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#top">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#FieldDescriptions">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#SpecialButtons">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Screen</h5>
+    <p><strong>Clarification Bin</strong></p>
+    <p>
+      <img border="0" src="img/ClarificationBinAdminDialog.png">
+    </p>
+    <p>
+      <strong>Clear Trip</strong></p>
+    <p class="screenshot"><img src="img/ClearTripAdminDialog.png"></p>
+    <!-- Content end -->
+  </div>
+
+
+  <!-- Block: Fields -->
+  <div class="block" id="block_fielddescriptions">   
+    <!-- Navigation line start -->
+    <a name="FieldDescriptions"></a>   
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#DialogScreen">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#SpecialButtons">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#SpecialButtons">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Fields</h5>
+    <p>For detailed field descriptions of &quot;Dialog Clarification Bin&quot;, see
+    <a href="../../../../../../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/storage/ui/client/dialog/location/LocationDetailDialog.html">Detail Dialog Location</a>.<br>
+    For detailed field descriptions of &quot;Dialog Clear Trip&quot;, see
+    <a href="../../../../../../../../../../../../orp/doc/en/user/WebHelp/dialogs/orp/order/ui/client/dialog/order/OrderDetailDialog.html">Detail Dialog Order</a>.</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Special Buttons -->
+  <div class="block" id="block_specialbuttons">   
+    <!-- Navigation line start -->
+    <a name="SpecialButtons"></a>   
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#FieldDescriptions">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right.gif">&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right_end.gif">
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Special Buttons</h5>
+    <p><strong>Clarification Bin</strong></p>
+    
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Button</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <img src="img/ClarificationBinAdminDialog_startClarification.png"></td>
+        <td>
+          <p class="tableBodyText"><strong>Start Clarification</strong></p>
+          <p class="tableBodyText">Initiates Clarification process for Location(s) and presents <b>Destination Locations </b>for selection for Clear Trips.</p>
+          <p class="tableBodyText">The only Locations listed have configured Area Access to the Locations (to be clarified) and are related to a Workstation.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">For multi-selection, ensure that all Locations to be clarified have a valid Area Access as the first selected entry.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="img/ClarificationBinAdminDialog_clarify.png"></td>
+        <td>
+          <p class="tableBodyText"><strong>Start Repair process</strong></p>
+          <p class="tableBodyText">If the bin is logically empty, clears only appropriate status fields of the Locations.</p>
+          <p class="tableBodyText">If the bin is logically not empty, must confirm an additional question prior to booking Load Units on the Location specified by the configuration topic &quot;<strong>oco-clarifactionBin.EmptyLoadUnitLocationId</strong>&quot;.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="img/ClarificationBinAdminDialog_createUFO.png"></td>
+        <td>
+          <p class="tableBodyText"><strong>Create UFO Transport</strong></p>
+          <p class="tableBodyText">Presents screen to create an UFO Load Unit (unknown Load Units for transport purposes only) on the Location and an UFO Transport to the chosen Clarification Station. 
+          (See
+          <a href="CreateUFOTransportDetailDialog.html">Dialog Create UFO Transport</a>.)</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">Only available for bins in appropriate status.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="img/ClarificationBinAdminDialog_bookEmpty.png"></td>
+        <td>
+          <p class="tableBodyText"><strong>Clarified</strong></p>
+          <p class="tableBodyText">Books the Location empty. The Load Unit is booked on the Location specified by the configuration topic &quot;<strong>oco-clarifactionBin.EmptyLoadUnitLocationId</strong>&quot;.</p>
+        </td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText"><img src="img/ClarificationBinAdminDialog_clarifyMultiplePositionBin.png"></p></td>
+        <td><p class="tableBodyText"><strong><a href="ClarifyMultipleRasterBinSubDialog.html">Clarify Multiple Position Bin</a></strong><br>
+            Opens a screen to define the occupancy of this bin and afterwards create UFO Load Units for this to the chosen Clarification Station.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">It is <strong>strongly</strong> required to clarify the real occupancy of the bin manually.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      </table>
+    <br>
+    <p><strong>Clear Trip</strong></p>
+    <p>For button descriptions, see <a href="../../../../../../../../../../../../orp/doc/en/user/WebHelp/dialogs/orp/order/ui/client/dialog/order/OrderOverviewDialog.html">Orders</a>.</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Footer start -->
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">© Dematic GmbH 2008. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar"><a href="#top">top</a> | <a href="javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

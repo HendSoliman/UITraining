@@ -1,0 +1,213 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2008. All rights reserved.
+
+  $Id: OrderFulfillment.html 27545 2014-05-05 09:58:11Z bernardy $
+-->
+    <title>Order Fulfillment</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)">
+  <meta name="keywords" content="Dematic, Dematic iQ">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Language" content="en-us">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content=".Web">
+  <style type="text/css" media="screen">@import url(../../../../../../common/style_screen.css);</style>
+    <style type="text/css" media="print">@import url(../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "orp/doc/en/user/WebHelp/process/OrderFulfillment.html";
+  </script>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../index.html?page=source%2Forp%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fprocess%2FOrderFulfillment.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../index.html?page=source%2Forp%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fprocess%2FOrderFulfillment.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+    <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../index.html"><img class="upLinkImg" id="uplinkO_img" border="0" title="Order Management" src="../../../../../../common/img/move_overview.gif"></a>
+        </td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Top navigation bar end -->
+
+  <!-- Map title -->
+  <h1 id="maptitle">Order Fulfillment</h1>
+
+  <!-- Block: Overview -->
+  <div class="block" id="block_overview">
+
+    <!-- Content start -->
+    <h5><a name="Overview"></a>Overview</h5>
+    <p>Within the overall <strong>Order Processing </strong>the <strong>Order Fulfillment </strong>supports all kind of execution processes for 
+	the<b> fulfillment of orders</b> with coordination of the different Task execution subsystems involved in Order Fulfillment like Picking, Palletizing and Transportation subsystems.</p>
+    <p>With (manual, automatic or triggered) Order Release the
+    <a href="../../../../../../cor/doc/en/user/WebHelp/process/Retrieval_Overview.html">Retrieval Strategies </a>
+    are used to allocate the optimal required Inventory for the given Order Line Criteria which are Inventory, Load Unit and Location Criteria. As a result the related Execution Tasks are created which can be <b>groups </b>of<b> Full Load Unit Retrievals</b> and <b>Pick Orders </b>for subsequent Order Fulfillment.</p>
+    <p><u><b>Full Load Unit Retrieval Management</b></u></p>
+    <p>Full Load Unit <a href="../../../../../../oco/doc/en/user/WebHelp/dialogs/oco/general/ui/client/dialog/retrievaladmin/RetrievalOverviewDialog.html">Retrievals</a> represents whole Load Units which are retrieved from storage directly to the 
+    marshalling destination without Picking. All Full Load Unit Retrievals belonging to one Order are grouped together by a Full Load Unit Retrieval Task. When a Task of this type is being released (possibly independent from order release) 
+    all related Full Load Unit Retrievals will be released and Transport Requests will be created. Full Load Unit Retrievals are confirmed when the related transports are confirmed by the underlying transport system.</p>
+    <p><u><b>Picking</b></u></p>
+    <p><a href="../dialogs/orp/pickrequest/ui/client/dialog/pickorder/PickOrderOverviewDialog.html">Pick Orders</a><b> </b>represent the parts of an Order which could not be served by whole Load Units and thus need to be picked. 
+    Each Pick Order is represented by a specific Task as well. When a Task of this type is being released the Picking request is sent to an underlying Picking subsystem for execution. The picking subsystem creates its own picking directions on the basis of the 
+    corresponding Picking requests which are represented by the single Pick Order Lines. The Pick Orders are confirmed when the related Picking requests are confirmed by the Picking subsystem. The 
+    <a href="../dialogs/orp/pickconfirmation/ui/client/dialog/pickconfirmation/PickConfirmationHandlingOverviewDialog.html">Pick Confirmation Handling</a> 
+	could be specific for different Picking Zones and thus this could be configured with respect to the Inventory Bookings and further operations which are dependant on the specific Pick Confirmation.</p>
+    <p>In case the related Order provides an <b>intermediate destination </b>the Pick Container will be temporarily buffered before finally shipped.</p>
+    <p>In case of any <b>shortages</b> within the system (e.g. due to any locks of resources or transport cancellations) Order Fulfillment initiates a <b>replacement inventory allocation </b>with subsequent specific processing of the new Full Load Unit Retrievals 
+    or Pick Order Lines. In case of the underdelivery tolerance of any Order Line will be violated the Order will be configurable cancelled, set to &quot;paused&quot; (with need of later manual cancellation or further release) or simply leave untouched without any action.</p>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">Manual palletizing (e.g. at <strong>ErgoPal </strong>Station) is 
+          processed as a Picking task.</p>
+        </td>
+      </tr>
+    </table>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">The overall basics of the supply of Workstations with empty Load Units are described in the section
+          <a href="../../../../../../cor/doc/en/user/WebHelp/process/Retrieval_Overview.html">Empty Container Supply</a> of the Retrieval Overview.</p>
+        </td>
+      </tr>
+    </table>
+    <br>
+   
+	<p><u><b>Palletizing</b></u></p>
+    <p><a href="../dialogs/orp/pickrequest/ui/client/dialog/pickorder/PickOrderOverviewDialog.html">Pick Orders</a><b> </b>represent as well the parts of an Order which need to be palletized with the specific <strong>RapidPal </strong>system. 
+    The palletizing subsystem uses for palletizing directions the Pick Order Lines where a Pick Order represents one single pallet.</p>
+    
+	<p><u><b>Order Completion</b></u></p>
+    <p>Order Fulfillment notifies Order Management about the <b>completion of an Order </b>when all related Load Units arrived at the given final Destination 
+    Location. After the host confirmation Order Fulfillment initiates the deletion of the 
+	Order related Inventory.<br>
+    Optionally the fulfillment can be done by use of 
+    <a href="../dialogs/orp/dispatchlu/ui/client/dialog/dispatchloadunit/DispatchLoadUnitOverviewDialog.html">Dispatch Load Units</a> which are the 
+	Order related Shipping equivalent of the Load Units for support of the Shipping processes and for representing the shipped units within the Orders even if the related Load Units 
+    and the Inventory are deleted already.</p>
+  <p class="MsoBodyText"><u><b>Order Fulfillment Topics</b></u></p>
+    <p class="MsoBodyText">The main responsibilities are:</p>
+    <ul class="listBullet1">
+      <li>
+      Global general <b>Lifecycle Management</b> of <b>Pick Orders</b> and <b>Full Load Unit Retrievals</b> </li>
+      <li>
+      <b>Fulfillment of Orders </b>with providing the appropriate specific execution management</li>
+      <li>
+      <b>Coordination</b> of all involved Task Execution Subsystems which are</li>
+    </ul>
+    <ul class="listBullet2">
+      <li><b><u>Pick Controller</u> </b>(PIC - for Picking tasks)</li>
+      <li><b><u>Pack Controller</u> </b>(PAC - for Palletizing tasks)</li>
+      <li><b><u>Material Flow Controller</u> </b>(MFC - for Transportation tasks)</li>
+    </ul>
+    <ul class="listBullet1">
+      <li>
+      <b>Cancellation </b>and <b>Completion </b>of Pick Orders (for Picking and Palletizing as well) and Full Load Unit Retrievals</li>
+    </ul>
+    <br>
+    <table>
+      <tr>
+        <th><p class="columnDescription">Section</p></th>
+        <th><p class="columnDescription">Description</p></th>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText"><a href="../../../../../../oco/doc/en/user/WebHelp/dialogs/oco/general/ui/client/dialog/retrievaladmin/RetrievalOverviewDialog.html">Retrieval Administration</a></p></td>
+        <td><p class="tableBodyText">The Retrieval Administration screen is a <strong>special </strong> <b>service dialog</b> with functionalities to fix various problems in the warehouse. This dialog provides a detailed overview about all main retrieval data with additional 
+        use of <b>superior filters</b>, which filter all related data within all provided levels in the context of the specific filter.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText"><a href="../dialogs/orp/orderfulfillment/ui/client/dialog/retrievalanalysis/RetrievalAnalysisOverviewDialog.html">Retrieval Analysis</a></p></td>
+        <td><p class="tableBodyText">This dialog supports the analysis of possible reasons for the <strong>cancellation of Order Lines</strong>.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText"><a href="../dialogs/orp/pickrequest/ui/client/dialog/pickorder/PickOrderOverviewDialog.html">Pick Orders</a></p></td>
+		<td><p class="tableBodyText"><b>Pick Orders </b>represents the parts of an Order which could not be served by whole Load Units and thus need to be picked. One Pick Order specifies the part of an Order which need to be picked within <b>one Picking Zone</b>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText"><a href="../dialogs/orp/pickconfirmation/ui/client/dialog/pickconfirmation/PickConfirmationHandlingOverviewDialog.html">Pick Confirmation Handlings</a></p></td>
+        <td><p class="tableBodyText">Description of the <strong>Pick Confirmation Handling </strong>with configuration of the possible bookings and every type of handling on the basis of a Pick Confirmation by the underlying Pick Controller.</p></td>
+      </tr>
+    </table>
+    <!-- Content end -->
+  </div>
+
+  <!-- Footer start -->
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">&copy; Dematic GmbH 2008. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar"><a href="#top">top</a> | <a href="javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

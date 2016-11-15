@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='gwt_phone'>
+  <!-- Inherit the core Web Toolkit stuff.                        -->
+  <inherits name='com.google.gwt.user.User'/>
+  <inherits name='com.dematic.wms.app.base.ui.phone.AppGWTPhone'/>
+  <inherits name='com.dematic.wms.app.base.ui.AppGWTGui'/>
+  <inherits name='com.dematic.wms.app.base.ui.AppGWTGuiTheme'/>
+  <inherits name='com.dematic.wms.app.AppDialogsPhone'/>
+  
+  <inherits name='com.dematic.trainingwarehouse.ui.phone.DCDm_GWT_Config'/>
+
+  <!-- Specify the app entry point class.                         -->
+  <entry-point class='com.dematic.wms.app.base.ui.phone.client.frame.PhoneFrame'/>
+  
+  <!-- Specify the app entry point class.                         -->
+  <inherits name='com.dematic.trainingwarehouse.ui.ETrain_Dialogs'/>
+
+  <!-- Specify the paths for translatable code                    -->
+  <source path='client'/>
+  <source path='shared'/>
+  
+</module>

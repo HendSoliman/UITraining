@@ -1,0 +1,362 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2008. All rights reserved.
+
+  $Id: Housekeeping.html 27545 2014-05-05 09:58:11Z bernardy $
+-->
+    <title>Execution of Housekeeping</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)">
+  <meta name="keywords" content="Dematic, Dematic iQ">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content="WCS-TPL_HelpUseCase.Web">
+  <style type="text/css" media="screen">@import url(../../../../../../common/style_screen.css);</style>
+    <style type="text/css" media="print">@import url(../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "itl/doc/en/user/WebHelp/usecases/Housekeeping.html";
+  </script>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../index.html?page=source%2Fitl%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fusecases%2FHousekeeping.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../index.html?page=source%2Fitl%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fusecases%2FHousekeeping.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+    <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../index.html"><img class="upLinkImg" id="uplinkO_img" border="0" title="Warehouse Optimization" src="../../../../../../common/img/move_overview.gif"></a>
+          <a class="upLink" id="uplinkP" href="../process/WarehouseOptimization.html"><img class="upLinkImg" id="uplinkP_img" border="0" title="Warehouse Optimization" src="../../../../../../common/img/move_up.gif"></a>
+        </td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+            <a class="naviBar" href="#Übersicht">Overview</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#AuslöserundAktoren">Triggers and Actors</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Vorbedingungen">Prerequisites</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#BenötigteRessourcen">Required Resources</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Arbeitsablauf">Work Flow</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Ergebnis">Result</a>
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Top navigation bar end -->
+
+  <!-- Map title -->
+  <h1 id="maptitle">Execution of Housekeeping</h1>
+
+  <!-- Block: Brief Description -->
+  <div class="block" id="block_kurzbeschreibung">
+    <!-- Content start -->
+    <h5><a name="Kurzbeschreibung"></a>Brief Description</h5>
+    <p>The mislocation level of all stored Load Units is calculated periodically using an appropriate batch program only. It is not calculated directly with the storage operation of a Load Unit.</p>
+    <p>For required <b>relocation transports, </b>Housekeeping periodically creates <b>Transport Requests </b>for the Load Units with the highest mislocation levels using an appropriate batch program. 
+    Transport Request execution can be started automatically or by manual release based on the related configuration.</p>
+  </div>
+
+  <!-- Block: Overview -->
+  <div class="block" id="block_übersicht">
+    <!-- Navigation line start -->
+    <a name="Übersicht"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#AuslöserundAktoren">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Ergebnis"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Overview</h5>
+    <p>For more information, see the
+    <a href="../process/WarehouseOptimization.html">Warehouse Optimization</a>.<br>
+    The maximum number of relocation transports to be executed within one batch run is configurable per area to avoid any overload of the conveying systems.<br>
+    The sequence for identification of Load Units to be relocated is defined by the default Housekeeping Configuration and depends mainly on the configured 
+    mislocation levels of the different mislocation issues (see
+          <a href="../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/optimization/ui/client/dialog/housekeeping/HousekeepingConfigurationOverviewDialog.html">Housekeeping Configuration</a>).</p>
+</div>
+
+  <!-- Block: Triggers and Actors -->
+  <div class="block" id="block_auslöserundaktoren">
+    <!-- Navigation line start -->
+    <a name="AuslöserundAktoren"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#Übersicht"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Vorbedingungen"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Ergebnis"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Triggers and Actors</h5>
+    <p>This is started when:</p>
+    <ul class="listBullet1">
+      <li>Relocation of not optimal stored Load Units should be initiated once or</li>
+      <li>Relocation of not optimal stored Load Units should be executed periodically.</li>
+    </ul>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Prerequisites -->
+  <div class="block" id="block_vorbedingungen">
+    <!-- Navigation line start -->
+    <a name="Vorbedingungen"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#AuslöserundAktoren">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#BenötigteRessourcen">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Ergebnis"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Prerequisites</h5>
+    <ul class="listBullet1">
+      <li>Base configurations for Housekeeping are finished (see
+          <a href="../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/optimization/ui/client/dialog/housekeeping/HousekeepingConfigurationOverviewDialog.html">Housekeeping Configuration</a>).</li>      
+    </ul>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Required Resources -->
+  <div class="block" id="block_benötigteressourcen">
+    <!-- Navigation line start -->
+    <a name="BenötigteRessourcen"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#Vorbedingungen"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Arbeitsablauf"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Ergebnis"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Required Resources</h5>
+      <ul class="listBullet1">
+        <li><a href="../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/optimization/ui/client/dialog/housekeeping/HousekeepingConfigurationOverviewDialog.html">Housekeeping Configuration</a></li>
+        <li><a href="../../../../../../app/doc/en/user/WebHelp/dialogs/app/cron/ui/client/dialog/CronjobOverviewDialog.html">Cron Jobs</a>.</li>
+      </ul>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Work Flow -->
+  <div class="block" id="block_arbeitsablauf">
+    <!-- Navigation line start -->
+    <a name="Arbeitsablauf"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#BenötigteRessourcen">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Ergebnis"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Ergebnis"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Work Flow</h5>
+    <table id="table1">
+      <tr>
+        <th>
+          Step
+         </th> 
+         <th>
+          <p class="columnDescription">Action</p>
+        </th>
+      </tr>
+      <tr>
+		<td>
+          <p class="tableBodyText">1.</p>
+        </td>
+		<td>
+          <p class="tableBodyText"><b>Configure maximum number of relocation transports</b> 
+			to execute per automatic Area with the </p>
+          <p class="tableBodyText">configuration topic &quot;<b>itl-hsk:HousekeepingMovement.MoveNumberLimit</b>&quot;.</p>
+        </td>
+      </tr>
+      <tr>
+		<td>
+          <p class="tableBodyText">2.</p>
+        </td>
+		<td>
+          <p class="tableBodyText"><b>Configure batch program for calculation of mislocation levels of the Load Units:</b></p>
+          <p class="tableBodyText">Open <a href="../../../../../../app/doc/en/user/WebHelp/dialogs/app/cron/ui/client/dialog/CronjobOverviewDialog.html">Cron Jobs</a> screen to activate the appropriate
+          <b>batch &quot;CalculateMislocationLevelsIteratorBatch&quot;.</b></p>
+          <p>A daily run at the end of each working day is recommended.</p>
+        </td>
+      </tr>
+      <tr>
+		<td>
+          <p class="tableBodyText">3.</p>
+        </td>
+		<td>
+          <p class="tableBodyText"><b>Configure batch program for execution of optimization transports:</b></p>
+          <p class="tableBodyText">Open <a href="../../../../../../app/doc/en/user/WebHelp/dialogs/app/cron/ui/client/dialog/CronjobOverviewDialog.html">Cron Jobs</a> screen to activate the appropriate
+          <b>batch &quot;CreateHousekeepingTransportsBatch&quot;.</b></p>
+          <p class="tableBodyText">A daily run at the end of each working day is recommended after (!) the batch run described in 2.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">Created <b>relocation transports</b> are <b>executed automatically </b>until the configured maximum number of transports is exceeded. </p>              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      </table>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Result -->
+  <div class="block" id="block_ergebnis">
+    <!-- Navigation line start -->
+    <a name="Ergebnis"></a>
+    <table class ="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#Arbeitsablauf"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif">&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif">
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Result</h5>
+    <ul class="listBullet1">
+      <li>Transport Requests created for relocation transports of not optimally stored Load Units for automatic Areas</li>
+      <li>Optimized storage utilization after execution</li>
+    </ul>
+  </div>
+
+  <!-- Footer start -->
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">&copy; Dematic GmbH 2008. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar"><a href="#top">top</a> | 
+			<a href="javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

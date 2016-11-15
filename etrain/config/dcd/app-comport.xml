@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<app:configuration xmlns:app="http://www.dematic.com/dcdng/wms/app" xmlns:comport="http://www.dematic.com/dcdng/wms/app-comport">
+    <comport:comport>
+        <enabled>false</enabled>
+        <baudrate>9600</baudrate>
+        <messageLength>1024</messageLength>
+        <timeOutMillis>1000</timeOutMillis>
+        <dataBits>8</dataBits>
+        <stopBits>1</stopBits>
+        <parity>0</parity>
+        <portName>COM1</portName>
+        <agent>agent1</agent>
+        <messageDelimiter>;X</messageDelimiter>
+        <flowControlMode>0</flowControlMode>
+    </comport:comport>
+</app:configuration>

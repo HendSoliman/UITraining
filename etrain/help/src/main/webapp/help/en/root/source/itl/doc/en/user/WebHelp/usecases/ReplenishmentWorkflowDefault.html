@@ -1,0 +1,321 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2008. All rights reserved.
+
+  $Id: ReplenishmentWorkflowDefault.html 27545 2014-05-05 09:58:11Z bernardy $
+-->
+    <title>Lookahead Replenishment Planning Workflow</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)">
+  <meta name="keywords" content="Dematic, Dematic iQ">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Language" content="en-us">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content="WCS-TPL_HelpUseCase.Web">
+  <meta name="author" content="author">
+  <style type="text/css" media="screen">@import url(../../../../../../common/style_screen.css);</style>
+    <style type="text/css" media="print">@import url(../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "itl/doc/en/user/WebHelp/usecases/ReplenishmentWorkflowDefault.html";
+  </script>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../index.html?page=source%2Fitl%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fusecases%2FReplenishmentWorkflowDefault.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../index.html?page=source%2Fitl%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fusecases%2FReplenishmentWorkflowDefault.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+    <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../index.html">
+          <img class="upLinkImg" id="uplinkO_img" border="0" title="Replenishment" src="../../../../../../common/img/move_overview.gif"></a>
+        </td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+            <a class="naviBar" href="#TriggersandActors">Triggers and Actors</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Prerequisites">Prerequisites</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#RequiredResources">Required Resources</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#WorkFlowforDemons">Work Flow for Demons</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Result">Result</a>
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Top navigation bar end -->
+
+  <!-- Map title -->
+  <h1 id="maptitle">Lookahead Replenishment Planning Workflow</h1>
+
+  <!-- Block: Brief Description -->
+  <div class="block" id="block_briefdescription">
+
+    <!-- Content start -->
+    <h5><a name="BriefDescription"></a>Description</h5>
+    <p>Recurring checks for Lookahead Replenishment are based on one demon per configured
+    <a href="../dialogs/itl/replenishmentgeneral/ui/client/dialog/replenishmentconfig/ReplenishmentSupervisedZoneOverviewDialog.html">Replenishment Supervised 
+    Zone</a> (Disposition Zone) with Replenishment Type lookahead. One demon for all configured Replenishment Supervised Zones should exist.</p>
+    <p>The <b>started demon </b>uses the configured Replenishment Supervised Zones for the Disposition Zone. Calculation 
+    starts if an appropriate entry exists. In the <b>calculation phase,</b> configuration&nbsp;values are checked by the
+    <a href="LookaheadAlgorithm.html">Lookahead Calculation.</a></p>
+    <p>Lookahead Replenishment is created if open Orders for SKUs with a Preferred 
+	Fulfillment Zone in the given Disposition Zone exist, within the lookahead 
+    period. Orders are created until the lookahead workload is reached.</p>
+    <p>Replenishment initiation occurs by creating <b>Replenishment Orders</b> that contain configured parameters from the Replenishment Supervised Zone or from the Threshold Configuration, if existing.&nbsp;</p>
+    <!-- Content end -->
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Triggers and Actors -->
+  <div class="block" id="block_triggersandactors">
+    <!-- Navigation line start -->
+    <a name="TriggersandActors"></a>
+    <table class ="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Prerequisites"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Result"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Triggers and Actors</h5>
+    <p>This is started by the Control Center Supervisor when:</p>
+    <ul class="listBullet1">
+      <li>Lookahead Replenishment must be executed periodically.</li>
+    </ul>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Prerequisites -->
+  <div class="block" id="block_prerequisites">
+    <!-- Navigation line start -->
+    <a name="Prerequisites"></a>
+    <table class ="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#TriggersandActors"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#RequiredResources">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Result"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Prerequisites</h5>
+    <ul class="listBullet1">
+      <li>Replenishment Default Configuration for the Disposition Zone is set</li>
+      <li>Area Access configuration done.</li>
+    </ul>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Required Resources -->
+  <div class="block" id="block_requiredresources">
+    <!-- Navigation line start -->
+    <a name="RequiredResources"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#Prerequisites"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#WorkFlowforDemons">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Result"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Required Resources</h5>
+    <ul class="listBullet1">
+      <li><a href="../dialogs/itl/replenishmentgeneral/ui/client/dialog/replenishmentconfig/ReplenishmentSupervisedZoneOverviewDialog.html">Replenishment Supervised Zones</a></li>
+      <li><a href="../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/transportresource/ui/client/dialog/areaaccess/AreaAccessOverviewDialog.html">Area Access</a></li>
+      <li><a href="../../../../../../app/doc/en/user/WebHelp/dialogs/app/cron/ui/client/dialog/CronjobOverviewDialog.html">Cron Jobs</a>.</li>
+    </ul>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Work Flow for Demons -->
+  <div class="block" id="block_workflowfordemons">
+    <!-- Navigation line start -->
+    <a name="WorkFlowforDemons"></a>
+	<table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#RequiredResources"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Result"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Result"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Work Flow for Demons</h5>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Step</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">1.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Open the 
+          <a href="../../../../../../app/doc/en/user/WebHelp/dialogs/app/cron/ui/client/dialog/CronjobOverviewDialog.html">Cron Jobs</a> screen to 
+          activate Lookahead Replenishment demon functionality.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">2.</p>
+        </td>
+		<td>
+          <p class="tableBodyText">Select a Demon by filtering the &quot;Demon Class Name&quot; for &quot;<strong>CheckLookaheadReplenishmentDemon</strong>&quot;.</p>
+          <p class="tableBodyText">One demon for all configured Replenishment Supervised Zones should exist. Additionally Replenishment Supervised Zone specific 
+          demons can be configured.</p>
+        </td>
+      </tr>
+      <tr>
+		<td>
+          <p class="tableBodyText">4.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Start the desired demon.</p>
+        </td>
+      </tr>
+      </table>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Work flow for "Inventory Check" -->
+
+  <!-- Block: Result -->
+  <div class="block" id="block_result">
+    <!-- Navigation line start -->
+    <a name="Result"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#WorkFlowforDemons"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif">&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif">
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Result</h5>
+    <p>Replenishment Orders are created for SKUs where future orders in the lookahead period exist for the given Disposition Zone are ordered by urgency.</p>
+  </div>
+  <div class="footer">
+    <hr class="footerLine">
+	<table class="footerTable" id="footertable">
+		<tr class="footerRow">
+			<td class="footerLeft">
+			<p class="footerPar">&copy; Dematic GmbH 2008. All Rights Reserved. </p>
+			</td>
+			<td class="footerMiddle"></td>
+			<td class="footerRight">
+			<p class="footerPar"><a href="#top">top</a> | 
+			<a href="javascript:window.print()">print</a></p>
+			</td>
+		</tr>
+	</table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

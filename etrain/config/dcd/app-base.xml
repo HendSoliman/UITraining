@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<app:configuration xmlns:app="http://www.dematic.com/dcdng/wms/app" xmlns:app-base="http://www.dematic.com/dcdng/wms/app-base">
+    <app-base:RollbackRepeatRetry>
+        <maxRetries>5</maxRetries>
+        <retryDelay>1000</retryDelay>
+        <retryDelayFactor>500</retryDelayFactor>
+    </app-base:RollbackRepeatRetry>
+    <app-base:LocaleTopic>
+        <defaultLocale>en</defaultLocale>
+        <availableLocales>
+            <locale>de</locale>
+            <locale>en</locale>
+        </availableLocales>
+    </app-base:LocaleTopic>
+    <app-base:FolderLocationsTopic>
+        <i18nFolderName>..\..\i18n</i18nFolderName>
+        <miscFolderName>..\..\misc</miscFolderName>
+    </app-base:FolderLocationsTopic>
+</app:configuration>

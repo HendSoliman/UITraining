@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<app:configuration xmlns:app="http://www.dematic.com/dcdng/wms/app" xmlns:webcam="http://www.dematic.com/dcdng/wms/app-webcam">
+    <webcam:Webcam>
+        <webCamDimension>
+            <webCamId>TCO.HA.0.0.PCPA01LU01</webCamId>
+        </webCamDimension>
+        <webCamClassName>com.dematic.wms.app.webcam.control.TinyCubeWebCam</webCamClassName>
+        <targetDirectory>D:\Temp\</targetDirectory>
+        <hostName>172.31.73.37</hostName>
+        <port>80</port>
+        <protocol>http</protocol>
+        <imagePath>image.cgi</imagePath>
+        <moviePath>asp/video.cgi</moviePath>
+        <query>profile=10&amp;resolution=640x360</query>
+        <maximumVideoLength>10000</maximumVideoLength>
+        <imageFileFormat>jpg</imageFileFormat>
+        <movieFileFormat>avi</movieFileFormat>
+        <active>true</active>
+    </webcam:Webcam>
+</app:configuration>

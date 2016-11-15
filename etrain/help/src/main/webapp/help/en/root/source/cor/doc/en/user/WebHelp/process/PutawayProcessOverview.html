@@ -1,0 +1,574 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2008. All rights reserved.
+
+  $Id: DefaultPutawayPlugins.html 17508 2013-07-30 09:09:06Z steinhni $
+-->
+    <title>Putaway Configuration</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)">
+  <meta name="keywords" content="Dematic, Dematic iQ">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content="WCS-TPL_HelpMenu.Web">
+  <meta name="Template-Type" content="WCS-TPL_FrameBlock">
+  <style type="text/css" media="screen">@import url(../../../../../../common/style_screen.css);</style>
+    <style type="text/css" media="print">@import url(../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "cor/doc/en/user/WebHelp/process/PutawayProcessOverview.html";
+  </script>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../index.html?page=source%2Fcor%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fprocess%2FPutawayProcessOverview.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../index.html?page=source%2Fcor%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fprocess%2FPutawayProcessOverview.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+    <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../index.html"><img class="upLinkImg" id="uplinkO_img" border="0" title="Strategy" src="../../../../../../common/img/move_overview.gif"></a>
+          <a class="upLink" id="uplinkP" href="PutawayStrategyAdministration.html"><img class="upLinkImg" id="uplinkP_img" border="0" title="Putaway Strategy Administration" src="../../../../../../common/img/move_up.gif"></a>
+        </td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+            <a class="naviBar" href="#DefaultPutawayStrategyBasicConditions">Default Putaway Strategy - Basic Conditions</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#DefaultPutawayStrategyBasicProcessFlow">Default Putaway Strategy - Basic Process Flow</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#DefaultAreaSelector">Default Area Selector</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#DefaultAisleSelector">Default Aisle Selector</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#DefaultBinSelector">Default Bin Selector</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Processofstrategyselection">Process of strategy selection</a>
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Top navigation bar end -->
+
+  <!-- Map title -->
+  <h1 id="maptitle">Putaway Configuration</h1>
+
+  <!-- Block: Introduction -->
+  <div class="block" id="block_introduction">
+    <!-- Content start -->
+    <h5><a name="Introduction"></a>Introduction</h5>
+    <p>The Putaway component provides an overall default Putaway strategy with three levels of selectors which are affected according to the configuration.</p>    <ul class="listBullet1">
+      <li>
+<a href="#DefaultPutawayStrategyBasicConditions">Default Putaway Strategy - Basic Conditions</a></li>
+      <li>
+<a href="#DefaultPutawayStrategyBasicProcessFlow">Default Putaway Strategy - Basic Process Flow</a></li>
+      <li>
+<a href="#DefaultAreaSelector">Default Area Selector</a></li>
+      <li>
+<a href="#DefaultAisleSelector">Default Aisle Selector</a></li>
+      <li>
+<a href="#DefaultBinSelector">Default Bin Selector</a>.</li>
+    </ul>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">For specific strategy usage, see
+          <a href="#Processofstrategyselection">Process of Strategy Selection</a>.&nbsp;</p>
+        </td>
+      </tr>
+    </table>
+    <table class="noteTable" id="table6">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">For Strategy descriptions and use of specific global <b>configuration topics,</b> see the
+          <a href="../../../../../../wms/wag/doc/en/user/WebHelp/strategy/putaway_strategy.html">Warehouse Administration Guide</a>.</p>
+        </td>
+      </tr>
+    </table>
+    <table class="noteTable" id="table8">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">For Multishuttle Areas specific default strategies are affected. The decision for the appropriate strategy depends on the 
+          configuration topic &quot;<strong>cor-strategy:Putaway.isStrategyMultishuttle</strong>&quot; for each 
+			Area.</p>
+        </td>
+      </tr>
+    </table>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">A <strong>Maximum Fill Level</strong> of Aisles/Levels can be set via the configuration topic &quot;<strong>cor-putaway:Putaway.maximumFillLevel</strong>&quot; 
+          per Area. The <strong>default</strong> is set to <strong>98%</strong>. The Default Strategies for choosing an aisle in classic Warehouses and the 
+          default strategies for choosing a bin in Multishuttles will then ignore aisles/levels with a fill Level higher or equal to this value, if the current 
+          Location of the given load unit is not within this aisle/level.</p>
+        </td>
+      </tr>
+    </table>
+     <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">To optimize bin usage in <strong>double deep</strong> Areas, use &quot;<strong>SwitchDoubleDeepPutawayStrategyDemon</strong>&quot;. 
+          This does the following for every area with enabled configuration topics &quot;cor-putaway:StrategySwitch.isPreferPartialBins&quot;, &quot;.thresholdPreferPartialBins&quot; 
+          and &quot;.thresholdPreferEmptyBins&quot;: 
+          </p>
+          <ul class="listBullet1">
+            <li>If the number of empty bins in an aisle is <strong>below</strong> ThresholdPreferPartialBins, the strategy is changed to &quot;Coordinates 
+            Ascending&quot;, so that <strong>partially occupied Bins are chosen first</strong>.</li>
+            <li>If the number of empty bins in an aisle is <strong>above</strong> ThresholdPreferEmptyBins, the strategy is changed to &quot;Coordinates 
+            Descending, so that <strong>empty Bins are chosen first</strong>.</li>
+          </ul>
+          <p>This is valid for <strong>Multishuttle </strong>areas as well!</p>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Content end -->
+  </div><!-- Block: Default Putaway Strategy - Basic Conditions -->
+  <div class="block" id="block_defaultputawaystrategybasicconditions">
+    <!-- Navigation line start -->
+    <a name="DefaultPutawayStrategyBasicConditions"></a>
+	<table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#DefaultPutawayStrategyBasicProcessFlow">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Processofstrategyselection">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Default Putaway Strategy - Basic Conditions</h5>
+    <p>The default Putaway Strategy ensures that a Destination Location is only selected, if all of the following <b>basic conditions</b> are fulfilled:</p>
+    <ul class="listBullet1">
+      <li>Aisle, Level or Location is not locked for input.<ul class="listBullet1">
+        <li>Except: Shuffle Move Putaway is allowed in levels locked for input since the Load Unit is just located inside the level. Find lock status details in <a href="../dialogs/cor/storage/ui/client/dialog/area/SubgroupDetailDialog.html#Fields">Subgroup Detail Dialog</a>.</li>
+      </ul>
+      </li>
+      <li>Facility, Area, Aisle and Location are completely configured.</li>
+      <li>Area Access entry exists from the current Area of the Load Unit to the Area of the Destination Location for the Load Unit Type of the Load Unit to be stored.</li>
+      <li>Height classification of the Load Unit is smaller or equal than height classification of the Location.</li>
+      <li>Load Unit to be stored would not exceed the weight limit of the Destination Location. </li>
+      <li>Load Unit to be stored would not exceed the limits defined by the Weight Limiter defined for the Location.</li>
+      <li>Location has at least one free position for the appropriate Load Unit Type.</li>
+      <li>In case of <strong>dynamic slotting</strong> an appropriate Slot is available (see <a href="../dialogs/cor/storage/ui/client/dialog/location/SlotDetailDialog.html#SlottingDefinitions">Slotting Definitions</a>).</li>
+    </ul>
+    <table class="noteTable" id="table7">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="tableBodyText">A short lock (technical lock) of a Location is<strong> not considered</strong>, but consideration could be enabled through the configuration topic <b>&quot;cor-putaway:Putaway.considerShortLockOnDisposition</b>&quot;.</p></td>
+      </tr>
+    </table>
+    <!-- Content end -->
+  </div>
+  <!-- Block: Default Putaway Strategy - Basic Process Flow -->
+  <div class="block" id="block_defaultputawaystrategybasicprocessflow">
+    <!-- Navigation line start -->
+    <a name="DefaultPutawayStrategyBasicProcessFlow"></a>
+	<table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#DefaultPutawayStrategyBasicConditions">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#DefaultAreaSelector">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Processofstrategyselection">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Default Putaway Strategy - Basic Process Flow</h5>
+    <p>The default Putaway Strategy performs the following <b>steps</b>:</p>
+    <ol class="listNumber">
+      <li><b>Dedicated Pick Face Selection </b>(only for classic strategies)<br>
+          Dedicated Pick Faces are Locations configured to be used for Picking the SKU assigned to the Location. If the Load Unit to be stored contains only 
+          one SKU and the SKU is assigned to one or more Dedicated Pick Faces and one of the Dedicated Pick Faces can be selected according to the basic conditions 
+          (see above), a position on the Dedicated Pick Faces is selected and reserved. The configuration of Dedicated Pick Faces could be done with
+          <a href="../dialogs/cor/sku/ui/client/dialog/admin/DedicatedPickfaceDetailDialog.html">Dialog Dedicated Pick Faces</a>.<br>
+          The configuration topic <b>&quot;cor-putaway:Putaway.useDedicatedPickFaces</b>&quot; must be enabled.</li>
+      <li><b>Preferred Destination Selection </b>(only for classic strategies)<br>If a matching Preferred Destination exists and can be selected according to the basic conditions 
+        (see above), a position on this Location is selected and reserved. The configuration of Preferred Destinations could be done with
+		<a href="../dialogs/cor/putaway/ui/client/dialog/preferreddestination/PreferredDestinationOverviewDialog.html">Dialog Preferred Destination Administration</a>.<br>
+		<b>The configuration topic &quot;cor-putaway:Putaway.usePreferredDestination</b>&quot; must be enabled.</li>
+      <li>Intermediate or Destination Location selection using <b>default Area, Aisle or Bin Selector</b><br>
+		The type of Selector to use is derived from the current destination (as set within the active Transport Request) of the Load Unit:
+		<table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">For details, see
+          <a href="#Processofstrategyselection">Process of Strategy Selection</a>.</p>
+        </td>
+      </tr>
+    </table>
+		</li>
+      <li>If an Area was chosen and <strong>before</strong> an <strong>aisle</strong> is selected, it checks if a <strong>Hot Zone Configuration</strong> exists. If yes, the <strong>number of 
+      Load Units</strong> on Hot Zone Locations in this Area with the same Discriminating Key is checked against the <strong>Load Unit Limit</strong> of the 
+      <a href="../dialogs/cor/putaway/ui/client/dialog/hotzoneconfig/HotZoneConfigurationOverviewDialog.html">Hot Zone Configuration</a>. <br>
+      If the number is smaller than the limit, the current Load Unit gets the flag &#39;Hot&#39;. This means it shall be stored on a Hot Zone Location.
+      <table class="noteTable">
+        <tr>
+          <td class="noteCell">
+            <p class="notePar">&nbsp;INFO&nbsp;</p>
+          </td>
+          <td class="noteTextCell">
+            <p>
+            <a href="../../../../../../wms/wag/doc/en/user/WebHelp/strategy/putaway_strategy.html">Putaway Strategies</a> that must be active to take effect:</p>
+            <p><strong>Classic</strong>: Putaway Bin Strategy &#39;<strong>HOT_ZONE</strong>&#39;</p>
+            <p><strong>Multishuttle</strong>: Aisle Strategy &#39;<strong>VELOCITY_CLASSIFICATION</strong>&#39;, Level Strategy &#39;<strong>VELOCITY_CLASSIFICATION</strong>&#39;</p>
+          </td>
+        </tr>
+      </table>
+      </li>
+    </ol>
+    
+    <!-- Content end -->
+  </div>
+  <!-- Block: Default Area Selector -->
+  <div class="block" id="block_defaultareaselector">
+    <!-- Navigation line start -->
+    <a name="DefaultAreaSelector"></a>
+	<table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#DefaultPutawayStrategyBasicProcessFlow">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#DefaultAisleSelector">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Processofstrategyselection">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Default Area Selector</h5>
+    <p>As described above in the basic process flow, the configured Area Selection executes as follows, if required:</p>
+    <ul class="listBullet1">
+      <li>Appropriate database execution selects with only use of configured Putaway Area Strategies, which are related to Areas or Aisles only.</li>
+      <li>For each Aisle of the result set, (ordered by the configured statement) a possible Location is selected.</li>
+    </ul>
+    <ul class="listBullet2">
+      <li>If the required granularity is bin, this selection is ordered as configured with consideration of the strategies related to bins only. The result 
+      is the <b>preferred bin</b>.</li>
+      <li>If the required granularity is not bin, no sorting occurs and only the existence of a possible Location is checked. The result is the <b>preferred Area</b>.</li>
+      <li>Possible Locations are checked against the possible local weight limits of the Location.</li>
+    </ul>
+    <p><b>Putaway Area strategies</b> can be assigned per Facility. The configured sequence provides the priority/sorting criteria of the applied strategies.</p>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">For details, see
+          <a href="#Processofstrategyselection">Process of Strategy Selection</a>.</p>
+        </td>
+      </tr>
+    </table>
+    <table class="noteTable" id="table5">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">For standard strategy descriptions, see the
+          <a href="../../../../../../wms/wag/doc/en/user/WebHelp/strategy/putaway_strategy.html">Warehouse Administration Guide</a>. The decision for the 
+          appropriate strategy depends on the configuration topic &quot;<strong>cor-strategy:Putaway.isStrategyMultishuttle</strong>&quot; for each 
+			Area.</p>
+        </td>
+      </tr>
+    </table>
+    <!-- Content end -->
+  </div>
+  <!-- Block: Default Aisle Selector -->
+  <div class="block" id="block_defaultaisleselector">
+    <!-- Navigation line start -->
+    <a name="DefaultAisleSelector"></a>
+	<table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#DefaultAreaSelector">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#DefaultBinSelector">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Processofstrategyselection">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Default Aisle Selector</h5>
+    <p>As described above in the basic process flow, the configured Aisle Selection executes as follows, if required:</p>
+    <ul class="listBullet1">
+      <li>Appropriate database execution selects with only use of configured Putaway Aisle Strategies, which are related to 
+		Aisles only.</li>
+      <li>If the Load Unit is already in an Aisle that within the Destination Area and the 
+		Source Area is a different Area than the Destination Area (no Area 
+      internal relocation) and the granularity of the request is bin, this Aisle is selected.</li>
+      <li>All aisles, but the aisle of the Load Unit´s current Location, having a fill level higher than or equal to the configuration topic &quot;<strong>cor-putaway:Putaway.maxFillLevel</strong>&quot; is ignored. The default value of this parameter is 98%.</li>
+      <li>For each Aisle of the result set, (ordered by the configured statement) a possible 
+		Location is selected</li>
+    </ul>
+    <ul class="listBullet2">
+      <li>If the required granularity is bin, this selection is ordered as configured with consideration of the strategies related to bins only. The result 
+      is the <b>preferred bin</b>.</li>
+      <li>If the required granularity is not bin, no sorting occurs and only the existence of a possible 
+		Location is checked. The result is the <b>
+      preferred
+      Aisle</b>.</li>
+      <li>Possible Locations are checked against the possible local weight limits of the 
+		Location.</li>
+    </ul>
+    <p><b>Putaway Aisle Strategies</b> can be assigned per Area. The 
+    configured sequence provides the priority/sorting criteria of the applied strategies.</p>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">For details, see the
+          <a href="#Processofstrategyselection">Process of Strategy Selection</a>.</p>
+        </td>
+      </tr>
+    </table>
+    <table class="noteTable" id="table11">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">For standard strategy descriptions, see the
+          <a href="../../../../../../wms/wag/doc/en/user/WebHelp/strategy/putaway_strategy.html">Warehouse Administration Guide</a>. The decision for the 
+          appropriate strategy depends on the configuration topic &quot;<strong>cor-strategy:Putaway.isStrategyMultishuttle</strong>&quot; for each 
+			Area.</p>
+        </td>
+      </tr>
+    </table>
+   
+    <!-- Content end -->
+  </div>
+  <!-- Block: Default Bin Selector -->
+  <div class="block" id="block_defaultbinselector">
+    <!-- Navigation line start -->
+    <a name="DefaultBinSelector"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#DefaultAisleSelector">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Processofstrategyselection">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Processofstrategyselection">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Default Bin Selector</h5>
+    <p>As described above in the basic process flow, the configured Bin Selection executes as follows, if required:</p>
+    <ul class="listBullet1">
+      <li>Appropriate database execution selects for configured Putaway Bin Strategies within a given 
+		Aisle (ordered by the configured statement)</li>
+    </ul>
+    <ul class="listBullet2">
+      <li>Possible Locations are checked against the possible local weight limits of the 
+		Location.</li>
+    </ul>
+    <p><b>Putaway Bin Strategies</b> can be assigned per Area. The 
+    configured sequence provides the priority/sorting criteria of the applied strategies.</p>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">For details, see
+          <a href="#Processofstrategyselection">Process of Strategy Selection</a>.</p>
+        </td>
+      </tr>
+    </table>
+    <table class="noteTable" id="table12">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">For standard strategy descriptions, see the
+          <a href="../../../../../../wms/wag/doc/en/user/WebHelp/strategy/putaway_strategy.html">Warehouse Administration Guide</a>. The decision for the 
+          appropriate strategy depends on the configuration topic &quot;<strong>cor-strategy:Putaway.isStrategyMultishuttle</strong>&quot; for each 
+			Area.</p>
+        </td>
+      </tr>
+    </table>
+    <!-- Content end -->
+  </div>
+  <!-- Block: Process of strategy selection -->
+  <div class="block" id="block_processofstrategyselection">
+    <!-- Navigation line start -->
+    <a name="Processofstrategyselection"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#DefaultBinSelector">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif">&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif">
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Process of Strategy Selection</h5>
+    <p>The following preconditions exist for the respective strategies:</p>
+    <ul class="listBullet2">
+      <li>If the granularity of the current destination is Aisle or bin and the granularity of the request is 
+		Aisle, set the current destination back to the 
+      Destination Area and use the <b>Aisle Selector</b>.</li>
+      <li>When the <strong>current destination</strong> of the Load Unit to store is <strong>not defined yet</strong> or is the <strong>Facility</strong>, the 
+      <strong>Area Selector</strong> is used to determine a virtual 
+      intermediate destination. If a valid Area is found, it is set for the <strong>intermediate destination</strong> of the Load Unit to store.</li>
+      <li>When an <strong>Area</strong> is the <strong>current destination</strong> of a Load Unit to store, the <strong>Aisle Selector</strong> is used next to determine the next virtual intermediate 
+      destination. Once a <strong>valid intermediate destination</strong> is found - in this case an <strong>Aisle</strong> -, it is set as the virtual intermediate destination of the Load 
+      Unit to store.</li>
+      <li>When an <strong>Aisle</strong> is the <strong>current destination</strong> of the Load Unit to store, the <strong>Bin Selector</strong> is used to determine a 
+      <strong>(final) bin</strong>. If a valid destination 
+      bin was found, it is set as <strong>current destination</strong> of the Load Unit to store.</li>
+    </ul>
+    <!-- Content end -->
+  </div>
+  <!-- Footer start -->
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">&copy; Dematic GmbH 2008. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar"><a href="#top">top</a> | <a href="javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><app:configuration xmlns:app="http://www.dematic.com/dcdng/wms/app" xmlns:app-dashboard-datasources="http://www.dematic.com/dcdng/wms/app-dashboard-datasources">
+    <app-dashboard-datasources:configuration>
+        <dataSource dataSourceType="NUMBER" databaseName="jdbc/dcd_prod" defaultElement="TRAFFIC_LIGHT_ELEMENT" id="AllUsersDS" impl="com.dematic.trainingwarehouse.datasource.AllUsersDS">
+            <params/>
+            <interval band="green" end="5.0" flash="false" start="0.0"/>
+            <interval band="amber" end="10.0" flash="false" start="5.0"/>
+            <interval band="red" end="50.0" flash="false" start="10.0"/>
+        </dataSource>
+        <dimension>
+            <datasourceId>AllUsersDS</datasourceId>
+        </dimension>
+    </app-dashboard-datasources:configuration>
+</app:configuration>

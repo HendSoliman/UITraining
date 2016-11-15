@@ -1,0 +1,909 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2008. All rights reserved.
+
+  $Id: UseCasePickOperation.html 27545 2014-05-05 09:58:11Z bernardy $
+-->
+  <title>Use Case Pick Operation</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)">
+  <meta name="keywords" content="Dematic, Dematic iQ">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content="WCS-TPL_HelpUseCase.Web">
+  <meta name="author" content="author">
+  <style type="text/css" media="screen">@import url(../../../../../../../common/style_screen.css);</style>
+  <style type="text/css" media="print">@import url(../../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "pic/doc/en/user/WebHelp/usecases/PersonToGoods/UseCasePickOperation.html";
+  </script>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../../index.html?page=source%2Fpic%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fusecases%2FPersonToGoods%2FUseCasePickOperation.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../../index.html?page=source%2Fpic%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fusecases%2FPersonToGoods%2FUseCasePickOperation.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+  <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+    
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkP" href="../../process/PersonToGoodsPickingOverview.html"><img class="upLinkImg" id="uplinkP_img" border="0" title="Overview Route Based Picking" src="../../../../../../../common/img/move_overview.gif"></a>
+          <a class="upLink" id="uplinkP" href="MantoGoodsPicking.html"><img class="upLinkImg" id="uplinkP_img" border="0" title="Person-to-Goods Picking" src="../../../../../../../common/img/move_up.gif"></a>
+        </td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+  
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+            <a class="naviBar" href="#TriggersAndActors">Triggers and Actors</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Prerequisites">Prerequisites</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#WorkFlow">Work Flow</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#RequiredResources">Required Resources</a>
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Top navigation bar end -->
+  
+  <!-- Map title -->
+  <h1 id="maptitle">Use Case Pick Operation</h1>
+
+  <!-- Block: Brief Description -->
+  <div class="block" id="block_briefdescription">
+    <!-- Content start -->
+    <h5><a name="BriefDescription"></a>Description</h5>
+    <p>The Source Location must be scanned to indicate the right location for picking after arriving at the next required Pick Face. The subsequent pick operation includes the standard case 
+    for single pick confirmation:</p>
+    <ul class="listBullet1">
+      <li>without variation</li>
+      <li>with handling of inventory shortage</li>
+      <li>with additional split pick operation</li>
+      <li>with advised overdelivery</li>
+      <li>with blocked Pick Face</li>
+      <li>with reverse picking functionality.</li>
+    </ul>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Triggers and Actors -->
+  <div class="block" id="block_triggersandactors">
+    <!-- Navigation line start -->
+    <a name="TriggersAndActors"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Prerequisites"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#RequiredResources">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Triggers and Actors</h5>
+    <p>The following persons must perform this for all active Picks of current Pick Walk after all required Pick Containers are put onto the Pick Cart by executing 
+    <a href="UseCaseNewPickContainer.html">
+    use case: New Pick Container</a>.</p>
+    <ul class="listBullet1">
+      <li>Picker operating in Person-to-Goods Pick Zone.</li>
+    </ul>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Prerequisites -->
+  <div class="block" id="block_prerequisites">   
+    <!-- Navigation line start -->
+    <a name="Prerequisites"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#TriggersAndActors">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#WorkFlow"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#RequiredResources">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Prerequisites</h5>
+    <ul class="listBullet1">
+      <li>All required Pick Containers are put on the correct Put Locations on the Pick Cart.</li>
+    </ul>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Work Flow -->
+  <div class="block" id="block_workflow">   
+    <!-- Navigation line start -->
+    <a name="WorkFlow"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#Prerequisites"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#WorkFlow"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#RequiredResources"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Work Flow</h5>
+    <p class="CaptionBody"><b>"OK": standard case</b></p>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Step</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">1.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Open the 
+			<a href="../../dialogsrf/RFPickingdialog.html">Dialog RF-Picking</a> and perform 
+          <a href="UseCaseNewPickContainer.html">Use Case: New Pick Container</a>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">2.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">The screen <a href="../../dialogsrf/DialogstateScanSourceLocation.html">Scan Source Location</a> displays.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">3.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Scan a valid Source Location and press "Enter".</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">3a.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">If an invalid Source Location is scanned, an error message appears. Proceed with step 3.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">4.</p>
+        </td>
+        <td><p class="tableBodyText">The screen <a href="../../dialogsrf/DialogstatePicking.html">Picking</a> displays.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">5.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Pick the required quantity from Source Load Unit and put it into the Pick Container at required Put Location.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">6.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Press "Enter".</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <p class="tableBodyText"><b>Required scan of Product Label</b></p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">4a.1</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Scan a valid Product Label and press "Enter".<br>
+          Proceed with step 5.</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <p class="tableBodyText"><b>Required scan of Pick Container (Put Location Alias)</b></p>
+        </td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">7.</p></td>
+        <td><p class="tableBodyText">If a Pick Container scan is required, the screen <a href="../../dialogsrf/DialogstateVerifyPickContainer.html">Verify Pick Container</a> displays.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">8.</p></td>
+        <td><p class="tableBodyText">Scan the required Put Location<br>
+          "Enter" key is activated implicitly with scan.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">9.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">If an invalid Put Location is scanned, an error message appears. Proceed with step 8.</p>
+        </td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <p class="CaptionBody"><b>"Short"</b></p>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Step</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">1.</p></td>
+        <td><p class="tableBodyText">Perform all steps up to <a href="../../dialogsrf/DialogstatePicking.html">"Picking"</a> (see standard case while considering special steps, "Required scan of Pick Container").</p></td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">2.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Not enough inventory is available on Source Load Unit.<br>
+          Press "F2" key.</p>
+        </td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">3.</p></td>
+        <td><p class="tableBodyText">The screen <a href="../../dialogsrf/DialogstateShort.html">Short</a> displays.</p></td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">4.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Pick the remaining quantity from Source Load Unit and put it into the Pick Container at required Put Location.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">5.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Enter the picked quantity.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">6.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Press "Enter".</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <p class="tableBodyText"><b>Change Function Reason</b></p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">6a.1</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Press "F9" key to change the displayed Function Reason.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">6a.2</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Select another Function Reason. Press "Enter" or discard changes with "F12" key.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">6a.3</p>
+        </td>
+        <td>
+          <p class="tableBodyText">The new, selected Function Reason displays for later confirmation. Proceed with original step.</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <p class="tableBodyText"><b>Cancel</b></p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">6b.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">If a miscount and enough inventory is available, press "F12" key.</p>
+        </td>
+      </tr>
+    </table>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">In case of any shortage the shorted Pick will be re-planned by Order Fulfillment in the short term and, if possible, reassigned to the current Pick Walk.<br>
+          Replenishment of the shorted Pick Face is done separately based on the appropriate Replenishment configuration.</p></td>
+      </tr>
+    </table>
+    <br>
+    <p class="CaptionBody"><b>"Over"</b></p>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Step</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">1.</p></td>
+        <td><p class="tableBodyText">Perform all steps up to <a href="../../dialogsrf/DialogstatePicking.html">Picking</a> (see standard case while considering special steps, "Required scan of Pick Container").</p></td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">2.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Operator decides to pick more than requested quantity.<br>
+          Press "F3" key.</p>
+        </td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">3.</p></td>
+        <td><p class="tableBodyText">The screen <a href="../../dialogsrf/DialogstateOver.html">Over</a> displays.</p></td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">4.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Pick the desired quantity from Source Load Unit and put it into the Pick Container at required Put Location without violating 
+          the overdelivery tolerance.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">5.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Enter the picked quantity.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">6.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Press "Enter".</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <p class="tableBodyText"><b>Change Function Reason</b></p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">6a.1</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Press "F9" key to change the displayed Function Reason.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">6a.2</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Select another Function Reason and press "Enter". Or discard changes with "F12" key.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">6a.3</p>
+        </td>
+        <td>
+          <p class="tableBodyText">The new, selected Function Reason displays for later confirmation. Proceed with original step.</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <p class="tableBodyText"><b>Cancel</b></p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">6b.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">If a mistake and no advised overdelivery is desired, press "F12" key.</p>
+        </td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <p class="CaptionBody"><b>"Skip"</b></p>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Step</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">1.</p></td>
+        <td><p class="tableBodyText">Perform all steps up to <a href="../../dialogsrf/DialogstatePicking.html">Picking</a> (see standard case).</p></td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">2.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">The Pick Face is temporarily blocked and currently unreachable.<br>
+          Press "F4" key.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">3.</p>
+        </td>
+        <td><p class="tableBodyText">The screen <a href="../../dialogsrf/DialogstateConfirmSkip.html">Confirm Skip</a> displays.</p></td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">4.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Press "Enter" to confirm the desired skip of current Pick and it's rescheduling to the end of current Pick Walk for later picking.</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <p class="tableBodyText"><b>Cancel</b></p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">4a.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">If a Pick Face becomes reachable, press "F12" key.</p>
+        </td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <p class="CaptionBody"><b>"Blocked"</b></p>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Step</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">1.</p></td>
+        <td><p class="tableBodyText">Perform all steps up to <a href="../../dialogsrf/DialogstatePicking.html">Picking</a> (see standard case).</p></td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">2.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">The Pick Face is permanently blocked and unreachable.<br>
+          Press "F5" key.</p>
+        </td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">3.</p></td>
+        <td><p class="tableBodyText">The screen <a href="../../dialogsrf/DialogstateConfirmBlocked.html">Confirm Blocked</a> displays.</p></td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">4.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Press "Enter" to confirm the desired skip of current Pick without appending it to the end of current Pick Walk.</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <p class="tableBodyText"><b>Cancel</b></p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">4a.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">If a Pick Face becomes reachable, press "F12" key.</p>
+        </td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <p class="CaptionBody"><b>"Full"</b></p>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Step</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">1.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Perform all steps up to <a href="../../dialogsrf/DialogstatePicking.html">Dialog State "Picking"</a> (see standard case while considering special steps, "Required scan of Pick Container").</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">2.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">The Pick Container is full and not all of required quantity fits into the current Pick Container. <br>
+          Press "F6" key.</p>
+        </td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">3.</p></td>
+        <td><p class="tableBodyText">The screen <a href="../../dialogsrf/DialogstateFull.html">Full</a> displays.</p></td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">4.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Pick less than the required quantity from Source Load Unit and put it into the Pick Container at the required Put Location.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">5.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Enter the picked quantity.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">6.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Press "Enter".</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">7.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Proceed with "<a href="UseCaseNewPickContainer.html">Use Case: New Pick Container</a>" to provide another Pick Container for remaining Picks of this closed Pick Container.</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <p class="tableBodyText"><b>Change Function Reason</b></p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">6a.1</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Press "F9" key to change the displayed Function Reason.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">6a.2</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Select another Function Reason. Press "Enter" or discard changes with "F12" key.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">6a.3</p>
+        </td>
+        <td>
+          <p class="tableBodyText">The new, selected Function Reason displays for later confirmation. Proceed with original step.</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <p class="tableBodyText"><b>Cancel</b></p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">6b.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">If a mistake and all required quantity fits into the Pick Container, press "F12" key.</p>
+        </td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <p class="CaptionBody"><b>"Reverse"</b></p>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Step</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">1.</p></td>
+        <td><p class="tableBodyText">Perform all steps up to <a href="../../dialogsrf/DialogstatePicking.html">Picking</a> (see standard case while considering special steps, "Required scan of Pick Container").</p></td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">2.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Decide to perform a reverse picking operation with exchange of Source Load Unit and Pick Container, e.g. if reverse picking is recommended by the system.<br>
+          Press "F7" key.</p>
+        </td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">3.</p></td>
+        <td>
+          <p class="tableBodyText">The screen <a href="../../dialogsrf/DialogstateReverse.html">Reverse</a> displays.</p></td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">4.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Leave the required quantity on the Source Load Unit and pick the remaining quantity into an empty Pick Container at the required Put Location.</p>
+          <p class="tableBodyText">Note: Empty the Pick Container if it is not empty.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">5.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Enter the picked and thus, reverse quantity.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">6.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Press "Enter".</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">7.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Perform the exchange of the Source Load Unit and Pick Container manually.</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <p class="tableBodyText"><b>Shortage</b></p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">4a.1</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Not enough inventory is available on Source Load Unit.<br>
+          Press &quot;F2&quot; key.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">4a.2</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Perform "Short" as mentioned from step 5.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">4a.3</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Proceed with step 7.</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <p class="tableBodyText"><b>Cancel</b></p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">6b.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">If a mistake and reverse picking is impossible at present, press "F12" key.</p>
+        </td>
+      </tr>
+    </table>
+
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#Prerequisites"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#RequiredResources"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#RequiredResources"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Result</h5>
+    <ul class="listBullet1">
+      <li>In standard case, the Pick proceeds to "confirmed" status and the related Inventory Unit is booked into the Pick Container. Additionally, if "Over" an advised overdelivery is booked.</li>
+      <li>If "Short", only the remaining quantity is booked into the Container. The missing quantity is booked related to its deletion and the shortage of related Pick Order is handled appropriate to its configuration.</li>
+      <li>If "Full", the Pick is split and a new Pick is available for picking the remaining quantity into a new Pick Container. </li>
+      <li>If "Skip", the Pick is rescheduled to the end of current Pick Walk and is processed later. If "Blocked", the Pick is not processed and removed from current Pick Walk.</li>
+      <li>If "Reverse", an additional exchange of Source Load Unit and Pick Container is booked by the system.</li>
+    </ul>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Required Resources -->
+  <div class="block" id="block_requiredresources">
+    <!-- Navigation line start -->
+    <a name="RequiredResources"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#WorkFlow"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_right.gif">&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_right_end.gif">
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Required Resources</h5>
+    <ul class="listBullet1">
+      <li><a href="../../dialogsrf/RFPickingdialog.html">RF-Picking Dialog</a> and in more detail</li>
+      <li><a href="../../dialogsrf/DialogstatePicking.html">Picking</a></li>
+      <li><a href="../../dialogsrf/DialogstateShort.html">Short</a> </li>
+      <li><a href="../../dialogsrf/DialogstateOver.html">Over</a> </li>
+      <li><a href="../../dialogsrf/DialogstateConfirmSkip.html">Confirm Skip</a> </li>
+      <li><a href="../../dialogsrf/DialogstateConfirmBlocked.html">Confirm Blocked</a> </li>
+      <li><a href="../../dialogsrf/DialogstateFull.html">Full</a> </li>
+      <li><a href="../../dialogsrf/DialogstateReverse.html">Reverse</a> </li>
+      <li><a href="../../dialogsrf/DialogstateVerifyPickContainer.html">Verify Pick Container</a>.</li>
+    </ul>    <!-- Content end -->
+  </div>
+
+  <!-- Footer start -->
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">© Dematic GmbH 2008. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar"><a href="#top">top</a> | <a href="javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

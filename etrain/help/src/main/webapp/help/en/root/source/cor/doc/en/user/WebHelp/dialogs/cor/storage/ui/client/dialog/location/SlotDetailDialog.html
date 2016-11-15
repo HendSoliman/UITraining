@@ -1,0 +1,367 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml">
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2008. All rights reserved.
+
+  $Id: SlotDetailDialog.html 28384 2014-05-22 11:18:05Z u02440 $
+-->
+  <title>Slot - Detail</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+  <meta name="keywords" content="Dematic, Dematic iQ" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content="WCS-TPL_HelpDialogMain.Web">
+  <style type="text/css" media="screen">@import url(../../../../../../../../../../../../common/style_screen.css);</style>
+  <style type="text/css" media="print">@import url(../../../../../../../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "cor/doc/en/user/WebHelp/dialogs/cor/storage/ui/client/dialog/location/SlotDetailDialog.html";
+  </script>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../../../../../../../index.html?page=source%2Fcor%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fdialogs%2Fcor%2Fstorage%2Fui%2Fclient%2Fdialog%2Flocation%2FSlotDetailDialog.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../../../../../../../index.html?page=source%2Fcor%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fdialogs%2Fcor%2Fstorage%2Fui%2Fclient%2Fdialog%2Flocation%2FSlotDetailDialog.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+  <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+    
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../../../../../../../index.html"><img class="upLinkImg" id="uplinkO_img" border="0" title="Logistics Core Functions" src="../../../../../../../../../../../../common/img/move_overview.gif"></a>
+          <a class="upLink" id="uplinkP" href="LocationOverviewDialog.html"><img class="upLinkImg" id="uplinkP_img" border="0" title="Locations" src="../../../../../../../../../../../../common/img/move_up.gif"></a>
+        </td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+  
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+            <a class="naviBar" href="#PositioningParameters">Positioning Parameters</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#DialogScreen">Screen</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#FieldDescriptions">Fields</a>
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Top navigation bar end -->
+  
+  <!-- Map title -->
+  <h1 id="maptitle">Slot - Detail</h1>
+
+  <!-- Block: Slotting Definitions -->
+  <div class="block" id="block_slottingdefinitions">
+
+    <!-- Content start -->
+    <h5><a name="SlottingDefinitions"></a>Slotting Definitions</h5>
+    <p class="graphic"><img src="img/SlottingDefinitions.png"></p>
+    <ul class="listBullet1">
+      <li>A Slot is an area within a bay where Load Units can be stored <strong>one behind each other </strong>(Z-direction) but <strong>not side by side </strong>(X-direction)</li>
+      <li>In X-direction, a <strong>fixed raster </strong>is used which can be defined depending on project conditions.</li>
+      <li>In Z-direction, space is divided into <strong>one or multiple partitions </strong>with equal spacing (D<sub>Z</sub>):</li>
+      <ul class="listBullet2">
+	    <li>single-deep (sd): 1 partition</li>
+	    <li>double-deep (dd): 2 partitions</li>
+	    <li>four-deep (4d): 4 partitions.</li>
+	  </ul>
+      <li>Z-partitioning is the same for a whole MS area. This applies to the number of partitions as well as to spacing in Z-direction (D<sub>Z</sub>).</li>
+      <li>Slots are always filled <strong>from back to front</strong></li>
+      <li>A Load Unit may occupy multiple Z-partitions. The number of required partitions is determined from </li>
+      <ul class="listBullet2">
+   	    <li>the depth of the load unit (D<sub>LU</sub>)</li>
+   	    <li>additional space required for finger engagement</li>
+   	    <li>the depth of a Z-partition (D<sub>Z</sub>)</li>
+      </ul>
+      <li><strong>The first Load Unit allocated to the deep position determines the width of a Slot</strong>. The Slot width (W<sub>Slot</sub>) is determined from</li>
+      <ul class="listBullet2">
+        <li>the width of the Load Unit</li>
+        <li>additional space required for the telescope on both sides.</li>
+      </ul>
+      <li>The Slot for this first Load Unit is created by a <strong>split </strong>from the existing empty Slot.</li>
+      <li>Each Slot that becomes empty will be <strong>merged </strong>with the empty neighbor or simply enlarged to span the whole empty space.</li>
+      <li><strong>Restricted Mixed Size Slotting</strong>: Load units stored in an already occupied slot <strong>must not have a larger width </strong>than the Slot width minus the space required for the telescopes. 
+      The Load Unit at the deepest position determines the slot width and all other Load Units stored in front must adhere to this width. Furthermore, the variation of X-extensions are limited to an extent which allows to 
+      extend the telescopes to the entire shelf depth, if necessary.
+      <ul class="listBullet2">
+        <li>The maximum width of the storable Load Unit also depends on the configuration of the Control Data property <strong>
+        <a href="../../../../../../../../../../../../wms/cng/doc/en/user/WebHelp/lms/CDPropertiesAndBatches/SystemProperties/controlDataProperties_PTA.html">
+        cor-putaway</a>:PutawayAreaConfigurations.OccupiedSlotWidthTolerance.</strong></li>
+      </ul>
+      </li>
+      <li><strong>Extended Mixed Size Slotting </strong>is a variant where it is allowed to store large items in front of smaller items if the <strong>adjacent slot is not occupied</strong>. 
+      This <strong>extends the Restricted Mixed Size Slotting </strong>and is <strong>enabled by default</strong>.</li>
+    </ul>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Positioning Parameters -->
+  <div class="block" id="block_positioningparameters">
+    <!-- Navigation line start -->
+    <a name="PositioningParameters"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#DialogScreen"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#FieldDescriptions"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Positioning Parameters</h5>
+    <p> <img src="img/SlottingDefinitions2.png"></p>
+    <p>The figure demonstrates the different parameters required for management of Load Unit positions within a bay for MS-Flex.</p>
+    <ul class="listBullet1">
+      <li>An offset of W<sub>gap</sub> is used to assure the required gap for the shuttle telescope. At the first left position of a bay no W<sub>gap</sub> is 
+      used, the bay always starts at 0. The resulting offset (because of the initial W<sub>gap</sub>=0) is fully handled by the PLC.</li>
+    </ul>
+    <ul class="listBullet1">
+      <li>Load Units always will be <strong>aligned at the left side </strong>of a Slot.</li>
+      <li>The Slot width (W<sub>Slot</sub>) is determined from the width of the Load Unit in the back position (W<sub>LU</sub>) by W<sub>slot</sub> = W<sub>LU</sub> + W<sub>gap</sub>. The Slot width in Raster Units (RU) is calculated according to <sup>RU</sup>W<sub>Slot</sub> = Ceil(W<sub>Slot</sub> / Raster Unit)</li>
+      <li>The number of depth positions (N<sub>Z</sub>) required for a Load Unit with a given depth (D<sub>LU</sub>) needs to consider the gap required for shuttle finger engagement (D<sub>Z</sub>) . It is calculated from N<sub>Z</sub> = Ceil{(D<sub>LU</sub> + D<sub>gap</sub>) / D<sub>Z</sub>}</li>
+      <li>The X-positions for every Load Unit are communicated to the MS-Flex PLC through parameter P in Raster Units. The example above assumes that the Multishuttle does not add an offset to the given P-Parameter.</li>
+    </ul>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Screen -->
+  <div class="block" id="block_dialogscreen">   
+    <!-- Navigation line start -->
+    <a name="DialogScreen"></a>
+	<table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#PositioningParameters">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#FieldDescriptions">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#FieldDescriptions">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Screen</h5>
+    <p>
+      <img border="0" src="img/SlotDetailDialog.png">
+    </p>
+    <!-- Content end -->
+  </div>
+
+
+  <!-- Block: Fields -->
+  <div class="block" id="block_fielddescriptions">
+    <!-- Navigation line start -->
+    <a name="FieldDescriptions"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#DialogScreen">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right.gif">&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right_end.gif">
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Fields</h5>
+    
+    <table id="table3">
+      <tr>
+        <th><p class="columnDescription">Field</p></th>
+        <th><p class="columnDescription">Description</p></th>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Slot ID</p></td>
+        <td><p class="tableBodyText">Unique ID of the Slot within the Location.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Status</p></td>
+        <td><p class="tableBodyText">Extent to which the Slot is available for the storage of additional Load Units. Accounts for reservations for Putaway and occupied positions. </p>
+          <ul class="tableListBullet1">
+            <li><strong>free</strong> (No Load Unit is currently stored within the Slot)</li>
+            <li><strong>partial </strong>(The Slot is occupied with at least 1 Load Unit but is not yet full)</li>
+            <li><strong>full </strong>(The Slot is completely filled with Load Units)</li>
+            <li><strong>blocked </strong>(The Slot is blocked and cannot be used for storage allocation. This status is usually used for Slots covering gaps with physical limitations (e.g. cooling or sprinkler))</li>
+            <li><strong>unused </strong>(The slot is not in use. It has been generated in advance for performance reasons).</li>
+          </ul></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Left Neighbor</p></td>
+        <td><p class="tableBodyText">Identifies the Slot adjacent to the left when looking in z-direction.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">Required for <strong>Extended Mixed Size Slotting</strong> only.</p></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Right Neighbor</p></td>
+        <td><p class="tableBodyText">Identifies the Slot adjacent to the right when looking in z-direction.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">Required for <strong>Extended Mixed Size Slotting</strong> only.</p></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Temporarily Blocked For Putaway</p></td>
+        <td><p class="tableBodyText">If this Slot is currently blocked for put away operations because in a multi-deep Location a Load Unit at a rear position is reserved for retrieval. Set in order to avoid shuffle moves.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">X Start</p></td>
+        <td><p class="tableBodyText">X-coordinate of the left boundary of the slot, specified as integer in raster units of the Area where the left boundary of the Location (bay) is at 0.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">X End</p></td>
+        <td><p class="tableBodyText">X-coordinate of the right boundary of the slot, specified as integer in raster units of the Area.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Width</p></td>
+        <td><p class="tableBodyText">Width of the slot, specified as integer in raster units of the Area.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Virtual Width</p></td>
+        <td><p class="tableBodyText">The width to which the Slot could be extended if the neighboring Slot would be used. Only a right neighbor is considered.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">Required for <strong>Extended Mixed Size Slotting</strong> only.</p></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Shuttle Width</p></td>
+        <td><p class="tableBodyText">Shuttle width for the next storage/retrieval operation using this slot (in mm). When using this width for extension of the flex axis, there will be no restriction for extension of the telescopes.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">Required for <strong>Extended Mixed Size Slotting</strong> only.</p></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+		<td><p class="tableBodyText">Reservation Capacity</p></td>
+		<td><p class="tableBodyText">Number of positions that are not yet occupied or reserved by Load Units.</p></td>
+      </tr>
+      <tr>
+		<td><p class="tableBodyText">Available Capacity</p></td>
+		<td><p class="tableBodyText">Number of positions that are currently not occupied by Load Units.</p></td>
+      </tr>
+      <tr>
+		<td><p class="tableBodyText">Discriminating Key</p></td>
+		<td><p class="tableBodyText">Discriminating key from the <a href="../../../../../loadunit/ui/client/dialog/admin/LoadUnitDetailDialog.html">Load Unit </a> in the front position.</p>
+        </td>
+      </tr>
+    </table>
+    <!-- Content end -->
+  </div>
+
+  <!-- Footer start -->
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">© Dematic GmbH 2008. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar">
+          <a href="#top">top</a> | <a href="../../../../../../../common/javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

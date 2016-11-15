@@ -1,0 +1,219 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2008. All rights reserved.
+
+  $Id: Index.html 27545 2014-05-05 09:58:11Z bernardy $
+-->
+    <title>Introduction</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)">
+  <meta name="keywords" content="Dematic, Dematic iQ">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content="WCS-TPL_TroubleShootingIndex.Web">
+  <meta name="author" content="author">
+  <style type="text/css" media="screen">@import url(../../../../../../../common/style_screen.css);</style>
+    <style type="text/css" media="print">@import url(../../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "wms/tsg/doc/en/user/WebHelp/pic/Index.html";
+  </script>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../../index.html?page=source%2Fwms%2Ftsg%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fpic%2FIndex.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../../index.html?page=source%2Fwms%2Ftsg%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fpic%2FIndex.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+    <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../index.html">
+          <img class="upLinkImg" id="uplinkO_img" border="0" title="Document Overview" src="../../../../../../../common/img/move_overview.gif"></a>
+        </td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+            <a class="naviBar" href="#Overview">Overview</a>
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Top navigation bar end -->
+
+  <!-- Map title -->
+  <h1 id="maptitle">Introduction</h1>
+
+  <!-- Block: Introduction -->
+  <div class="block" id="block_introduction">
+    <!-- Content start -->
+    <h5><a name="Introduction"></a>Introduction</h5>
+    <p>The Pick Controller subsystem (PIC) is the <b>central task execution subsystem </b>within the DCD concerning all <b>picking processes</b>. The communication with Logistics Manager proceeds in general through the following two channels:</p>
+    <ul class="listBullet1">
+      <li>LMS-ORF (Order Fulfillment) provides Pick Requests to the Pick Controller</li>
+      <li>The Pick Controller provides Pick Confirmations and other process information to LMS-ORF.</li>
+    </ul>
+    <p>The architecture allows not only for a single Pick Controller but for <b>multiple Pick Controllers </b>to be used in parallel, depending on specific demands. Dependant on the Picking Zone the Order Fulfillment subsystem 
+    (ORF) will address the adequate Pick Controller and submit the provided picking workload as Pick Orders to it.</p>
+    <p>Two main different Pick Controller Types are supported:</p>
+    <ul class="listBullet1">
+      <li><b>Person-to-Goods Picking </b>(Route based Picking) and</li>
+      <li><b>Goods-to-Person Picking</b>.</li>
+    </ul>
+    <p>&nbsp;</p>
+    <p class="MsoBodyText">
+    A short list of the <b>basic Pick Controller Responsibilities</b> could be given as follows:</p>
+    <ul class="listBullet1">
+      <li><b>Planning, Optimization </b>and <b>Execution </b>of Picking</li>      
+      <li><b>Equipment Configuration </b>and <b>Communication </b>with Picking equipment</li>
+      <li>Signaling of <b>Replenishment Requests </b>and execution of <b>Perpetual Stocktaking </b>for Pick Faces or Source Load Units</li>
+      <li>Handling and delivery of <b>Pick Container</b></li>
+    </ul>
+    <p>&nbsp;</p>
+    <p>For a very first introduction into Pick Controller arena refer to
+    <a href="../../../../../../../pic/doc/en/user/WebHelp/process/PICOverview.html">&quot;Overview of Subsystem PIC&quot;</a>.</p>
+    <p>A general introduction into the Pick Controller is given in the User Guide
+    <a href="../index.html">&quot;Overview Picking General&quot;</a>.</p>
+    <p>&nbsp;</p>
+    <p>The main topics for <strong>trouble shooting </strong>are:</p>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription" style="width:279px">Topic / Dialog</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText"><a href="../../../../../../../pic/doc/en/user/WebHelp/dialogs/pic/goods2person/ui/client/dialog/pstanalysis/PickStationAnalysisOverviewDialog.html">Pickstation Analysis</a></p></td>
+        <td><p class="tableBodyText">The <strong>Pickstation Analysis</strong> Dialog shows the <strong>actual current situation </strong>of the Pickstations. 
+        All picks according to this Pickstation are shown in the lower detail grid in the <strong>sequence of transport purposes </strong>of the related Source Load Units.</p></td>
+      </tr>
+      <tr>
+        <td>
+          <a href="../../../../../../../oco/doc/en/user/WebHelp/dialogs/oco/general/ui/client/dialog/retrievaladmin/RetrievalOverviewDialog.html">Retrieval Administration</a></td><td>
+          <b>Most important dialog</b> with various and powerful functionalities to fix various problems around the fulfillment arena with a detailed overview about all main retrieval data with additional use of <b>superior filters</b></td>
+      </tr>
+      </table>
+  </div>
+
+  <!-- Block: Overview -->
+  <div class="block" id="block_overview">
+    <!-- Navigation line start -->
+    <a name="Overview"></a>
+    <table class ="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_right.gif">&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_right_end.gif">
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Overview</h5>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Section</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <a href="../lms/orderFulfillment/GoodsToPersonIssues.html">Goods-To-Person Picking: General Exceptions</a></td>
+        <td>
+          <p class="tableBodyText">An active Order could not get completed because of an assigned Pick Order could not be correctly executed or completed.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">The description is located in section
+                <a href="../lms/orderFulfillment/Index.html">&quot;Order Fulfillment Exceptions&quot;</a>.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <!-- Content end -->
+  </div>
+
+  <!-- Footer start -->
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">&copy; Dematic GmbH 2008. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar"><a href="#top">top</a> | <a href="javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

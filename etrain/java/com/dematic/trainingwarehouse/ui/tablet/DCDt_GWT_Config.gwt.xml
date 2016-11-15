@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='gwt_tablet_config'>
+
+  <!-- available browser variants: ie6,ie8,ie9,gecko (Firefox 1.0),gecko1_8 (Firefox 1.5 onwards),
+                                   safari (for safari and Chrome),opera 
+       only safari is allowed in mobile context, since the mobile phonegap applications use WebKit based browsers-->
+  <set-property  name="user.agent" value="safari"></set-property>
+  
+  <!-- variable for mobile GWT => Valid values are:
+    ipad
+    ipad_retina
+    android_tablet
+  -->
+  
+  <!-- IMPORTANT order of mgwt.os values: retina before android !!!  -->
+  <set-property name="mgwt.os" value="android_tablet" />
+
+  <!-- available modes: production,test -->
+  <set-property name="app.gwt_gui.mode" value="production" />
+  <set-configuration-property name="app.gwt_gui.frame_type" value="tablet"/>
+  <inherits name='com.dematic.wms.app.base.ui.mobile.AppGwtMobileDefaultConfig'/>
+
+  <!-- to make gwt-phonegap run on a server side hosted page -->
+  <set-property name="phonegap.env" value="yes" />
+
+  <!-- reduce to loadable code size -->
+  <set-configuration-property name="compiler.emulatedStack.recordLineNumbers" value="false" />
+  <set-property name="compiler.stackMode" value="native" />
+  
+</module>

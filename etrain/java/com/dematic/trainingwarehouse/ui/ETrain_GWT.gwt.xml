@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='gwt'>
+  <!-- Inherit the core Web Toolkit stuff.                        -->
+  <inherits name='com.dematic.trainingwarehouse.ui.ETrain_GWT_Config'/>
+  <inherits name='com.dematic.wms.app.AppDialogs'/>
+  
+  <!-- Specify the app entry point class.                         -->
+  <entry-point class='com.dematic.trainingwarehouse.ui.client.TrainingFrame'/>
+  
+  <inherits name='com.dematic.trainingwarehouse.ui.ETrain_Dialogs'/>
+</module>

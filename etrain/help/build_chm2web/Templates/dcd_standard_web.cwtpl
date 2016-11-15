@@ -1,0 +1,60 @@
+;==============================================================================
+;
+; Dematic iQ Standard TEMPLATE SCHEME for chm2web software
+; Version supports Frames target only
+; (c) Dematic GmbH, 2010
+; 
+; $Id: dcd_standard_web.cwtpl 75497 2010-08-14 10:53:25Z nagelsie $
+;
+;==============================================================================
+
+
+[TEMPLATE.INFO]
+
+NAME		= DCD Standard (WebHelp)
+Template name
+
+BODY		= dcd_standard_web.body
+Template body file name
+
+AUTHOR		= Dematic GmbH
+Copyright(c) 2010, All Rights Reserved
+
+
+[OPEN.FIELDS]
+
+BACKCOLOR	= white
+Background color
+
+LEFTBACKCOLOR	= white
+Left frame background color
+
+PAGECAPTION   = #F9B200
+Page caption text color
+
+SCHEMECOLOR1	= white
+
+SCHEMECOLOR2  = silver
+
+SCHEMECOLOR3	= gray
+
+SCHEMECOLOR4	= black
+
+TREEICONSFOLDER = dcd_standard\tico_line
+Folder from which tree icons are chosen (if using tico_none, copy 9x*.gif manually to files folder under root)
+
+;==============================================================================
+;
+; FILES TO COPY
+;
+; [F|N|M]:[target_image_name] = [source_image_name]
+;
+; F - only for frames version
+; N - only for noframes version
+; M - only for mobile version
+;
+;==============================================================================
+
+[COPY.FILES]
+F:.\          = dcd_standard\*.*
+F:files\      = dcd_standard\files\*.*

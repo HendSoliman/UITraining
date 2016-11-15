@@ -1,0 +1,650 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2008. All rights reserved.
+
+  $Id: putaway_strategy.html 27545 2014-05-05 09:58:11Z bernardy $
+-->
+    <title>Putaway Strategy</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)">
+  <meta name="keywords" content="Dematic, Dematic iQ">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content="WCS-TPLD_Overview.Web">
+  <meta name="author" content="author">
+  <style type="text/css" media="screen">@import url(../../../../../../../common/style_screen.css);
+</style>
+    <style type="text/css" media="print">@import url(../../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "wms/wag/doc/en/user/WebHelp/strategy/putaway_strategy.html";
+  </script>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../../index.html?page=source%2Fwms%2Fwag%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fstrategy%2Fputaway_strategy.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../../index.html?page=source%2Fwms%2Fwag%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fstrategy%2Fputaway_strategy.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+    <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+    
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../index.html"><img class="upLinkImg" id="uplinkO_img" border="0" title="Warehouse Administration Guide" src="../../../../../../../common/img/move_overview.gif"></a>
+          <a class="upLink" id="uplinkP" href="index.html"><img class="upLinkImg" id="uplinkP_img" border="0" title="Strategy Related Resources" src="../../../../../../../common/img/move_up.gif"></a>
+        </td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+  
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+            <a class="naviBar" href="#Screens">Screens</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#ClassicPutawayStrategies">Classic Put-away Strategies</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#MultishuttlePutawayStrategies">Multi-shuttle Put-away Strategies</a>
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Top navigation bar end -->
+
+  <!-- Map title -->
+  <h1 id="maptitle">Putaway Strategy</h1>
+
+  <!-- Block: Configuration -->
+  <div class="block" id="block_configuration">
+
+    <!-- Content start -->
+    <h5><a name="Configuration"></a>Configuration</h5>
+    <p>Putaway strategies can be configured in terms of the distribution of order sequences or weights to single strategy aspects. </p>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">It is recommended to load the strategy configuration of the demo project. This configuration should be then adapted to the requirements of the project.</p>
+        </td>
+      </tr>
+    </table>
+    <table class="noteTable" id="table8">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">For Multishuttle Areas specific default strategies are affected. The decision for the appropriate strategy depends on the 
+          configuration topic &quot;<strong>cor-strategy:Putaway.isStrategyMultishuttle</strong>&quot; for each Area.</p>
+        </td>
+      </tr>
+    </table>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">A <strong>Maximum Fill Level</strong> of Aisles/Levels can be set via the configuration topic &quot;<strong>cor-putaway:PutawayAreaConfigurations.maximumFillLevel</strong>&quot; per Area. 
+          The <strong>default</strong> is set to <strong>98%</strong>. The Default Strategies for choosing an aisle in classic Warehouses and the default strategies for choosing a bin in Multishuttles will 
+          then ignore aisles/levels with a fill Level higher or equal to this value, if the current Location of the given load unit is not within this aisle/level.</p>
+        </td>
+      </tr>
+    </table>
+     <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">To optimize bin usage in <strong>double deep</strong> <strong>Classic areas</strong>, use 
+          <a href="../../../../../../cng/doc/en/user/WebHelp/lms/Batches/index.html">SwitchDoubleDeepPutawayStrategyDemon</a>. 
+          </p>
+        </td>
+      </tr>
+    </table>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">In case of a <strong>particular area has at least one specified entry </strong>all strategies that should apply for this area need to be set with the area value as well.</p>
+        </td>
+      </tr>
+    </table>
+    <table class="noteTable">
+    <tr>
+      <td class="noteCell">
+        <p class="notePar">&nbsp;INFO&nbsp;</p>
+      </td>
+      <td class="noteTextCell">
+        <p class="noteTextPar"><strong>Dual Cycle</strong> lift configurations: Levels with missing Inbound conveyors will be not considered from the strategies and thus stay unused.</p>
+      </td>
+    </tr>
+  </table>
+   <!-- Content end -->
+  </div>
+
+  <!-- Block: Screens -->
+  <div class="block" id="block_screens">
+    <!-- Navigation line start -->
+    <a name="Screens"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#ClassicPutawayStrategies">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#MultishuttlePutawayStrategies">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Screens</h5>
+    <ul class="listBullet1">
+      <li><a href="../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/putaway/ui/client/dialog/putawaystrategy/PutawayStrategyOverviewDialog.html">Putaway Strategies</a>.</li>
+    </ul>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Classic Put-away Strategies -->
+  <div class="block" id="block_classicputawaystrategies">
+    <!-- Navigation line start -->
+    <a name="ClassicPutawayStrategies"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#Screens"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#MultishuttlePutawayStrategies">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#MultishuttlePutawayStrategies">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Classic Putaway Strategies</h5>
+    <table id="table1">
+      <tr>
+        <th><p class="columnDescription">Order By</p></th>
+        <th><p class="columnDescription">Description</p></th>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Group Fill Level</p></td>
+        <td><p class="tableBodyText">Expressed as a percentage and represents the fill level of the group (<strong>aisle</strong>). This is the relation from full capacity to currently occupied capacity in this aisle. The fill level will be recalculated when reservation for one 
+          certain identified bin Location is made or one Load Unit is leaving certain bin Location by retrieval start.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Group Last Dispo Date</p></td>
+        <td><p class="tableBodyText">Every time the group (<strong>aisle</strong>) was chosen, the property &quot;Last Dispo Date&quot; of that aisle updates to the current date / time. 
+          Use of this aspect in the aisle selection strategy in the first sequence (as sorting property) within an area provide the effect of an Aisle ROUND ROBIN (regardless of the SKU) in the strongest form.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Group Balance</p></td>
+        <td><p class="tableBodyText">Balancing of SKUs over the groups (<strong>aisles</strong>). A specific discriminating Inventory aspect is also considered 
+          (e.g. batch). If yet allocated and order related Inventory, this aspect is the Order ID. For Inventory Balance principles, see the <a href="../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/strategygeneral/ui/client/dialog/inventorybalance/InventoryBalanceOverviewDialog.html">Inventory Balance Dialog</a>.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Group Balanced AS/RS Workload</p></td>
+        <td><p class="tableBodyText">Prefer a group (<strong>aisle</strong>) (or respectively a storage bin) with the lowest number of currently active inbound transports. Thus the possible destinations are sorted by the current inbound workload of the affected AS/RS.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Height Classification</p></td>
+        <td><p class="tableBodyText">Possible destinations are sorted by the height classification of the Locations. The height classification of Locations must always be equal or greater than the height classification of the Load Unit. This strategy prefers lower height classifications.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Hot Zone</p></td>
+        <td><p class="tableBodyText">Prefer storage bins that match the Hot Zone requirement of the Load Unit. A Load Unit shall preferably be stored on a Location of the Hot Zone, if the number of Load Units with the same Discriminating Key planned for hot zoning or stored in the Hot Zone is smaller than the limit defined by the Hot 
+          Zone Configuration. For Hot Zone principles, see the <a href="../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/putaway/ui/client/dialog/hotzoneconfig/HotZoneConfigurationOverviewDialog.html">Hot Zone Configuration</a>.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Multi Deep</p></td>
+        <td><p class="tableBodyText">Prefer a Location with free and unblocked positions that store Load Unit(s) with the same Discriminating Key. In case of this strategy is 
+          enabled and the Load Unit contains only one inventory unit <strong>all other strategies will not be considered anymore</strong> in case an appropriate Location could be found.</p>
+          <p class="tableBodyText">Please note that enabling <strong>Coordinates Ascending</strong> decreases the possibility for Multi Deep matches 
+          significantly.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Empty Bins</p></td>
+        <td><p class="tableBodyText">Prefer empty Bins. Possible destinations are sorted by residual capacity of the Location, starting with maximum value.</p>
+			<table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">This strategy may be enabled or disabled by 
+                <a href="../../../../../../cng/doc/en/user/WebHelp/lms/Batches/index.html">SwitchDoubleDeepPutawayStrategyDemon</a>!</p></td>
+            </tr>
+          </table>
+		</td>        
+      </tr>
+       <tr>
+        <td><p class="tableBodyText">Partial Bins</p></td>
+        <td><p class="tableBodyText">Prefer partial filled Bins. Possible destinations are sorted by residual capacity of the Location, starting with minimum value.</p>
+              	          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">This strategy may be enabled or disabled by 
+                <a href="../../../../../../cng/doc/en/user/WebHelp/lms/Batches/index.html">SwitchDoubleDeepPutawayStrategyDemon</a>!</p></td>
+            </tr>
+          </table>
+		</td>
+      </tr>
+
+      <tr>
+        <td><p class="tableBodyText">Velocity Classification</p></td>
+        <td><p class="tableBodyText">Possible destinations are sorted by the velocity classification of the Locations. The order of velocity classifications depends on the slowest velocity classification of the SKUs on the Load Unit to be stored:
+          <br>
+          SKU velocity classification=A: A -&gt; B -&gt; C <br>
+          SKU velocity classification=B: B -&gt; C -&gt; A. <br>
+          SKU velocity classification=C: C -&gt; B -&gt; A <br>
+          If the configuration topic &quot;<strong>cor-putaway:PutawayGeneral.isLMSDispoHigherVelocityClass</strong>&quot; is false, Locations with a faster velocity classification than the 
+          slowest velocity classification of the SKUs on the Load Unit to be stored are not selected.</p>
+        </td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Weight Limit</p></td>
+        <td><p class="tableBodyText">Possible destinations are sorted by the currently residual weight limit of the Location (only locally with consideration of the single Location).</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">The standard strategy does <strong>not optimize </strong>in terms of weight distribution with respect to <strong> configured Weight Limiters</strong>. If needed this must be done by extending the Putaway database views.</p></td>
+            </tr>
+          </table>
+          </td>
+      </tr>
+            <tr>
+        <td><p class="tableBodyText"><em>Coordinates</em></p></td>
+        <td><p class="tableBodyText">Possible destinations are sorted by x- and y-coordinate. That means from the front to the back and from the bottom to the top of a rack.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">General fallback strategy. Is executed implicitly and can not be configured. </p>
+              </td>
+            </tr>
+          </table>
+          </td>
+      </tr>
+
+    </table>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">Project specific Putaway strategies can be introduced by extending the Putaway database views. If this is insufficient, project specific Putaway strategies must be implemented.</p>
+        </td>
+      </tr>
+    </table>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Multi-shuttle Put-away Strategies -->
+  <div class="block" id="block_multishuttleputawaystrategies">
+    <!-- Navigation line start -->
+    <a name="MultishuttlePutawayStrategies"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#ClassicPutawayStrategies"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_right.gif">&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_right_end.gif">
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Multishuttle Putaway Strategies</h5>
+    <p><strong>Multishuttle Putaway Group Strategies (for selection of an Aisle</strong>)</p>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Order By</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <p>&nbsp;</p>
+      <tr>
+        <td>
+          <p class="tableBodyText">Balance</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Balancing of Stock Keeping Units over the aisles. Furthermore a specific discriminating aspect of Inventory is considered (e.g. batch). If yet allocated and order related Inventory this aspect is the Order ID. <br>
+          For Inventory Balance principles, see <a href="../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/strategygeneral/ui/client/dialog/inventorybalance/InventoryBalanceOverviewDialog.html">Inventory Balance</a>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Dual Cycle</p></td>
+        <td><p class="tableBodyText">Prefer an Aisle having a released but still inactive outbound request.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Group Fill Level</p></td>
+        <td><p class="tableBodyText">Prefer Aisles with lower fill level.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">Group Transports</p></td>
+        <td><p class="tableBodyText">Prefer Aisles with lower number of currently planned inbound transports.</p></td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">Multi Deep</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Prefer a Location with free and unblocked positions that store Load Unit(s) with the same Discriminating Key. 
+          <br>
+          If this strategy is enabled and the Load Unit contains only one inventory unit <strong>all other strategies will not be considered anymore</strong> if an appropriate Location could be found.</p>
+          <p class="tableBodyText">Please note that enabling <strong>cor-putaway:StrategySwitch.isPreferPartialBins </strong>decreases the possibility for Multi 
+          Deep matches significantly.</p></td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText" style="width:130px">Velocity Classification</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Prefer an Aisle with capacity that matches the velocity classification and Hot Zone storage requirements of the Load Unit to be put away. A Load Unit 
+          shall preferably be stored on a Location of the Hot Zone, if the number of Load Units with the same Discriminating Key planned for hot zoning or stored in the Hot Zone is smaller than the limit defined by the Hot Zone Configuration. For Hot Zone principles, see the
+          <a href="../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/putaway/ui/client/dialog/hotzoneconfig/HotZoneConfigurationOverviewDialog.html">Hot Zone Configuration</a>.</p></td>
+      </tr>
+    </table>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">Only Aisles with an appropriate and available Bin respectively Slot are selected in principle (checked directly on aisle selection).</p>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <p><strong>Multishuttle Putaway Subgroup Strategies (for selection of a Level</strong>)</p>
+    <table id="table3">
+    <tr>
+      <th>
+        <p class="columnDescription">Order By</p>
+      </th>
+      <th>
+        <p class="columnDescription">Description</p>
+      </th>
+    </tr>
+    <tr>
+      <td><p class="tableBodyText">Balance</p></td>
+      <td><p class="tableBodyText">Balancing of SKUs over the levels of the aisle. Furthermore a specific discriminating aspect of Inventory is considered (e.g. batch). If yet allocated and order related Inventory this aspect is the Order ID.<br>
+          For Inventory Balance principles, see <a href="../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/strategygeneral/ui/client/dialog/inventorybalance/InventoryBalanceOverviewDialog.html">Inventory Balance</a>.</p></td>
+    </tr>
+    <tr>
+      <td><p class="tableBodyText">Dual Cycle</p></td>
+      <td><p class="tableBodyText">Prefer a Level having a released but still inactive outbound request.</p></td>
+    </tr>
+        <tr>
+      <td><p class="tableBodyText">Number of Shuttles</p></td>
+      <td><p class="tableBodyText">Prefer the level that has currently no shuttles in order to avoid unnecessary empty shuttle movements in a multishuttle in configuration roaming</p>
+      		<table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">Activate this strategy only for <strong>Multishuttle Roaming</strong> storages.</p>
+              </td>
+            </tr>
+          </table></td>
+    </tr>
+
+    <tr>
+      <td>
+          <p class="tableBodyText">Fill Level</p>
+      </td>
+      <td>
+        <p class="tableBodyText">Prefer Levels with lower fill level.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+          <p class="tableBodyText">Subgroup Transports</p>
+        </td>
+      <td>
+          <p class="tableBodyText">Prefer Levels with lower number of currently planned inbound transports.</p>
+        </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">Subgroup Multi Deep</p>
+      </td>
+      <td><p class="tableBodyText">Prefer a Location within a given aisle with free and unblocked positions that store Load Unit(s) with the same Discriminating Key.<br>
+          If this strategy is enabled and the Load Unit contains only one inventory unit all other strategies <strong>will not be considered anymore</strong> in case an appropriate Location could be found.</p>
+        <p class="tableBodyText">Please note that enabling <strong>cor-putaway:StrategySwitch.isPreferPartialBins </strong>decreases the possibility for Multi 
+        Deep matches significantly.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">In case of dynamic slotting Multi Deep considers the <strong>"slot best fit"</strong> strategy implicitly.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+    </tr>
+    <tr>
+      <td><p class="tableBodyText" style="width:130px;">Velocity Classification</p></td>
+      <td><p class="tableBodyText">Prefer a Level with capacity that matches the velocity classification and Hot Zone storage requirements of the Load Unit to be put away. A Load Unit shall preferably be stored on a Location of the Hot Zone, 
+      if the number of Load Units with the same Discriminating Key planned for hot zoning or stored in the Hot Zone is smaller than the limit defined by the Hot Zone Configuration. 
+      For Hot Zone principles, see the <a href="../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/putaway/ui/client/dialog/hotzoneconfig/HotZoneConfigurationOverviewDialog.html"> Hot Zone Configuration</a>.</p></td>
+    </tr>
+    <tr>
+      <td><p class="tableBodyText" style="width:130px;">Height Classification</p></td>
+      <td><p class="tableBodyText">Prefer levels with lower height.</p></td>
+    </tr>
+	<tr>
+      <td><p class="tableBodyText" style="width:130px;">Bin Multi Deep</p></td>
+      <td><p class="tableBodyText">Prefer a Location within a given subgroup with free and unblocked positions that store Load Unit(s) with the same Discriminating Key.</p>
+        <p class="tableBodyText">Only takes effect if &quot;Subgroup Multi Deep&quot; is disabled.</p></td>
+    </tr>
+	<tr>
+      <td><p class="tableBodyText" style="width:130px;">Lift Stops</p></td>
+      <td><p class="tableBodyText">Prefer a Location within a given subgroup with free and unblocked positions, with focus on lift performance (minimizing number of lift stops).<br>
+      The strategy implementation is based on current Rack Conveyor allocations and optimized for lift pairing.</p>
+		<table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">Activate this strategy only for Multishuttle storages with Tandem Lift configurations.</p>
+              </td>
+            </tr>
+          </table>
+      </td>
+    </tr>
+
+	<tr>
+      <td><p class="tableBodyText" style="width:130px;">Interaisle Transfer (IAT)</p></td>
+      <td><p class="tableBodyText">Prefer a Level with lowest IAT load.<br>
+      IAT load means the number of active or planned transports via IAT of the load units <strong>current aisle</strong>.</p>
+		<table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">IAT transports may cross several groups to reach their destination. The strategy <strong>does not consider target or transit groups</strong>.</p>
+              </td>
+            </tr>
+          </table>
+      </td>
+    </tr>
+
+    </table>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">Level and Bin (or respectively Slot) are selected <strong>at once</strong>.</p>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <p><strong>Multishuttle Putaway Bin/Slot Selection</strong></p>
+    <p>Bin/Slot Strategies in Multishuttle Areas are not configurable.</p>
+    <p>In case of discrete raster <a href="../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/storage/ui/client/dialog/layout/LayoutOverviewDialog.html">Layouts</a> (defined through the positioning method of the related 
+       <a href="../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/storage/ui/client/dialog/area/AreaDetailDialog.html">Area</a>), <b>the Location within a Level</b> is selected by following ordered strategies</p>
+    <ol>
+      <li><strong>Velocity Classification</strong>: if configured in Multishuttle Putaway Subgroup Strategies Velocity Classification settings are considered first.</li>
+      <li><p><strong>Coordinates / Prefer Empty</strong>: sorting the Locations <b>by depth</b> (z-coordinate or respectively the position within the Location) <b>and x-coordinate ascending</b>.<br>
+          Sorting Locations by the x-coordinate is done by determine the closest x-coordinate to the current location of the Load Unit.<br>
+          This means empty bins close to current location are preferred. See description of Multi Deep Strategy above.</p>
+          <p>This default behavior can be switched by enabling the configuration aspect <strong>cor-putaway:StrategySwitch.isPreferPartialBins</strong>. 
+          See <a href="../../../../../../cng/doc/en/user/WebHelp/lms/CDPropertiesAndBatches/SystemProperties/controlDataProperties_PTA.html">cor-putaway</a>.</p>
+      </li>
+    </ol>
+    <p>In case of dynamic slotting, the <a href="../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/storage/ui/client/dialog/location/SlotDetailDialog.html">Slot</a><b> within a Level </b>
+    is selected by the combination of the following ordered strategies:</p>
+    <ol>
+      <li><p><strong>Velocity Classification</strong>: if configured in Multishuttle Putaway Group Strategies Velocity Classification settings are considered first.</p></li>
+      <li><p><strong>Coordinates / Prefer Empty</strong>: prefer empty slots and prefer nearby X coordinates (details as described above).</p></li>
+      <li><p><strong>Shuffle Move Buffer</strong>: Slot selection is done with respect to Shuffle Move Buffer configuration (configuration topic: <b>
+        <a href="../../../../../../cng/doc/en/user/WebHelp/lms/CDPropertiesAndBatches/SystemProperties/controlDataProperties_STG.html">cor-strategy:Strategy.freeShuffleSlotCapacity</a></b>).</p>
+      </li>
+      <li><p><strong>Slot Best Fit</strong>: This calculation assures that the chosen Slot has a width which is equal to or larger than but closest to the required width.<br>
+          This supports building Slots with cartons of similar size rather than storing small cartons in the same Slot with large cartons.<br>
+          To assure that small bays are not preferred in situations where a subgroup is almost empty this strategy considers the area property <strong>maximum considered width</strong> 
+          (described in <a href="../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/storage/ui/client/dialog/area/AreaDetailDialog.html">Area Detail Dialog</a>). All slots having this width or larger are treated as equivalent.<br>
+          Storing in an <strong>occupied Slot </strong>is done with respect to the <strong>Extended Mixed Size Slotting </strong>
+          (as described in <a href="../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/storage/ui/client/dialog/location/SlotDetailDialog.html#SlottingDefinitions">Slotting Definitions</a>).</p>
+      </li>
+    </ol>
+    <p><strong>Multishuttle Inter-Aisle Transfer (iAT) Strategies</strong></p>
+    <p>The Inter-aisle transfer technology allows optimization of routes and efficiency in multishuttle storages by providing the ability of horizontal movements between aisles without the use of lifts.</p>
+    <p>Therefore, these strategies consider the horizontal aligned subgroups (levels) - in contrast to all other subgroups strategies that always consider the vertical (all subgroups of an aisle).</p>    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar"><span class="hps">This feature is only active if inter</span><span class="">-aisle</span>
+          <span class="hps">transfer</span> <span class="hps">is enabled on this storage area</span> <span class="hps">(configuration topic </span>"<a href="../../../../../../cng/doc/en/user/WebHelp/lms/CDPropertiesAndBatches/SystemProperties/controlDataProperties_STG.html">cor-strategy:Strategy.isIATStorage</a>").</p>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <ol>
+      <li><strong>Shuffle Moves via iAT </strong>
+          <p>If a load unit A is requested for retrieval, which is blocked by another load unit B, then B will automatically be relocated within a Shuffle Move. For this 
+          transport a destination is selected in the same subgroup or in any other subgroup of same level.</p>
+      <p>The current subgroup of the load unit is preferred most. Rating of other subgroups is based on their distance (nearest first).</p>
+           <table class="noteTable">
+             <tr>
+               <td class="noteCell"><p class="notePar">&nbsp;INFO&nbsp;</p></td>
+               <td class="noteTextCell">
+                 <p class="noteTextPar"><strong>Fill Levels</strong> and <strong>Subgroup Locks for inbound or outbound</strong> are <strong>ignored</strong> in 
+                 case of Shuffle Moves.</p>
+               </td>
+             </tr>
+          </table>
+      </li>
+    </ol>
+  </div>
+
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">© Dematic GmbH 2009. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar"><a href="#top">top</a> | <a href="javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

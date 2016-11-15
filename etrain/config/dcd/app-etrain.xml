@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<app:configuration xmlns:app="http://www.dematic.com/dcdng/wms/app" xmlns:etrain="http://www.dematic.com/dcdng/wms/app-etrain">
+    <etrain:ETrainBackgroundProcess description="Test Background Process">
+        <etrain:active>true</etrain:active>
+        <etrain:sleepTime>200</etrain:sleepTime>
+    </etrain:ETrainBackgroundProcess>
+    <etrain:ETrainUserTopic>
+        <etrain:dimensions>
+            <etrain:username>lemarkus</etrain:username>
+        </etrain:dimensions>
+        <etrain:welcomeMessage>Servus</etrain:welcomeMessage>
+    </etrain:ETrainUserTopic>
+</app:configuration>

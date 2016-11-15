@@ -1,0 +1,422 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2008. All rights reserved.
+
+  $Id: ItemIdentificationAndVerification.html 27545 2014-05-05 09:58:11Z bernardy $
+-->
+  <title>De-Palletizing</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)">
+  <meta name="keywords" content="Dematic, Dematic iQ">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content="WCS-TPL_HelpProcess.Web">
+  <meta name="author" content="author">
+  <style type="text/css" media="screen">
+@import url(../../../../../../common/style_screen.css);
+.style1 {
+  direction:ltr;
+}
+.style2 {
+  background-color:#FAF5B4;
+}
+</style>
+  <style type="text/css" media="print">@import url(../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "pic/doc/en/user/WebHelp/process/De-Palletizing.html";
+  </script>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../index.html?page=source%2Fpic%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fprocess%2FDe-Palletizing.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../index.html?page=source%2Fpic%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fprocess%2FDe-Palletizing.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+  <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+    
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../index.html"><img class="upLinkImg" id="uplinkO_img" border="0" title="Overview Pick Controller (PIC)" src="../../../../../../common/img/move_overview.gif"></a>
+          <a class="upLink" id="uplinkP" href="../../../../../../wms/doc/en/user/WebHelp/process/AMCAP.html">
+          <img class="upLinkImg" id="uplinkP_img" border="0" title="AMCAP" src="../../../../../../common/img/move_up.gif"></a>
+        </td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+  
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+            <a class="naviBar" href="#Identification">Identification</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#PhotoTaking">Photo Taking</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#ItemOrientation">Item Orientation</a>
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Navigation bar end -->
+
+  <!-- Map title -->
+  <h1 id="maptitle">Item identification and verification</h1>
+
+  <!-- Block: Purpose -->
+  <div class="block" id="block_purpose">
+    <!-- Content start -->
+    <h5><a name="Purpose"></a>Purpose</h5>
+    <p>After de-palletizing and singulation, every item is properly oriented on the case conveyor and uniquely identified. Afterwards, different measuring 
+    stations collect various data which are then used to decide whether to store the item in the Multishuttle or to divert it to a reject lane.</p>
+    <p>Item identification is an optional process step where barcodes on an item are read and analyzed. This process is currently not integrated on the case 
+    conveyor, because a scan tunnel component is missing. But the interpretation of the barcodes on an item, which is the main part of the identification, is 
+    already used at manual de-palletizing stations.</p>
+    <p>On more part of identification is the optional process of photo taking. Thereby a photo for every individual item after de-palletizing and before 
+    re-orientation is taken and stored for later analyzing.</p>
+    <p>Afterwards the items are oriented in the storing direction, which is given during the Teach-In process. The last step is the check on the dimension and 
+    weight after the orientation.</p>
+  </div>
+
+  <!-- Block: Identification -->
+  <div class="block" id="block_identification">
+    <!-- Navigation line start -->
+    <a name="Identification"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#PhotoTaking"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#ItemOrientation"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Identification</h5>
+    <p class="style1">For the identification of an item the following information are extracted from the barcodes placed on it:</p>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription" style="direction:ltr">Information</p>
+        </th>
+        <th>
+          Source</th>
+        <th>
+          Description</th>
+      </tr>
+      <tr>
+        <td>
+          SSCC</td>
+        <td>
+          AI(00) length=18</td>
+        <td class="style1">
+          The i<span class="style2">tems</span> are tracked with the SSCC of the pallet from which they were de-palletized. Thus this information is not used in 
+          AMCAP scope. </td>
+      </tr>
+      <tr>
+        <td>
+          GTIN</td>
+        <td>
+          AI (01) length=14</td>
+        <td class="style1">
+          Global Trade Item Number. This is used to determine the trading unit.</td>
+      </tr>
+      <tr>
+        <td>
+          GTIN of contained Trade Items</td>
+        <td>
+          AI(02) length=14</td>
+        <td>
+          Is used to determine the correct trading unit.</td>
+      </tr>
+      <tr>
+        <td>
+          Batch/Lot</td>
+        <td>
+          AI(10) length=1..20</td>
+        <td>
+          The batch identifier.</td>
+      </tr>
+      <tr>
+        <td>
+          Best Before Date</td>
+        <td>
+          A(15) length=6</td>
+        <td>
+          Format: yyMMdd</td>
+      </tr>
+      <tr>
+        <td>
+          Count of trade items</td>
+        <td>
+          AI(37) length=1..8</td>
+        <td>
+          Number of base items (factor2base)</td>
+      </tr>
+      <tr>
+        <td>
+          Net weight in kg</td>
+        <td>
+          AI(310) length=7</td>
+        <td>
+          Product net weigth.</td>
+      </tr>
+      <tr>
+        <td>
+          Length in m</td>
+        <td>
+          A(311) length=7</td>
+        <td>
+          Product length in m</td>
+      </tr>
+      <tr>
+        <td>
+          Width in m</td>
+        <td>
+          A(312) length=7</td>
+        <td>
+          Product width in m</td>
+      </tr>
+      <tr>
+        <td>
+          Height in m</td>
+        <td>
+          A(313) length=7</td>
+        <td>
+          Product height in m</td>
+      </tr>
+      </table>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">GS1 is completely supported by DCD, but only a part is needed for AMCAP.</p>
+        </td>
+      </tr>
+    </table>
+    <p>The identification throw the barcode is already used by the manual de-palletizing dialog. A scan tunnel which uses this concept also on the conveyor 
+    after the de-palletizing to identify the items is not yet available.</p>
+    <p>In case of automatic de-palletizing DCD announced the number of upcoming items of one type, for example &quot;Next 20 pieces of SKU 4711 are coming&quot;. On the 
+    PLC side this is controlled and tracked. If there are less than announced items, the missing items are deleted automatically. And if there are more than the 
+    announced items, these are transported to the reject lane.</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Photo Taking -->
+  <div class="block" id="block_phototaking">
+    <!-- Navigation line start -->
+    <a name="PhotoTaking"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#Identification"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#ItemOrientation"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#ItemOrientation"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Photo Taking</h5>
+    <p class="style1">There can be different cameras taking photos on different locations. <br>
+    Such images can help in clarification of errors which can be caused by:</p>
+    <ul class="listBullet1">
+      <li>an unexpected orientation</li>
+      <li>bad shape of the item</li>
+      <li>open flaps</li>
+      <li>overhanging plastic film</li>
+      <li>other damages or anomalies</li>
+    </ul>
+    <p>The images are saved by the PLC on a defined file storage. A specific configuration of the MediaBackupCronjob is used to sort the images on another 
+    defined file storage.</p>
+    <p>There is a specific pattern to sort the image files in target folders. For example the path to the image file is constructed from the pallet id from 
+    which the item was de-palletized.</p>
+    <p><img alt="" src="img/ImageNamePattern.jpg"></p>
+    <!-- Content end -->
+  </div>
+  <!-- Block: Item Orientation -->
+  <div class="block" id="block_itemorientation">
+    <!-- Navigation line start -->
+    <a name="ItemOrientation"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#PhotoTaking"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif">&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif">
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Item Orientation</h5>
+    <p>During the Teach-In process the operator decide in which orientation the item is to store. This information is saved in the palletizing quantity unit and send 
+    to the PLC after de-palletizing.</p>
+    <p>PLC knows also the dimensions and tolerance of each dimension. With these information PLC trigger the turning and toppling if needed and orientate the 
+    item in the desired orientation.</p>
+    <p>Afterwards the oriented item is measured and if the given dimensions are not inside the given tolerances, the item is send to the reject lane otherwise 
+    it is stored in MS buffer.</p>
+    <p><img alt="" src="img/CaseOrientation.jpg"></p>
+    <p>The image above shows, how the coordinates are used and how the orientation is interpreted. Thereby the system assumes x always in conveying direction 
+    and the longer side of the horizontal dimensions is always the length. y is always the height and z the width (the shorter side of horizontal dimensions). 
+    With these assumptions following orientations are possible and supported by the system (First digit is the dimension in x-direction and second in 
+    y-direction):</p>
+    <ul class="listBullet1">
+      <li>&nbsp;LW (Length x Width)</li>
+      <li>LH (Length x Height)</li>
+      <li>WL (Width x Length)</li>
+      <li>WH (Width x Height)</li>
+      <li>HL (Height x Length)</li>
+      <li>HW (Height x Width)</li>
+    </ul>
+    <p>Depended on the installed turning and toppling devices some restrictions are to consider. Such restrictions are considered by the Teach-In dialog, which 
+    allows only such orientations which are also possible. For the configuration see:
+    <a href="../../../../../../wms/cng/doc/en/user/WebHelp/lms/CDPropertiesAndBatches/SystemProperties/controlDataProperties_ORIENTREST.html">CD: 
+    OrientationRestriction</a></p>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Installed devices</p>
+        </th>
+        <th>
+          Allowed orientations</th>
+        <th>
+          Restriction</th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">Turn</p>
+        </td>
+        <td>
+          LW, WL</td>
+        <td>
+          The i<span class="style2">tem can&#39;t be toppled and during teach-in the orientation of the item on the source pallet has to be considered.</span></td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">Turn-Topple</p>
+        </td>
+        <td>
+          LW, WL, HW, HL</td>
+        <td>
+          <p class="tableBodyText">Turning after toppling is not possible.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Topple-Turn</td>
+        <td>
+          LW, WL, HW*, WH*, HL#, LH#</td>
+        <td>
+          <p class="noteTextPar">* and # are mutually exclusive, depending on the initial orientation of the item.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">This configuration is not supported by DCD.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Turn-Topple-Turn</td>
+        <td>
+          LW, WL, HW, WH, HL, LH</td>
+        <td>
+          Not restrictions, all orientations are possible.</td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <p>The current orientation of an item is determined by the current dimensions of it. Thereby the system cannot distinguish orientation variants having the 
+    same dimensions in x, y and z direction. E.g. it is not possible to reorient an item in following case:</p>
+    <p><img alt="" src="img/OrientationRestricted.jpg"></p>
+    <!-- Content end -->
+  </div>
+  
+  <!-- Footer start -->
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">© Dematic GmbH 2012. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar"><a href="#top">top</a> | <a href="javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

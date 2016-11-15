@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Language" content="ru">
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <script type="text/javascript" src="files/dcd_buttons.js"></script>
+  <title>Editing Help Topics</title>
+  <style type="text/css">
+    body {
+    background-color:#FFFFFF;
+    font-family:Arial;
+    margin-left:5px; 
+    margin-right:5px; 
+    margin-top:0px; 
+    margin-bottom:3px;
+	}
+  h1  {
+    font-size:16.0pt;
+    color:#F6B800;
+    margin-bottom:0px;
+    padding-bottom:0px;
+    }
+  h5  {
+    font-size:12.0pt;
+    margin-top:0px;
+    padding-top:5px;
+    margin-bottom:0px;
+    padding-bottom:5px;
+    }
+  p   {
+    font-size:10.0pt;
+    margin-left:0pt;
+    margin-top:0px; 
+    margin-bottom:10px;
+    }
+  ul {
+    font-size:10.0pt;
+    margin-top:0px;
+    margin-bottom:0px;
+    margin-left:0pt;
+    padding-left:20pt;
+    }
+  li {
+    margin-bottom:5px;
+    margin-left:0pt;
+    }
+  
+  ul.listBullet1 {
+    margin-left:0pt;
+    list-style-type:disc
+    }
+
+  ul.listBullet2 {
+    margin-left:11pt;
+    list-style-type:square
+    }
+	
+  </style>
+</head>
+
+<body>
+  <h1>Bearbeitung von Hilfe-Kapiteln</h1>
+  <h5>Zweck</h5>
+    <p>Dies scheint das erste mal zu sein, dass Sie den &lt;Bearbeiten&gt; Knopf verwendet haben.</p>
+  <p>Hier finden Sie Informationen zur Einrichtung der Infrastruktur für die Bearbeitung von Hilfe-Kapiteln.</p>
+  <h5>Voraussetzungen</h5>
+    <ul class="listBullet1">
+      <li>Auf diesem Computer muss ein <b>HTML Editor</b> installiert sein.<br>
+          Empfohlene HTML Editoren sind</li>
+    </ul>
+    <ul class="listBullet2">
+      <li>Microsoft FrontPage</li>
+      <li>Microsoft SharePoint Designer<br>
+      &nbsp;</li>
+    </ul>
+    <ul class="listBullet1">
+      <li>Für umfangreiche Bearbeitungen sollte <b>DocHTML installiert sein</b>.<br>
+        Geringfügige Änderungen können auch ohne dieses Tool vorgenommen werden.<br>
+        DocHTML erleichtert die Bearbeitung von HTML Seiten entsprechend den Standards für Dematic iQ.<br>
+        DocHTML kann von
+        <a href="http://wcsrdit1/repos/wcs/tools/internal/DocHTML/trunk/release">hier</a> installiert werden.<br>
+        <br>
+      </li>
+      <li><b>HTMLEdit</b> muss installiert sein.<br>
+        Dieses kleine Hilfsmittel erlaubt es aus einem Browser heraus einen HTML Editor zu starten.<br>
+        HTMLEdit kann von 
+      <a href="http://wcsrdit1/repos/wcs/tools/internal/HTMLEdit/trunk/release/HTMLEdit.exe">hier</a> installiert werden.</li>
+    </ul>
+    <p>&nbsp;</p>
+    <p>
+      <input type="checkbox" id="editOK" name="editOK" value="editOK" onchange="dcd_toggleEditOk(document,'editOK')"> 
+      <b><font size="3" color="#FF0000">Die Infrastruktur ist installiert. Diesen Hinweis nicht mehr anzeigen.</font></b>
+    </p>
+    <p>&nbsp;</p>
+    <h5>Hintergrund</h5>
+    <p>Aus Sicherheitsgründen ist es normalerweise nicht möglich ein Programm wie einen HTML Editor aus einem Browser heraus zu öffnen.<br>
+    Durch die Installation eines zusätzlichen Programms auf Ihrem Rechner ist es jedoch möglich, dies zu erreichen.</p>
+  <p>Dematic iQ verwendet dazu folgendes Verfahren:</p>
+  <p>Der Knopf Bearbeiten <img border="0" src="files/w_button_modify.gif" width="26" height="26"> ist mit folgender URL verknüpft: &lt;htmledit:&lt;Dokument URL&gt;<br>
+  <em>htmledit</em> ist ein Protokoll ähnlich wie <em>http</em> jedoch spezifisch für Dematic iQ.<br>
+  Nach aktuellem Kenntnisstand wird dieses Protokoll von keinem anderen Programm verwendet.</p>
+  <p>Um einen HTML Editor auf dem lokalen Rechner zu starten, muss ein Protokoll-Handler für das <em>htmledit</em> Protokoll registriert werden, der das zu 
+  startende Programm festlegt.<br>
+  Solche Protokoll-Handler können manuell über den Windows Explorer angelegt werden (Extras -&gt; Ordneroptionen -&gt; Dateitypen) mit dem Typ URL: &lt;protokoll&gt; ohne 
+  Dateierweiterung.<br>
+  Da der Web Browser die gesamte URL (einschließlich &quot;htmledit:&quot;) an das im Protokoll-Handler festgelegte Programm übergibt, kann der Editor nicht direkt mit 
+  dieser URL gestartet werden. Stattdessen muss zunächst die URL des Dokuments über ein kleines Zusatzprogramm extrahiert werden. Dazu werden String-Funktionen 
+  des Windows Scripting Host verwendet.</p>
+  <p>Die gesamte Infrastruktur kann mit Hilfe des
+  <a href="http://wcsrdit1/repos/wcs/tools/internal/HTMLEdit/trunk/release/HTMLEdit.exe">HTMLEdit Installers</a> installiert werden.</p>
+  <p>Diese Lösung hat keine Sicherheitsprobleme, da der Anwender selbst festlegt, wie das spezielle Protokoll verwendet wird.<br>
+  Es wird kein ActiveX verwendet.</p>
+</body>
+</html>

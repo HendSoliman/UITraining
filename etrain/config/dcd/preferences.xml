@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<app:configuration xmlns:app="http://www.dematic.com/dcdng/wms/app"
+                   xmlns:preferences="http://www.dematic.com/dcdng/wms/app-preferences">
+<preferences:UserPreferences/>
+</app:configuration>

@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<app:configuration xmlns:app="http://www.dematic.com/dcdng/wms/app"
+	xmlns:gui="http://www.dematic.com/dcdng/wms/app-gui">
+	<gui:MenuTree>
+		<dimensions>
+			<frameType>DESKTOP</frameType>
+		</dimensions>
+		<MenuTreeData>
+			<Node name="etrain">
+				<Leaf typeId="ETrainUserDialog" token="ETUS" />
+			</Node>
+			<Node name="monitoring">
+				<Node name="SystemHealth">
+					<Leaf token="SHOD" typeId="SystemHealthOverviewDialog" />
+					<Leaf token="MEPO" typeId="MemoryPoolDashboardDialog" />
+				</Node>
+				<Leaf token="ATOD" typeId="AuditTrailOverviewDialog" />
+				<Node name="systemControl">
+					<Leaf token="SYCO" typeId="SystemControllerDialog" />
+					<Leaf token="CRON" typeId="CronjobOverviewDialog" />
+					<Leaf token="QUBR" typeId="QueueBrowserOverviewDialog" />
+					<Leaf token="FEOD" typeId="FailedEventOverviewDialog" />
+					<Leaf token="BGPR" typeId="BackgroundProcessOverviewDialog" />
+				</Node>
+				<Node name="logsJournals">
+					<Leaf token="LOLO" typeId="LogisticLogDialog" />
+					<Leaf token="LOCO" typeId="LogConsoleDialog" />
+					<Leaf token="SYDI" typeId="SyslogDialog" />
+					<Leaf token="DBTM" typeId="DBTMMessageDialog" />
+					<Leaf token="ENFA" typeId="EventNotificationFailureDialog" />
+					<Leaf token="CJJD" typeId="CronjobJournalDialog" />
+				</Node>
+				<Node name="materialFlow">
+					<Leaf token="STDI" typeId="FtStatDialog" />
+					<Leaf token="ZUMO" typeId="ZusoMonitorOverviewDialog" />
+					<Leaf token="METR" typeId="MessageTraceOverviewDialog" />
+					<Leaf token="TULO" typeId="tuLog" />
+					<Leaf token="PCST" typeId="ConnectionStateDialog" />
+				</Node>
+				<Node name="externalInterfaces">
+					<Leaf token="TTOV" typeId="TransferTablesQueryDialog" />
+					<Leaf name="LMS_IN" token="TTR1" typeId="TransferTablesOverviewDialog">
+						<Parameter name="suffix" value="R01" />
+						<Parameter name="editorClassName"
+							value="com.dematic.wms.app.eai.ui.server.service.editor.XMLEditor" />
+						<Parameter name="xsdPath" value="LMS" />
+						<Parameter name="limit" value="100" />
+					</Leaf>
+					<Leaf name="LMS_OUT" token="TTS1" typeId="TransferTablesOverviewDialog">
+						<Parameter name="suffix" value="S01" />
+						<Parameter name="editorClassName"
+							value="com.dematic.wms.app.eai.ui.server.service.editor.XMLEditor" />
+						<Parameter name="xsdPath" value="LMS" />
+						<Parameter name="limit" value="100" />
+					</Leaf>
+				</Node>
+				<Node name="alarmNotification">
+					<Leaf token="ALDI" typeId="AlarmOverviewDialog" />
+					<Leaf token="NODI" typeId="NotificationDialog" />
+					<Leaf token="EXNO" typeId="ExplicitNotificationDialog" />
+					<Leaf token="METE" typeId="MessageTemplateDialog" />
+				</Node>
+				<Node name="systemAccess">
+					<Leaf token="RUSE" typeId="RunningSessionsOverviewDialog" />
+					<Leaf token="LOHI" typeId="LogonHistoryOverviewDialog" />
+					<Leaf token="FLHI" typeId="FailedLogonHistoryOverviewDialog" />
+					<Leaf token="ILPA" typeId="IllegalPasswordOverviewDialog" />
+				</Node>
+				<Node name="parametersRules">
+					<Leaf token="CODA" typeId="ControlDataDialog" />
+					<Leaf token="DDVA" typeId="DynamicDomainValueDialog" />
+					<Leaf token="TTOD" typeId="TaskTypeOverviewDialog" />
+					<Leaf token="" typeId="LocaleIdDialog" />
+					<Leaf token="NURA" typeId="NumberRangeOverviewDialog" />
+				</Node>
+				<Node name="utilities">
+					<Leaf token="SCBO" typeId="ScratchBookOverviewDialog" />
+				</Node>
+				<Node name="archive">
+					<Leaf token="ALAR" typeId="AlarmArchiveOverviewDialog" />
+				</Node>
+			</Node>
+			<Node name="admin">
+				<Node name="workstations">
+					<Node name="terminals">
+						<Leaf token="TRDI" typeId="TerminalOverviewDialog" />
+					</Node>
+					<Node name="printing">
+						<Leaf token="DOCT" typeId="DocumentTypeOverviewDialog" />
+						<Leaf token="PRNT" typeId="PrinterOverviewDialog" />
+						<Leaf token="PREQ" typeId="PrintRequestOverviewDialog" />
+						<Leaf token="PRHI" typeId="PrintHistoryOverviewDialog" />
+					</Node>
+					<Leaf token="WOOD" typeId="WorkstationOverviewDialog" />
+					<Leaf token="PIST" typeId="PickStationDialog" />
+					<Leaf token="PSAN" typeId="PickStationAnalysisOverviewDialog" />
+					<Leaf token="FLST" typeId="FlsTerminalDialog" />
+				</Node>
+				<Node name="operators">
+					<Leaf token="USDI" typeId="UserOverviewDialog" />
+					<Leaf token="USGR" typeId="UserGroupOverviewDialog" />
+					<Leaf token="PEDI" typeId="PermissionOverviewDialog" />
+					<Leaf token="WKOD" typeId="WorkerOverviewDialog" />
+					<Leaf token="WKGR" typeId="WorkerGroupOverviewDialog" />
+					<Leaf token="PIGR" typeId="PickerGroupDialog" />
+					<Leaf token="PKDI" typeId="PickerDialog" />
+					<Leaf token="TEZO" typeId="TerminalZoneOverviewDialog" />
+				</Node>
+
+
+
+				<Node name="eTrainOperators">
+
+					<Leaf token="ETGR" typeId="ETrainGroupDialog" />
+					<Leaf token="ETUW" typeId="CreateUserWizard" />
+				</Node>
+
+				<Node name="messagesNotofication" />
+				<Node name="warehouse">
+					<Leaf token="FAOD" typeId="FacilityOverviewDialog" />
+					<Leaf token="DOOV" typeId="DockOverviewDialog" />
+					<Leaf token="DCOV" typeId="DockCapabilityOverviewDialog" />
+					<Leaf token="HZCO" typeId="HotZoneConfigurationOverviewDialog" />
+					<Leaf token="STZO" typeId="StocktakingZoneConfigOverviewDialog" />
+					<Leaf token="EOPS" typeId="EOPStocktakingDialog" />
+				</Node>
+				<Node name="client">
+					<Leaf token="CLOD" typeId="ClientOverviewDialog" />
+					<Leaf token="SKUO" typeId="PacSkuOverviewDialog" />
+					<Leaf token="CUOD" typeId="CustomerOverviewDialog" />
+					<Leaf token="SUOD" typeId="SupplierOverviewDialog" />
+					<Leaf token="CAOD" typeId="CarrierOverviewDialog" />
+				</Node>
+				<Node name="strategy">
+					<Leaf token="PUST" typeId="PutawayStrategyOverviewDialog" />
+					<Leaf token="PUAN" typeId="PutawayAnalysisOverviewDialog" />
+					<Leaf token="INBA" typeId="InventoryBalanceOverviewDialog" />
+					<Leaf token="PRDE" typeId="PreferredDestinationOverviewDialog" />
+					<Leaf token="REST" typeId="RetrievalStrategyOverviewDialog" />
+					<Leaf token="HOCO" typeId="HousekeepingConfigurationOverviewDialog" />
+					<Leaf token="RSOD" typeId="ReplenishmentSupervisedZoneOverviewDialog" />
+					<Leaf token="RTOD" typeId="ReplenishmentThresholdOverviewDialog" />
+				</Node>
+				<Node name="utilities">
+					<Leaf token="ITOR" typeId="internalTransportOrder" />
+				</Node>
+			</Node>
+			<Node name="config">
+				<Node name="systemAccess" />
+				<Node name="archive">
+					<Leaf token="ARDI" typeId="ArchivingDialog" />
+				</Node>
+				<Node name="alarmNotification">
+					<Leaf token="ALTY" typeId="AlarmTypeOverviewDialog" />
+					<Leaf token="ALSU" typeId="AlarmSubscriptionOverviewDialog" />
+				</Node>
+				<Node name="externalInterfaces">
+					<Node name="mapping" />
+					<Node name="utilities" />
+				</Node>
+			</Node>
+		</MenuTreeData>
+	</gui:MenuTree>
+	<gui:MenuTree>
+		<dimensions>
+			<frameType>PHONE</frameType>
+		</dimensions>
+		<MenuTreeData>
+			<Node name="logisticsCockpit">
+				<Node name="DemoFacility">
+					<Leaf name="DemoOverviewDashboardDialog" token="DODD"
+						typeId="OverviewDashboardDialog">
+						<Parameter name="facility" value="00GE" />
+						<Parameter name="automaticAreas" value="MS01,MS02,WP01,WT01" />
+						<Parameter name="allAreas"
+							value="BP01,MHRP,MS01,MS02,PBL1,WP01,WP02,WT01" />
+						<Parameter name="allPickZones"
+							value="*,CCT1,CCT2,CCT3,MTT01,MTT02,ZONE1,ZONE2,ZONE3,ZONE4,ZONE5,ZONE6,ZONE7,ZONE8" />
+					</Leaf>
+					<Leaf name="DemoReceivingDashboardDialog" token="DREV"
+						typeId="ReceivingDashboardDialog">
+						<Parameter name="facility" value="00GE" />
+					</Leaf>
+					<Leaf name="DemoReplenishmentDashboardDialog" token="DRPL"
+						typeId="ReplenishmentDashboardDialog">
+						<Parameter name="facility" value="00GE" />
+						<Parameter name="automaticAreas" value="MS01,MS02,WP01,WT01" />
+						<Parameter name="allAreas"
+							value="BP01,MHRP,MS01,MS02,PBL1,WP01,WP02,WT01" />
+					</Leaf>
+					<Leaf name="DemoShippingOrderDashboardDialog" token="DSHP"
+						typeId="ShippingOrderDashboardDialog">
+						<Parameter name="facility" value="00GE" />
+					</Leaf>
+					<Node name="storage">
+						<Leaf name="DemoStorageDashboardDialog" token="DSTO"
+							typeId="StorageDashboardDialog">
+							<Parameter name="facility" value="00GE" />
+							<Parameter name="allAreas"
+								value="BP01,MHRP,MS01,MS02,PBL1,WP01,WP02,WT01" />
+							<Parameter name="automaticAreas"
+								value="*,BP01,MHRP,MS01,MS02,PBL1,WP01,WP02,WT01" />
+							<Parameter name="multiShuttleAreas" value="MS01,MS02" />
+							<Parameter name="allAreasAisles"
+								value="BP0101,MHRP01,MHRP02,MS0101,MS0102,MS0103,MS0104,MS0105,MS0106,MS0107,MS0108,MS0109,MS0110
+                            MS0201,MS0202,MS0203,MS0204,MS0205,PBL101,WP0101,WP0102,WP0103,WP0104,WP0105,WP0106,WP0107,WP0108,WP0201,WP0202,WP0203,WP0204,WT0101,WT0102,WT0103,WT0104,WT0105,WT0106,WT0107,WT0108,WT0109,WT0110" />
+						</Leaf>
+						<Leaf name="DemoBP01StorageDashboardDialog" token="DBP1"
+							typeId="StorageIndividualDashboardDialog">
+							<Parameter name="facility" value="00GE" />
+							<Parameter name="allAreas" value="BP01" />
+							<Parameter name="automaticAreas" value="*,BP01" />
+							<Parameter name="multiShuttleAreas" value="MS01,MS02" />
+							<Parameter name="allAreasAisles" value="BP0101" />
+						</Leaf>
+						<Leaf name="DemoMHRPStorageDashboardDialog" token="DMHP"
+							typeId="StorageIndividualDashboardDialog">
+							<Parameter name="facility" value="00GE" />
+							<Parameter name="allAreas" value="MHRP" />
+							<Parameter name="automaticAreas" value="MHRP" />
+							<Parameter name="multiShuttleAreas" value="MS01,MS02" />
+							<Parameter name="allAreasAisles" value="MHRP01,MHRP02" />
+						</Leaf>
+						<Leaf name="DemoMS01StorageDashboardDialog" token="DMS1"
+							typeId="StorageIndividualDashboardDialog">
+							<Parameter name="facility" value="00GE" />
+							<Parameter name="allAreas" value="MS01" />
+							<Parameter name="automaticAreas" value="MS01" />
+							<Parameter name="multiShuttleAreas" value="MS01,MS02" />
+							<Parameter name="allAreasAisles"
+								value="MS0101,MS0102,MS0103,MS0104,MS0105,MS0106,MS0107,MS0108,MS0109,MS0110" />
+						</Leaf>
+						<Leaf name="DemoMS02StorageDashboardDialog" token="DMS2"
+							typeId="StorageIndividualDashboardDialog">
+							<Parameter name="facility" value="00GE" />
+							<Parameter name="allAreas" value="MS02" />
+							<Parameter name="automaticAreas" value="MS02" />
+							<Parameter name="multiShuttleAreas" value="MS01,MS02" />
+							<Parameter name="allAreasAisles" value="MS0201,MS0202,MS0203,MS0204,MS0205" />
+						</Leaf>
+						<Leaf name="DemoPBL1StorageDashboardDialog" token="DPB1"
+							typeId="StorageIndividualDashboardDialog">
+							<Parameter name="facility" value="00GE" />
+							<Parameter name="allAreas" value="PBL1" />
+							<Parameter name="automaticAreas" value="PBL1" />
+							<Parameter name="multiShuttleAreas" value="MS01,MS02" />
+							<Parameter name="allAreasAisles" value="PBL101" />
+						</Leaf>
+						<Leaf name="DemoWP01StorageDashboardDialog" token="DWP1"
+							typeId="StorageIndividualDashboardDialog">
+							<Parameter name="facility" value="00GE" />
+							<Parameter name="allAreas" value="WP01" />
+							<Parameter name="automaticAreas" value="WP01" />
+							<Parameter name="multiShuttleAreas" value="MS01,MS02" />
+							<Parameter name="allAreasAisles"
+								value="WP0101,WP0102,WP0103,WP0104,WP0105,WP0106,WP0107,WP0108" />
+						</Leaf>
+						<Leaf name="DemoWP02StorageDashboardDialog" token="DWP2"
+							typeId="StorageIndividualDashboardDialog">
+							<Parameter name="facility" value="00GE" />
+							<Parameter name="allAreas" value="WP02" />
+							<Parameter name="automaticAreas" value="WP02" />
+							<Parameter name="multiShuttleAreas" value="MS01,MS02" />
+							<Parameter name="allAreasAisles" value="WP0201,WP0202,WP0203,WP0204" />
+						</Leaf>
+						<Leaf name="DemoWT01StorageDashboardDialog" token="DWT1"
+							typeId="StorageIndividualDashboardDialog">
+							<Parameter name="facility" value="00GE" />
+							<Parameter name="allAreas" value="WT01" />
+							<Parameter name="automaticAreas" value="WT01" />
+							<Parameter name="multiShuttleAreas" value="MS01,MS02" />
+							<Parameter name="allAreasAisles"
+								value="WT0101,WT0102,WT0103,WT0104,WT0105,WT0106,WT0107,WT0108,WT0109,WT0110" />
+						</Leaf>
+					</Node>
+					<Leaf name="DemoPickingDashboardDialog" token="SPIC"
+						typeId="PickingDashboardDialog">
+						<Parameter name="facility" value="00GE" />
+						<Parameter name="personToGoodsPickZones" value="ZONE1,ZONE2,ZONE5" />
+						<Parameter name="allPickZones"
+							value="*,CCT1,CCT2,CCT3,MTT01,MTT02,ZONE1,ZONE2,ZONE3,ZONE4,ZONE5,ZONE6,ZONE7,ZONE8" />
+					</Leaf>
+				</Node>
+				<Node name="TechcenterFacility">
+					<Leaf name="TechcenterOverviewDashboardDialog" token="TODD"
+						typeId="OverviewDashboardDialog">
+						<Parameter name="facility" value="TCO" />
+						<Parameter name="automaticAreas" value="MS" />
+						<Parameter name="allAreas" value="TCO,SHP,RCV,PAL,HA" />
+						<Parameter name="allPickZones"
+							value="*,CCT1,CCT2,CCT3,MTT01,MTT02,ZONE1,ZONE2,ZONE3,ZONE4,ZONE5,ZONE6,ZONE7,ZONE8" />
+					</Leaf>
+					<Leaf name="TechcenterReceivingDashboardDialog" token="TREV"
+						typeId="ReceivingDashboardDialog">
+						<Parameter name="facility" value="TCO" />
+					</Leaf>
+					<Leaf name="TechcenterReplenishmentDashboardDialog" token="TRPL"
+						typeId="ReplenishmentDashboardDialog">
+						<Parameter name="facility" value="TCO" />
+						<Parameter name="automaticAreas" value="Multishuttle Storage" />
+						<Parameter name="allAreas"
+							value="Manual Pallet Rack,Multishuttle Storage" />
+					</Leaf>
+					<Leaf name="TechcenterShippingOrderDashboardDialog" token="TSHP"
+						typeId="ShippingOrderDashboardDialog">
+						<Parameter name="facility" value="TCO" />
+					</Leaf>
+					<Node name="storage">
+						<Leaf name="TechcenterStorageDashboardDialog" token="TSTO"
+							typeId="StorageDashboardDialog">
+							<Parameter name="facility" value="TCO" />
+							<Parameter name="allAreas" value="TCO,SHP,RCV,PAL,HA" />
+							<Parameter name="automaticAreas" value="*,MS" />
+							<Parameter name="multiShuttleAreas" value="*,MS" />
+							<Parameter name="allAreasAisles" value="MS01" />
+						</Leaf>
+						<Leaf name="TechcenterTCOStorageDashboardDialog" token="TTCS"
+							typeId="StorageIndividualDashboardDialog">
+							<Parameter name="facility" value="TCO" />
+							<Parameter name="allAreas" value="TCO" />
+							<Parameter name="automaticAreas" value="MS" />
+							<Parameter name="multiShuttleAreas" value="MS" />
+							<Parameter name="allAreasAisles" value="MS01" />
+						</Leaf>
+						<Leaf name="TechcenterSHPStorageDashboardDialog" token="TSHS"
+							typeId="StorageIndividualDashboardDialog">
+							<Parameter name="facility" value="TCO" />
+							<Parameter name="allAreas" value="SHP" />
+							<Parameter name="automaticAreas" value="MS" />
+							<Parameter name="multiShuttleAreas" value="MS" />
+							<Parameter name="allAreasAisles" value="MS01" />
+						</Leaf>
+						<Leaf name="TechcenterRCVStorageDashboardDialog" token="TRCS"
+							typeId="StorageIndividualDashboardDialog">
+							<Parameter name="facility" value="TCO" />
+							<Parameter name="allAreas" value="RCV" />
+							<Parameter name="automaticAreas" value="MS" />
+							<Parameter name="multiShuttleAreas" value="MS" />
+							<Parameter name="allAreasAisles" value="MS01" />
+						</Leaf>
+						<Leaf name="TechcenterPALStorageDashboardDialog" token="TPAS"
+							typeId="StorageIndividualDashboardDialog">
+							<Parameter name="facility" value="TCO" />
+							<Parameter name="allAreas" value="PAL" />
+							<Parameter name="automaticAreas" value="MS" />
+							<Parameter name="multiShuttleAreas" value="MS" />
+							<Parameter name="allAreasAisles" value="MS01" />
+						</Leaf>
+						<Leaf name="TechcenterHAStorageDashboardDialog" token="THAS"
+							typeId="StorageIndividualDashboardDialog">
+							<Parameter name="facility" value="TCO" />
+							<Parameter name="allAreas" value="HA" />
+							<Parameter name="automaticAreas" value="MS" />
+							<Parameter name="multiShuttleAreas" value="MS" />
+							<Parameter name="allAreasAisles" value="MS01" />
+						</Leaf>
+					</Node>
+					<Leaf name="TechcenterPickingDashboardDialog" token="TPIC"
+						typeId="PickingDashboardDialog">
+						<Parameter name="facility" value="TCO" />
+						<Parameter name="personToGoodsPickZones" value="ZONE1,ZONE2,ZONE5" />
+						<Parameter name="allPickZones"
+							value="*,CCT1,CCT2,CCT3,MTT01,MTT02,ZONE1,ZONE2,ZONE3,ZONE4,ZONE5,ZONE6,ZONE7,ZONE8" />
+					</Leaf>
+				</Node>
+				<Leaf token="CADI" typeId="CameraDialog" />
+			</Node>
+			<Node name="managementReports" />
+			<Node name="warehouse">
+				<Leaf token="AGIN" typeId="AggregatedInventoryDialog" />
+				<Leaf token="INUN" typeId="InventoryUnitOverviewDialog" />
+				<Leaf token="INQU" typeId="InventoryQueryOverviewDialog" />
+				<Leaf token="INJO" typeId="InventoryJournalOverviewDialog" />
+			</Node>
+			<Node name="receiving">
+				<Leaf token="PUOR" typeId="PurchaseOrderDialog" />
+				<Leaf token="ADOD" typeId="AdviceOverviewDialog" />
+				<Leaf token="ADQD" typeId="AdviceQueryDialog" />
+			</Node>
+			<Node name="orderFullfillment">
+				<Leaf token="OROD" typeId="OrderOverviewDialog" />
+				<Leaf token="ORQD" typeId="OrderQueryDialog" />
+			</Node>
+			<Node name="monitoring">
+				<Leaf token="AFDI" typeId="AlarmFaultDialog" />
+				<Leaf token="ALDI" typeId="AlarmOverviewDialog" />
+			</Node>
+			<Node name="settings">
+				<Node name="workstations">
+					<Leaf token="TRDI" typeId="TerminalOverviewDialog" />
+				</Node>
+				<Node name="operators">
+					<Leaf token="USDI" typeId="UserOverviewDialog" />
+				</Node>
+			</Node>
+			<Node name="favourites" />
+		</MenuTreeData>
+	</gui:MenuTree>
+	<gui:MenuTree>
+		<dimensions>
+			<frameType>TABLET</frameType>
+		</dimensions>
+		<MenuTreeData>
+			<Node name="logisticsCockpit">
+				<Node name="DemoDashboard">
+					<Leaf name="DemoOverviewDashboardDialog" token="DODD"
+						typeId="OverviewDashboardDialog">
+						<Parameter name="facility" value="00GE" />
+						<Parameter name="automaticAreas" value="MS01,MS02,WP01,WT01" />
+						<Parameter name="allAreas"
+							value="BP01,MHRP,MS01,MS02,PBL1,WP01,WP02,WT01" />
+						<Parameter name="allPickZones"
+							value="*,CCT1,CCT2,CCT3,MTT01,MTT02,ZONE1,ZONE2,ZONE3,ZONE4,ZONE5,ZONE6,ZONE7,ZONE8" />
+					</Leaf>
+					<Leaf name="DemoReceivingDashboardDialog" token="DREV"
+						typeId="ReceivingDashboardDialog">
+						<Parameter name="facility" value="00GE" />
+					</Leaf>
+					<Leaf name="DemoReplenishmentDashboardDialog" token="DRPL"
+						typeId="ReplenishmentDashboardDialog">
+						<Parameter name="facility" value="00GE" />
+						<Parameter name="automaticAreas" value="MS01,MS02,WP01,WT01" />
+						<Parameter name="allAreas"
+							value="BP01,MHRP,MS01,MS02,PBL1,WP01,WP02,WT01" />
+					</Leaf>
+					<Leaf name="DemoShippingOrderDashboardDialog" token="DSHP"
+						typeId="ShippingOrderDashboardDialog">
+						<Parameter name="facility" value="00GE" />
+					</Leaf>
+					<Node name="storage">
+						<Leaf name="DemoStorageDashboardDialog" token="DSTO"
+							typeId="StorageDashboardDialog">
+							<Parameter name="facility" value="00GE" />
+							<Parameter name="allAreas"
+								value="BP01,MHRP,MS01,MS02,PBL1,WP01,WP02,WT01" />
+							<Parameter name="automaticAreas"
+								value="*,BP01,MHRP,MS01,MS02,PBL1,WP01,WP02,WT01" />
+							<Parameter name="multiShuttleAreas" value="MS01,MS02" />
+							<Parameter name="allAreasAisles"
+								value="BP0101,MHRP01,MHRP02,MS0101,MS0102,MS0103,MS0104,MS0105,MS0106,MS0107,MS0108,MS0109,MS0110
+                            MS0201,MS0202,MS0203,MS0204,MS0205,PBL101,WP0101,WP0102,WP0103,WP0104,WP0105,WP0106,WP0107,WP0108,WP0201,WP0202,WP0203,WP0204,WT0101,WT0102,WT0103,WT0104,WT0105,WT0106,WT0107,WT0108,WT0109,WT0110" />
+						</Leaf>
+						<Leaf name="DemoBP01StorageDashboardDialog" token="DBP1"
+							typeId="StorageIndividualDashboardDialog">
+							<Parameter name="facility" value="00GE" />
+							<Parameter name="allAreas" value="BP01" />
+							<Parameter name="automaticAreas" value="*,BP01" />
+							<Parameter name="multiShuttleAreas" value="MS01,MS02" />
+							<Parameter name="allAreasAisles" value="BP0101" />
+						</Leaf>
+						<Leaf name="DemoMHRPStorageDashboardDialog" token="DMHP"
+							typeId="StorageIndividualDashboardDialog">
+							<Parameter name="facility" value="00GE" />
+							<Parameter name="allAreas" value="MHRP" />
+							<Parameter name="automaticAreas" value="MHRP" />
+							<Parameter name="multiShuttleAreas" value="MS01,MS02" />
+							<Parameter name="allAreasAisles" value="MHRP01,MHRP02" />
+						</Leaf>
+						<Leaf name="DemoMS01StorageDashboardDialog" token="DMS1"
+							typeId="StorageIndividualDashboardDialog">
+							<Parameter name="facility" value="00GE" />
+							<Parameter name="allAreas" value="MS01" />
+							<Parameter name="automaticAreas" value="MS01" />
+							<Parameter name="multiShuttleAreas" value="MS01,MS02" />
+							<Parameter name="allAreasAisles"
+								value="MS0101,MS0102,MS0103,MS0104,MS0105,MS0106,MS0107,MS0108,MS0109,MS0110" />
+						</Leaf>
+						<Leaf name="DemoMS02StorageDashboardDialog" token="DMS2"
+							typeId="StorageIndividualDashboardDialog">
+							<Parameter name="facility" value="00GE" />
+							<Parameter name="allAreas" value="MS02" />
+							<Parameter name="automaticAreas" value="MS02" />
+							<Parameter name="multiShuttleAreas" value="MS01,MS02" />
+							<Parameter name="allAreasAisles" value="MS0201,MS0202,MS0203,MS0204,MS0205" />
+						</Leaf>
+						<Leaf name="DemoPBL1StorageDashboardDialog" token="DPB1"
+							typeId="StorageIndividualDashboardDialog">
+							<Parameter name="facility" value="00GE" />
+							<Parameter name="allAreas" value="PBL1" />
+							<Parameter name="automaticAreas" value="PBL1" />
+							<Parameter name="multiShuttleAreas" value="MS01,MS02" />
+							<Parameter name="allAreasAisles" value="PBL101" />
+						</Leaf>
+						<Leaf name="DemoWP01StorageDashboardDialog" token="DWP1"
+							typeId="StorageIndividualDashboardDialog">
+							<Parameter name="facility" value="00GE" />
+							<Parameter name="allAreas" value="WP01" />
+							<Parameter name="automaticAreas" value="WP01" />
+							<Parameter name="multiShuttleAreas" value="MS01,MS02" />
+							<Parameter name="allAreasAisles"
+								value="WP0101,WP0102,WP0103,WP0104,WP0105,WP0106,WP0107,WP0108" />
+						</Leaf>
+						<Leaf name="DemoWP02StorageDashboardDialog" token="DWP2"
+							typeId="StorageIndividualDashboardDialog">
+							<Parameter name="facility" value="00GE" />
+							<Parameter name="allAreas" value="WP02" />
+							<Parameter name="automaticAreas" value="WP02" />
+							<Parameter name="multiShuttleAreas" value="MS01,MS02" />
+							<Parameter name="allAreasAisles" value="WP0201,WP0202,WP0203,WP0204" />
+						</Leaf>
+						<Leaf name="DemoWT01StorageDashboardDialog" token="DWT1"
+							typeId="StorageIndividualDashboardDialog">
+							<Parameter name="facility" value="00GE" />
+							<Parameter name="allAreas" value="WT01" />
+							<Parameter name="automaticAreas" value="WT01" />
+							<Parameter name="multiShuttleAreas" value="MS01,MS02" />
+							<Parameter name="allAreasAisles"
+								value="WT0101,WT0102,WT0103,WT0104,WT0105,WT0106,WT0107,WT0108,WT0109,WT0110" />
+						</Leaf>
+					</Node>
+					<Leaf name="DemoPickingDashboardDialog" token="SPIC"
+						typeId="PickingDashboardDialog">
+						<Parameter name="facility" value="00GE" />
+						<Parameter name="personToGoodsPickZones" value="ZONE1,ZONE2,ZONE5" />
+						<Parameter name="allPickZones"
+							value="*,CCT1,CCT2,CCT3,MTT01,MTT02,ZONE1,ZONE2,ZONE3,ZONE4,ZONE5,ZONE6,ZONE7,ZONE8" />
+					</Leaf>
+				</Node>
+				<Node name="TechCenterDashboard">
+					<Leaf name="TechcenterOverviewDashboardDialog" token="TODD"
+						typeId="OverviewDashboardDialog">
+						<Parameter name="facility" value="TCO" />
+						<Parameter name="automaticAreas" value="MS" />
+						<Parameter name="allAreas" value="TCO,SHP,RCV,PAL,HA" />
+						<Parameter name="allPickZones"
+							value="*,CCT1,CCT2,CCT3,MTT01,MTT02,ZONE1,ZONE2,ZONE3,ZONE4,ZONE5,ZONE6,ZONE7,ZONE8" />
+					</Leaf>
+					<Leaf name="TechcenterReceivingDashboardDialog" token="TREV"
+						typeId="ReceivingDashboardDialog">
+						<Parameter name="facility" value="TCO" />
+					</Leaf>
+					<Leaf name="TechcenterReplenishmentDashboardDialog" token="TRPL"
+						typeId="ReplenishmentDashboardDialog">
+						<Parameter name="facility" value="TCO" />
+						<Parameter name="automaticAreas" value="Multishuttle Storage" />
+						<Parameter name="allAreas"
+							value="Manual Pallet Rack,Multishuttle Storage" />
+					</Leaf>
+					<Leaf name="TechcenterShippingOrderDashboardDialog" token="TSHP"
+						typeId="ShippingOrderDashboardDialog">
+						<Parameter name="facility" value="TCO" />
+					</Leaf>
+					<Node name="storage">
+						<Leaf name="TechcenterStorageDashboardDialog" token="TSTO"
+							typeId="StorageDashboardDialog">
+							<Parameter name="facility" value="TCO" />
+							<Parameter name="allAreas" value="TCO,SHP,RCV,PAL,HA" />
+							<Parameter name="automaticAreas" value="*,MS" />
+							<Parameter name="multiShuttleAreas" value="*,MS" />
+							<Parameter name="allAreasAisles" value="MS01" />
+						</Leaf>
+						<Leaf name="TechcenterTCOStorageDashboardDialog" token="TTCS"
+							typeId="StorageIndividualDashboardDialog">
+							<Parameter name="facility" value="TCO" />
+							<Parameter name="allAreas" value="TCO" />
+							<Parameter name="automaticAreas" value="MS" />
+							<Parameter name="multiShuttleAreas" value="MS" />
+							<Parameter name="allAreasAisles" value="MS01" />
+						</Leaf>
+						<Leaf name="TechcenterSHPStorageDashboardDialog" token="TSHS"
+							typeId="StorageIndividualDashboardDialog">
+							<Parameter name="facility" value="TCO" />
+							<Parameter name="allAreas" value="SHP" />
+							<Parameter name="automaticAreas" value="MS" />
+							<Parameter name="multiShuttleAreas" value="MS" />
+							<Parameter name="allAreasAisles" value="MS01" />
+						</Leaf>
+						<Leaf name="TechcenterRCVStorageDashboardDialog" token="TRCS"
+							typeId="StorageIndividualDashboardDialog">
+							<Parameter name="facility" value="TCO" />
+							<Parameter name="allAreas" value="RCV" />
+							<Parameter name="automaticAreas" value="MS" />
+							<Parameter name="multiShuttleAreas" value="MS" />
+							<Parameter name="allAreasAisles" value="MS01" />
+						</Leaf>
+						<Leaf name="TechcenterPALStorageDashboardDialog" token="TPAS"
+							typeId="StorageIndividualDashboardDialog">
+							<Parameter name="facility" value="TCO" />
+							<Parameter name="allAreas" value="PAL" />
+							<Parameter name="automaticAreas" value="MS" />
+							<Parameter name="multiShuttleAreas" value="MS" />
+							<Parameter name="allAreasAisles" value="MS01" />
+						</Leaf>
+						<Leaf name="TechcenterHAStorageDashboardDialog" token="THAS"
+							typeId="StorageIndividualDashboardDialog">
+							<Parameter name="facility" value="TCO" />
+							<Parameter name="allAreas" value="HA" />
+							<Parameter name="automaticAreas" value="MS" />
+							<Parameter name="multiShuttleAreas" value="MS" />
+							<Parameter name="allAreasAisles" value="MS01" />
+						</Leaf>
+					</Node>
+					<Leaf name="TechcenterPickingDashboardDialog" token="TPIC"
+						typeId="PickingDashboardDialog">
+						<Parameter name="facility" value="TCO" />
+						<Parameter name="personToGoodsPickZones" value="ZONE1,ZONE2,ZONE5" />
+						<Parameter name="allPickZones"
+							value="*,CCT1,CCT2,CCT3,MTT01,MTT02,ZONE1,ZONE2,ZONE3,ZONE4,ZONE5,ZONE6,ZONE7,ZONE8" />
+					</Leaf>
+				</Node>
+				<Node name="DemoVisualization">
+					<Leaf name="Behaelterlager" token="SCD1" typeId="SCADAWidget">
+						<Parameter name="pictureId" value="Behaelterlager" />
+					</Leaf>
+					<Leaf name="Palettenlager" token="SCD2" typeId="SCADAWidget">
+						<Parameter name="pictureId" value="Palettenlager" />
+					</Leaf>
+				</Node>
+				<Node name="TechCenterVisualization" />
+				<Leaf token="TCCD" typeId="TrackedCaseConveyorStatusDialog">
+					<Parameter name="flowDirection" value="left" />
+					<Parameter name="deviceIdentifier" value="C0301A01" />
+				</Leaf>
+				<Leaf name="binLocation" token="FLEX" typeId="BinLocationDialog">
+					<Parameter name="locationId" value="TCO.MS.01.01.MS01201101" />
+				</Leaf>
+			</Node>
+			<Node name="managementReports">
+				<Node name="storage">
+					<Leaf name="StorUtilReportFacility" token="SURF" typeId="MisDialog" />
+					<Leaf name="StorUtilReportArea" token="SURA" typeId="MisDialog" />
+					<Leaf name="StorUtilReportAreaGroup" token="SURS" typeId="MisDialog" />
+					<Leaf name="StorUtilReportAreaSubGroup" token="SURL" typeId="MisDialog" />
+				</Node>
+				<Leaf name="DetailedInventoryReport" token="DIRE" typeId="MisDialog" />
+			</Node>
+			<Node name="warehouse" />
+			<Node name="receiving">
+				<Leaf token="ADQD" typeId="AdviceQueryDialog" />
+			</Node>
+			<Node name="orderFullfillment">
+				<Leaf token="ORQD" typeId="OrderQueryDialog" />
+			</Node>
+			<Node name="monitoring">
+				<Leaf token="ALDI" typeId="AlarmOverviewDialog" />
+			</Node>
+			<Node name="extras">
+				<Leaf token="DPDF" typeId="PdfViewDialog" />
+				<Leaf token="CAPT" typeId="CaptureDialog" />
+				<Leaf token="CMMD" typeId="CapturedMediaOverviewDialog" />
+				<Leaf token="TRDI" typeId="TerminalOverviewDialog" />
+			</Node>
+			<Node name="favourites" />
+		</MenuTreeData>
+	</gui:MenuTree>
+	<gui:MenuTree>
+		<dimensions>
+			<frameType>RF_TERMINAL</frameType>
+		</dimensions>
+		<MenuTreeData>
+			<Node name="root">
+				<Node name="internalProcesses">
+					<Leaf token="RORF" typeId="RelocationOperationDialogRF" />
+					<Leaf token="RPRF" typeId="RepackingOperationDialogRF" />
+					<Leaf token="RSRF" typeId="RestackingOperationDialogRF" />
+				</Node>
+				<Node name="fls">
+					<Leaf token="OMDR" typeId="OptimizedModeDialogRF" />
+					<Leaf token="AMDR" typeId="ActiveModeDialogRF" />
+					<Leaf token="INDR" typeId="InfoDialogRF" />
+				</Node>
+				<Leaf token="PCRF" typeId="PickingOperationDialogRF" />
+				<Leaf token="RCRF" typeId="ReceivingOperationDialogRF" />
+				<Leaf token="LORF" typeId="LoadingOperationDialogRF" />
+				<Leaf token="ULRF" typeId="UnloadingOperationDialogRF" />
+				<Leaf token="STRF" typeId="CountingDialogRF" />
+			</Node>
+		</MenuTreeData>
+	</gui:MenuTree>
+	<gui:AppFrame>
+		<ProjectName>Application Platform Training</ProjectName>
+		<ProductName>Dematic iQ</ProductName>
+		<Header>
+			<Show>true</Show>
+			<CustomerLogoWidth>131</CustomerLogoWidth>
+			<CustomerLogoHeight>46</CustomerLogoHeight>
+		</Header>
+		<Toolbar>
+			<Show>true</Show>
+		</Toolbar>
+		<Desktop>
+			<StartMode>MDI</StartMode>
+			<SwitchMode>true</SwitchMode>
+		</Desktop>
+		<Tree>
+			<Show>true</Show>
+			<ShowButton>true</ShowButton>
+		</Tree>
+		<StatusBar>
+			<Show>true</Show>
+		</StatusBar>
+		<AlarmArea>
+			<Show>true</Show>
+			<ShowButton>true</ShowButton>
+		</AlarmArea>
+		<WebHelp />
+		<QueryService>
+			<SelectionMaxRowSize>1000</SelectionMaxRowSize>
+		</QueryService>
+		<CSVFieldDelimiter>;</CSVFieldDelimiter>
+	</gui:AppFrame>
+	<gui:ServerPushJmsReceiver description="Receiver process for ServerPush messages">
+		<active>true</active>
+		<receiveTimeout>5000</receiveTimeout>
+	</gui:ServerPushJmsReceiver>
+</app:configuration>

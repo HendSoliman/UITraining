@@ -1,0 +1,846 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml">
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2011. All rights reserved.
+
+  $Id: index.html 27545 2014-05-05 09:58:11Z bernardy $
+-->
+    <title>Batches and Demons</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)">
+  <meta name="keywords" content="Dematic, Dematic iQ">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content="WCS-TPLP_Index.Web">
+  <meta name="author" content="author">
+  <style type="text/css" media="screen">@import url(../../../../../../../../common/style_screen.css);</style>
+    <style type="text/css" media="print">@import url(../../../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "wms/cng/doc/en/user/WebHelp/lms/Batches/index.html";
+  </script>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../../../index.html?page=source%2Fwms%2Fcng%2Fdoc%2Fen%2Fuser%2FWebHelp%2Flms%2FBatches%2Findex.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../../../index.html?page=source%2Fwms%2Fcng%2Fdoc%2Fen%2Fuser%2FWebHelp%2Flms%2FBatches%2Findex.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+    <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+    
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../../index.html">
+          <img class="upLinkImg" id="uplinkO_img" border="0" title="LMS Developer Documentation" src="../../../../../../../../common/img/move_overview.gif"></a>
+          <a class="upLink" id="uplinkP" href="../index.html">
+          <img class="upLinkImg" id="uplinkP_img" border="0" title="LMS Configuration Guide" src="../../../../../../../../common/img/move_up.gif"></a>
+        </td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+  
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+            <a class="naviBar" href="#Demons">Demons</a>
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Top navigation bar end -->
+
+  <!-- Map title -->
+  <h1 id="maptitle">Batches and Demons</h1>
+
+  <!-- Block: Batches -->
+  <div class="block" id="block_batches">
+
+    <!-- Content start -->
+    <h5><a name="Batches"></a>Batches</h5>
+    <p>Each batch program has an application specific <strong>default configuration </strong>which is defined within its sources.</p>
+   
+   <p><strong>ITL - Internal Processes</strong></p>
+   <table>
+    <tr>
+      <th><p class="columnDescription">Program-ID</p></th>
+      <th><p class="columnDescription">Class Name</p></th>
+      <th><p class="columnDescription">Description</p></th>
+    </tr>
+    <tr>
+      <td>
+        ReplenishmentThresholdRecalculationBatch</td>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.itl.replenishmentgeneral.</p>
+        <p class="tableBodyText">control.ReplenishmentThresholdRecalculationBatch</p>
+      </td>
+      <td>
+        This batch program updates all replenishment thresholds with the flag generated set to the proposed threshold values (according to the method 
+        ReplenishmentThresholdAdministrator.proposeThreshold).</td>
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">VelocityClassAnalysisBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.itl.velocityclassanalysis.</p>
+        <p class="tableBodyText">control.VelocityClassAnalysisBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This batch program calculates a weighted access frequency for each SKU defined by the view <strong>V_OPT_SKUS_TO_ANALYZE</strong>.</p>
+        <p class="tableBodyText">When the calculated weighted access  frequency indicates a change of the velocity classification according to the <strong>&nbsp;<a href="../../../../../../../../itl/doc/en/user/WebHelp/dialogs/itl/velocityclassanalysis/ui/client/dialog/config/VelocityClassAnalysisConfigDialog.html">Velocity 
+        Class Analysis Config</a></strong>, the velocity classification of the SKU is changed.</p>
+      </td>
+    </tr>
+        <tr>
+      <td>
+        <p class="tableBodyText">DeleteVelocityClassAnalysisJournalsBatch</p>
+      </td>
+            <td>
+        <p class="tableBodyText">com.dematic.wms.itl.velocityclassanalysis.</p>
+        <p class="tableBodyText">control.DeleteVelocityClassAnalysisJournalsBatch</p>
+      </td>
+
+      <td>
+        <p class="tableBodyText">This batch program deletes all entries of the 
+        <a href="../../../../../../../../itl/doc/en/user/WebHelp/dialogs/itl/velocityclassanalysis/ui/client/dialog/velocityclassanalysisjournal/VelocityClassAnalysisJournalOverviewDialog.html">Velocity Class Analysis Journal</a>
+        , which are older than one year (the default time period). </p>
+        <p class="tableBodyText">This time period is configurable by the control data <strong>VelocityClassAnalysis.VelocityClassAnalysisJournalRemainingTime</strong>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">AggregateSKUAccessesBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.itl.velocityclassanalysis.</p>
+        <p class="tableBodyText">control.AggregateSKUAccessesBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This batch program aggregates SKU accesses and writes the results to the entity
+                                 <a href="../../../../../../../../itl/doc/en/user/WebHelp/dialogs/itl/velocityclassanalysis/ui/client/dialog/velocityclassanalysisjournal/VelocityClassAnalysisJournalOverviewDialog.html">Velocity Class Analysis Journal</a>, which is used for velocity classification analysis.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">CreateHousekeepingTransportsBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.itl.housekeeping</p>
+        <p class="tableBodyText">control.CreateHousekeepingTransportsBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This batch program creates housekeeping transport requests for Load Units with the highest mislocation factors.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">CalculateMislocationFactorsBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.itl.housekeeping</p>
+        <p class="tableBodyText">control.CalculateMislocationFactorsBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This batch program calculates a mislocation factor for all stored Load Units with a yet undefined mislocation factor.</p>
+      </td>
+    </tr>
+
+   </table>
+   
+   
+   
+      <p>&nbsp;</p>
+    <p><strong>COR - Core Components</strong></p>
+   <table>
+    <tr>
+      <th><p class="columnDescription">Program-ID</p></th>
+      <th><p class="columnDescription">Class Name</p></th>
+      <th><p class="columnDescription">Description</p></th>
+    </tr>
+    <tr>
+      <td>
+        ReleaseTaskBatch</td>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.cor.task.control.</p>
+        <p class="tableBodyText">ReleaseTaskBatch</p>
+      </td>
+      <td>
+        This batch program releases tasks in release mode <strong>scheduled</strong> and status <strong>pending</strong>.</td>
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">FixCapacitiesBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.cor.storage.control.</p>
+        <p class="tableBodyText">FixCapacitiesBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This batch program recalculates the capacity values of all Levels and Aisles.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">DeleteSKUMarkedForDeleteBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.cor.sku.control.</p>
+        <p class="tableBodyText">DeleteSKUMarkedForDeleteBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This batch program selects SKUs that are marked for delete and tries to delete them finally.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">FixLocationBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.cor.loadunit.control.</p>
+        <p class="tableBodyText">FixLocationBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This batch program fixes the status values of all Locations whose status values differ from their calculated values.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">LoadUnitTypeCleanupBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.cor.loadunit.control.</p>
+        <p class="tableBodyText">LoadUnitTypeCleanupBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This batch program tries to delete all load unit types which have been marked for deletion.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ReconciliationBatch</td>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.cor.inventory.control.</p>
+        <p class="tableBodyText">ReconciliationBatch</p>
+      </td>
+      <td>
+        This batch collects inventory data and sends a reconciliation message to the configured host system.</td>
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">FixDispoZoneAggregatedInventoryBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.cor.inventory.control.</p>
+        <p class="tableBodyText">FixDispoZoneAggregatedInventoryBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This batch program fixes inconsistent aggregated inventory entries.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">DeleteArchivableInventoryJournalsBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.cor.inventory.control.</p>
+        <p class="tableBodyText">DeleteArchivableInventoryJournalsBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This batch program looks for inventory journal entries that can be deleted and deletes them. </p>
+        <p class="tableBodyText">The time span after which Inventory Journal entries can be deleted can be configured by the control data parameter 
+        InventoryJournalRemainingTime.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        FixInventoryBalanceBatch</td>
+      <td>
+        com.dematic.wms.cor.strategygeneral.control.<br>
+        FixInventoryBalanceBatch</td>
+      <td>
+        This batch program recalculates the amount values of all Inventory Balance objects.</td>
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">DeleteSupplierIteratorBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.cor.client.control.</p>
+        <p class="tableBodyText">DeleteSupplierIteratorBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This batch program tries to delete all suppliers, which have been marked for deletion.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">DeleteCustomerIteratorBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.cor.client.control.</p>
+        <p class="tableBodyText">DeleteCustomerIteratorBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This batch program tries to delete all customers, which have been marked for deletion.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">DeleteClientIteratorBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.cor.client.control.</p>
+        <p class="tableBodyText">DeleteClientIteratorBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This batch program tries to delete all clients, which have been marked for deletion.</p>
+      </td>
+    </tr>
+   </table>
+   
+   <p>&nbsp;</p>
+    <p><strong>ORP - Order Processing</strong></p>
+   <table>
+    <tr>
+      <th><p class="columnDescription">Program-ID</p></th>
+      <th><p class="columnDescription">Class Name</p></th>
+      <th><p class="columnDescription">Description</p></th>
+
+    </tr>
+    <tr>
+      <td>
+        ConfirmOrdersToConfirmBatch</td>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.orp.order.control.</p>
+        <p class="tableBodyText">ConfirmOrdersToConfirmBatch</p>
+      </td>
+      <td>
+        This batch program confirms all orders in status &#39;TO_CONFIRM&#39; to the host which have not been confirmed (in exceptional 
+        cases) yet.</td>
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">DeleteFinishedSortationOrdersBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.orp.sortation.control.</p>
+        <p class="tableBodyText">DeleteFinishedSortationOrdersBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This batch program deletes all sortation orders in status <strong>complete</strong> reached a
+ configured age. (Control data parameter: Sortation. SortationOrdersRemainingTime)</p>
+      </td>
+    </tr>
+        <tr>
+      <td>
+        <p class="tableBodyText">DeleteFinishedSortationBatchesBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.orp.sortation.control.</p>
+        <p class="tableBodyText">DeleteFinishedSortationBatchesBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This batch program deletes all sortation batches in status <strong>complete</strong> reached a configured age. (Control data 
+        parameter: Sortation. SortationOrdersRemainingTime) </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">ConfirmPickOrderBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.orp.pickrequest.control.</p>
+        <p class="tableBodyText">ConfirmPickOrderBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This batch program looks for orders in status <strong>to confirm</strong> and initiates the creation of host notification 
+        messages in an EAI transfer table.</p>
+      </td>
+    </tr>
+    <tr>
+      <td><p class="tableBodyText">DeleteDispatchLoadUnitTypeBatch</p></td>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.orp.dispatchlu.control.<br>DeleteDispatchLoadUnitTypeBatch</p>
+      </td>
+      <td><p class="tableBodyText">This batch program tries to delete all dispatch load unit types which have been marked for deletion.</p></td>
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">ReleaseOrdersBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.orp.orderfulfillment.control.</p>
+        <p class="tableBodyText">ReleaseOrdersBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This batch program determines the
+ number of open orders and releases additional orders if configuration allows
+ to do so. (See control data parameter OrderFulfillment.MaxOpenOrders.)</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        DeleteCompletedWavesBatch</td>
+      <td>
+        com.dematic.wms.orp.shipping.control.<br>
+        DeleteCompletedWavesBatch</td>
+      <td>
+        This batch program deletes all waves in status <strong>finished</strong> and their depending entities. (Configuration: control 
+        data parameter OrderFulfillment.OrdersRemainingTime)</td>
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">DeleteFinishedOrdersBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.orp.orderfulfillment.control.</p>
+        <p class="tableBodyText">DeleteFinishedOrdersBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This batch program deletes all orders in status <strong>finished</strong> and their depending entities. (Configuration: control 
+        data parameter OrderFulfillment.OrdersRemainingTime)</p>
+      </td>
+    </tr>
+   </table>
+
+   <p>&nbsp;</p>
+    <p><strong>IBD - (Inbound) Receiving</strong></p>
+   <table>
+    <tr>
+      <th><p class="columnDescription">Program-ID</p></th>
+      <th><p class="columnDescription">Class Name</p></th>
+      <th><p class="columnDescription">Description</p></th>
+
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">FixBookLoadUnitStoredBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.ibd.receivinggeneral.control.</p>
+        <p class="tableBodyText">FixBookLoadUnitStoredBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This batch program finds Load Units with missing Load Unit stored bookings and performs the Load Unit stored booking for these Load Units.</p>
+      </td>
+    </tr>
+        <tr>
+      <td>
+        <p class="tableBodyText">ConfirmAdvicesToConfirmBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.ibd.receivinggeneral.control.</p>
+        <p class="tableBodyText">ConfirmAdvicesToConfirmBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This batch program looks for Advices in status <strong>to confirm</strong> and initiates the creation of host notification 
+        messages in an EAI transfer table.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">ConfirmAdviceLinesToConfirmBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.ibd.receivinggeneral.control.</p>
+        <p class="tableBodyText">ConfirmAdviceLinesToConfirmBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This batch program looks for Advice Lines in status <strong>to confirm</strong> and initiates the creation of host notification 
+        messages in an EAI transfer table.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">CleanupAdvicesBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.ibd.receivinggeneral.control.</p>
+        <p class="tableBodyText">CleanupAdvicesBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This batch program looks for Advices in status <strong>finished</strong> and deletes them. (Configuration: control data 
+        paramater ReceivingGeneral.AdvicesRemainingTime.) </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">CancelUnusedAdvicesBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.ibd.receivinggeneral.control.</p>
+        <p class="tableBodyText">CancelUnusedAdvicesBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This batch program looks for unused Advices (status <strong>pending</strong> and <strong>released</strong>) and cancels them. 
+        (Configuration: control data parameter ReceivingGeneral.UnusedAdvicesRemainingTime)</p>
+      </td>
+    </tr>
+
+   </table>
+
+   <p>&nbsp;</p>
+    <p><strong>PIC - Picking</strong></p>
+   <table>
+    <tr>
+      <th><p class="columnDescription">Program-ID</p></th>
+      <th><p class="columnDescription">Class Name</p></th>
+      <th><p class="columnDescription">Description</p></th>
+
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">CleanupPickingGeneralBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.pic.general.control.cron.</p>
+        <p class="tableBodyText">CleanupPickingGeneralBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This batch program deletes Picks in status <strong>cancelled</strong> without a Pick Mission. </p>
+        (Configuration: pic-general.xml/pickStructureRemainingTime)</td>
+    </tr>
+        <tr>
+      <td>
+        CleanupFinishedPickMissionsBatch</td>
+      <td>
+        com.dematic.wms.pic.general.control.cron.<br>
+        CleanupFinishedPickMissionsBatch</td>
+      <td>
+        This batch program deletes PicksMissions in status <strong>finished</strong> and dependend entities. <br>
+        (Configuration: pic-general.xml/pickStructureRemainingTime)</td>
+    </tr>
+        <tr>
+      <td>
+        <p class="tableBodyText">CleanupFinishedPickWalksBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.pic.person2goods.control.cron.</p>
+        <p class="tableBodyText">CleanupFinishedPickWalksBatch</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This batch program to delete Pick Walks in status <strong>finished</strong>. </p>
+        (Configuration: pic-general.xml/pickStructureRemainingTime)</td>
+    </tr>
+    
+   </table>
+
+   <p>&nbsp;</p>
+  </div>
+ 
+  <!-- Block: Demons -->
+  <div class="block" id="block_demons">
+    <!-- Navigation line start -->
+    <a name="Demons"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right.gif">&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right_end.gif">
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Demons</h5>
+    
+    <!-- Content end -->
+     
+    <p><strong>COR - Common Services </strong></p>
+    <table>
+    <tr>
+      <th><p class="columnDescription">Demon Class Name</p></th>
+      <th><p class="columnDescription">Description</p></th>
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.cor.putaway.control.</p>
+        <p class="tableBodyText">SwitchDoubleDeepPutawayStrategyDemon</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This demon checks for all<strong> Classic areas </strong>with existing Putaway-Bin-Strategy &quot;Prefer Empty&quot; or &quot;Prefer 
+        Partial&quot; and existing Control Data (see 
+        below), if there 
+        is an aisle with a
+ number of empty bins below a threshold (control data&nbsp; <strong>Putaway.StrategySwitch.ThresholdPreferPartialBins</strong> and if there is an aisle with a 
+        number of empty bins above a threshold (control data <strong>Putaway.StrategySwitch.ThresholdPreferEmptyBins</strong>). In case both is true for an 
+        area, the strategy for this area is left unchanged. </p>
+        <p class="tableBodyText">When the number is below the <strong>ThresholdPreferPartialBins</strong>, the strategy &quot;Prefer Partial&quot; will be 
+        activated, so that Bins that are partially occupied will be chosen first. </p>
+        <p class="tableBodyText">When the number is above the <strong>ThresholdPreferEmptyBins</strong>, the strategy "Prefer Empty" will be activated, so that empty Bins will be chosen first.</p>
+        <p class="tableBodyText">If the strategy to be activated does not exist, the demon will create it automatically.</p>
+        <p class="tableBodyText">For <strong>Multishuttle areas</strong> the business logic is similar. Since there dont exist an adequate strategy the switch is implemented on base of configuration topic &quot;cor-putaway:StrategySwitch.isPreferPartialBins&quot;.</p>
+        <p class="tableBodyText">Precondition: &quot;cor-putaway:StrategySwitch&quot; must be configured for the concrete Areas defining the &quot;cor-putaway:StrategySwitch.AreaDimension&quot;.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.cor.workstation.control.cron</p>
+        <p class="tableBodyText">FeedWorkstationDemon</p>
+      </td>
+      <td>
+        <p class="tableBodyText">Triggers&nbsp;<span class="hps">the refilling</span> <span class="hps">of</span> <span class="hps">workstation</span> <span class="hps">queues</span> <span class="hps">
+with pending work</span><span class="">.</span><br>
+<span class="hps">Only</span> <span class="hps">workstation</span> <span class="hps">that are available and</span> <span class="hps">active </span><span>are 
+considered.</span></p>
+        <p class="tableBodyText">&nbsp;</p>
+      </td>
+    </tr>
+
+    </table>
+    
+    <p>&nbsp;</p>
+    <p><strong>ORP - Order Processing</strong></p>
+    <table>
+    <tr>
+      <th><p class="columnDescription">Demon Class Name</p></th>
+      <th><p class="columnDescription">Description</p></th>
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.orp.fullu.control.</p>
+        <p class="tableBodyText">ReleaseFLRGroupsDemon</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This demon polls the database for pending FLR
+ groups and releases them. This is required in cases where the first try to
+ release a FLR group failed. A FLR group release can fail for example, because a destination of an existing transport request cannot be changed.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.orp.orderfulfillment.control.</p>
+        <p class="tableBodyText">FillAreaTransportWorkloadDemon</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This demon is instantiated once per Area, if the area is related to a Dispo Zone of Reservation Type <strong>two phases</strong>. 
+        If the current number of active outbound transports falls below <strong>Area.outboundTransportsMinimalThreshold</strong> the demon starts the second phase Disposition until
+        <strong>Area.fulfillmentLoadUnitRefillThreshold</strong> new Load Units are planned for this Area.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">If the configuration topic &quot;<strong>orp-orderfulfillment:OrderFulfillmentGeneral.avoidParallelAccessInSecondPhase</strong>&quot; 
+                is set, Orders that causes a concurrent access exception are skipped temporarily.</p>
+              </td>
+            </tr>
+          </table>
+      </td>
+    </tr>
+        <tr>
+      <td>
+        <p class="tableBodyText">&nbsp;</p>
+        <p class="tableBodyText">com.dematic.wms.orp.precubing.control.</p>
+        <p class="tableBodyText">DLUQuantityEstimationDemon</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This demon performs the pre-cubing method DLU quantity estimation
+ for orders specified by the view V_ORD_READY_4_DLU_QTY_EST. By default the view selects 
+ orders in order planning status PRE_CUBING. When a DLU Quantity estimation cannot be executed 
+ for an order, the planning status of the order is set to PRE_CUBING_FAILED. Note that the 
+ order planning status sequence can be configured by the CD parameter 
+ <strong>Order.OrderPlanningStatusSequence</strong>.</p>
+      </td>
+    </tr>
+    </table>
+
+<p>&nbsp;</p>
+    <p><strong>IBD - (Inbound) Receiving</strong></p>
+    <table>
+    <tr>
+      <th><p class="columnDescription">Demon Class Name</p></th>
+      <th><p class="columnDescription">Description</p></th>
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.ibd.receivinggeneral.</p>
+        <p class="tableBodyText">RepairClosableAdviceLinesDemon</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This demon closes Advice Lines that have to be closed and that where not 
+ closed by the service bookLoadUnitStored because of concurrency.</p>
+      </td>
+    </tr>
+         
+        
+    </table>
+    
+    <p>&nbsp;</p>
+    <p><strong>ITL - Internal Processes</strong></p>
+    <table>
+    <tr>
+      <th><p class="columnDescription">Demon Class Name</p></th>
+      <th><p class="columnDescription">Description</p></th>
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">com.dematic.itl.replenishmentgeneral.control.</p>
+        <p class="tableBodyText">CheckLookAheadReplenishmentDemon</p>
+      </td>
+      <td>
+        <p class="tableBodyText">&nbsp;</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">com.dematic.itl.replenishmentgeneral.control.</p>
+        <p class="tableBodyText">ReplenishmentThresholdDemon</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This demon checks for all replenishment thresholds, if online replenishment has to be triggered. Ongoing replenishment is 
+        considered in this check.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">com.dematic.itl.replenishmentgeneral.control.</p>
+        <p class="tableBodyText">rpg.server.ReplenishmenThresholdAdministrationDemon</p>
+      </td>
+      <td>
+        <p class="tableBodyText">&nbsp;</p>
+      </td>
+    </tr>
+
+        
+    </table>
+    
+    <p>&nbsp;</p>
+    <p><strong>OBD - (Outbound) Shipping</strong></p>
+    <table>
+    <tr>
+      <th><p class="columnDescription">Demon Class Name</p></th>
+      <th><p class="columnDescription">Description</p></th>
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.shp.route.control.cron.</p>
+        <p class="tableBodyText">DockAssignmentAlarmDemon</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This demon checks for all routes without assigned docks if the earliest staging time minus the value of CD parameter <strong>
+        Route.dockAssignmentAlarmPeriod</strong> has been reached and raises a corresponding alarm per route. </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="tableBodyText">com.dematic.wms.shp.load.control.cron.</p>
+        <p class="tableBodyText">AuthorizeForStagingDemon</p>
+      </td>
+      <td>
+        <p class="tableBodyText">This demon switches the status of pending loads to &quot;authorized for staging&quot;, when the earliest staging time of the route is 
+        reached.</p>
+      </td>
+    </tr>        
+    </table>
+
+    <p>&nbsp;</p>
+    <p><strong>PIC - Picking</strong></p>
+    <table>
+    <tr>
+      <th><p class="columnDescription">Demon Class Name</p></th>
+      <th><p class="columnDescription">Description</p></th>
+    </tr>
+    <tr>
+      <td><p class="tableBodyText">com.dematic.wms.pic.general.cron.<br>ReleasePickMissionsDemon</p></td>
+      <td><p class="tableBodyText">This demon releases all Pick Missions with already reached earliest start time.</p></td>
+    </tr> 
+    <tr>
+      <td><p class="tableBodyText">com.dematic.wms.pic.general.cron.<br>ResetMissionsWithFailedRequestDemon</p></td>
+      <td><p class="tableBodyText">This demon resets the flag Failed Requests of Pick Missions to make them available for a new request again.</p></td>
+    </tr>
+    <tr>
+        <td><p class="tableBodyText">com.dematic.wms.pic.goods2person.cron.<br>CloseMissionsWithDanglingReplacementReservationDemon</p></td>
+        <td><p class="tableBodyText">This demon closes Pick Missions which are already assigned to a Workstation but having no further active Picks because of a failed replacement reservation due to a shortage.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">Pick Missions of this kind will only be created if the configuration topic "<strong>pic-general:Picking.InjectPickInActiveMission</strong>" is set to "true"</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr>
+      <td><p class="tableBodyText">com.dematic.wms.pic.general.cron.<br>HandleDeferedPicksDemon</p></td>
+      <td><p class="tableBodyText">This demon creates Pick Missions for pending Picks with service qualifier ‘BLOCK’.</p></td>
+    </tr>    
+    <tr>
+      <td><p class="tableBodyText">com.dematic.demowarehouse.pic.goods2person.control.cron.<br>AutomaticGTPDemon</p></td>
+      <td><p class="tableBodyText">This demon automatically confirms the Picks assigned to the Pick Station given as reference id. The demon is designed to support testing activities.</p></td>
+    </tr>      
+    </table>
+    <!-- Content end -->
+  </div>
+
+  <!-- Footer start -->
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">© Dematic GmbH 2011. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar"><a href="#top">top</a> | <a href="javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

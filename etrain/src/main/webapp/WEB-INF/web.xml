@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+
+    <servlet>
+        <servlet-name>ServiceResolver</servlet-name>
+        <servlet-class>com.dematic.wms.app.base.ui.server.AppServiceResolver</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServiceResolver</servlet-name>
+        <url-pattern>*.gwtrpc</url-pattern>
+    </servlet-mapping>
+    
+	<servlet>
+	    <servlet-name>fileProvider</servlet-name>
+	    <servlet-class>com.dematic.wms.app.base.ui.server.FileProvider</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>fileProvider</servlet-name>
+	    <url-pattern>/app_data/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+	    <servlet-name>imageProvider</servlet-name>
+	    <servlet-class>com.dematic.wms.app.base.ui.server.ImageProvider</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>imageProvider</servlet-name>
+	    <url-pattern>/app_image/*</url-pattern>
+	</servlet-mapping>
+    
+	<servlet>
+	    <servlet-name>miscFileProvider</servlet-name>
+	    <servlet-class>com.dematic.wms.app.base.ui.server.MiscFileProvider</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>miscFileProvider</servlet-name>
+	    <url-pattern>/app_misc/*</url-pattern>
+	</servlet-mapping>
+    
+	<servlet>
+	    <servlet-name>miscFileUpload</servlet-name>
+	    <servlet-class>com.dematic.wms.app.base.ui.server.MiscFileUpload</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>miscFileUpload</servlet-name>
+	    <url-pattern>/app_misc_upload/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+	    <servlet-name>rfI18nDictionary</servlet-name>
+	    <servlet-class>com.dematic.wms.app.base.ui.rf.server.RfI18nDictionaryProvider</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>rfI18nDictionary</servlet-name>
+	    <url-pattern>/I18nDictionary.js</url-pattern>
+	</servlet-mapping>
+    
+	<servlet>
+	    <servlet-name>remoteAccessCheck</servlet-name>
+	    <servlet-class>com.dematic.wms.app.base.ui.server.RemoteAccessCheck</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>remoteAccessCheck</servlet-name>
+	    <url-pattern>/app_access/*</url-pattern>
+	</servlet-mapping>
+
+	<!-- Listener for server push service -->
+    <servlet>
+        <servlet-name>EventService</servlet-name>
+        <servlet-class>de.novanic.eventservice.service.EventServiceImpl</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EventService</servlet-name>
+        <url-pattern>/gwt/gwteventservice</url-pattern>
+        <url-pattern>/gwt_phone/gwteventservice</url-pattern>
+        <url-pattern>/gwt_tablet/gwteventservice</url-pattern>
+        <url-pattern>/gwt_rf/gwteventservice</url-pattern>
+        <url-pattern>/gwt_kiosk/gwteventservice</url-pattern>
+        <url-pattern>/gwt_nrf/gwteventservice</url-pattern>
+    </servlet-mapping>
+	
+	<!-- Listener for REST service -->
+	<servlet>
+        <servlet-name>Jersey Web Application</servlet-name>
+        <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+        <init-param>
+            <param-name>com.sun.jersey.config.property.packages</param-name>
+            <param-value>com.dematic</param-value>
+        </init-param>
+        <init-param>
+            <param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>
+            <param-value>true</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Jersey Web Application</servlet-name>
+        <url-pattern>/resources/*</url-pattern>
+    </servlet-mapping>
+
+	<!-- SESSION CONTEXT LISTENER -->
+    <listener>
+        <listener-class>
+			com.dematic.wms.app.base.ui.server.GenericContextListener
+        </listener-class>
+    </listener>
+	
+    <listener>
+        <listener-class>
+			com.dematic.wms.app.base.ui.server.session.GenericSessionListener
+        </listener-class>
+    </listener> 
+
+        <!-- Default page to serve -->
+    <welcome-file-list>
+        <welcome-file>DCD_GWT.html</welcome-file>
+    </welcome-file-list>
+
+	<!-- FILTERS -->
+    <filter>
+            <!-- Creates the MDC for logback Ensure this is the 1st Filter defined in here.-->
+            <filter-name>mdcFilter</filter-name>
+            <filter-class>com.dematic.wms.app.base.ui.server.MdcFilter</filter-class>
+    </filter>
+    <filter-mapping>
+            <filter-name>mdcFilter</filter-name>
+            <!-- Do not change the patterns. There exist hard coded logic, which depends on these patterns -->
+            <url-pattern>*.gwtrpc</url-pattern>
+            <url-pattern>*.html</url-pattern>
+    	    <url-pattern>/I18nDictionary.js</url-pattern>
+    </filter-mapping>
+    
+    <filter>
+        <filter-name>gwtCacheControlFilter</filter-name>
+        <filter-class>com.dematic.wms.app.base.ui.server.filter.HTTPResponseHeaderFilter</filter-class>
+        <init-param>
+            <param-name>Cache-Control</param-name>
+            <param-value>no-cache, no-store, max-age=0, must-revalidate</param-value>
+        </init-param>
+        <init-param>
+            <param-name>Pragma</param-name>
+            <param-value>no-cache</param-value>
+        </init-param>		
+    </filter>
+    
+    <filter-mapping>
+        <filter-name>gwtCacheControlFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping> 
+	
+	<filter>
+        <filter-name>RuntimeContextRESTFilter</filter-name>
+        <filter-class>com.dematic.wms.app.base.util.RuntimeContextRESTFilter</filter-class>
+    </filter>
+	
+    <filter-mapping>
+        <filter-name>RuntimeContextRESTFilter</filter-name>
+        <servlet-name>Jersey Web Application</servlet-name>
+        <dispatcher>REQUEST</dispatcher>
+    </filter-mapping>
+
+    <filter>
+            <filter-name>qrCodeFilter</filter-name>
+            <filter-class>com.dematic.wms.app.base.ui.server.ReplaceQRCodeImageFilter</filter-class>
+    </filter>
+    <filter-mapping>
+            <filter-name>qrCodeFilter</filter-name>
+            <url-pattern>/download/qr_code_template.png</url-pattern>
+    </filter-mapping>
+    <filter>
+            <filter-name>absoluteURLFilter</filter-name>
+            <filter-class>com.dematic.wms.app.base.ui.server.ReplaceAbsoluteURLPartsFilter</filter-class>
+    </filter>
+    <filter-mapping>
+            <filter-name>absoluteURLFilter</filter-name>
+            <url-pattern>/download/index.html</url-pattern>
+            <url-pattern>/download/MobileApp.plist</url-pattern>
+    </filter-mapping>
+    
+    
+</web-app>

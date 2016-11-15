@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>etrain</artifactId>
+    <packaging>war</packaging>
+
+    <parent>
+        <groupId>com.dematic.wms</groupId>
+        <artifactId>wms-project</artifactId>
+        <version>3.4-alpha-training</version>
+    </parent>
+
+    <description>Training Project based on DCDng</description>
+
+    <properties>
+        <dcd.version>${project.version}</dcd.version>
+        <gwt-desktop-module>com.dematic.trainingwarehouse.ui.ETrain_GWT</gwt-desktop-module>
+        <gwt-phone-module>com.dematic.trainingwarehouse.ui.phone.DCDm_GWT</gwt-phone-module>
+        <gwt-tablet-module>com.dematic.trainingwarehouse.ui.tablet.DCDt_GWT</gwt-tablet-module>
+     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.dematic.wms</groupId>
+            <artifactId>wms-test</artifactId>
+            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>com.dematic.wms</groupId>
+            <artifactId>app</artifactId>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-ejb_3.1_spec</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.dematic.wms</groupId>
+                <artifactId>ddl-generator</artifactId>
+                <executions>
+                    <execution>
+                        <id>generate-aggregation-ddl</id>
+                        <phase>none</phase>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>gwt-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>desktop</id>
+                        <phase>prepare-package</phase>
+                    </execution>
+                     <execution>
+                        <id>phone</id>
+                        <phase>prepare-package</phase>
+                    </execution>
+                    <execution>
+                        <id>tablet</id>
+                        <phase>prepare-package</phase>
+                    </execution>
+                    </executions>
+            </plugin>
+        </plugins>
+        <finalName>etrain</finalName>
+    </build>
+</project>

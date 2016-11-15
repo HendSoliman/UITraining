@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://java.sun.com/xml/ns/javaee"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:weld="http://jboss.org/schema/weld/beans"
+       xsi:schemaLocation="
+          http://java.sun.com/xml/ns/javaee http://docs.jboss.org/cdi/beans_1_0.xsd
+          http://jboss.org/schema/weld/beans http://jboss.org/schema/weld/beans_1_1.xsd">
+    <interceptors>
+        <class>com.dematic.wms.app.base.interceptor.AsynchronousServiceInterceptor</class>
+        <class>com.dematic.wms.app.base.interceptor.EntityManagerExceptionWrappingInterceptor</class>
+    </interceptors>
+    <alternatives>
+        <class>com.dematic.wms.app.lightdrive.boundary.NoopLightdriveInitiator</class>
+    </alternatives>
+
+    <weld:scan>
+        <weld:include name="com.dematic.**"/>
+        <weld:exclude pattern="^.*[.]ui[.](.+[.])*client[.].*$" />
+        <weld:exclude pattern="^.*[.]gwt[.].*[.]client[.].*$" />
+        <weld:exclude name="com.dematic.wms.app.base.ui.elementparser.**" />
+        <weld:exclude name="com.dematic.wms.app.base.ui.generator.**"/>
+        <weld:exclude name="com.google.gwt.uibinder.**"/>
+    </weld:scan>
+</beans>

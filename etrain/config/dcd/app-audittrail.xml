@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns3:configuration
+        xmlns:ns3="http://www.dematic.com/dcdng/wms/app"
+        xmlns:ns7="http://www.dematic.com/dcdng/wms/app-audittrail"
+        >
+    <!--
+        APP - ALM
+    -->
+    <ns7:AuditTrail>
+        <dimensions>
+            <entityName>com.dematic.wms.app.alarm.entity.Alarm</entityName>
+        </dimensions>
+        <isEnabled>true</isEnabled>
+        <Archiving residentTimeDays="100" isEnabled="true" />
+    </ns7:AuditTrail>
+    <ns7:AuditTrail>
+        <dimensions>
+            <entityName>com.dematic.wms.app.alarm.entity.AlarmChannel</entityName>
+        </dimensions>
+        <isEnabled>true</isEnabled>
+        <Archiving residentTimeDays="100" isEnabled="true" />
+    </ns7:AuditTrail>
+    <ns7:AuditTrail>
+        <dimensions>
+            <entityName>com.dematic.wms.app.alarm.entity.AlarmDomain</entityName>
+        </dimensions>
+        <isEnabled>true</isEnabled>
+        <Archiving residentTimeDays="100" isEnabled="true" />
+    </ns7:AuditTrail>
+    <ns7:AuditTrail>
+        <dimensions>
+            <entityName>com.dematic.wms.app.alarm.entity.AlarmFilter</entityName>
+        </dimensions>
+        <isEnabled>true</isEnabled>
+        <Archiving residentTimeDays="100" isEnabled="true" />
+    </ns7:AuditTrail>
+    <ns7:AuditTrail>
+        <dimensions>
+            <entityName>com.dematic.wms.app.alarm.entity.AlarmHistory</entityName>
+        </dimensions>
+        <isEnabled>true</isEnabled>
+        <Archiving residentTimeDays="100" isEnabled="true" />
+    </ns7:AuditTrail>
+    <ns7:AuditTrail>
+        <dimensions>
+            <entityName>com.dematic.wms.app.alarm.entity.AlarmParameter</entityName>
+        </dimensions>
+        <isEnabled>true</isEnabled>
+        <Archiving residentTimeDays="100" isEnabled="true" />
+    </ns7:AuditTrail>
+    <ns7:AuditTrail>
+        <dimensions>
+            <entityName>com.dematic.wms.app.alarm.entity.AlarmSubscription</entityName>
+        </dimensions>
+        <isEnabled>true</isEnabled>
+        <Archiving residentTimeDays="100" isEnabled="true" />
+    </ns7:AuditTrail>
+    <ns7:AuditTrail>
+        <dimensions>
+            <entityName>com.dematic.wms.app.alarm.entity.AlarmType</entityName>
+        </dimensions>
+        <isEnabled>true</isEnabled>
+        <Archiving residentTimeDays="100" isEnabled="true" />
+    </ns7:AuditTrail>
+    <!--
+        APP - CRON
+    -->
+    <ns7:AuditTrail>
+        <dimensions>
+            <entityName>com.dematic.wms.app.cron.entity.CronjobJournal</entityName>
+        </dimensions>
+        <isEnabled>true</isEnabled>
+        <Archiving residentTimeDays="100" isEnabled="true" />
+    </ns7:AuditTrail>
+    <!--
+        APP - JOURNAL
+    -->
+    <ns7:AuditTrail>
+        <dimensions>
+            <entityName>com.dematic.wms.app.journal.entity.BusinessJournal</entityName>
+        </dimensions>
+        <isEnabled>true</isEnabled>
+        <Archiving residentTimeDays="100" isEnabled="true" />
+    </ns7:AuditTrail>
+    <!--
+        APP - NUMBERING
+    -->
+    <ns7:AuditTrail>
+        <dimensions>
+            <entityName>com.dematic.wms.app.numbering.entity.NumberRange</entityName>
+        </dimensions>
+        <isEnabled>true</isEnabled>
+        <Archiving residentTimeDays="100" isEnabled="true" />
+    </ns7:AuditTrail>
+    <!--
+        APP - PRINT
+    -->
+    <ns7:AuditTrail>
+        <dimensions>
+            <entityName>com.dematic.wms.app.print.entity.DocumentLayout</entityName>
+        </dimensions>
+        <isEnabled>true</isEnabled>
+        <Archiving residentTimeDays="100" isEnabled="true" />
+    </ns7:AuditTrail>
+    <ns7:AuditTrail>
+        <dimensions>
+            <entityName>com.dematic.wms.app.print.entity.DocumentType</entityName>
+        </dimensions>
+        <isEnabled>true</isEnabled>
+        <Archiving residentTimeDays="100" isEnabled="true" />
+    </ns7:AuditTrail>
+    <ns7:AuditTrail>
+        <dimensions>
+            <entityName>com.dematic.wms.app.print.entity.Printer</entityName>
+        </dimensions>
+        <isEnabled>true</isEnabled>
+        <Archiving residentTimeDays="100" isEnabled="true" />
+    </ns7:AuditTrail>
+    <ns7:AuditTrail>
+        <dimensions>
+            <entityName>com.dematic.wms.app.print.entity.PrintHistory</entityName>
+        </dimensions>
+        <isEnabled>true</isEnabled>
+        <Archiving residentTimeDays="100" isEnabled="true" />
+    </ns7:AuditTrail>
+    <ns7:AuditTrail>
+        <dimensions>
+            <entityName>com.dematic.wms.app.print.entity.PrintRequest</entityName>
+        </dimensions>
+        <isEnabled>true</isEnabled>
+        <Archiving residentTimeDays="100" isEnabled="true" />
+    </ns7:AuditTrail>
+    <ns7:AuditTrail>
+        <dimensions>
+            <entityName>com.dematic.wms.app.print.entity.TerminalAssignment</entityName>
+        </dimensions>
+        <isEnabled>true</isEnabled>
+        <Archiving residentTimeDays="100" isEnabled="true" />
+    </ns7:AuditTrail>
+    <!--
+        APP - SCRATCHBOOK
+    -->
+    <ns7:AuditTrail>
+        <dimensions>
+            <entityName>com.dematic.wms.app.scratchbook.entity.ScratchBook</entityName>
+        </dimensions>
+        <isEnabled>true</isEnabled>
+        <Archiving residentTimeDays="100" isEnabled="true" />
+    </ns7:AuditTrail>
+    <!--
+        APP - TERMINAL
+    -->
+    <ns7:AuditTrail>
+        <dimensions>
+            <entityName>com.dematic.wms.app.terminal.entity.Terminal</entityName>
+        </dimensions>
+        <isEnabled>true</isEnabled>
+        <Archiving residentTimeDays="100" isEnabled="true" />
+    </ns7:AuditTrail>
+    <!--
+        APP - USER
+    -->
+    <ns7:AuditTrail>
+        <dimensions>
+            <entityName>com.dematic.wms.app.user.entity.LogonHistory</entityName>
+        </dimensions>
+        <isEnabled>true</isEnabled>
+        <Archiving residentTimeDays="100" isEnabled="true" />
+    </ns7:AuditTrail>
+    <ns7:AuditTrail>
+        <dimensions>
+            <entityName>com.dematic.wms.app.user.entity.PasswordHistory</entityName>
+        </dimensions>
+        <isEnabled>true</isEnabled>
+        <Archiving residentTimeDays="100" isEnabled="true" />
+    </ns7:AuditTrail>
+    <ns7:AuditTrail>
+        <dimensions>
+            <entityName>com.dematic.wms.app.user.entity.PrivacyPeriod</entityName>
+        </dimensions>
+        <isEnabled>true</isEnabled>
+        <Archiving residentTimeDays="100" isEnabled="true" />
+    </ns7:AuditTrail>
+    <ns7:AuditTrail>
+        <dimensions>
+            <entityName>com.dematic.wms.app.user.entity.Permission</entityName>
+        </dimensions>
+        <isEnabled>true</isEnabled>
+        <Archiving residentTimeDays="100" isEnabled="true" />
+    </ns7:AuditTrail>
+    <ns7:AuditTrail>
+        <dimensions>
+            <entityName>com.dematic.wms.app.user.entity.User</entityName>
+        </dimensions>
+        <isEnabled>true</isEnabled>
+        <Archiving residentTimeDays="100" isEnabled="true" />
+    </ns7:AuditTrail>
+    <ns7:AuditTrail>
+        <dimensions>
+            <entityName>com.dematic.wms.app.user.entity.UserGroup</entityName>
+        </dimensions>
+        <isEnabled>true</isEnabled>
+        <Archiving residentTimeDays="100" isEnabled="true" />
+    </ns7:AuditTrail>
+    <ns7:AuditTrail>
+        <dimensions>
+            <entityName>com.dematic.wms.app.user.entity.UserGroupMembership</entityName>
+        </dimensions>
+        <isEnabled>true</isEnabled>
+        <Archiving residentTimeDays="100" isEnabled="true" />
+    </ns7:AuditTrail>
+    <ns7:AuditTrail>
+        <dimensions>
+            <entityName>com.dematic.wms.app.user.entity.UserGroupPermission</entityName>
+        </dimensions>
+        <isEnabled>true</isEnabled>
+        <Archiving residentTimeDays="100" isEnabled="true" />
+    </ns7:AuditTrail>   
+	<ns7:AuditTrail>
+        <dimensions>
+            <entityName>com.dematic.trainingwarehouse.entity.SimpleTechnicalEntity</entityName>
+        </dimensions>
+        <isEnabled>true</isEnabled>
+        <Archiving residentTimeDays="100" isEnabled="true" />
+    </ns7:AuditTrail>
+</ns3:configuration>

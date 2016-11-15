@@ -1,0 +1,538 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml">
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2008. All rights reserved.
+
+  $Id: ActiveStep.html 27545 2014-05-05 09:58:11Z bernardy $
+-->
+  <title>Active</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)">
+  <meta name="keywords" content="Dematic, Dematic iQ">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content="WCS-TPL_HelpDialogFunction.Web">
+  <meta name="author" content="author">
+  <style type="text/css" media="screen">@import url(../../../../../../../../../../../../common/style_screen.css);
+</style>
+  <style type="text/css" media="print">@import url(../../../../../../../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "pic/doc/en/user/WebHelp/dialogs/pic/manualdepal/ui/client/dialog/manualdepal/ActiveStep.html";
+  </script>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../../../../../../../index.html?page=source%2Fpic%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fdialogs%2Fpic%2Fmanualdepal%2Fui%2Fclient%2Fdialog%2Fmanualdepal%2FActiveStep.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../../../../../../../index.html?page=source%2Fpic%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fdialogs%2Fpic%2Fmanualdepal%2Fui%2Fclient%2Fdialog%2Fmanualdepal%2FActiveStep.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+  <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+    
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../../../../../../../index.html"><img class="upLinkImg" id="uplinkO_img" border="0" title="Palletizing Control" src="../../../../../../../../../../../../common/img/move_overview.gif"></a>
+          <a class="upLink" id="uplinkP" href="ManualDepalOperationDialog.html"><img class="upLinkImg" id="uplinkP_img" border="0" title="Pallet Constructor" src="../../../../../../../../../../../../common/img/move_up.gif"></a>
+        </td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+  
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+            <a class="naviBar" href="#Prerequisites">Prerequisites</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#DialogScreen">Screen</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Procedure">Procedure</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#ButtonDescriptions">Buttons</a>
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+<h1 id="maptitle">Active</h1>
+
+  <!-- Block: Purpose -->
+  <div class="block" id="block_purpose">
+    <!-- Content start -->
+    <h5><a name="Purpose"></a>Purpose</h5>
+    <p>In this screen the actual de-palletizing process is done. For each 
+	package the bar code is received from the built-in scanner. It is also 
+	possible to enter the bar code manually or use a hand scanner.</p>
+	<p>Between the instructed and entire pallet mode the only different are the 
+	shown quantities. In instructed mode the quantity of the current SKU for 
+	de-palletizing is shown. As long the quantity to be de-palletized is not 
+	reached the same SKU has to put on the conveyor. In case of wrong scan an 
+	exception is shown and the operator is instructed to put the correct SKU on 
+	the conveyor.<br>
+	In entire pallet mode the operator can put any package from the pallet on 
+	the conveyor.<br>
+	It is not possible to change the physical position from this screen. If this 
+	is necessary the operator can switch to step “Special” .</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Prerequisites -->
+  <div class="block" id="block_prerequisites">
+    <!-- Navigation line start -->
+    <a name="Prerequisites"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#DialogScreen"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#ButtonDescriptions"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Prerequisites</h5>
+    <ul class="listBullet1">
+      <li>Click Next button in preparation step when no other active position 
+		exists.</li>
+      <li>&nbsp;Activate position in pending step.</li>
+		<li>After current Active step finished. Current position is determined 
+		to be active.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="mso-bidi-font-weight:normal">
+		<span lang="EN-US" style="font-size: 10.0pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; mso-fareast-font-family: &quot;Arial Unicode MS&quot;; mso-bidi-font-family: &quot;Arial Unicode MS&quot;; color: #999999; background: #999999; mso-shading: windowtext; mso-pattern: gray-40 auto; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">
+		:</span><span lang="EN-US" style="font-size: 10.0pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; mso-fareast-font-family: &quot;Arial Unicode MS&quot;; mso-bidi-font-family: &quot;Arial Unicode MS&quot;; background: #999999; mso-shading: windowtext; mso-pattern: gray-40 auto; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">INFO<span style="color:
+#999999">:</span></span></b><span lang="EN-US" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Arial Unicode MS&quot;;
+mso-bidi-font-family:&quot;Arial Unicode MS&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA">&nbsp;Determination rule: </span>
+		<span class="style2">activate next pallet 
+		which has the older arrival date on one of the n source locations</span></li>
+    </ul>
+    <p>&nbsp;</p>
+    <!-- Content end -->
+  </div>
+
+<!-- Block: Screen -->
+  <div class="block" id="block_dialogscreen">   
+    <!-- Navigation line start -->
+    <a name="DialogScreen"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#Prerequisites"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Procedure"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#ButtonDescriptions"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Screen</h5>
+	<p><strong>Instructed Mode</strong></p>
+    <p>
+      <img src="img/active.png" width="628" height="505">
+    </p>
+	<p>
+      If SKUQuantityUnit cannot be parsed according to the barcode scanned. 
+		Search / Same / Again buttons will be enabled.</p>
+	<p>
+      <img src="img/barcodeCannotDetermined.png" width="630" height="505">&nbsp;</p>
+	<p>
+      &nbsp;</p>
+	<p>
+      <strong>Entire Pallet Mode</strong></p>
+	<p>
+      <img src="img/active_entirepallet.png" width="627" height="506">&nbsp;</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Procedure -->
+  <div class="block" id="block_procedure">   
+    <!-- Navigation line start -->
+    <a name="Procedure"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#DialogScreen"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#ButtonDescriptions"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#ButtonDescriptions"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Procedure</h5>
+	<p>Instructed Mode:</p>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Step</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">1.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Load the pick mission from the workstation 
+			queue.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">2.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Load next pick of this pick mission 
+			considering the sequence.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          3.</td>
+        <td>
+          <span lang="EN-US" style="font-size:10.0pt;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Arial Unicode MS&quot;;mso-bidi-font-family:
+&quot;Arial Unicode MS&quot;;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA">Show the SKU, the total quantity to be palletized and 
+			the already de-palletized quantity in the dialog.</span></td>
+      </tr>
+      <tr>
+        <td>
+          4.</td>
+        <td>
+          <span lang="EN-US" style="font-size:10.0pt;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Arial Unicode MS&quot;;mso-bidi-font-family:
+&quot;Arial Unicode MS&quot;;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA">The operator puts a package from the pallet on the 
+			conveyor.</span></td>
+      </tr>
+      <tr>
+        <td>
+          5.</td>
+        <td>
+          <p class="TableBodyText"><span lang="EN-US">The scanner sends
+			<a style="mso-comment-reference:
+lq_1;mso-comment-date:20130604T1548">a list of barcodes and a synchronization 
+			number</a></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          6.</td>
+        <td>
+          Determine the correct package using the received barcode list. If 
+			exact one packaging type (SKUQuantityUnit) can be determined use 
+			this. Otherwise the operator has to select the correct 
+			SKUQuantityUnit.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          7.</td>
+        <td>
+          If SkuQuantityUnit cannot determined according to the barcode received 
+			from the scanner:<br>
+			● If this is the same product as last shown, the operator can press 
+			the button “Same”.<br>
+			● Otherwise he/she has to use the “Search” button to identify the 
+			correct packaging type.</td>
+      </tr>
+      <tr>
+        <td>
+          8.</td>
+        <td>
+          Compare the determined/selected SKUQuantityUnit with the next 
+			expected. If both are same call DepalletizingHelper.bookPick with 
+			the current pick and quantity = 1. Confirmation code should be 
+			ConfirmationCode.PARTIAL.</td>
+      </tr>
+      <tr>
+        <td>
+          9.</td>
+        <td>
+          After all picks are confirmed and the pick mission is completed:<br>
+			● Proceed with idle step, when the pallet is empty or deleted .<br>
+			Trigger the determination of the next to activate source location.<br>
+			● Proceed with complete step, when the pallet is not empty</td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+	<p>Entire Pallet Mode:</p>
+	<table>
+      <tr>
+        <th>
+          <p class="columnDescription">Step</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">1.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Load the pick mission from the workstation 
+			queue.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">2.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Show the number of packages on the pallet in 
+			“#Caces to Depal”.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          3.</td>
+        <td>
+          The operator puts a package from the pallet on the conveyor.</td>
+      </tr>
+      <tr>
+        <td>
+          4.</td>
+        <td>
+          The scanner sends a list of barcodes and a synchronization number.</td>
+      </tr>
+      <tr>
+        <td>
+          5.</td>
+        <td>
+          <p class="TableBodyText"><span lang="EN-US">Determine the correct 
+			package using the received barcode list. If exact one packaging type 
+			(SKUQuantityUnit) can be determined use this. Otherwise the operator 
+			has to select the correct SKUQuantityUnit.</span></p>
+			<b style="mso-bidi-font-weight:normal">
+			<span lang="EN-US" style="font-size: 10.0pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; mso-fareast-font-family: &quot;Arial Unicode MS&quot;; mso-bidi-font-family: &quot;Arial Unicode MS&quot;; color: #999999; background: #999999; mso-shading: windowtext; mso-pattern: gray-40 auto; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">
+			:</span><span lang="EN-US" style="font-size: 10.0pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; mso-fareast-font-family: &quot;Arial Unicode MS&quot;; mso-bidi-font-family: &quot;Arial Unicode MS&quot;; background: #999999; mso-shading: windowtext; mso-pattern: gray-40 auto; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">INFO<span style="color:
+#999999">:</span></span></b><span lang="EN-US" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Arial Unicode MS&quot;;
+mso-bidi-font-family:&quot;Arial Unicode MS&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA">&nbsp;Only the products on the pallets are to 
+			consider.</span></td>
+      </tr>
+      <tr>
+        <td>
+          6.</td>
+        <td>
+          <p class="TableBodyText">If SkuQuantityUnit cannot determined 
+			according to the barcode received from the scanner:</p>
+			<p style="tab-stops: list 18.0pt;" class="style1"><![if !supportLists]>
+			<span lang="EN-US" style="mso-fareast-font-family:
+Arial;mso-bidi-font-family:Arial"><span style="mso-list:Ignore">●<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</span></span></span><![endif]><span lang="EN-US">If this is the 
+			same product as last shown, the operator can press the button 
+			“Same”.</span></p>
+			<span lang="EN-US" style="font-size:10.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Arial Unicode MS&quot;;mso-bidi-font-family:&quot;Arial Unicode MS&quot;;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">
+			Otherwise he/she has to use the “Search” button to identify the 
+			correct packaging type.</span></td>
+      </tr>
+      <tr>
+        <td>
+          7.</td>
+        <td>
+          Determine the correct pick from the loaded pick mission for the 
+			deter-mined/selected product.<br>
+			Call DepalletizingHelper.bookPick with this pick and quantity = 1 as 
+			parameter. Confirmation code should be ConfirmationCode.PARTIAL.</td>
+      </tr>
+      <tr>
+        <td>
+          8.</td>
+        <td>
+          After all picks are confirmed and the pick mission is completed, 
+			proceed with idle step .<br>
+			Trigger the determination of the next to activate source location.</td>
+      </tr>
+    </table>
+
+	<p>&nbsp;</p>
+    <!-- Content end -->
+  </div>
+
+<!-- Block: Buttons -->
+  <div class="block" id="block_buttondescriptions">   
+    <!-- Navigation line start -->
+    <a name="ButtonDescriptions"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#Procedure"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right.gif">&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../common/img/arrow_right_end.gif">
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Special Buttons</h5>
+    <table id="table3">
+      <tr>
+        <th>
+          <p class="columnDescription">Button</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">
+			<img src="img/btn_missing.png" width="101" height="55">&nbsp;</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Instructed Mode:<br>
+			Use this function to book the missing packages. This is necessary 
+			when the expected number of packages is greater than the actual 
+			booked on the pallet.<br>
+			Therefore set pick.confirmationCode = SHORT and 
+			pick.confirmationReason with PickErrorCode = QTY_MISSING.<br>
+			Entire Mode:<br>
+			Booking as in instructed mode. </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">
+			<img src="img/btn_broken.png" width="102" height="59">&nbsp;</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Same as missing with different that here 
+			PickErrorCode = BREAKAGE is used.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="img/btn_search.png" width="100" height="58">&nbsp;</td>
+        <td>
+          <span lang="EN-US" style="font-size:10.0pt;font-family:
+&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Arial Unicode MS&quot;;mso-bidi-font-family:
+&quot;Arial Unicode MS&quot;;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA">Go to step “Search”.</span></td>
+      </tr>
+      <tr>
+        <td>
+          <img src="img/btn_same.png" width="103" height="60">&nbsp;</td>
+        <td>
+          <p class="TableBodyText"><span lang="EN-US">Use the same data as for 
+			the last confirmation.</span></p>
+			<b style="mso-bidi-font-weight:normal">
+			<span lang="EN-US" style="font-size: 10.0pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; mso-fareast-font-family: &quot;Arial Unicode MS&quot;; mso-bidi-font-family: &quot;Arial Unicode MS&quot;; color: #999999; background: #999999; mso-shading: windowtext; mso-pattern: gray-40 auto; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">
+			:</span><span lang="EN-US" style="font-size: 10.0pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; mso-fareast-font-family: &quot;Arial Unicode MS&quot;; mso-bidi-font-family: &quot;Arial Unicode MS&quot;; background: #999999; mso-shading: windowtext; mso-pattern: gray-40 auto; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">INFO<span style="color:
+#999999">:</span></span></b><span lang="EN-US" style="font-size:10.0pt;
+font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Arial Unicode MS&quot;;
+mso-bidi-font-family:&quot;Arial Unicode MS&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA">&nbsp;For the first action this 
+			is not possible.</span></td>
+      </tr>
+      <tr>
+        <td>
+          <img src="img/btn_again.png" width="102" height="58">&nbsp;</td>
+        <td>
+          Transport back the package in order that the operator can scan this 
+			package again.</td>
+      </tr>
+      <tr>
+        <td>
+          <img src="img/btn_special.png" width="100" height="56">&nbsp;</td>
+        <td>
+          Go to step &quot;Special Handling&quot;.</td>
+      </tr>
+      </table>
+    <p>&nbsp;</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Footer start -->
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">© Dematic GmbH 2012. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar"><a href="#top">top</a> | <a href="javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

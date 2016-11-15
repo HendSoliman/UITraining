@@ -1,0 +1,436 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2011. All rights reserved.
+-->
+  <title>Dialogs and Sub dialogs</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)">
+  <meta name="keywords" content="Dematic, Dematic iQ">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Language" content="en-us">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content=".Web">
+  <style type="text/css" media="screen">@import url(../../../../../../common/style_screen.css);
+</style>
+  <style type="text/css" media="print">@import url(../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "app/doc/en/user/WebHelp/general/dialogs.html";
+  </script>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../index.html?page=source%2Fapp%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fgeneral%2Fdialogs.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../index.html?page=source%2Fapp%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fgeneral%2Fdialogs.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+  <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../index.html"><img class="upLinkImg" id="uplinkO_img" border="0" title="Introduction" src="../../../../../../common/img/move_overview.gif"></a>
+        </td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+            <a class="naviBar" href="#Overview">Overview</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Dialogs">Dialogs</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Subdialogs">Subdialogs</a>
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Top navigation bar end -->
+
+  <!-- Map title -->
+  <h1 id="maptitle">Dialogs and Sub dialogs</h1>
+
+  <!-- Block: Purpose -->
+  <div class="block" id="block_purpose">
+    <!-- Content start -->
+    <h5><a name="Purpose"></a>Purpose</h5>
+    <p>This chapter describes the general structure and layout of grid based dialog and sub dialogs. In addition to grid based dialogs, Dematic iQ<sup><small>&reg;</small></sup> also 
+    encompasses graphical dialogs which are not grid based. These dialog are described in the context of the business use case the refer to.</p>
+    <p>Definition of notions:</p>
+    <ul>
+      <li><strong>Dialog</strong><br>
+      A dialog is a screen window which resides in the
+      <a href="guiframe.html#DialogArea"><span class="style1">D</span>ialog Area</a> of UI frame. In general, dialogs are opened via the
+      <a href="guiframe.html#AccordionMenu"><span class="style1">A</span>ccordion Menu</a>. Often the central layout element of a dialog is one or more tabular presentation of datasets.<br>
+      Dialogs are non-modal in the sense that there can be more than one open dialog in the dialog area at the same time.</li>
+      <li><strong>Sub dialogs</strong><br>
+      Sub dialogs are pop-up screen windows which are open from dialogs or by means of
+      <a href="naviagtion.html">navigation</a>. They consist of several form based panels which presents all fields of a dataset.<br>
+      Sub dialogs are always modal, which means that the user can only perform actions which are offered by the sub dialog itself while it is open. The DC 
+      Director UI does not perform any non-modal sub dialogs.</li>
+    </ul>
+    <p>&nbsp;</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Overview -->
+  <div class="block" id="block_overview">
+    <!-- Navigation line start -->
+    <a name="Overview"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Dialogs"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Subdialogs"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Overview</h5>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription" style="height:16px">Topic</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">
+          <a href="#Dialogs">Dialogs</a></p>
+        </td>
+        <td>
+          <p class="tableBodyText">Explains the general structure and layout of a dialog.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">
+          <a href="#Dialogs">Tables</a></p>
+        </td>
+        <td>
+          <p class="tableBodyText">Explains the presentation and handling of tabular data.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">
+          <a href="#Dialogs">Sub dialogs</a></p>
+        </td>
+        <td>
+          <p class="tableBodyText">Explains the general structure and layout of modal sub dialogs.</p>
+        </td>
+      </tr>
+      </table>
+      <p>&nbsp;</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Dialogs -->
+  <div class="block" id="block_dialogs">
+    <!-- Navigation line start -->
+    <a name="Dialogs"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#Overview"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Subdialogs"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Subdialogs"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Dialogs</h5>
+    <p>In its simplest form a dialog consists of a button bar at the top and a tabular grid showing datasets:</p>
+    <p class="ScreenshotFullPage"><img src="img/dialog.png"></p>
+    <p>&nbsp;</p>
+    <p>The button bar offers the possibility to trigger actions for one ore more selected datasets. Depending on the context it may also be possible to create 
+    new datasets. All buttons are contexts sensitive, i.e. they are only active when their action is allowed in the current business context.</p>
+    <p class="noteTextPar">&nbsp;</p>
+    <p>The button bar encompasses the following functionality from left to right:</p>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription" style="height:16px">Element</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">
+          Standard buttons</p>
+        </td>
+        <td>
+          <p class="tableBodyText">The standard buttons offers are a set of actions which apply to all data grids. Depending on business context the exact set 
+          of standard actions may vary:</p>
+          <ul class="tableListBullet1">
+            <li><strong>Refresh</strong> (<img src="img/refresh.gif" width="18" height="18">)<br>
+            A refresh triggers new retrieval of data from the database. If filters are active, they are applied when retrieving the data.<br>
+            Dialogs do not refresh them automatically. This has to be done explicitly by the user.<br>
+            The pull down menu of the refresh button gives access to predefined filter sets and the 
+            <a href="datagrid.html#Filtering">filter history</a>.</li>
+            <li><strong>Printing</strong> / <strong>Export</strong> (<img src="img/print.gif" width="18" height="18">)<br>
+            The printing of datasets is achieved by generating a pdf file which is subsequently downloaded to the browser. Hereby, the &quot;What You See Is What You 
+            Get&quot; (WYSIWYG) principle is applied, i.e. the current column layout is used. <br>
+            This pdf file can then be printed by 
+            making use of standard browser functionality. The exact procedure how to do this depends on the browser being used and the individual settings of the user.
+            <strong>INFO</strong> Please ensure that there is no popup-blocker active for Dematic iQ<sup><small>&reg;</small></sup> URL. Otherwise the downloaded pdf file will not show up.<br>
+            Before the pdf file is generated the user can decide whether he wants to print the data as they are now being displayed in the data grid or 
+            whether he wants have all data being printed. In the latter case a new retrieval of data from the database is necessary which might yield a 
+            different result compared to what is currently displayed. <br>
+            A special form of printing is the export of data into an external files. The following formats are supported: Excel, csv, ODF, XML, RTF. This 
+            functionality gives the user the possibility to process data outside Dematic iQ<sup><small>&reg;</small></sup>.<br>
+            Layout oriented formats (RTF, PDF) create pages in landscape format with additional headers and footers, where all column widths display according 
+            to the relative size in the table. Data centric formats (XLS, ODT, XML, CSV, HTML) export only the column headers and the data.</li>
+            <li><strong>Modify</strong> (<img src="img/modify.gif" width="18" height="18">) / V<strong>iew</strong> (<img src="img/view.gif" width="18" height="18">)<br>
+            A subdialog opens which displays the field values of the selected dataset in a tabular form. Depending on his access rights, the user has the 
+            possibility to modify the values or just to view them.</li>
+            <li><strong>Create</strong> (<img src="img/create.gif" width="18" height="18">)<br>
+            A             
+            <a href="#Dialogs">sub dialog</a> opens which allows the user to fill a tabular form with the field value of new dataset. This action requires no 
+            dataset to be selected.</li>
+            <li><strong>Duplicate</strong> (<img src="img/duplicate.gif" width="18" height="18">)<br>
+            Similar to the new action a
+            <a href="#Subdialogs">sub dialog</a> open. The entry fields of the form are already populated with the values of the selected data set. This gives 
+            the user the advantage that he has to modify only these values which differ from the selected data set.</li>
+            <li><strong>Delete</strong> (<img src="img/delete.gif" width="18" height="18">)<br>
+            Deletes the selected datasets.</li>
+              <li><strong>TracePointer</strong> (<img src="img/show_log.gif" width="18" height="18">)<br>
+                  Open filtered Trace Location in browser.
+              </li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">
+          Dialog specific buttons</p>
+        </td>
+        <td>
+          <p class="tableBodyText">A dialog may also offer functionality which is specific for its purpose. In the example shown above, the assignment from user 
+          to groups is such a dialog specific action.</p>
+          <p class="tableBodyText">Dialog specific buttons can be displayed as:</p>
+          <ul>
+            <li>
+            <p class="tableBodyText">icons</p>
+            </li>
+            <li>
+            <p class="tableBodyText">icons with text</p>
+            </li>
+            <li>
+            <p class="tableBodyText">pure text</p>
+            </li>
+          </ul>
+           <p class="tableBodyText">In case when there is not enough space available, logically related text button are group together in a pull down menu.&nbsp; </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">
+          Status of the tabular data</p>
+        </td>
+        <td>
+          <ul class="tableListBullet1">
+            <li><strong>Available rows</strong> displays the number of rows which are currently available in the gird.<br>
+            A &gt; in the value indicates that there are more data available in the database which will be displayed when the user scrolls down. A click on the 
+            number determines the full number of rows in the database.<br>
+            To limit resource consumption, at most 1000 rows are displayed. The value 1001 indicates that there are still data in the database which cannot be 
+            displayed anymore due to resource limits. In this case it is recommended to add a new filter criterion to reduce the number of selected rows.</li>
+            <li>The <strong>last refresh</strong> indicates the age of the date being currently displayed. &nbsp;</li>
+          </ul>
+        </td>
+      </tr>
+      </table>
+    <p>&nbsp;</p>
+    <p>In general, a dialog is initially filled with data when it is open. However, especially when there is a huge amount of data in a table it makes more 
+    sense to first specify certain filter criteria which limit the data set before retrieving data. In this case, the message &quot;Set filter and click refresh 
+    button!&quot; and the refresh icon (<img src="img/refresh.gif" width="18" height="18">) is displayed in the grid. </p>
+    <p>See
+    <a href="datagrid.html">Data Grids</a> for more details.</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Subdialogs -->
+  <div class="block" id="block_subdialogs">
+    <!-- Navigation line start -->
+    <a name="Subdialogs"></a>
+
+    <!-- Content start -->
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#Dialogs"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif">&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif">
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Sub dialogs</h5>
+    <p>The following screenshot shows the typical structure of modal sub dialog.</p>
+    <p class="screenshot"><img src="img/subdialog.png"></p>
+    <p>It encompasses the following elements from top to button:</p>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription" style="height:16px">Element</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          Heading</td>
+        <td>
+          The heading gives a short description of the purpose of the modal dialog.<br>
+          At the right side there buttons to close (<img src="img/close.gif" width="18" height="18">) the sub dialog and to open the help page (<img src="img/help.gif" width="18" height="18">) explaining the sub dialog. 
+          The sub dialog can also be closed by pressing the ESC key.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">
+          Id </p>
+        </td>
+        <td>
+          Shows the key fields of the displayed dataset.</td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">
+          Tabbed Pane</p>
+        </td>
+        <td>
+          <p>The tabbed panes shows the fields of the dataset. If a data set encompasses a lot of fields, several tabs are used. Each of the them groups 
+          logically related fields together. The exact number of tabs being shown depends of the concrete dataset.</p>
+          <p>The last tab is always entitled &quot;History&quot;. It contains information when and by whom the dataset was created and lastly modified.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">Buttonbar</p></td>
+        <td>
+          On the right hand side there is &quot;OK&quot; button which triggers the action (e.g. storing modified data). Similarity, the &quot;Cancel&quot; button aborts the 
+          operation. All modifications are discarded and the dialog is closed.<br>
+          On the left hand side there is a dropdown menu, which encompasses all actions of the toolbar of the main dialog which are applicable to the currently 
+          displayed dataset. This allows the triggering of action directly from the sub dialog, i.e. without having to go back main dialog. This is especially 
+          useful if the sub dialog has been open by means of navigation where there is no direct correlation to a main dialog.</td>
+      </tr>
+      </table>
+    <p>&nbsp;</p>
+    <h5>Mandatory Fields</h5>
+    <p>Mandatory fields are fields which must be filled in before the dataset can be stored.</p>
+    <p>Mandatory fields which still needs to be filled in are marked with an orange asterisk (<img src="img/MandatoryInputEmpty.gif" width="9" height="9">) in 
+    front of the label. After data has been entered the color of the 
+    asterisk changes to black. </p>
+    <p>The same indication is contained in the heading of tabbed pane which contains mandatory fields. If at least one mandatory field is encompassed in the tab 
+    which has not yet been filled in, an orange asterisk is shown.</p>
+    <p>&nbsp;</p>
+    <h5>Picker</h5>
+    <p>For simple data fields (e.g. text of numeric) values can be typed in directly. For more complex data fields &quot;picker&quot; assist the user enter valid data 
+    efficiently. </p>
+    <p>The picker is a small symbol at the right hand side of an entry field. The following variants are supported:</p>
+    <ul>
+      <li>ComboBoxes (<img src="img/combo.png" width="8" height="10">): a combo box opens from which the user can select a single value.</li>
+      <li>Date/time fields (<img src="img/calendar.gif" width="8" height="10">): a calendar control opens from which the user can choose date and/or time.</li>
+      <li>References to datasets (<img src="img/ellipsis.png" width="8" height="10">): a reference sub dialog opens which displays a table having the (logical) 
+      key fields and the primary key as columns. The user can select a value by selecting a row from the grid. Filter criteria can be used to reduce the 
+      displayed amount of data sets as usual.</li>
+    </ul>
+    <p>The shape of the picker may vary dynamically depending on the amount of datasets can choose of. For a small amount of data a combo box is more efficient, 
+    whereas a for a large set an reference sub dialog is more appropriate.</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Footer start -->
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">&copy; Dematic GmbH 2011. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar"><a href="#top">top</a> | <a href="javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

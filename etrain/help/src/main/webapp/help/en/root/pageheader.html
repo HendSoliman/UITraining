@@ -1,0 +1,276 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <script type="text/javascript" src="files/dcd_buttons.js"></script>
+  <title>Training Warehouse</title>
+<script type="text/JavaScript" src="files/treearr.js"></script>
+<script type="text/JavaScript" src="files/supply.js"></script>
+</head>
+<body topmargin="0" leftmargin="5" rightmargin="5" bottommargin="5" bgcolor="#FFFFFF">
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="100%">
+    <script type="text/javascript">
+      if (top.document.getElementById("__gwt_historyFrame") == null) {
+        document.write('    <tr height="60">');
+        document.write('      <td width="20%">');
+        document.write('        <a href="http://www.dematic.com" target="content">');
+        document.write('        <img border="0" src="files/LogoLeft.png"></a></td>');
+        document.write('      <td width="60%" colspan="2">');
+        document.write('        <p align="center"><b><font face="Arial" color="#F6B800" size="5">Training Warehouse</font></b></p></td>');
+        document.write('      <td width="20%">');
+        document.write('        <p align="right">');
+        document.write('          <a href="http://intranet.emea.tld" target="content">');
+        document.write('           <img border="0" src="files/LogoRight.png"></a>');
+        document.write('        </p>');
+        document.write('      </td>');
+        document.write('    </tr>');
+      }
+    </script>
+    <tr height="28" bgcolor="#EFEFEF">
+      <td colspan="3">
+        <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse">
+          <tr valign="middle">
+            <td width="26">
+              <div style="position:relative; bottom:-13px">
+                <img id="dcdTreeBg" border="0" 
+                     style="position:absolute; bottom:0px; left:0px" 
+                     src="files/button.gif" width="26" height="26">
+                <a name="dcdToggleTree" id="dcdToggleTree">
+	                <img id="dcdTree" border="0" 
+	                     style="position:absolute; bottom:4px; left:4px" 
+	                     src="files/tree.gif" width="18" height="18" 
+	                     alt="Show/hide navigation area"
+	                     title="Show/hide navigation area"
+	                     onmouseover="dcd_highlightOn(document, 'dcdTreeBg')" 
+	                     onmouseout="dcd_highlightOff(document, 'dcdTreeBg')"
+                       onclick="dcd_toggleTree(parent.document)">
+	              </a>
+              </div>
+            </td>
+            <td width="26">
+              <div style="position:relative; bottom:-13px">
+                <img id="dcdEditBg" border="0" 
+                     style="position:absolute; bottom:0px; left:0px" 
+                     src="files/button.gif" width="26" height="26">
+                <a name="dcdEditLink" id="dcdEditLink">
+	                <img id="dcdEdit" border="0" 
+	                     style="position:absolute; bottom:4px; left:4px" 
+	                     src="files/modify.gif" width="18" height="18" 
+	                     alt="Edit source document"
+	                     title="Edit source document"
+	                     onmouseover="dcd_highlightOn(document, 'dcdEditBg')" 
+	                     onmouseout="dcd_highlightOff(document, 'dcdEditBg')"
+                       onclick="dcd_editDocument(document, 'dcdEditLink', parent.content.document, 'dcd_editinghelptopics.html')">
+	              </a>
+              </div>
+            </td>
+            <td width="26">
+              <div style="position:relative; bottom:-13px">
+                <img id="dcdRefreshBg" border="0" 
+                     style="position:absolute; bottom:0px; left:0px" 
+                     src="files/button.gif" width="26" height="26" 
+                     width="0" height="0">
+                <img id="dcdRefresh" border="0" 
+                     style="position:absolute; bottom:4px; left:4px" 
+                     src="files/refresh.gif" width="18" height="18" 
+                     alt="Refresh help window after document editing"
+                     title="Refresh help window after document editing"
+                     onmouseover="dcd_highlightOn(document, 'dcdRefreshBg')"
+                     onmouseout="dcd_highlightOff(document, 'dcdRefreshBg')"
+                     onclick="dcd_refreshDocument(parent.content.document)">
+              </div>
+            </td>
+            <td width="26">
+              <div style="position:relative; bottom:-13px">
+                <img id="dcdPrintBg" border="0" 
+                     style="position:absolute; bottom:0px; left:0px" 
+                     src="files/button.gif" width="26" height="26" 
+                     width="0" height="0">
+                <img id="dcdPrint" border="0" 
+                     style="position:absolute; bottom:4px; left:4px" 
+                     src="files/print.gif" width="18" height="18" 
+                     alt="Print document"
+                     title="Print document"
+                     onmouseover="dcd_highlightOn(document, 'dcdPrintBg')"
+                     onmouseout="dcd_highlightOff(document, 'dcdPrintBg')"
+                     onclick="chmtop.c2wtopf.conPrint(); return false;">
+              </div>
+            </td>
+            <td width="26">
+            </td>
+            <td width="26">
+              <div style="position:relative; bottom:-13px">
+                <img id="dcdHomeBg" border="0" 
+                     style="position:absolute; bottom:0px; left:0px" 
+                     src="files/button.gif" width="26" height="26" 
+                     width="0" height="0">
+                <img id="dcdHome" border="0" 
+                     style="position:absolute; bottom:4px; left:4px" 
+                     src="files/home.gif" width="18" height="18" 
+                     alt="Goto home page"
+                     title="Goto home page"
+                     onmouseover="dcd_highlightOn(document, 'dcdHomeBg')"
+                     onmouseout="dcd_highlightOff(document, 'dcdHomeBg')"
+                     onclick="window.open('source/etrain/doc/en/user/WebHelp/index.html','content')">
+              </div>
+            </td>
+            <td width="26">
+              <div style="position:relative; bottom:-13px">
+                <img id="dcdUpBg" border="0" 
+                     style="position:absolute; bottom:0px; left:0px" 
+                     src="files/button.gif" width="26" height="26" 
+                     width="0" height="0">
+                <img id="dcdUp" border="0" 
+                     style="position:absolute; bottom:4px; left:4px" 
+                     src="files/up.gif" width="18" height="18" 
+                     alt="Show previous topic"
+                     title="Show previous topic"
+                     onmouseover="dcd_highlightOn(document, 'dcdUpBg')"
+                     onmouseout="dcd_highlightOff(document, 'dcdUpBg')"
+                     onclick="chmtop.c2wtopf.navDelta(-1); return false;">
+              </div>
+            </td>
+            <td width="26">
+              <div style="position:relative; bottom:-13px">
+                <img id="dcdDownBg" border="0" 
+                     style="position:absolute; bottom:0px; left:0px" 
+                     src="files/button.gif" width="26" height="26" 
+                     width="0" height="0">
+                <img id="dcdDown" border="0" 
+                     style="position:absolute; bottom:4px; left:4px" 
+                     src="files/down.gif" width="18" height="18" 
+                     alt="Show next topic"
+                     title="Show next topic"
+                     onmouseover="dcd_highlightOn(document, 'dcdDownBg')"
+                     onmouseout="dcd_highlightOff(document, 'dcdDownBg')"
+                     onclick="chmtop.c2wtopf.navDelta(1); return false;">
+              </div>
+            </td>
+            <td width="26">
+            </td>
+            <td width="26">
+              <div style="position:relative; bottom:-13px">
+                <img id="dcdOverviewBg" border="0" 
+                     style="position:absolute; bottom:0px; left:0px" 
+                     src="files/button.gif" width="26" height="26" 
+                     width="0" height="0">
+                <img id="dcdOverview" border="0" 
+                     style="position:absolute; bottom:4px; left:4px" 
+                     src="files/overview.gif" width="18" height="18" 
+                     alt="No overview topic available"
+                     title="No overview topic available"
+                     onmouseover="dcd_highlighInContext(document, 'dcdOverviewBg', 'dcdOverview', parent.content.document, 'uplinkO')"
+                     onmouseout="dcd_highlighInContextOff(document, 'dcdOverviewBg', 'dcdOverview', parent.content.document, 'uplinkO')"
+                     onclick="dcd_goTo(parent.content, parent.content.document, 'uplinkO')">
+              </div>
+            </td>
+            <td width="26">
+              <div style="position:relative; bottom:-13px">
+                <img id="dcdParentBg" border="0" 
+                     style="position:absolute; bottom:0px; left:0px" 
+                     src="files/button.gif" width="26" height="26" 
+                     width="0" height="0">
+                <img id="dcdParent" border="0" 
+                     style="position:absolute; bottom:4px; left:4px" 
+                     src="files/parent.gif" width="18" height="18" 
+                     alt="No parent topic available"
+                     title="No parent topic available"
+                     onmouseover="dcd_highlighInContext(document, 'dcdParentBg', 'dcdParent', parent.content.document, 'uplinkP')"
+                     onmouseout="dcd_highlighInContextOff(document, 'dcdParentBg', 'dcdParent', parent.content.document, 'uplinkP')"
+                     onclick="dcd_goTo(parent.content, parent.content.document, 'uplinkP')">
+              </div>
+            </td>
+            <td width="26">
+              <div style="position:relative; bottom:-13px">
+                <img id="dcdBackBg" border="0" 
+                     style="position:absolute; bottom:0px; left:0px" 
+                     src="files/button.gif" width="26" height="26" 
+                     width="0" height="0">
+                <img id="dcdBack" border="0" 
+                     style="position:absolute; bottom:4px; left:4px" 
+                     src="files/back.gif" width="18" height="18" 
+                     alt="Go back"
+                     title="Go back"
+                     onmouseover="dcd_highlightOn(document, 'dcdBackBg')"
+                     onmouseout="dcd_highlightOff(document, 'dcdBackBg')"
+                     onclick="dcd_goBack(parent)">
+              </div>
+            </td>
+            <td width="26">
+              <div style="position:relative; bottom:-13px">
+                <img id="dcdFwrdBg" border="0" 
+                     style="position:absolute; bottom:0px; left:0px" 
+                     src="files/button.gif" width="26" height="26" 
+                     width="0" height="0">
+                <img id="dcdFwrd" border="0" 
+                     style="position:absolute; bottom:4px; left:4px" 
+                     src="files/forward.gif" width="18" height="18" 
+                     alt="Go forward"
+                     title="Go forward"
+                     onmouseover="dcd_highlightOn(document, 'dcdFwrdBg')"
+                     onmouseout="dcd_highlightOff(document, 'dcdFwrdBg')"
+                     onclick="dcd_goForward(parent)">
+              </div>
+            </td>
+            <td width="26">
+            </td>
+            <td width="26">
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td colspan="1" align="right">
+        <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse">
+          <tr valign="middle">
+            <td style="width:26px">
+              <div style="position:relative; bottom:-13px">
+                <img id="dcdCopyUrlToClipboardBg"border="0" 
+                     style="position:absolute; bottom:0px; left:0px" 
+                     src="files/button.gif" width="26" height="26">
+                <img id="dcdCopyUrlToClipboard" border="0" 
+                     style="position:absolute; bottom:4px; left:4px" 
+                     src="files/copyLink.gif" width="18" height="18" 
+                     alt="Copy hyperlink target for content page to clipboard"
+                     title="Copy hyperlink target for content page to clipboard"
+                     onmouseover="dcd_highlightOn(document, 'dcdCopyUrlToClipboardBg')" 
+                     onmouseout="dcd_highlightOff(document, 'dcdCopyUrlToClipboardBg')"
+                     onclick="dcd_copyUrlToClipboard(document, parent.content.document)">
+              </div>
+            </td>
+            <td style="width:26px">
+              <div style="position:relative; bottom:-13px">
+                <img id="dcdHelpBg"border="0" 
+                     style="position:absolute; bottom:0px; left:0px" 
+                     src="files/button.gif" width="26" height="26">
+                <img id="dcdHelp" border="0" 
+                     style="position:absolute; bottom:4px; left:4px" 
+                     src="files/help.gif" width="18" height="18" 
+                     alt="Usage of Help System"
+                     title="Usage of Help System"
+                     onmouseover="dcd_highlightOn(document, 'dcdHelpBg')" 
+                     onmouseout="dcd_highlightOff(document, 'dcdHelpBg')"
+                     onclick="dcd_help(document, 'dcd_helphelp.html')">
+              </div>
+            </td>
+            <td style="width:26px">
+              <div style="position:relative; bottom:-13px">
+                <img id="dcdCloseBg"border="0" 
+                     style="position:absolute; bottom:0px; left:0px" 
+                     src="files/button.gif" width="26" height="26">
+                <img id="dcdClose" border="0" 
+                     style="position:absolute; bottom:4px; left:4px" 
+                     src="files/close.gif" width="18" height="18" 
+                     alt="Close Help Window"
+                     title="Close Help Window"
+                     onmouseover="dcd_highlightOn(document, 'dcdCloseBg')" 
+                     onmouseout="dcd_highlightOff(document, 'dcdCloseBg')"
+                     onclick="dcd_close(parent)">
+              </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>  
+</html>

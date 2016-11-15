@@ -1,0 +1,196 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2008. All rights reserved.
+
+  $Id: Shipping.html 27545 2014-05-05 09:58:11Z bernardy $
+-->
+    <title>Shipping</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)">
+  <meta name="keywords" content="Dematic, Dematic iQ">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content="WCS-TPL_Frame.Web">
+  <style type="text/css" media="screen">@import url(../../../../../../common/style_screen.css);</style>
+    <style type="text/css" media="print">@import url(../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "obd/doc/en/user/WebHelp/process/Shipping.html";
+  </script>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../index.html?page=source%2Fobd%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fprocess%2FShipping.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../index.html?page=source%2Fobd%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fprocess%2FShipping.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+  <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../index.html"><img class="upLinkImg" id="uplinkO_img" border="0" title="Outbound Processes" src="../../../../../../common/img/move_overview.gif"></a>
+         </td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Top navigation bar end -->
+
+  <!-- Map title -->
+  <h1 id="maptitle">Shipping</h1>
+
+  <!-- Block: Overview -->
+  <div class="block" id="block_overview">
+    <!-- Content start -->
+    <h5><a name="Overview"></a>Overview</h5>
+    <p>Shipping provides the components to support various execution processes for the<b> shipment of orders</b>.</p>
+    <p><u><b>Routes</b></u></p>
+    <p>A Route is the central business object carrying information on the Carrier of the Load, the assigned Dock where loading is executed, departure and required staging times. 
+    Thus, the Route is a concrete instance of an Itinerary. <br>
+    If required, all stops of the Itinerary can be hit during the Route, which can be planned by an external Route Planning System.
+    The shipping processes can be executed without Route management, only by handling Loads.<br>
+    The possible <strong>lifecycle </strong>of Routes is described in the related 
+    <a href="../dialogs/obd/route/ui/client/dialog/admin/RouteOverviewDialog.html">description of the status values</a>.</p>
+    <p><u><b>Loads</b></u></p>
+    <p>A Load comprises all Dispatch Load Units shipped together, usually in one truck or any other loading equipment. A Load can be assigned directly to a Dock if Routes are not used in the system. Otherwise, the Load is assigned to a Route.<br>
+       All Dispatch Load Units, to be shipped together as a unit, are grouped to a Dispatch. A 
+    <a href="../dialogs/obd/load/ui/client/dialog/dispatch/DispatchOverviewDialog.html">Dispatch</a> is the part of the Load that represents for example 
+       the recipient of the goods or a single unloading point of the Route.<br>
+       The possible <strong>lifecycle </strong>of Loads and Dispatches is described in the related description of the status values for 
+    <a href="../dialogs/obd/load/ui/client/dialog/load/LoadOverviewDialog.html">Loads</a> 
+       and 
+    <a href="../dialogs/obd/load/ui/client/dialog/dispatch/DispatchOverviewDialog.html">Dispatches</a>.</p>
+    <p><u><b>Marshalling and Loading</b></u></p>
+    <p>Dispatch Load Units that are ready for shipment are staged, after a possible intermediate storage, at a special Marshalling Grid located in the shipping area where the Dispatch Load Units could be marshaled in a required sequence.<br>
+       Subsequent loading into a truck or other loading equipment occurs at the Dock assigned to the Marshalling Grid.<br>
+       The loading process is done using <a href="../dialogsrf/RFLoadingOperationDialog.html">RF-Terminal Loading</a> and finished with closing the Load, printing shipping documents, and confirming truck departure which releases the occupied Dock for further use.</p>
+    <p><u><b>Shipping Topics</b></u></p>
+    <p><b>Basic functions</b> and responsibilities of the Shipping subsystem:</p>
+    <ul class="listBullet1">
+      <li>Global general <b>Lifecycle Management</b> of <strong>Routes </strong>and <strong>Loads</strong></li>
+      <li><b>Shipment of Orders </b>(marshalling and loading) with providing the appropriate specific execution management</li>
+      <li>Administration of <strong>special Marshalling Areas</strong></li>
+      <li>Administration of <strong>Shipping Areas </strong>including <strong>Docks</strong>.</li>
+    </ul>
+    <br>
+    <table>
+      <tr>
+        <th><p class="columnDescription">Section</p></th>
+        <th><p class="columnDescription">Description</p></th>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">
+          <a href="../dialogs/obd/load/ui/client/dialog/marshallinggrid/MarshallingGridOverviewDialog.html">Marshalling Grids</a></p></td>
+        <td><p class="tableBodyText">Screens for Marshalling Grid Administration and for <strong>assignment of Docks and Loads</strong>.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">
+          <a href="../dialogs/obd/route/ui/client/dialog/dockmanagement/DockManagementOverviewDialog.html">Dock Management</a></p></td>
+        <td><p class="tableBodyText">Screen for <strong>assigning Routes</strong> to Docks.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">
+          <a href="../dialogs/obd/load/ui/client/dialog/shippingarea/ShippingAreaOverviewDialog.html">Shipping Area</a></p></td>
+        <td><p class="tableBodyText">Screen for administration of the Shipping Area for a <strong>graphical assignment of Docks to Marshalling Grids</strong>.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">
+          <a href="../dialogs/obd/route/ui/client/dialog/admin/RouteOverviewDialog.html">Routes</a></p></td>
+        <td><p class="tableBodyText">Screen for <strong>Route</strong> Administration.</p></td>
+      </tr>
+       <tr>
+        <td><p class="tableBodyText">
+          <a href="../dialogs/obd/load/ui/client/dialog/load/LoadOverviewDialog.html">Loads</a></p></td>
+        <td><p class="tableBodyText">Screen for <strong>Load</strong> Administration.</p></td>
+      </tr>
+      <tr>
+        <td><p class="tableBodyText">
+          <a href="../dialogs/obd/load/ui/client/dialog/dispatch/DispatchOverviewDialog.html">Dispatches</a></p></td>
+        <td><p class="tableBodyText">Screen for <strong>Dispatch</strong> Administration.</p></td>
+      </tr>
+       <tr>
+        <td><p class="tableBodyText">
+          <a href="../dialogsrf/RFLoadingOperationDialog.html">RF-Terminal Loading</a></p></td>
+        <td><p class="tableBodyText">Screen for <strong>loading</strong> operation using an <strong>RF-Terminal</strong>.</p></td>
+      </tr>
+       <tr>
+        <td><p class="tableBodyText">
+          <a href="../usecases/shipping_general.html">General Shipping</a></p></td>
+        <td><p class="tableBodyText">Prerequisites and steps for using the <strong>shipping processes </strong>with <strong>basic functionalities only</strong>.</p>	</td>
+      </tr>
+       <tr>
+        <td><p class="tableBodyText">
+          <a href="../usecases/UseCaseRFLoading.html">Loading with RF-Terminal</a></p></td>
+        <td><p class="tableBodyText"><strong>Loading process </strong>using 
+          <a href="../dialogsrf/RFLoadingOperationDialog.html">RF-Terminal Loading</a>.</p></td>
+      </tr>
+    </table>
+    <!-- Content end -->
+  </div>
+
+  <!-- Footer start -->
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">&copy; Dematic GmbH 2011. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar"><a href="#top">top</a> | <a href="javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

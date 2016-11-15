@@ -1,0 +1,1045 @@
+;==============================================================================
+;
+; Dematic iQ Standard TEMPLATE BODY for chm2web software
+; Version supports Frames target only
+; (c) Dematic GmbH, 2010
+; 
+; $Id: dcd_standard_web.body 96775 2012-08-28 15:51:05Z nagelsie $
+; 
+; Supported help versions:
+; 
+;  Frames version :       supported
+:  No frames version :    not supported
+;  Mobile version :       not supported
+;
+;==============================================================================
+
+;====================================================
+;
+; Current template body information
+;
+;====================================================
+[BODY.INFO]
+
+NAME		= DCD Standard (WebHelp)
+Template body for chm2web software.
+
+AUTHOR		= Dematic GmbH
+Copyright(c) 2010, All Rights Reserved
+
+TARGETS		= FRAMES
+Supported targets
+
+FORBUILD	= 120
+Required chm2web version (build)
+
+;====================================================
+;
+; Custom Fields
+; 
+; VARxxxxx - user can edit this fields
+; xxxxxxxx - fields with fixed values
+;
+;====================================================
+[OPEN.FIELDS]
+
+VARPAGECAPTION	= Web Online Help
+Help page caption
+
+VARLEFTURL = http://www.dematic.com
+URL to be opened when clicking on left Logo
+
+VARRIGHTURL = http://intranet.emea.tld
+URL to be opened when clicking on right Logo
+
+VARCONTENTS	= Content
+Contents button caption
+
+VARSEARCH 	= Search
+Search button caption
+
+VARSEARCHTIT 	= Type in the word(s) to search for:
+Search tab caption
+
+VARSEARCHBUT 	= Search
+Search button caption
+
+VARINDEX	= Index
+Index button caption
+
+VARINDEXTIT	= Type in the keyword to find:
+Caption in index tab
+
+VARINDEXBUT	= Display
+Caption for index button
+
+VARTOGGLETREE = Show/hide navigation area
+Button "Show/hide navigation area"
+
+VAREDITSOURCE = Edit source document
+Button "Edit Source" tool tip
+
+VARREFRESH = Refresh help window after document editing
+Button "Refresh" tool tip
+
+VARPRINT = Print document
+Button "Print" tool tip
+
+VARHOME = Return to home page
+Button "Home" tool tip
+
+VARHOMEURL	= http://www.dematic.com
+Home page url
+
+VARUP = Show previous topic
+Button "up" tool tip
+
+VARDOWN = Show next topic
+Button "down" tool tip
+
+VAROVERVIEW = No overview topic available
+Button "overview" tool tip
+
+VARPARENT = No parent topic available
+Button "parent" tool tip
+
+VARBACK = Go back
+Button "back" tool tip
+
+VARFORWARD = Go forward
+Button "Forward" tool tip
+
+VARCOPYLINK = Copy hyperlink target for content page to clipboard
+Button "Copy Hyperlink Target" tool tip
+
+VARHELP = Usage of Help System
+Button "Help" tool tip
+
+VARCLOSE = Close Help Window
+Button "Close" tool tip
+
+VARCONTENTHEADER = dcd_contentheader.html
+HTML File for Content header
+
+VAREDITINGTOPIC = dcd_editinghelptopics.html
+HTML File with hint for editing help topics
+
+VARHELPHELP = dcd_helphelp.html
+HTML File for help
+
+;====================================================
+;
+; Template for Configuration Manager 
+; ("Template" chm2web tab)
+; 
+; All field names should begin with "var" keyword.
+;
+;============+========================================
+
+[CONFIG.MANAGER]
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+
+<META HTTP-EQUIV="MSThemeCompatible" CONTENT="yes">
+
+<HEAD>
+ <STYLE>
+   TD { font-family: Tahoma; font-size: 8pt}
+   SELECT { font-family: Tahoma; font-size: 8pt}
+   INPUT { font-family: Tahoma; font-size: 8pt}
+   .TRCAP { background-color: #000080; color: white }
+ </STYLE>
+</HEAD>
+
+<BODY BGCOLOR="#FBFAFB" SCROLL="auto" topmargin="2" leftmargin="2">
+
+  <table cellpadding="2" style="border-collapse: collapse" width="100%" BGCOLOR="#FBFAFB">
+    <tr class="TRCAP">
+     <td width="100%" nowrap ><b>Supported Targets:</td>
+     <td align="right" bgcolor="white" width=100 height=35 rowspan="2" valign="top" nowrap>
+       <img src="#TEMPLATES.FOLDER#logo/valid-html401.png" 
+       alt="Valid HTML 4.01!" height="31" width="88" border=0></td>
+    </tr>
+    <tr>
+      <td height="25">Frames version only</td>
+    </tr>
+  </table>
+
+  <table cellpadding="2" style="border-collapse: collapse" width="100%" BGCOLOR="#FBFAFB">
+    <tr class="TRCAP">
+      <td width="100%" colspan="2"><b>
+      General:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For unicode characters use HTML (hex) notation: &#x{hex code};</td>
+    </tr>
+    <tr>
+      <td width="12%">Help Title:</td>
+      <td width="88%"><input type="text" name="varPageCaption" size="80"></td>
+    </tr>
+    <tr>
+      <td width="12%">Left Side URL:</td>
+      <td width="88%"><input type="text" name="varLeftURL" size="80">
+      </td>
+    </tr>
+    <tr>
+      <td width="12%">Right Side URL:</td>
+      <td width="88%"><input type="text" name="varRightURL" size="80">
+      </td>
+    </tr>
+
+    <tr class="TRCAP">
+      <td colspan="2"><b>
+      Captions:</td>
+    </tr>
+    <tr>
+      <td width="12%">Contents Tab Caption:</td>
+      <td width="88%"><input type="text" name="varContents" size="30"></td>
+    </tr>
+    <tr>
+      <td width="12%">Index Tab Caption:</td>
+      <td width="88%"><input type="text" name="varIndex" size="30"></td>
+    </tr>
+    <tr>
+      <td width="12%">Index Tab Text:</td>
+      <td width="88%"><input type="text" name="varIndexTit" size="30"></td>
+    </tr>
+    <tr>
+      <td width="12%">Index Btn Text:</td>
+      <td width="88%"><input type="text" name="varIndexBut" size="30"> &nbsp;For unicode use Java notation: \u{hex code}</td>
+    </tr>
+    <tr>
+      <td width="12%">Search Tab Caption:</td>
+      <td width="88%"><input type="text" name="varSearch" size="30"></td>
+    </tr>
+    <tr>
+      <td width="12%">Search Tab Text:</td>
+      <td width="88%"><input type="text" name="varSearchTit" size="30"></td>
+    </tr>
+    <tr>
+      <td width="12%">Search Btn Text:</td>
+      <td width="88%"><input type="text" name="varSearchBut" size="30"> &nbsp;For unicode use Java notation: \u{hex code}</td>
+    </tr>
+
+    <tr class="TRCAP">
+      <td colspan="2"><b>
+      Button Tool Tips:</td>
+    </tr>
+
+    <tr>
+      <td colspan="2"> 
+        <table width="100%">
+        <tr width="50%">
+         <td width="12%">Toggle Tree button:</td>
+         <td width="30%"><input type="text" name="varToggleTree" size="35"></td>
+         <td width="12%"></td>
+         <td width="30%"></td>
+        </tr>
+        <tr width="50%">
+         <td width="12%">Edit button:</td>
+         <td width="30%"><input type="text" name="varEditSource" size="35"></td>
+         <td width="12%">Hint File:</td>
+         <td width="30%"><input type="text" name="varEditingTopic" size="35"></td>
+        </tr>
+        <tr width="50%">
+         <td width="12%">Refresh button:</td>
+         <td width="30%"><input type="text" name="varRefresh" size="35"></td>
+         <td width="12%">Print button:</td>
+         <td width="30%"><input type="text" name="varPrint" size="35"></td>
+        </tr>
+        <tr width="50%">
+         <td width="12%">Home button:</td>
+         <td width="30%"><input type="text" name="varHome" size="35"></td>
+         <td widzh="12%">Home URL</td>
+         <td width="30%"><input type="text" name="varHomeUrl" size="35"></td>
+        </tr>
+        <tr width="50%">
+         <td width="12%">Up button:</td>
+         <td width="30%"><input type="text" name="varUp" size="35"></td>
+         <td widzh="12%">Down button</td>
+         <td width="30%"><input type="text" name="varDown" size="35"></td>
+        </tr>
+        <tr width="50%">
+         <td width="12%">Overview button:</td>
+         <td width="30%"><input type="text" name="varOverview" size="35"></td>
+         <td widzh="12%">Parent button</td>
+         <td width="30%"><input type="text" name="varParent" size="35"></td>
+        </tr>
+        <tr width="50%">
+         <td width="12%">Back button:</td>
+         <td width="30%"><input type="text" name="varBack" size="35"></td>
+         <td widzh="12%">Forward button</td>
+         <td width="30%"><input type="text" name="varForward" size="35"></td>
+        </tr>
+        <tr width="50%">
+         <td width="12%"></td>
+         <td width="30%"></td>
+         <td widzh="12%">Link button:</td>
+         <td width="30%"><input type="text" name="varCopyLink" size="35"></td>
+        </tr>
+        <tr width="50%">
+         <td width="12%">Help button:</td>
+         <td width="30%"><input type="text" name="varHelp" size="35"></td>
+         <td widzh="12%">Close button:</td>
+         <td width="30%"><input type="text" name="varClose" size="35"></td>
+        </tr>
+        <tr width="50%">
+         <td width="12%">Content header:</td>
+         <td width="30%"><input type="text" name="varContentHeader" size="35"></td>
+         <td widzh="12%">Help help:</td>
+         <td width="30%"><input type="text" name="varHelpHelp" size="35"></td>
+        </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</BODY>
+</HTML>
+;==============================================================================
+;==============================================================================
+;==============================================================================
+;====================================================
+;
+; FRAMES VERSION TEMPLATES
+;
+;====================================================
+
+
+;====================================================
+;
+; HTML Template for Page Header
+;
+; This code is used to display the frame located above 
+; the other frames.
+; It hosts two icons, left and right, with optional links
+; as well as a set of buttons for different functions.
+; 
+; Frame name: pageheader
+;
+;====================================================
+
+[PAGE.HEADER.BODY]
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <script type="text/javascript" src="files/dcd_buttons.js"></script>
+
+  <title>#VARPAGECAPTION#</title>
+</head>
+<body topmargin="0" leftmargin="5" rightmargin="5" bottommargin="5" bgcolor="#FFFFFF">
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="100%">
+    <script type="text/javascript">
+      if (top.document.getElementById("__gwt_historyFrame") == null) {
+        document.write('    <tr height="60">');
+        document.write('      <td width="20%">');
+        document.write('        <a href="#VARLEFTURL#" target="content">');
+        document.write('        <img border="0" src="files/LogoLeft.png"></a></td>');
+        document.write('      <td width="60%" colspan="2">');
+        document.write('        <p align="center"><b><font face="Arial" color="#F6B800" size="5">#VARPAGECAPTION#</font></b></p></td>');
+        document.write('      <td width="20%">');
+        document.write('        <p align="right">');
+        document.write('          <a href="#VARRIGHTURL#" target="content">');
+        document.write('           <img border="0" src="files/LogoRight.png"></a>');
+        document.write('        </p>');
+        document.write('      </td>');
+        document.write('    </tr>');
+      }
+    </script>
+    <tr height="28" bgcolor="#EFEFEF">
+      <td colspan="3">
+        <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse">
+          <tr valign="middle">
+            <td width="26">
+              <div style="position:relative; bottom:-13px">
+                <img id="dcdTreeBg" border="0" 
+                     style="position:absolute; bottom:0px; left:0px" 
+                     src="files/button.gif" width="26" height="26">
+                <a name="dcdToggleTree" id="dcdToggleTree">
+	                <img id="dcdTree" border="0" 
+	                     style="position:absolute; bottom:4px; left:4px" 
+	                     src="files/tree.gif" width="18" height="18" 
+	                     alt="#VARTOGGLETREE#"
+	                     title="#VARTOGGLETREE#"
+	                     onmouseover="dcd_highlightOn(document, 'dcdTreeBg')" 
+	                     onmouseout="dcd_highlightOff(document, 'dcdTreeBg')"
+                       onclick="dcd_toggleTree(parent.document)">
+	              </a>
+              </div>
+            </td>
+            <td width="26">
+              <div style="position:relative; bottom:-13px">
+                <img id="dcdEditBg" border="0" 
+                     style="position:absolute; bottom:0px; left:0px" 
+                     src="files/button.gif" width="26" height="26">
+                <a name="dcdEditLink" id="dcdEditLink">
+	                <img id="dcdEdit" border="0" 
+	                     style="position:absolute; bottom:4px; left:4px" 
+	                     src="files/modify.gif" width="18" height="18" 
+	                     alt="#VAREDITSOURCE#"
+	                     title="#VAREDITSOURCE#"
+	                     onmouseover="dcd_highlightOn(document, 'dcdEditBg')" 
+	                     onmouseout="dcd_highlightOff(document, 'dcdEditBg')"
+                       onclick="dcd_editDocument(document, 'dcdEditLink', parent.content.document, '#VAREDITINGTOPIC#')">
+	              </a>
+              </div>
+            </td>
+            <td width="26">
+              <div style="position:relative; bottom:-13px">
+                <img id="dcdRefreshBg" border="0" 
+                     style="position:absolute; bottom:0px; left:0px" 
+                     src="files/button.gif" width="26" height="26" 
+                     width="0" height="0">
+                <img id="dcdRefresh" border="0" 
+                     style="position:absolute; bottom:4px; left:4px" 
+                     src="files/refresh.gif" width="18" height="18" 
+                     alt="#VARREFRESH#"
+                     title="#VARREFRESH#"
+                     onmouseover="dcd_highlightOn(document, 'dcdRefreshBg')"
+                     onmouseout="dcd_highlightOff(document, 'dcdRefreshBg')"
+                     onclick="dcd_refreshDocument(parent.content.document)">
+              </div>
+            </td>
+            <td width="26">
+              <div style="position:relative; bottom:-13px">
+                <img id="dcdPrintBg" border="0" 
+                     style="position:absolute; bottom:0px; left:0px" 
+                     src="files/button.gif" width="26" height="26" 
+                     width="0" height="0">
+                <img id="dcdPrint" border="0" 
+                     style="position:absolute; bottom:4px; left:4px" 
+                     src="files/print.gif" width="18" height="18" 
+                     alt="#VARPRINT#"
+                     title="#VARPRINT#"
+                     onmouseover="dcd_highlightOn(document, 'dcdPrintBg')"
+                     onmouseout="dcd_highlightOff(document, 'dcdPrintBg')"
+                     onclick="#SCRIPT.PRINT#">
+              </div>
+            </td>
+            <td width="26">
+            </td>
+            <td width="26">
+              <div style="position:relative; bottom:-13px">
+                <img id="dcdHomeBg" border="0" 
+                     style="position:absolute; bottom:0px; left:0px" 
+                     src="files/button.gif" width="26" height="26" 
+                     width="0" height="0">
+                <img id="dcdHome" border="0" 
+                     style="position:absolute; bottom:4px; left:4px" 
+                     src="files/home.gif" width="18" height="18" 
+                     alt="#VARHOME#"
+                     title="#VARHOME#"
+                     onmouseover="dcd_highlightOn(document, 'dcdHomeBg')"
+                     onmouseout="dcd_highlightOff(document, 'dcdHomeBg')"
+                     onclick="window.open('#VARHOMEURL#','content')">
+              </div>
+            </td>
+            <td width="26">
+              <div style="position:relative; bottom:-13px">
+                <img id="dcdUpBg" border="0" 
+                     style="position:absolute; bottom:0px; left:0px" 
+                     src="files/button.gif" width="26" height="26" 
+                     width="0" height="0">
+                <img id="dcdUp" border="0" 
+                     style="position:absolute; bottom:4px; left:4px" 
+                     src="files/up.gif" width="18" height="18" 
+                     alt="#VARUP#"
+                     title="#VARUP#"
+                     onmouseover="dcd_highlightOn(document, 'dcdUpBg')"
+                     onmouseout="dcd_highlightOff(document, 'dcdUpBg')"
+                     onclick="#SCRIPT.NAVIGATE.PREVPAGE#">
+              </div>
+            </td>
+            <td width="26">
+              <div style="position:relative; bottom:-13px">
+                <img id="dcdDownBg" border="0" 
+                     style="position:absolute; bottom:0px; left:0px" 
+                     src="files/button.gif" width="26" height="26" 
+                     width="0" height="0">
+                <img id="dcdDown" border="0" 
+                     style="position:absolute; bottom:4px; left:4px" 
+                     src="files/down.gif" width="18" height="18" 
+                     alt="#VARDOWN#"
+                     title="#VARDOWN#"
+                     onmouseover="dcd_highlightOn(document, 'dcdDownBg')"
+                     onmouseout="dcd_highlightOff(document, 'dcdDownBg')"
+                     onclick="#SCRIPT.NAVIGATE.NEXTPAGE#">
+              </div>
+            </td>
+            <td width="26">
+            </td>
+            <td width="26">
+              <div style="position:relative; bottom:-13px">
+                <img id="dcdOverviewBg" border="0" 
+                     style="position:absolute; bottom:0px; left:0px" 
+                     src="files/button.gif" width="26" height="26" 
+                     width="0" height="0">
+                <img id="dcdOverview" border="0" 
+                     style="position:absolute; bottom:4px; left:4px" 
+                     src="files/overview.gif" width="18" height="18" 
+                     alt="#VAROVERVIEW#"
+                     title="#VAROVERVIEW#"
+                     onmouseover="dcd_highlighInContext(document, 'dcdOverviewBg', 'dcdOverview', parent.content.document, 'uplinkO')"
+                     onmouseout="dcd_highlighInContextOff(document, 'dcdOverviewBg', 'dcdOverview', parent.content.document, 'uplinkO')"
+                     onclick="dcd_goTo(parent.content, parent.content.document, 'uplinkO')">
+              </div>
+            </td>
+            <td width="26">
+              <div style="position:relative; bottom:-13px">
+                <img id="dcdParentBg" border="0" 
+                     style="position:absolute; bottom:0px; left:0px" 
+                     src="files/button.gif" width="26" height="26" 
+                     width="0" height="0">
+                <img id="dcdParent" border="0" 
+                     style="position:absolute; bottom:4px; left:4px" 
+                     src="files/parent.gif" width="18" height="18" 
+                     alt="#VARPARENT#"
+                     title="#VARPARENT#"
+                     onmouseover="dcd_highlighInContext(document, 'dcdParentBg', 'dcdParent', parent.content.document, 'uplinkP')"
+                     onmouseout="dcd_highlighInContextOff(document, 'dcdParentBg', 'dcdParent', parent.content.document, 'uplinkP')"
+                     onclick="dcd_goTo(parent.content, parent.content.document, 'uplinkP')">
+              </div>
+            </td>
+            <td width="26">
+              <div style="position:relative; bottom:-13px">
+                <img id="dcdBackBg" border="0" 
+                     style="position:absolute; bottom:0px; left:0px" 
+                     src="files/button.gif" width="26" height="26" 
+                     width="0" height="0">
+                <img id="dcdBack" border="0" 
+                     style="position:absolute; bottom:4px; left:4px" 
+                     src="files/back.gif" width="18" height="18" 
+                     alt="#VARBACK#"
+                     title="#VARBACK#"
+                     onmouseover="dcd_highlightOn(document, 'dcdBackBg')"
+                     onmouseout="dcd_highlightOff(document, 'dcdBackBg')"
+                     onclick="dcd_goBack(parent)">
+              </div>
+            </td>
+            <td width="26">
+              <div style="position:relative; bottom:-13px">
+                <img id="dcdFwrdBg" border="0" 
+                     style="position:absolute; bottom:0px; left:0px" 
+                     src="files/button.gif" width="26" height="26" 
+                     width="0" height="0">
+                <img id="dcdFwrd" border="0" 
+                     style="position:absolute; bottom:4px; left:4px" 
+                     src="files/forward.gif" width="18" height="18" 
+                     alt="#VARFORWARD#"
+                     title="#VARFORWARD#"
+                     onmouseover="dcd_highlightOn(document, 'dcdFwrdBg')"
+                     onmouseout="dcd_highlightOff(document, 'dcdFwrdBg')"
+                     onclick="dcd_goForward(parent)">
+              </div>
+            </td>
+            <td width="26">
+            </td>
+            <td width="26">
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td colspan="1" align="right">
+        <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse">
+          <tr valign="middle">
+            <td style="width:26px">
+              <div style="position:relative; bottom:-13px">
+                <img id="dcdCopyUrlToClipboardBg"border="0" 
+                     style="position:absolute; bottom:0px; left:0px" 
+                     src="files/button.gif" width="26" height="26">
+                <img id="dcdCopyUrlToClipboard" border="0" 
+                     style="position:absolute; bottom:4px; left:4px" 
+                     src="files/copyLink.gif" width="18" height="18" 
+                     alt="#VARCOPYLINK#"
+                     title="#VARCOPYLINK#"
+                     onmouseover="dcd_highlightOn(document, 'dcdCopyUrlToClipboardBg')" 
+                     onmouseout="dcd_highlightOff(document, 'dcdCopyUrlToClipboardBg')"
+                     onclick="dcd_copyUrlToClipboard(document, parent.content.document)">
+              </div>
+            </td>
+            <td style="width:26px">
+              <div style="position:relative; bottom:-13px">
+                <img id="dcdHelpBg"border="0" 
+                     style="position:absolute; bottom:0px; left:0px" 
+                     src="files/button.gif" width="26" height="26">
+                <img id="dcdHelp" border="0" 
+                     style="position:absolute; bottom:4px; left:4px" 
+                     src="files/help.gif" width="18" height="18" 
+                     alt="#VARHELP#"
+                     title="#VARHELP#"
+                     onmouseover="dcd_highlightOn(document, 'dcdHelpBg')" 
+                     onmouseout="dcd_highlightOff(document, 'dcdHelpBg')"
+                     onclick="dcd_help(document, '#VARHELPHELP#')">
+              </div>
+            </td>
+            <td style="width:26px">
+              <div style="position:relative; bottom:-13px">
+                <img id="dcdCloseBg"border="0" 
+                     style="position:absolute; bottom:0px; left:0px" 
+                     src="files/button.gif" width="26" height="26">
+                <img id="dcdClose" border="0" 
+                     style="position:absolute; bottom:4px; left:4px" 
+                     src="files/close.gif" width="18" height="18" 
+                     alt="#VARCLOSE#"
+                     title="#VARCLOSE#"
+                     onmouseover="dcd_highlightOn(document, 'dcdCloseBg')" 
+                     onmouseout="dcd_highlightOff(document, 'dcdCloseBg')"
+                     onclick="dcd_close(parent)">
+              </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>  
+</html>
+
+;====================================================
+;
+; HTML Template for Navigation Header
+;
+;====================================================
+
+[HEADER.BODY]
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+ <title>#VARPAGECAPTION#</title>
+</head>
+<body topmargin="0" leftmargin="5" bottommargin="5" rightmargin="5" bgcolor="#BACKCOLOR#">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width:100%">
+  <tr style="width:100%">
+##CONTENTS_SELECTED_BEGIN##
+    <td style="width:33%">
+       <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width:100%">
+        <tr  style="width:100%">
+          <td style="height:5px; width:5px">
+            <img border="0" src="files/corner-left-top-dialog.png" width="5px" height="5px"></td>
+          <td bgcolor="#00456F" style="height:4px; border-top: 1px solid #00456F">
+          </td>
+          <td style="height:5px; width:5px">
+            <img vspace="0" border="0" src="files/corner-right-top-dialog.png" width="5px" height="5px"></td>
+        </tr>
+        <tr style="width:100%" bgcolor="#00456F">
+          <td style="border-left:1px solid #00456F; height:20px; width:4px">
+          </td>
+          <td>
+            <p align="center"><b><font face="Arial" color="#FFFFFF">#VARCONTENTS#</font></b></p>
+          </td>
+          <td style="border-right:1px solid #00456F; width:4px">
+          </td>
+        </tr>
+      </table>
+    </td>
+##CONTENTS_SELECTED_END##
+##CONTENTS_NOTSELECTED_BEGIN##
+    <td style="width:33%">
+      <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width:100%">
+        <tr style="width:100%">
+          <td style="height:5px; width:5px">
+            <img border="0" src="files/corner-left-top-dialog_inactive.png" width="5px" height="5px"></td>
+          <td bgcolor="#EFEFEF" style="height:4px; border-top: 1px solid #B5BDC6">
+          </td>
+          <td style="height:5px; width:5px">
+            <img border="0" src="files/corner-right-top-dialog_inactive.png" width="5px" height="5px"></td>
+        </tr>
+        <tr style="width:100%" bgcolor="#EFEFEF">
+          <td style="border-left:1px solid #B5BDC6; border-bottom:1px solid #B5BDC6; height:20px; width:4px">
+          </td>
+          <td onClick="document.location ='#HEADER.CONTENTS.NAME#';" style="border-bottom:1px solid #B5BDC6">
+            <p align="center">
+              <a target="toc" href="#CONTENTS.FILE.NAME#" style="font-family:'Arial'; text-decoration:none; color:black; font-weight:700">#VARCONTENTS#</a>
+            </p>
+          </td>
+          <td style="border-right:1px solid #B5BDC6; border-bottom:1px solid #B5BDC6; width:4px">
+          </td>
+        </tr>
+      </table>
+    </td>
+##CONTENTS_NOTSELECTED_END##
+    <td style="border-bottom:1px solid #B5BDC6; height:24px; width:1px"></td>
+##INDEX_EXISTS_BEGIN##
+##INDEX_SELECTED_BEGIN##
+    <td style="width:33%">
+       <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width:100%">
+        <tr  style="width:100%">
+          <td style="height:5px; width:5px">
+            <img border="0" src="files/corner-left-top-dialog.png" width="5px" height="5px"></td>
+          <td bgcolor="#00456F" style="height:4px; border-top: 1px solid #00456F">
+          </td>
+          <td style="height:5px; width:5px">
+            <img vspace="0" border="0" src="files/corner-right-top-dialog.png" width="5px" height="5px"></td>
+        </tr>
+        <tr style="width:100%" bgcolor="#00456F">
+          <td style="border-left:1px solid #00456F; height:20px; width:4px">
+          </td>
+          <td>
+            <p align="center"><b><font face="Arial" color="#FFFFFF">#VARINDEX#</font></b></p>
+          </td>
+          <td style="border-right:1px solid #00456F; width:4px">
+          </td>
+        </tr>
+      </table>    
+    </td>
+##INDEX_SELECTED_END##
+##INDEX_NOTSELECTED_BEGIN##
+    <td style="width:33%">
+       <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width:100%">
+        <tr  style="width:100%">
+          <td style="height:5px; width:5px">
+            <img border="0" src="files/corner-left-top-dialog_inactive.png" width="5px" height="5px"></td>
+          <td bgcolor="#EFEFEF" style="height:4px; border-top: 1px solid #B5BDC6">
+          </td>
+          <td style="height:5px; width:5px">
+            <img vspace="0" border="0" src="files/corner-right-top-dialog_inactive.png" width="5px" height="5px"></td>
+        </tr>
+        <tr style="width:100%" bgcolor="#EFEFEF">
+          <td style="border-left:1px solid #B5BDC6; border-bottom:1px solid #B5BDC6; height:20px; width:4px">
+          </td>
+          <td onClick="document.location ='#HEADER.INDEX.NAME#';" style="border-bottom:1px solid #B5BDC6; height:19px">
+            <p align="center">
+              <a target="toc" href="#INDEX.FILE.NAME#" style="font-family:'Arial'; text-decoration:none; color:black; font-weight:700">#VARINDEX#</a>
+            </p>
+          </td>
+          <td style="border-right:1px solid #B5BDC6; border-bottom:1px solid #B5BDC6; width:4px">
+          </td>
+        </tr>
+      </table>
+    </td>
+##INDEX_NOTSELECTED_END##
+    <td style="border-bottom:1px solid #B5BDC6; height:24px; width:1px"></td>
+##INDEX_EXISTS_END##
+##SEARCH_SELECTED_BEGIN##
+    <td style="width:32%">
+       <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width:100%">
+        <tr  style="width:100%">
+          <td style="height:5px; width:5px">
+            <img border="0" src="files/corner-left-top-dialog.png" width="5px" height="5px"></td>
+          <td bgcolor="#00456F" style="height:4px; border-top: 1px solid #00456F">
+          </td>
+          <td style="height:5px; width:5px">
+            <img vspace="0" border="0" src="files/corner-right-top-dialog.png" width="5px" height="5px"></td>
+        </tr>
+        <tr style="width:100%" bgcolor="#00456F">
+          <td style="border-left:1px solid #00456F; height:20px; width:4px">
+          </td>
+          <td>
+            <p align="center"><b><font face="Arial" color="#FFFFFF">#VARSEARCH#</font></b></p>
+          </td>
+          <td style="border-right:1px solid #00456F; width:4px">
+          </td>
+        </tr>
+      </table>
+    </td>
+##SEARCH_SELECTED_END##
+##SEARCH_NOTSELECTED_BEGIN##
+    <td style="width:32%">
+      <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width:100%">
+        <tr style="width:100%">
+          <td style="height:5px; width:5px">
+            <img border="0" src="files/corner-left-top-dialog_inactive.png" width="5px" height="5px"></td>
+          <td bgcolor="#EFEFEF" style="height:4px; border-top: 1px solid #B5BDC6">
+          </td>
+          <td style="height:5px; width:5px">
+            <img border="0" src="files/corner-right-top-dialog_inactive.png" width="5px" height="5px"></td>
+        </tr>
+        <tr style="width:100%" bgcolor="#EFEFEF">
+          <td style="border-left:1px solid #B5BDC6; border-bottom:1px solid #B5BDC6; height:20px; width:4px">
+          </td>
+          <td onClick="document.location ='#HEADER.SEARCH.NAME#';" style="border-bottom:1px solid #B5BDC6">
+            <p align="center">
+              <a target="toc" href="#SEARCH.FILE.NAME#" style="font-family:'Arial'; text-decoration:none; color:black; font-weight:700">#VARSEARCH#</a>
+            </p>
+          </td>
+          <td style="border-right:1px solid #B5BDC6; border-bottom:1px solid #B5BDC6; width:4px">
+          </td>
+        </tr>
+      </table>
+    </td>
+##SEARCH_NOTSELECTED_END##
+  </tr>
+</table>
+</body>
+</html>
+
+;====================================================
+;
+; CONTENTS.BODY
+;
+; This code is used to display the frame containing the 
+; Table of Contents.
+; 
+; Frame name: toc
+;
+;====================================================
+
+[CONTENTS.BODY]
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>#VARPAGECAPTION#</title>
+  <script type="text/javascript">
+    window.onload=resizeContent;
+    function browserc()
+    {
+      var b = "ie";
+      var bn=window.navigator.appName;
+      var ver=navigator.appVersion;
+      ver = parseFloat(ver.indexOf('MSIE') > 0 ? ver.split(';')[1].split(' ')[2] : ver.split(' ')[0]);
+      if (navigator.userAgent.indexOf('Opera') != -1 && ver >= 4)
+        b = "opera";
+      else
+        if (bn.indexOf('Netscape') != -1)
+          b = "netscape";
+      return b;
+    }
+    function resizeContent() 
+    {
+      if (browserc() == "ie")
+      { 
+        window.document.getElementById("contenttab").width="108.5%";
+        window.document.getElementById("contentfoot").width="108.5%";
+      }
+    }
+  </script>
+</head>
+
+<body topmargin="0" leftmargin="5" bottommargin="5" rightmargin="5" bgcolor="#BACKCOLOR#">
+<table id="contenttab" border="0" width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse; height: 99.2%">
+  <tr style="width:100%; height:100%">
+    <td style="width:10px; height:100%; border-left:1px solid #B5BDC6"> </td>
+    <td style="padding-top:5px" align="left" valign="top">
+      #CONTENTS.TREE#
+    </td>
+    <td style="width:10px; border-right:1px solid #B5BDC6"> </td>
+  </tr>
+</table>
+<table id="contentfoot" border="0" width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse; height:4px">
+  <tr style="width:100%; height:4px">
+    <td style="width:4px; height:4px">
+      <img border="0" src="files/corner-left-bottom-dialog.png" width="4px" height="4px"></td>
+    <td style="height:3px; width:100%; border-bottom:1px solid #B5BDC6"></td>
+    <td style="width:4px; height:4px" align="right">
+      <img border="0" src="files/corner-right-bottom-dialog.png" width="4px" height="4px"></td>
+  </tr>
+</table>
+</body>
+</html>
+
+;====================================================
+;
+; INDEX.BODY
+;
+; This code is used to display the frame containing the 
+; Help index.
+; 
+; Frame name: toc
+;
+;====================================================
+
+[INDEX.BODY]
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>#VARPAGECAPTION#</title>
+  <script type="text/javascript">
+    window.onload=initIndex;
+    window.onresize=resizeIndex;
+    function browseri()
+    {
+      var b = "ie";
+      var bn=window.navigator.appName;
+      var ver=navigator.appVersion;
+      ver = parseFloat(ver.indexOf('MSIE') > 0 ? ver.split(';')[1].split(' ')[2] : ver.split(' ')[0]);
+      if (navigator.userAgent.indexOf('Opera') != -1 && ver >= 4)
+        b = "opera";
+      else
+        if (bn.indexOf('Netscape') != -1)
+          b = "netscape";
+      return b;
+    }
+    function resizeIndex() 
+    {
+      var h;
+      var s;
+      if (browseri() == "ie")
+      { 
+        window.document.getElementById("indextab").width="108.5%";
+        window.document.getElementById("indextab").height="99.2%";
+        window.document.getElementById("indexfoot").width="108.5%";
+        window.document.getElementsByName("indexlist")[0].size="500";
+      } else {
+        h = ((window.innerHeight - 120) / 17);
+        s = h.toFixed(0);
+        s = s.toString();
+        window.document.getElementsByName("indexlist")[0].size=s;
+      }
+    }
+    function initIndex() 
+    {
+      window.document.getElementsByName("displaybutton")[0].value="#VARINDEXBUT#";
+      resizeIndex();
+    }
+  </script>
+</head>
+
+<body topmargin="0" leftmargin="5" bottommargin="5" rightmargin="5" bgcolor="#BACKCOLOR#">
+<table id="indextab" border="0" width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse">
+  <tr style="width:100%; height:100%">
+    <td style="width:10px; border-left:1px solid #B5BDC6"> </td>
+    <td style="vertical-align:top">
+      <p style="margin-top:7px; font-family: Tahoma, Verdana; font-size: 8pt"><b>#VARINDEXTIT#</b></p>
+      #INDEX.TREE#
+    </td>
+    <td style="width:10px; border-right:1px solid #B5BDC6"> </td>
+  </tr>
+</table>
+<table id="indexfoot" border="0" width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse">
+  <tr style="width:100%; height:4px">
+    <td style="width:4px; height:4px">
+      <img border="0" src="files/corner-left-bottom-dialog.png" width="4px" height="4px"></td>
+    <td style="height:3px; width:100%; border-bottom:1px solid #B5BDC6"></td>
+    <td style="width:4px; height:4px" align="right">
+      <img border="0" src="files/corner-right-bottom-dialog.png" width="4px" height="4px"></td>
+  </tr>
+</table>
+</body>
+</html>
+
+;====================================================
+;
+; SEARCH.BODY
+;
+; This code is used to display the frame containing 
+; Help search.
+; 
+; Frame name: toc
+;
+;====================================================
+
+[SEARCH.BODY]
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>#VARPAGECAPTION#</title>
+  <script type="text/javascript">
+    window.onload=initSearch;
+    window.onresize=resizeSearch;
+    function browsers()
+    {
+      var b = "ie";
+      var bn=window.navigator.appName;
+      var ver=navigator.appVersion;
+      ver = parseFloat(ver.indexOf('MSIE') > 0 ? ver.split(';')[1].split(' ')[2] : ver.split(' ')[0]);
+      if (navigator.userAgent.indexOf('Opera') != -1 && ver >= 4)
+        b = "opera";
+      else
+        if (bn.indexOf('Netscape') != -1)
+          b = "netscape";
+      return b;
+    }
+    function resizeSearch() 
+    {
+      var h;
+      var s;
+      if (browsers() == "ie")
+      { 
+        window.document.getElementById("searchtab").width="108.5%";
+        window.document.getElementById("searchtab").height="99.2%";
+        window.document.getElementById("searchfoot").width="108.5%";
+        window.document.getElementsByName("founddocslist")[0].size="500";
+      } else {
+        h = ((window.innerHeight - 100) / 17);
+        s = h.toFixed(0);
+        s = s.toString();
+        window.document.getElementsByName("founddocslist")[0].size=s;
+      }
+    }
+    function initSearch() 
+    {
+      window.document.getElementsByName("searchbutton")[0].value="#VARSEARCHBUT#";
+      resizeSearch();
+    }
+  </script>
+</head>
+
+<body topmargin="0" leftmargin="5" bottommargin="5" rightmargin="5" bgcolor="#BACKCOLOR#">
+<table id="searchtab" border="0" width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse">
+  <tr style="width:100%; height:100%">
+    <td style="width:10px; height:100%; border-left:1px solid #B5BDC6"> </td>
+    <td style="vertical-align:top">
+      <p style="margin-top:7px; font-family: Tahoma, Verdana; font-size: 8pt"><b>#VARSEARCHTIT#</b></p>
+      #SEARCH.PAGE#
+    </td>
+    <td style="width:10px; border-right:1px solid #B5BDC6"> </td>
+  </tr>
+</table>
+<table id="searchfoot" border="0" width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse">
+  <tr style="width:100%; height:4px">
+    <td style="width:4px; height:4px">
+      <img border="0" src="files/corner-left-bottom-dialog.png" width="4px" height="4px"></td>
+    <td style="height:3px; width:100%; border-bottom:1px solid #B5BDC6"></td>
+    <td style="width:4px; height:4px" align="right">
+      <img border="0" src="files/corner-right-bottom-dialog.png" width="4px" height="4px"></td>
+  </tr>
+</table>
+</body>
+</html>
+
+;====================================================
+;
+; MAINFRAMESET.BODY
+;
+; This code is used as the main frame template. A frame 
+; with the name "content" in which the current help page
+; will be displayed should be present in the code.
+; 
+;====================================================
+
+[MAINFRAMESET.BODY]
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+ <head>
+  <title>#VARPAGECAPTION#</title>
+ </head>
+  
+<!-- Add script to head =============================================================================================================== -->
+<!-- <script type="text/JavaScript" src="files/dcd_buttons.js"></script>                                                                -->
+<!-- ================================================================================================================================== -->
+<!-- Replace the first row by ==(remove spaces from f r a m e set )==================================================================== -->
+<!-- if (top.document.getElementById("__gwt_historyFrame") != null) {                                                                   -->
+<!--   document.write('<f r a m e set rows="30,*" frameborder="no" framespacing="0" border="0" bordercolor="white">');                  -->
+<!-- } else {                                                                                                                           -->
+<!--   document.write('<f r a m e set rows="93,*" frameborder="0" framespacing="0" border="0" bordercolor="white">');                   -->
+<!-- }                                                                                                                                  -->
+<!-- ================================================================================================================================== -->
+<!-- Replace the third row by ========================================================================================================= -->
+<!-- if (isTreeVisible(document) == "True") {                                                                                           -->
+<!--   document.write('<f r a m e set id="contentarea" cols="230,*" frameborder="0" framespacing="0" border="0" bordercolor="white">'); -->
+<!-- } else {                                                                                                                           -->
+<!--   document.write('<f r a m e set id="contentarea" cols="0,*" frameborder="0" framespacing="0" border="0" bordercolor="white">');   -->
+<!-- }                                                                                                                                  -->
+<!-- ================================================================================================================================== -->
+
+<frameset rows="93,*" frameborder="no" framespacing="0" border="0" bordercolor="gray">
+   <frame name="pageheader" src="#PAGE.HEADER.NAME#" scrolling="no" noresize>
+   <frameset cols="230,*" frameborder="0" framespacing="0" border="0" bordercolor="white">
+     <frameset rows="25,*" frameborder="0" framespacing="0" border="0">
+       <frame name="header" src="?TAB:#HEADER.CONTENTS.NAME#|#HEADER.INDEX.NAME#|#HEADER.SEARCH.NAME#?" scrolling="no">
+       <frame name="toc" src="?TAB:#CONTENTS.FILE.NAME#|#INDEX.FILE.NAME#|#SEARCH.FILE.NAME#?" scrolling="auto">
+     </frameset>
+     <frameset rows="0,*" frameborder="0" framespacing="0" border="0">
+       <frame src="#VARCONTENTHEADER#" scrolling="no">
+       <frame name="content" src="#START.FILE.NAME#" scrolling="auto" >
+     </frameset>
+   </frameset>
+ </frameset>
+</html>

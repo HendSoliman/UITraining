@@ -1,0 +1,364 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2008. All rights reserved.
+
+  $Id: whynot.html 27545 2014-05-05 09:58:11Z bernardy $
+-->
+    <title>Why not?</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)">
+  <meta name="keywords" content="Dematic, Dematic iQ">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content="WCS-TPL_TroubleShootingGuide.Web">
+  <meta name="author" content="author">
+  <style type="text/css" media="screen">@import url(../../../../../../../../common/style_screen.css);</style>
+    <style type="text/css" media="print">@import url(../../../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "wms/tsg/doc/en/user/WebHelp/lms/materialFlowManagement/whynot.html";
+  </script>
+<style type="text/css">
+.style3 {
+  text-align:left;
+}
+</style>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../../../index.html?page=source%2Fwms%2Ftsg%2Fdoc%2Fen%2Fuser%2FWebHelp%2Flms%2FmaterialFlowManagement%2Fwhynot.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../../../index.html?page=source%2Fwms%2Ftsg%2Fdoc%2Fen%2Fuser%2FWebHelp%2Flms%2FmaterialFlowManagement%2Fwhynot.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+    <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+    
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../../index.html">
+          <img class="upLinkImg" id="uplinkO_img" border="0" title="Document Overview" src="../../../../../../../../common/img/move_overview.gif"></a>
+          <a class="upLink" id="uplinkP" href="Index.html">
+          <img class="upLinkImg" id="uplinkP_img" border="0" title="Material Flow Management Errors" src="../../../../../../../../common/img/move_up.gif"></a>
+        </td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+  
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+            <a class="naviBar" href="#Overview">Overview</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#NotMoving">Not Moving</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#TransportRequestfailed">Transport Request failed</a>
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Top navigation bar end -->
+
+  <!-- Map title -->
+  <h1 id="maptitle">Why not?</h1>
+
+  <!-- Block: Purpose -->
+  <div class="block" id="block_purpose">
+    <!-- Content start -->
+    <h5><a name="Purpose"></a>Symptom</h5>
+    <p>This topic explains a general approach to find out why a Load Unit does not move in the way it is supposed to. Along with the analysis of the issue 
+    the typical fault 
+    recovery actions are mentioned.</p>
+    <p>The techniques described here are not meant to be a world formula which can explain all problems conceivable in a warehouse. It is intended to be a 
+    starting point for a project specific troubleshooting guide which can address the special peculiarities of a certain installation.</p>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">It is important to <strong>start the first steps </strong>of troubleshooting within the underlying transport execution system (<strong>MFC</strong>)
+          <strong>before </strong>further steps are considered thereafter.</p>
+        </td>
+      </tr>
+    </table>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;CAUTION&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">In any case, please make sure that you have a clear understanding of the cause of the problem prior to carrying out and fault 
+          recovery actions. </p>
+          <p class="noteTextPar"><strong>Otherwise the situation might get even worse.</strong></p>
+        </td>
+      </tr>
+    </table>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Overview -->
+  <div class="block" id="block_overview">
+    <!-- Navigation line start -->
+    <a name="Overview"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#NotMoving"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#TransportRequestfailed">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Overview</h5>
+    <table id="table2">
+      <tr>
+        <th>
+          <p class="columnDescription" style="width:194px;height:20px">Scenario</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText"><a href="#NotMoving">Not Moving</a></p>
+        </td>
+        <td>
+          <p class="tableBodyText">Explains techniques to find out why a transport unit is not moving at all within the underlying transport execution system <strong>MFC</strong>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText"><a href="#TransportRequestfailed">Transport Request Failed</a></p>
+        </td>
+        <td>
+          <p class="tableBodyText">In case the transport of the Load Unit is in any exceptional situation <strong>and </strong>the situation within the MFC is completely clear the analysis could proceed with the 
+          analysis and clarification of the related Transport Request.</p>
+        </td>
+      </tr>
+      </table>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Not Moving -->
+  <div class="block" id="block_notmoving">
+    <!-- Navigation line start -->
+    <a name="NotMoving"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#Overview"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#TransportRequestfailed">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#TransportRequestfailed">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Not Moving</h5>
+    <p>The trigger of this scenario is that there is somewhere a transport unit in the warehouse which is supposed to move but doesn&#39;t. In order to get an 
+    idea of the possible reasons and further hints for troubleshooting this situation it is recommended <strong>to start always </strong>within the underlying 
+    transport execution system <strong>MFC</strong>.</p>
+    <p>The description of the required steps is given in
+    the chapter &quot;<a href="../../mfc/operation/whynot.html">Why not?</a>&quot; and and overview for supporting the analysis is given in&nbsp;
+    <a href="../../mfc/Index.html">Introduction of MFC Trouble Shootings</a>.&nbsp;</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Transport Request failed -->
+  <div class="block" id="block_transportrequestfailed">
+    <!-- Navigation line start -->
+    <a name="TransportRequestfailed"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#NotMoving"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right.gif">&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right_end.gif">
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Transport Request failed</h5>
+    <p>In case the transport of the Load Unit is in any exceptional situation <strong>and </strong>the situation within the MFC is completely clear the analysis could proceed with the 
+    analysis and clarification of the related Transport Request.</p>
+    <p>The main dialog related to the troubleshooting of transports - in case the Transport Request of the LMS is relevant - is the
+    <a href="../../../../../../../../mfc/doc/en/user/WebHelp/dialogs/mfc/core/ui/transportorder/client/dialog/TransportOrderOverviewDialog.html">Dialog Transport 
+    Administration</a> where a <strong>combination</strong> <b>of transports of the following involved levels </b>is provided:</p>
+    <ul class="listBullet1">
+      <li>
+      LMS (Logistics Manager) requests the execution of a transport at the underlying transport execution system (MFC) using <strong> 
+      <a href="../../../../../../../../mfc/doc/en/user/WebHelp/dialogs/mfc/core/ui/transportorder/client/dialog/TransportOrderOverviewDialog.html">Transport Requests</a> </strong>and</li>
+      <li>
+      MFC (Material Flow Controller) executes the transports represented by
+      <a href="../../../../../../../../mfc/doc/en/user/WebHelp/dialogs/mfc/core/ui/transportorder/client/dialog/TransportOrderOverviewDialog.html">Transport 
+    Orders</a>.</li>
+    </ul>
+    <p>&nbsp;</p>
+    <p>The further analysis strongly depends on the <strong>status </strong>and the <strong>type </strong>of the <strong>Transport Request </strong>and should 
+    start with filtering the mentioned Load Unit in the superior filter of the
+    <a href="../../../../../../../../mfc/doc/en/user/WebHelp/dialogs/mfc/core/ui/transportorder/client/dialog/TransportOrderOverviewDialog.html">Dialog Transport 
+    Administration</a>.</p>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;CAUTION&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar"><strong>The troubleshooting of the Transport Request in the LMS must always consider the related business process which will be 
+          fulfilled with the execution of the transport. Be aware in case the Transport will not be fulfilled at the planned destination this could have huge 
+          impact to the process.</strong></p>
+          <p class="noteTextPar">For example: In case the outbound transport of a Pick Container to a Pickstation is cancelled manually the Pick Order will never 
+          be finished anyway.</p>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Status</p>
+        </th>
+        <th class="style3">Troubleshooting Action</th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText"><strong>released</strong></p>
+        </td>
+        <td>
+          <p class="tableBodyText">For all transports the possible actions are described in the function specific <strong>button description </strong>of the <strong>Dialog Transport 
+Administration</strong>. </p>
+          <p class="tableBodyText">Possible actions for the Transport Request are:</p>
+          <ul class="tableListBullet1">
+            <li>Complete</li>
+            <li>Release and Submit</li>
+            <li>Cancel</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText"><strong>active</strong></p>
+        </td>
+        <td>
+          <p class="tableBodyText">For all transports the possible actions are described in the function specific <strong>button description </strong>of the <strong>Dialog Transport 
+Administration</strong>. </p>
+          <p class="tableBodyText">Possible actions for the Transport Request are:</p>
+          <ul class="tableListBullet1">
+            <li>Complete</li>
+            <li>Cancel</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText"><strong>error</strong></p>
+        </td>
+		<td>
+          <p class="tableBodyText">For all transports the possible actions are described in the function specific <strong>button description </strong>of the <strong>Dialog Transport 
+Administration</strong>. </p>
+          <p class="tableBodyText">Possible actions for the Transport Request are:</p>
+          <ul class="tableListBullet1">
+            <li>Reset and Repeat </li>
+            <li>Complete </li>
+            <li>Cancel </li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">Further actions on <strong>different status </strong>are not provided.</td>
+      </tr>
+      </table>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <!-- Content end -->
+  </div>
+
+  <p>&nbsp;</p>
+
+  <!-- Footer start -->
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">© Dematic GmbH 2009. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar"><a href="#top">top</a> | <a href="javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

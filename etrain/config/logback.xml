@@ -1,0 +1,193 @@
+<configuration scan="true" scanPeriod="60 seconds" debug="true">
+
+    <!-- a relative path here is relative to domain.xml of the corresponding Glassfish domain! -->
+    <property scope="system" name="LOG_ROOT" value="../logs"/>
+    <!-- <statusListener class="ch.qos.logback.core.status.OnConsoleStatusListener" /> -->
+
+
+    <appender name="DCD3" class="ch.qos.logback.classic.sift.SiftingAppender">
+        <!-- in the absence of the class attribute, it is assumed that the
+             desired discriminator type is
+             ch.qos.logback.classic.sift.MDCBasedDiscriminator -->
+        <discriminator>
+            <key>diskriminatorKey</key>
+            <defaultValue>dcd3</defaultValue>
+        </discriminator>
+        <sift>
+            <appender name="FILE-${diskriminatorKey}" class="ch.qos.logback.core.rolling.RollingFileAppender">
+                <file>${LOG_ROOT}/${diskriminatorKey}/${diskriminatorKey}.log</file>
+
+                <rollingPolicy class="com.dematic.wms.tools.logging.AsyncRoundRobinRollingPolicy">
+                    <fileNamePattern>${LOG_ROOT}/${diskriminatorKey}/${diskriminatorKey}.%i.log</fileNamePattern>
+                    <minIndex>0</minIndex>
+                    <maxIndex>99</maxIndex>
+                </rollingPolicy>
+
+                <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+                    <maxFileSize>25MB</maxFileSize>
+                </triggeringPolicy>
+                <encoder>
+                    <charset>UTF-8</charset>
+                    <immediateFlush>false</immediateFlush>
+                    <pattern>%d{ISO8601} [%replace(%X{incidentId}){'(-(\p{XDigit}){4}){3}-(\p{XDigit}){12}',''}/%-8(%replace(%thread){'[^-]*-', ''})] %-5level %67.67(%logger#%X{methodName}) %-2(%marker) %X{indent} %msg%n
+                    </pattern>
+                </encoder>
+            </appender>
+        </sift>
+    </appender>
+
+
+    <appender name="ALARM_LOG_CHANNEL_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_ROOT}/AlarmLogChannel/LogChannelOutput.log</file>
+        <rollingPolicy class="com.dematic.wms.tools.logging.AsyncRoundRobinRollingPolicy">
+            <fileNamePattern>${LOG_ROOT}/AlarmLogChannel/LogChannelOutput.%i.log.zip</fileNamePattern>
+            <minIndex>0</minIndex>
+            <maxIndex>9</maxIndex>
+        </rollingPolicy>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>50MB</maxFileSize>
+        </triggeringPolicy>
+        <encoder>
+            <charset>UTF-8</charset>
+            <immediateFlush>false</immediateFlush>
+            <pattern>%date{HH:mm:ss.SSS} %-5level [%25thread] %msg %n</pattern>
+        </encoder>
+    </appender>
+
+
+    <appender name="PURGING_BY_ENTITY" class="ch.qos.logback.core.FileAppender">
+        <!-- in the absence of the class attribute, it is assumed that the
+             desired discriminator type is
+             ch.qos.logback.classic.sift.MDCBasedDiscriminator -->
+        <discriminator>
+            <key>PurgingEntityName</key>
+            <defaultValue>AllOthers</defaultValue>
+        </discriminator>
+        <sift>
+            <appender name="FILE-${PurgingEntityName}" class="ch.qos.logback.core.rolling.RollingFileAppender">
+                <file>${LOG_ROOT}/Purging/${PurgingEntityName}/${PurgingEntityName}.log</file>
+
+                <rollingPolicy class="com.dematic.wms.tools.logging.AsyncRoundRobinRollingPolicy">
+                    <fileNamePattern>
+                        ${LOG_ROOT}/Purging/${PurgingEntityName}/${PurgingEntityName}.%i.log.zip
+                    </fileNamePattern>
+                    <minIndex>0</minIndex>
+                    <maxIndex>10</maxIndex>
+                </rollingPolicy>
+
+                <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+                    <maxFileSize>10MB</maxFileSize>
+                </triggeringPolicy>
+                <encoder>
+                    <charset>UTF-8</charset>
+                    <immediateFlush>false</immediateFlush>
+                    <pattern>%d{ISO8601} %-5level [%25thread] %msg %n</pattern>
+                </encoder>
+            </appender>
+        </sift>
+    </appender>
+
+
+    <appender name="DCD3_perf" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_ROOT}/dcd3_perf.log</file>
+
+        <rollingPolicy class="com.dematic.wms.tools.logging.AsyncRoundRobinRollingPolicy">
+            <fileNamePattern>${LOG_ROOT}/dcd3_perf.%i.log.zip</fileNamePattern>
+            <minIndex>0</minIndex>
+            <maxIndex>9</maxIndex>
+        </rollingPolicy>
+
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>50MB</maxFileSize>
+        </triggeringPolicy>
+        <encoder>
+            <pattern>%d{ISO8601} %-5level %logger - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="DCD3_agg" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_ROOT}/dcd3_agg.log</file>
+
+        <rollingPolicy class="com.dematic.wms.tools.logging.AsyncRoundRobinRollingPolicy">
+            <fileNamePattern>${LOG_ROOT}/dcd3_agg.%i.log.zip</fileNamePattern>
+            <minIndex>0</minIndex>
+            <maxIndex>9</maxIndex>
+        </rollingPolicy>
+
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>50MB</maxFileSize>
+        </triggeringPolicy>
+        <encoder>
+            <pattern>%d{ISO8601} %-5level %logger - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="performance" level="DEBUG" additivity="false">
+        <appender-ref ref="DCD3_perf"/>
+    </logger>
+
+
+    <logger name="LogChannelOutputLogger" level="TRACE" additivity="true">
+        <appender-ref ref="ALARM_LOG_CHANNEL_FILE"/>
+    </logger>
+
+    <logger name="com.dematic" level="TRACE" additivity="false">
+        <appender-ref ref="DCD3"/>
+    </logger>
+    <logger name="com.dematic.wms.app.aggregation" level="WARN" additivity="false">
+        <appender-ref ref="DCD3_agg"/>
+    </logger>
+
+    <logger name="org.hibernate" level="INFO" additivity="false">
+        <appender-ref ref="DCD3"/>
+    </logger>
+
+
+    <logger name="com.dematic.wms.app.audittrail" level="WARN" additivity="false">
+        <appender-ref ref="DCD3"/>
+    </logger>
+
+    <logger name="com.dematic.wms.app.audittrail.ui" level="TRACE" additivity="false">
+        <appender-ref ref="DCD3"/>
+    </logger>
+
+    <logger name="org.apache.activemq" level="INFO" additivity="false">
+        <appender-ref ref="DCD3"/>
+    </logger>
+
+    <logger name="org.apache.camel" level="INFO" additivity="false">
+        <appender-ref ref="DCD3"/>
+    </logger>
+
+    <logger name="org.apache.kahadb" level="INFO" additivity="false">
+        <appender-ref ref="DCD3"/>
+    </logger>
+
+    <logger name="org.jboss.logging" level="INFO" additivity="false">
+        <appender-ref ref="DCD3"/>
+    </logger>
+
+    <logger name="org.springframework.core.io.support.PathMatchingResourcePatternResolver" level="ERROR"
+            additivity="false">
+        <appender-ref ref="DCD3"/>
+    </logger>
+
+    <!-- org.hibernate.SQL	Log all SQL DML statements as they are executed -->
+    <logger name="org.hibernate.SQL" level="DEBUG" additivity="false">
+        <appender-ref ref="DCD3"/>
+    </logger>
+
+    <!-- org.hibernate.type	Log all JDBC parameters
+    <logger name="org.hibernate.type" level="DEBUG" additivity="false">
+      <appender-ref ref="DCD3"/>
+    </logger>
+    -->
+
+    <logger name="com.dematic.wms.app.base.util.jms.JmsTemplate" level="WARN" additivity="false">
+    </logger>
+
+
+    <root level="TRACE">
+        <appender-ref ref="DCD3"/>
+    </root>
+</configuration>

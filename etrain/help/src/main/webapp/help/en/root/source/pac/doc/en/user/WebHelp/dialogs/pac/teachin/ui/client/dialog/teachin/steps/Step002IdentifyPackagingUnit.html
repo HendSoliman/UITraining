@@ -1,0 +1,666 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2008. All rights reserved.
+
+  $Id: Step002IdentifyPackagingUnit.html 27545 2014-05-05 09:58:11Z bernardy $
+-->
+  <title>Teach-In Step: Scan Product Code</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)">
+  <meta name="keywords" content="Dematic, Dematic iQ">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content="WCS-TPL_HelpDialogDetail.Web">
+  <meta name="author" content="author">
+  <style type="text/css" media="screen">@import url(../../../../../../../../../../../../../common/style_screen.css);</style>
+  <style type="text/css" media="print">@import url(../../../../../../../../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "pac/doc/en/user/WebHelp/dialogs/pac/teachin/ui/client/dialog/teachin/steps/Step002IdentifyPackagingUnit.html";
+  </script>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../../../../../../../../index.html?page=source%2Fpac%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fdialogs%2Fpac%2Fteachin%2Fui%2Fclient%2Fdialog%2Fteachin%2Fsteps%2FStep002IdentifyPackagingUnit.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../../../../../../../../index.html?page=source%2Fpac%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fdialogs%2Fpac%2Fteachin%2Fui%2Fclient%2Fdialog%2Fteachin%2Fsteps%2FStep002IdentifyPackagingUnit.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+  <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../../../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../../../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+    
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../../../../../../../../index.html"><img class="upLinkImg" id="uplinkO_img" border="0" title="Palletizing Control" src="../../../../../../../../../../../../../common/img/move_overview.gif"></a>
+          <a class="upLink" id="uplinkP" href="../TeachInDialog.html">
+          <img class="upLinkImg" id="uplinkP_img" border="0" title="Teach-In Station" src="../../../../../../../../../../../../../common/img/move_up.gif"></a>
+</td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../../../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+  
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+            <a class="naviBar" href="#StepSequence">Step Sequence</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#DialogScreen">Screen</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#FieldDescriptions">Fields</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#ButtonDescriptions">Buttons</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#BarcodesforIdentification">Barcodes for Identification</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#BarcodeTypes">Barcode Types</a>
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Top navigation bar end -->
+  
+  <!-- Map title -->
+  <h1 id="maptitle">Teach-In Step: Scan Product Code</h1>
+
+  <!-- Block: Purpose -->
+  <div class="block" id="block_purpose">
+    <!-- Content start -->
+    <h5><a name="Purpose"></a>Purpose</h5>
+    <p>This step is used to identify the trade item by scanning the product barcode.<br>
+    The barcode may be, for example, a GS1-13 or a GS1-128 including Application identifier 01 for the GTIN.</p>
+    <p>Usually, the barcode of the outer package shall be scanned.<br>
+    If the outer package has no barcode, it is also possible to scan the barcode of a contained unit.</p>
+    <p>&nbsp;</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Step Sequence -->
+  <div class="block" id="block_stepsequence">
+    <!-- Navigation line start -->
+    <a name="StepSequence"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#DialogScreen"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#BarcodeTypes"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Step Sequence</h5>
+    <table>
+      <tr>
+        <td>
+          <p class="tableBodyText"><strong>Overview: </strong></p>
+        </td>
+        <td>
+          <p class="tableBodyText">
+          <a href="../TeachInDialog.html">Teach-In Station dialog</a></p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText"><strong>Previous step</strong>:</p>
+        </td>
+        <td>
+          <p class="tableBodyText">
+          <a href="Step001SelectClient.html">Select Client</a> <br>
+          (Only at session start in multi-client environment)</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText"><strong>Next step</strong>: </p>
+        </td>
+        <td>
+          <p class="tableBodyText">
+          <a href="Step004SelectTradeUnit.html">Select Packaging Variant</a> (normal flow)</p>
+          <p class="tableBodyText">
+          <a href="Step003SelectSkuId.html">Select SKU</a> (If SKU has not been uniquely determined in this step)</p>
+        </td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Screen -->
+  <div class="block" id="block_dialogscreen">   
+    <!-- Navigation line start -->
+    <a name="DialogScreen"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#StepSequence">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#FieldDescriptions">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#BarcodeTypes">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Screen</h5>
+    <p class="screenshot"><img src="img/ScreenScanProductCode.png"></p>
+    <p>&nbsp;</p>
+    <!-- Content end -->
+  </div>
+
+
+  <!-- Block: Fields -->
+  <div class="block" id="block_fielddescriptions">
+    <!-- Navigation line start -->
+    <a name="FieldDescriptions"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#DialogScreen">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#ButtonDescriptions">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#BarcodeTypes">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Fields</h5>
+    
+    <table id="table3">
+      <tr>
+        <th>
+          <p class="columnDescription">Field</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">Barcode</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Entry field for the barcode to be scanned.</p>
+          <p class="tableBodyText">See
+          <a href="#BarcodesforIdentification">Barcodes for Identification</a> for choosing the correct barcode</p>
+          <p class="tableBodyText">If the barcode cannot be read by the scanner, it is also possible to enter it through the keyboard.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">GTIN</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Global Trade Identifier (GTIN) extracted from the barcode (see
+          <a href="#BarcodeTypes">BarcodeTypes</a>)</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">Batch</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Batch extracted from a GS1-128 barcode.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">SKU</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Identifier of the Stock Keeping Unit, SKU, of the product identified through the GTIN</p>
+        </td>
+      </tr>
+    <tr>
+        <td>
+          <p class="tableBodyText">Client</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Client ID of the client owning the SKU</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">Pkg. Unit</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Identifier of the trade unit (<a href="../../../../../../../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/sku/ui/client/dialog/admin/SKUQuantityUnitDetailDialog.html">SKU 
+          Quantity Unit</a>) which is uniquely identified through the GTIN.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">Factor</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Number of base quantity units contained in the trade unit.<br>
+          This is taken from the
+          <a href="../../../../../../../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/sku/ui/client/dialog/admin/SKUQuantityUnitDetailDialog.html">SKU 
+          Quantity Unit</a>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">Base Unit</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Identifier of the base unit for the SKU</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">Description</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Description of the SKU</p>
+        </td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Buttons -->
+  <div class="block" id="block_buttondescriptions">   
+    <!-- Navigation line start -->
+    <a name="ButtonDescriptions"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#FieldDescriptions"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#BarcodesforIdentification"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#BarcodeTypes"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Special Buttons</h5>
+    <table id="table3">
+      <tr>
+        <th>
+          <p class="columnDescription">Button</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText"><img src="img/ButtonSelectClient.png"></p>
+        </td>
+        <td>
+          <p class="tableBodyText">&nbsp;</p>
+          <p class="tableBodyText">&nbsp;</p>
+          <p class="tableBodyText">This button allows changing the active client for future teach operations.<br>
+          Step 
+      <a href="Step001SelectClient.html">Select Client</a> is activated</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText"><img src="img/ButtonNoAmcap.png"></p>
+          <p class="tableBodyText"><img src="img/ButtonAmcap.png"></p>
+        </td>
+        <td>
+          <p class="tableBodyText">&nbsp;</p>
+          <p class="tableBodyText">The button toggles between two states depending on the <em>Prepared Fulfillment Handling Type</em> of the Trade Item (See 
+          screen
+          <a href="../../../../../../../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/sku/ui/client/dialog/admin/SKUQuantityUnitDetailDialog.html">SKU 
+          Quantity Unit</a>)<br>
+          </p>
+          <ul class="tableListBullet1">
+            <li>If <em>Prepared Fulfillment Handling Type</em> is AMCAP,<br>
+            the button is labeled with &quot;No AMCAP&quot;. <br>
+            Pressing the button excludes the Trade Item from the AMCAP process after an additional confirmation.<br>
+            Teaching for this Trade Unit is immediately terminated.<br>
+            </li>
+            <li>If <em>Prepared Fulfillment Handling Type</em> is not AMCAP,<br>
+            the button is labeled with &quot;AMCAP&quot;. <br>
+            Pressing the button enables the Trade Item from the AMCAP process.<br>
+            Teaching of the Trade Item can be continued.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText"><img src="img/ButtonNext.png"></p>
+        </td>
+        <td>
+          <p class="tableBodyText">&nbsp;</p>
+          <ul class="tableListBullet1">
+            <li>If the Trade Item (SKU and Quantity Unit) is uniquely determined by the GTIN, the dialog proceeds to step 
+      <a href="Step004SelectTradeUnit.html">Select Packaging Variant</a></li>
+            <li>If multiple SKUs exist for the same GTIN, or if no GTIN has been specified, the dialog proceeds to step 
+      <a href="Step003SelectSkuId.html">Select SKU</a></li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Barcodes for Identification -->
+  <div class="block" id="block_barcodesforidentification">
+    <!-- Navigation line start -->
+    <a name="BarcodesforIdentification"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#ButtonDescriptions"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#BarcodeTypes"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#BarcodeTypes"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Barcodes for Identification</h5>
+    <p>In order to choose a suitable barcode for identification, proceed as follows:</p>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Alternative</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">1.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Inspect the outer packaging</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">2.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">If there is a GS1 barcode with Application Identifier (01), scan this barcode&nbsp; </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">3.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">If there is an ITF-14 barcode, scan this barcode</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">4.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">If there is a GS1-Datamatrix Barcode with Application Identifier (01), scan this code</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText" style="width:29px">5.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">If there is an EAN/UPC barcode, scan this barcode</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">6.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">If none of alternatives 2-5 applies, check the contained items<br>
+          and continue with step 2</p>
+        </td>
+      </tr>
+<tr>
+        <td>
+          <p class="tableBodyText">7.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">If no valid barcode has been found, <br>
+          push the &lt;Next&gt; button and try to identify the product through its name.</p>
+        </td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <p>When a barcode is read, the system will search the Product Codes of the
+    <a href="../../../../../../../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/sku/ui/client/dialog/admin/SKUQuantityUnitDetailDialog.html">SKU 
+    Quantity Units </a>
+    for the active client for the code.</p>
+    <p>In case that a GS1-128 code is found, the system will parse the code and try to identify application identifiers (01) (GTIN) and (10) (batch).<br>
+    If a GTIN has been found, the Product Codes of the
+    <a href="../../../../../../../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/sku/ui/client/dialog/admin/SKUQuantityUnitDetailDialog.html">SKU 
+    Quantity Units </a>
+    for the active client will be searched for a match.</p>
+    <p>&nbsp;</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Barcode Types -->
+  <div class="block" id="block_barcodetypes">
+    <!-- Navigation line start -->
+    <a name="BarcodeTypes"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#BarcodesforIdentification"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../../common/img/arrow_right.gif">&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../../../../../../common/img/arrow_right_end.gif">
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Barcode Types</h5>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Type</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+        <th>
+          <p class="columnDescription">Example</p>
+        </th>
+      </tr>
+      <tr>
+  <td>
+          <p class="tableBodyText">GS1-128</p>
+        </td>
+  <td>
+          <p class="tableBodyText">GS1-128 barcode with application identifier (01)</p>
+          <p class="tableBodyText">identifying the Global Trade Identification number, GTIN.</p>
+        </td>
+  <td>
+          <p class="tableBodyText"><img src="img/Barcode_GS1-128_1.png" width="250" height="121"></p>
+        </td>
+</tr>
+<tr>
+        <td>
+          <p class="tableBodyText">GS1-128</p>
+        </td>
+        <td>
+          <p class="tableBodyText">If multiple GS1-128 barcodes are found,<br>
+          choose the one with application identifier (AI) 01.<br>
+          It can be recognized by the bracketed 01 in the human readable code: (01)</p>
+        </td>
+        <td>
+          <p class="tableBodyText"><img src="img/Barcode_GS1-128_2.png" width="334" height="121"></p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">ITF-14</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Interleaved Two of Fife code with 14 digits<br>
+          containing&nbsp; the Global Trade Identification number, GTIN-14</p>
+        </td>
+        <td>
+          <p class="tableBodyText"><img src="img/Barcode_ITF-14.png" width="381" height="121"></p>
+        </td>
+      </tr>
+<tr>
+        <td>
+          <p class="tableBodyText">GS1-Datamatrix</p>
+        </td>
+        <td>
+          <p class="tableBodyText">GS1 Datamatrix Code with Application Identifier (01)</p>
+        </td>
+        <td>
+          <p class="tableBodyText"><img src="img/Barcode_GS1-128_Datamatrix.png" width="312" height="121"></p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">EAN-13</p>
+        </td>
+        <td>
+          <p class="tableBodyText">European Article Number code with 13 digits <br>
+          containing the Global Trade Identification number, GTIN-13</p>
+        </td>
+        <td>
+          <p class="tableBodyText"><img src="img/Barcode_EAN13.png" width="200" height="121"></p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">UPC-A</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Universal Product Code with 12 digits </p>
+          <p class="tableBodyText">containing the Global Trade Identification number, GTIN-12</p>
+        </td>
+        <td>
+          <p class="tableBodyText"><img src="img/Barcode_UPC-A.png" width="167" height="121"></p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">EAN-8</p>
+        </td>
+        <td>
+          <p class="tableBodyText">European Article Number code with 8 digits<br>
+          containing the Global Trade Identification number, GTIN-8</p>
+        </td>
+        <td>
+          <p class="tableBodyText"><img src="img/Barcode_EAN8.png" width="144" height="121"></p>
+        </td>
+      </tr>
+      </table>
+    <p>&nbsp;</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Footer start -->
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">© Dematic GmbH 2008. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar"><a href="#top">top</a> | <a href="javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

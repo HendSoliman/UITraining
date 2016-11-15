@@ -1,0 +1,267 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2008. All rights reserved.
+
+  $Id: AMCAPInventoryBalancing.html 27715 2014-05-08 08:38:38Z ahmadman $
+-->
+    <title>Strategy</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+  <meta name="keywords" content="Dematic, DC Director" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content="WCS-TPL_DialogOverview.Web">
+  <style type="text/css" media="screen">@import url(../../../../../../common/style_screen.css);
+.style1 {
+  direction:ltr;
+}
+.style2 {
+  background-color:#FAF5B4;
+}
+</style>
+    <style type="text/css" media="print">@import url(../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "cor/doc/en/user/WebHelp/process/Strategy.html";
+  </script>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../index.html?page=source%2Fcor%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fprocess%2FStrategy.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../index.html?page=source%2Fcor%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fprocess%2FStrategy.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+    <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../index.html"><img class="upLinkImg" id="uplinkO_img" border="0" title="Logistics Core Functions" src="../../../../../../common/img/move_overview.gif"></a>&nbsp;
+          <a class="upLink" id="uplinkP" href="../../../../../../wms/doc/en/user/WebHelp/process/AMCAP.html">
+          <img class="upLinkImg" id="uplinkP_img" border="0" title="AMCAP" src="../../../../../../common/img/move_up.gif"></a></td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+            <a class="naviBar" href="#DemonandView">Demon and View</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Workflow">Workflow</a>
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Top navigation bar end -->
+
+  <!-- Map title -->
+  <h1 id="maptitle" class="style1">AMCAP Inventory Balancing</h1>
+
+  <!-- Block: Purpose -->
+  <div class="block" id="block_purpose">
+
+    <!-- Content start -->
+    <h5><a name="Purpose"></a>Purpose</h5>
+    <p>Due to different reasons the initial distribution of products across aisles cannot exactly cover the required demand in these aisles. The reasons for 
+    this may be:</p>
+    <ul class="listBullet1">
+      <li>Excess quantities during replenishment which exceeded the actual order demand and could not be directly stored in aisles associated with an order.</li>
+      <li>Late&nbsp;order change or order cancellation</li>
+      <li>Consideration of urgent orders</li>
+      <li>Re-allocation of orders to other aisles because of blocked resources</li>
+      <li>Collection of items in an aisle for being palletized in order to purge the Multishuttle</li>
+    </ul>
+    <p>In this case, the required stock distribution across the aisles can be archieved by moving from aisles having excess quantities to aisles with missing 
+    quantities.</p>
+    <p>Because the previous sub-process of replenishment is only considering the total orders demand and the total available stock in Multishuttle. Thus the 
+    items with excess quantities in another aisle than the assigned one is very important.</p>
+    <!-- Content end -->
+  </div>
+  <!-- Block: Demon and View -->
+  <div class="block" id="block_demonandview">
+    <!-- Navigation line start -->
+    <a name="DemonandView"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Workflow"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Workflow"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Demon and View</h5>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Demon</p>
+        </th>
+        <th>
+          Description</th>
+        <th>
+          Configuration</th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">AMCAPInventoryBalancingDemon</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Look over the all aisles of the Multishuttle buffer and use items where quantity excess in their aisle and send them to the 
+          aisle where these are needed.</p>
+        </td>
+        <td>
+          No specific configuration</td>
+      </tr>
+      </table>
+    <p>There are various views, which provides information about the current need and availability of packages in Multishuttle:</p>
+    <ul class="listBullet1">
+      <li class="style1"><strong>PAC_PAL_AISLE_WITH_MORE_NEED_V</strong><br>
+      This view provides the aisles, where a specific package is needed. Thereby it considered the transports in the aisles. This view is used at the putaway 
+      step and determine all groups where the current package is needed. The concrete aisle where it is finally stored is selected by putaway. Thereby the aisle 
+      close to the current position is selected.</li>
+      <li><strong>PAC_PAL_MORE_NEED_V</strong><br>
+      This view provides a list of packages, which are still needed in any aisles. Thereby the transports to the area MS (includes also the transports to 
+      specific aisles) are considered as well.</li>
+      <li><strong>PAC_PAL_MORE_AVAILABLE_V</strong><br>
+      This view provides all packages, which are stored in Multishuttle but not needed by any order.</li>
+    </ul>
+    <p>AMCAPInventoryBalancingDemon use the last two mentioned views and created inter aisle transfers based on the data provided by these views.</p>
+    <!-- Content end -->
+  </div>
+  <!-- Block: Workflow -->
+  <div class="block" id="block_workflow">
+    <!-- Navigation line start -->
+    <a name="Workflow"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#DemonandView"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif">&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif">
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Workflow</h5>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Step</p>
+        </th>
+        <th>
+          Description</th>
+      </tr>
+      <tr>
+        <td>
+          1</td>
+        <td>
+          Find out which packages are still missing in specific aisles, e.g. have more need.<span class="style2"> </span></td>
+      </tr>
+      <tr>
+        <td>
+          2</td>
+        <td class="style1">
+          If there is no more need, stop immediately.</td>
+      </tr>
+      <tr>
+        <td>
+          3</td>
+        <td>
+        Otherwise find out which packages are free and can be used for entries found in step 1, e.g. are more available.</td>
+      </tr>
+      <tr>
+        <td>
+          4</td>
+        <td>
+          If there is no more available, stop immediately.</td>
+      </tr>
+      <tr>
+        <td>
+          5</td>
+        <td>
+          If there are more need and more available, then create transports from more available aisles to more need aisles.</td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Footer start -->
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">&copy; Dematic GmbH 2009. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar">
+          <a href="#top">top</a> | 
+          <a href="javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

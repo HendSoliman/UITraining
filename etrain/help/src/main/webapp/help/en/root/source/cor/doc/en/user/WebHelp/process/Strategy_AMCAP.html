@@ -1,0 +1,401 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2008. All rights reserved.
+
+  $Id: Strategy_AMCAP.html 27715 2014-05-08 08:38:38Z ahmadman $
+-->
+    <title>Strategy</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+  <meta name="keywords" content="Dematic, DC Director" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content="WCS-TPL_DialogOverview.Web">
+  <style type="text/css" media="screen">@import url(../../../../../../common/style_screen.css);
+.style1 {
+  direction:ltr;
+}
+.style2 {
+  background-color:#FAF5B4;
+}
+</style>
+    <style type="text/css" media="print">@import url(../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "cor/doc/en/user/WebHelp/process/Strategy.html";
+  </script>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../index.html?page=source%2Fcor%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fprocess%2FStrategy.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../index.html?page=source%2Fcor%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fprocess%2FStrategy.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+    <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../index.html"><img class="upLinkImg" id="uplinkO_img" border="0" title="Logistics Core Functions" src="../../../../../../common/img/move_overview.gif"></a>&nbsp;
+          <a class="upLink" id="uplinkP" href="../../../../../../wms/doc/en/user/WebHelp/process/AMCAP.html">
+          <img class="upLinkImg" id="uplinkP_img" border="0" title="AMCAP" src="../../../../../../common/img/move_up.gif"></a></td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+            <a class="naviBar" href="#Generalconditionsandrequirements">General conditions and requirements</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Workflow">Workflow</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Locationsearch">Location search</a>
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Top navigation bar end -->
+
+  <!-- Map title -->
+  <h1 id="maptitle" class="style1">AMCAP Strategy</h1>
+
+  <!-- Block: Purpose -->
+  <div class="block" id="block_purpose">
+
+    <!-- Content start -->
+    <h5><a name="Purpose"></a>Purpose</h5>
+    <p>It is an important characteristic of the AMCAP concept that the distribution of products across the aisles of the Multishuttle buffer is done during the 
+    storage process in order to be able to exploit the full throughput capacity of individual aisles during output due to the lack of inter-aisle sequencing 
+    requirements.</p>
+    <p>The current concept on the inbound side is bases on the combined usage of pushers for distribution across two aisles as well as inter-aisle transfer for 
+    final distribution.</p>
+    <p><img alt="" src="img/inboundLayout.jpg"></p>
+    <p>In AMCAP installation Multishuttle Flex is used. In this chapter only the putaway strategies are described. For detailed on usage of slots in MS Flex 
+    see:
+    <a href="../dialogs/cor/storage/ui/client/dialog/location/SlotDetailDialog.html">SlotDetailDialog</a>.</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: General conditions and requirements -->
+  <div class="block" id="block_generalconditionsandrequirements">
+    <!-- Navigation line start -->
+    <a name="Generalconditionsandrequirements"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Workflow"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Locationsearch"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>General conditions and requirements</h5>
+    <ul class="listBullet1">
+      <li>In an AMCAP system, items are stored without trays</li>
+      <li>Items have a large variety of dimensions, ranging</li>
+    </ul>
+    <ul class="listBullet2">
+      <li>from 150mm x 100mm x 50mm</li>
+      <li>to&nbsp;&nbsp;&nbsp; 650mm x 650mm x 450mm</li>
+    </ul>
+    <ul class="listBullet1">
+      <li>The Multishuttle Flex in an AMCAP installation is not used for storage but as an intermediate buffer for sequencing</li>
+      <li>Residence time of items in the MS Flex shelf is usually short, typically less than a day</li>
+      <li>Typically, all locations in a MS Flex shelf for AMCAP have equal height to allow for the largest flexibility.</li>
+      <li>All locations are considered equal with respect to dimensions</li>
+      <li>No weight restrictions need to be considered for location search</li>
+      <li>No other sorting conditions need to be considered for location search</li>
+      <li>No interdependencies between different products or product groups need to be considered</li>
+    </ul>
+    <p>&nbsp;</p>
+    <!-- Content end -->
+  </div>
+  <!-- Block: Workflow -->
+  <div class="block" id="block_workflow">
+    <!-- Navigation line start -->
+    <a name="Workflow"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#Generalconditionsandrequirements"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Locationsearch"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Locationsearch"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Workflow</h5>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Step</p>
+        </th>
+        <th>
+          Description</th>
+        <th>
+          Responsible</th>
+      </tr>
+      <tr>
+        <td>
+          1</td>
+        <td>
+          After passing the identification and measurement stations, the item is send to the &quot;Distribution Pusher&quot; (DP).</td>
+        <td>
+          <p class="tableBodyText">PLC</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2</td>
+        <td class="style1">
+          Normally the DP works alternatively, e.g. one i<span class="style2">tem to the first aisle and the second to the second one. But in case of lift lock 
+          the aisle with the locked lift is not considered.</span></td>
+        <td>
+          MFC</td>
+      </tr>
+      <tr>
+        <td>
+          3</td>
+        <td>
+          <p class="tableBodyText">As soon the item is on the pick station in front of the lift, a destination request is triggered.</p>
+        </td>
+        <td>
+          MFC</td>
+      </tr>
+      <tr>
+        <td>
+          4</td>
+        <td>
+          LMS looks for a storage location and reserve this. At this position the final destination of the item is determined.</td>
+        <td>
+          LMS</td>
+      </tr>
+      <tr>
+        <td>
+          5</td>
+        <td>
+          If inter aisle transfer is needed, this is handled by MFC.</td>
+        <td>
+          MFC</td>
+      </tr>
+    </table>
+    <p>For details on step 4 and 5 see:
+    <a href="AMCAPInventoryBalancing.html">AMCAPInventoryBalancing</a></p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Location search -->
+  <div class="block" id="block_locationsearch">
+    <!-- Navigation line start -->
+    <a name="Locationsearch"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#Workflow"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif">&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif">
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Location search</h5>
+    <p>During storing items in Multishuttle aisles, the order-related demand is considered. Therefore the orders are assigned to one or many aisles in advance. 
+    For details see:
+    <a href="../../../../../../pac/doc/en/user/WebHelp/process/Order_Allocation.html">Order Allocation</a>.</p>
+    <p>Following further restrictions are considered in order to find the destination location:</p>
+    <ol class="listNumber">
+      <li>In order to optimize the lift operation the two items of a pair are directed to the same level.</li>
+      <li>If the destination aisle requires inter-aisle transfer (iAT), levels are preferred having free iAT slots.</li>
+      <li class="style1">In a pair requiring iAT, the direction of iAT is always different in order not to block iAT slots.<br>
+      This is avoided by storing one item in the arrival aisle whereas the other is stored in a different aisle.<br>
+      But if there is only need on one side, then both items are send to that.</li>
+      <li>Palletizing groups are restricted to specific aisles, this restriction is considered when selecting an aisle.</li>
+    </ol>
+    <p>Following configuration is needed for the Multishuttle buffer area in &quot;MS Putaway Level Strategy&quot;:</p>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Strategy</p>
+        </th>
+        <th>
+          Weight</th>
+        <th>
+          Description</th>
+      </tr>
+      <tr>
+        <td>
+          Bin Multi Deep</td>
+        <td>
+          15</td>
+        <td>
+          The weight is not used for weighting this strategy, but as soon it is greater than 0 this strategy is performed. Otherwise it is in-active.<br>
+          This strategy prefer a location within the allocated subgroup with free and unblocked positions storing load unit(s) with the same discriminating key.<br>
+          E.g. store the same items inside a level in the same location.</td>
+      </tr>
+      <tr>
+        <td>
+          Subgroup transports</td>
+        <td>
+          10</td>
+        <td>
+          Prefer subgroups with lower number of currently planned inbound transports.</td>
+      </tr>
+      <tr>
+        <td>
+          Fill Level</td>
+        <td>
+          5</td>
+        <td>
+          Prefer subgroups with lower fill level.</td>
+      </tr>
+      <tr>
+        <td>
+          Height Classification</td>
+        <td>
+          3</td>
+        <td>
+          <p class="tableBodyText">Prefer subgroups with lower height.</p>
+          <table class="tableNoteTable">
+            <tr>
+              <td class="tableNoteCell">
+                <p class="notePar">&nbsp;INFO&nbsp;</p>
+              </td>
+              <td class="tableNoteTextCell">
+                <p class="noteTextPar">Although the requirement says, that same heights are used. This strategy can be used to use different heights.<br></p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Interaisle Transfer</td>
+        <td>
+          2</td>
+        <td>
+          Prefer the subgroups that have currently less open inter aisle transfers</td>
+      </tr>
+    </table>
+    <table class="noteTable">
+      <tr>
+        <td class="noteCell">
+          <p class="notePar">&nbsp;INFO&nbsp;</p>
+        </td>
+        <td class="noteTextCell">
+          <p class="noteTextPar">The above configuration is used in Techcenter Offenbach. For other projects this can be different. </p>
+        </td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <p class="style1">In order to fulfill the requirement (1) PLC waits for pairing and afterwards MFC requests for destination for a pair of packages.</p>
+    <p class="style1">For the requirement (2) the strategy &quot;Inter-aisle Transfer&quot; is configured. Thereby the level with the less iAT is used, which ensure to 
+    have iAT slots available.</p>
+    <p class="style1">The requirement (3) is handled as follow:</p>
+    <ul class="listBullet1">
+      <li>It consider the order demands which are assigned to the aisles. Further it consider also the 
+      <a href="../dialogs/cor/palletizing/ui/client/dialog/palletizinggroupassignment/PalletizingGroupAssignmentDialog.html">palletizing groups assignment</a>, e.g. requirement (4).</li>
+      <li>First of all the current aisle is determine, e.g. as soon as an item or a pair of items requests for the destination, this is in front of a specific aisle 
+      (on the so-called pick station).</li>
+      <li>If the current item(s) are needed in the current aisle, then use a location in the current aisle.</li>
+      <li>If the current item(s) are needed by nor of the aisles, then also use the current aisle.</li>
+      <li>Demand is in another aisle(s):</li>
+    </ul>
+    <ul class="listBullet2">
+      <li>Request for only one item (no pair), then use the nearest aisle with demand.</li>
+      <li>Request for a pair of items, then send one in the right and one in the left direction.&nbsp;</li>
+    </ul>
+    <p><strong>How are the distance and direction (right/left) determined?</strong></p>
+    <p class="style1">The virtual locations of the area have sequence numbers. These are configured from 0 to <span lang="de">#Aisles-1 (from right to left). As 
+    larger the different between current and target sequence number is (absolute), as long is the distance. Further the greater sequences than of the current 
+    aisle means left direction and with lower sequences means right direction.</span></p>
+    <p>&nbsp;</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Footer start -->
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">&copy; Dematic GmbH 2009. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar">
+          <a href="#top">top</a> | 
+          <a href="javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

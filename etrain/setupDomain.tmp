@@ -1,0 +1,95 @@
+stop-domain --domaindir C:\\glassfish3\\glassfish\\domains etrain 
+delete-domain --domaindir C:\\glassfish3\\glassfish\\domains etrain 
+create-domain --domaindir C:\\glassfish3\\glassfish\\domains --portbase 9000 --nopassword=true --user admin --usemasterpassword=false --savelogin=false etrain 
+start-domain --domaindir C:\\glassfish3\\glassfish\\domains etrain 
+create-system-properties --target domain WMS_JDBC_URL=jdbc\\:oracle\\:thin\\:@localhost\\:1521\\:dcd 
+create-system-properties --target domain WMS_JDBC_USER=etrain 
+create-system-properties --target domain WMS_JDBC_PASS=123456 
+create-system-properties --target domain WMS_ENVIRONMENT=TRAINING 
+create-system-properties --target domain WMS_LOGBACK_XML=C\\:\\\\uiTraining\\\\etrain\\\\config\\\\logback.xml 
+create-system-properties --target domain WMS_CONFIG_DIR=C\\:\\\\uiTraining\\\\etrain\\\\config\\\\dcd 
+create-system-properties --target domain activemq.message.storage=C\\:\\\\glassfish3\\\\glassfish\\\\domains\\\\etrain\\\\activemq-data\\\\kahadb 
+create-system-properties --target domain activemq.connector.address=tcp\\://localhost\\:9056 
+create-system-properties --target domain ACTIVEMQ_BROKER_CONFIG=C\\:/uiTraining/etrain/config/activemq/broker-config.xml 
+create-system-properties --target domain MaxPermSize=400m 
+create-system-properties --target domain InitPermSize=400m 
+create-system-properties --target domain MaxHeapSize=Xmx1G 
+create-system-properties --target domain MAIL_SERVER=172.31.77.69 
+create-system-properties --target domain MAIL_USER=superuser@emea.tld 
+create-system-properties --target domain MAIL_PASS=dcd3 
+create-system-properties --target domain SMTP_PORT=25 
+create-system-properties --target domain POP3_PORT=110 
+create-system-properties --target domain ACTIVEMQ_REMOTE_CONNECTOR_HOST=localhost 
+create-system-properties --target domain JMX_PORT=9086 
+create-system-properties --target domain CLASSIC_SYSTEM_ROOT=C\\:/uiTraining/etrain/ 
+create-system-properties --target domain CLASSIC_CONFIG_PATH=C\\:/uiTraining/etrain/ 
+create-system-properties --target domain CLASSIC_CONFIG_ENV=EG1168NB 
+create-system-properties --target domain CLASSIC_PROJECT_PATH=config/mfc;config/eai;config/classic;config/com;target/classic/config/mfc;target/classic/config/eai;target/classic/config/classic;target/classic/config/com 
+create-system-properties --target domain CLASSIC_RUNTIME_DATA=../logs 
+deploy --name activemqrar C:\\\\uiTraining\\\\etrain\\\\target\\\\activemqrar.rar 
+delete-jvm-options --target server -XX\\:MaxPermSize=192m:-XX\\:PermSize=64m:-client:-Xmx512m
+create-jvm-options --target server -XX\\:MaxPermSize=\${MaxPermSize}:-server
+create-jvm-options --target server -XX\\:PermSize=\${InitPermSize}
+create-jvm-options --target server -XX\\:+CMSClassUnloadingEnabled
+create-jvm-options --target server -XX\\:+CMSPermGenSweepingEnabled
+create-jvm-options --target server -Dorg.apache.catalina.loader.WebappClassLoader.ENABLE_CLEAR_REFERENCES=true
+create-jvm-options --target server -Dcom.sun.management.jmxremote
+create-jvm-options --target server -\${MaxHeapSize}
+create-jvm-options --target server -XX\\:+HeapDumpOnOutOfMemoryError
+create-jvm-options --target server -Dapp.system.root=\${CLASSIC_SYSTEM_ROOT}
+create-jvm-options --target server -Dapp.cfg.path=\${CLASSIC_CONFIG_PATH}
+create-jvm-options --target server -Dapp.cfg.environment=\${CLASSIC_CONFIG_ENV}
+create-jvm-options --target server -Dapp.project.path=\${CLASSIC_PROJECT_PATH}
+create-jvm-options --target server -Dapp.runtime.data=\${CLASSIC_RUNTIME_DATA}
+create-jvm-options --target server -Dlogback.configurationFile=\${WMS_LOGBACK_XML}
+create-jvm-options --target server -Ddcd.configurationDirectory=\${WMS_CONFIG_DIR}
+create-jvm-options --target server -Ddcd.environment=\${WMS_ENVIRONMENT}
+create-jvm-options --target server -Dactivemq.jmx.url=service\\:jmx\\:rmi\\:///jndi/rmi\\://\${ACTIVEMQ_REMOTE_CONNECTOR_HOST}\\:${JMX_PORT}/jmxrmi
+create-jvm-options --target server -Dactivemq.connector.address=\${activemq.connector.address}
+create-threadpool --maxthreadpoolsize 100 --minthreadpoolsize 1 --idletimeout 1 activemq-ra-thread-pool
+create-resource-adapter-config --threadpoolid activemq-ra-thread-pool --property "ServerUrl=vm\\://dcdng:BrokerXmlConfig=xbean\\:file\\:///\${ACTIVEMQ_BROKER_CONFIG}" activemqrar
+create-connector-connection-pool --maxpoolsize 200 --steadypoolsize 1 --raname activemqrar --connectiondefinition javax.jms.ConnectionFactory --property "MaximumRedeliveries=0" amq-connection-pool
+create-connector-resource --poolname amq-connection-pool QueueConnectionFactory
+create-connector-resource --poolname amq-connection-pool ServerPushConnectionFactory
+create-connector-resource --poolname amq-connection-pool LightDriveConnectionFactory
+create-connector-resource --poolname amq-connection-pool ConfigChangeTopicConnectionFactory
+create-connector-resource --poolname amq-connection-pool ComportTopicConnectionFactory
+create-connector-resource --poolname amq-connection-pool ComportQueueConnectionFactory
+create-connector-resource --poolname amq-connection-pool ConnectionFactory
+create-connector-resource --poolname amq-connection-pool TopicConnectionFactory
+create-admin-object --restype javax.jms.Queue --raname activemqrar --classname org.apache.activemq.command.ActiveMQQueue --property PhysicalName=LightDriveQueue LightDriveQueue
+create-admin-object --restype javax.jms.Queue --raname activemqrar --classname org.apache.activemq.command.ActiveMQQueue --property PhysicalName=EventQueue EventQueue
+create-admin-object --restype javax.jms.Queue --raname activemqrar --classname org.apache.activemq.command.ActiveMQQueue --property PhysicalName=DLQ.EventQueue DLQ.EventQueue
+create-admin-object --restype javax.jms.Queue --raname activemqrar --classname org.apache.activemq.command.ActiveMQQueue --property PhysicalName=VizInputQueue VizInputQueue
+create-admin-object --restype javax.jms.Queue --raname activemqrar --classname org.apache.activemq.command.ActiveMQQueue --property PhysicalName=VizOutputQueue VizOutputQueue
+create-admin-object --restype javax.jms.Queue --raname activemqrar --classname org.apache.activemq.command.ActiveMQQueue --property PhysicalName=ComportQueue ComportQueue
+create-admin-object --restype javax.jms.Queue --raname activemqrar --classname org.apache.activemq.command.ActiveMQQueue --property PhysicalName=RollbackRepeatFailureQueue RollbackRepeatFailureQueue
+create-admin-object --restype javax.jms.Topic --raname activemqrar --classname org.apache.activemq.command.ActiveMQTopic --property PhysicalName=ServerPushTopic ServerPushTopic
+create-admin-object --restype javax.jms.Topic --raname activemqrar --classname org.apache.activemq.command.ActiveMQTopic --property PhysicalName=ComportTopic ComportTopic
+create-admin-object --restype javax.jms.Topic --raname activemqrar --classname org.apache.activemq.command.ActiveMQTopic --property PhysicalName=BackgroundProcessStatusTopic BackgroundProcessStatusTopic
+create-admin-object --restype javax.jms.Topic --raname activemqrar --classname org.apache.activemq.command.ActiveMQTopic --property PhysicalName=ConfigChangeTopic ConfigChangeTopic
+create-admin-object --restype javax.jms.Topic --raname activemqrar --classname org.apache.activemq.command.ActiveMQTopic --property PhysicalName=CronjobStatusTopic CronjobStatusTopic
+create-javamail-resource --mailhost \${MAIL_SERVER} --mailuser \${MAIL_USER} --fromaddress \${MAIL_USER} --storeprotocol pop3 --transprotocol smtp --storeprotocolclass com.sun.mail.pop3.POP3Store --property mail.smtp.user=\${MAIL_USER}:mail.smtp.password=\${MAIL_PASS}:mail.pop3.user=\${MAIL_USER}:mail.pop3.password=\${MAIL_PASS}:mail.smtp.auth=true:mail.pop3.auth=true:mail.smtp.port=\${SMTP_PORT}:mail.pop3.port=\${POP3_PORT}:mail.from=\${MAIL_USER} mail/printing
+create-javamail-resource --mailhost \${MAIL_SERVER} --mailuser \${MAIL_USER} --fromaddress \${MAIL_USER} --storeprotocol pop3 --transprotocol smtp --storeprotocolclass com.sun.mail.pop3.POP3Store --property mail.smtp.user=\${MAIL_USER}:mail.smtp.password=\${MAIL_PASS}:mail.pop3.user=\${MAIL_USER}:mail.pop3.password=\${MAIL_PASS}:mail.smtp.auth=true:mail.pop3.auth=true:mail.smtp.port=\${SMTP_PORT}:mail.pop3.port=\${POP3_PORT}:mail.from=\${MAIL_USER} mail/alarm
+create-jdbc-connection-pool --datasourceclassname com.dematic.wms.tools.jdbc.ExtendedOracleXADataSource --restype javax.sql.XADataSource --maxpoolsize 200 --steadypoolsize 10 --statementtimeoutinseconds 60 --transactionisolationlevel "read-committed" --property url=\${WMS_JDBC_URL}:user=\${WMS_JDBC_USER}:password=\${WMS_JDBC_PASS}:socketConnectTimeout=3000:socketReadTimeout=65000 --idletimeout 30 dcdngConnectionPool
+create-jdbc-connection-pool --datasourceclassname com.dematic.wms.tools.jdbc.ExtendedOracleXADataSource --restype javax.sql.XADataSource --maxpoolsize 200 --steadypoolsize 10 --statementtimeoutinseconds 60 --transactionisolationlevel "read-committed" --property url=\${WMS_JDBC_URL}:user=\${WMS_JDBC_USER}:password=\${WMS_JDBC_PASS}:socketConnectTimeout=3000:socketReadTimeout=65000 --idletimeout 30 dcdngUIConnectionPool
+create-jdbc-resource --connectionpoolid dcdngConnectionPool jdbc/dcd3
+create-jdbc-resource --connectionpoolid dcdngUIConnectionPool jdbc/dcd3_ui
+set server.ejb-container.property.thread-core-pool-size=500
+set server.ejb-container.property.thread-max-pool-size=500
+set server.ejb-container.property.thread-queue-capacity=100
+set server.ejb-container.property.allow-core-thread-timeout=true
+set server.ejb-container.property.prestart-all-core-threads=false
+set server.thread-pools.thread-pool.http-thread-pool.max-thread-pool-size=200
+set server.thread-pools.thread-pool.http-thread-pool.min-thread-pool-size=10
+set server.thread-pools.thread-pool.http-thread-pool.idle-thread-timeout-seconds=100
+set server.transaction-service.property.pending-txn-cleanup-interval=600
+set server.transaction-service.automatic-recovery=true
+set server.transaction-service.keypoint-interval=2048
+set server.network-config.protocols.protocol.http-listener-1.http.request-timeout-seconds=7200
+set-log-attributes com.sun.enterprise.server.logging.GFFileHandler.rotationLimitInBytes=25000000
+set-log-attributes com.sun.enterprise.server.logging.GFFileHandler.logFormatDateFormat="yyyy-MM-dd HH\:mm\:ss,SSS"
+set-log-attributes com.sun.enterprise.server.logging.GFFileHandler.maxHistoryFiles=99
+set server.monitoring-service.module-monitoring-levels.web-container=LOW
+create-admin-object --restype javax.jms.Queue --raname activemqrar --classname org.apache.activemq.command.ActiveMQQueue --property PhysicalName=TestQueue TestQueue
+restart-domain --debug=true --domaindir C:\\glassfish3\\glassfish\\domains etrain 

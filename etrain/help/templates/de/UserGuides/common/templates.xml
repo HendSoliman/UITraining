@@ -1,0 +1,52 @@
+<docHtmlTemplateSet name="OnlineHelp">
+  <template file="WCS-TPL_HelpMenu.html">
+    <doctype name="Overview Map"/>       
+    <context name="WebHelp"/>
+    <default value="true"/>
+    <index value="true"/>
+    <defaultfolder name="general"/>
+    <defaultparent name="index.html"/>
+  </template>
+  <template file="WCS-TPL_HelpProcess.html">
+    <doctype name="Process Description"/>       
+    <context name="All"/>
+    <defaultfolder name="process"/>
+    <defaultparent name="process\index.html"/>
+  </template>
+  <template file="WCS-TPL_HelpUseCase.html">
+    <doctype name="Use Case Description"/>       
+    <context name="All"/>
+    <defaultfolder name="usecases"/>
+    <defaultparent name="usecases\index.html"/>
+  </template>
+  <template file="WCS-TPL_HelpDialogMain.html">
+    <doctype name="Main Dialog Description"/>       
+    <context name="WebHelp"/>
+    <defaultfolder name="dialogs"/>
+    <defaultparent name="menu\index.html"/>
+  </template>
+  <template file="WCS-TPL_HelpDialogDetail.html">
+    <doctype name="SubDialog Description"/>       
+    <context name="WebHelp"/>
+    <defaultfolder name="dialogs"/>
+  </template>
+  <template file="WCS-TPL_HelpDialogFunction.html">
+    <doctype name="Dialog Function Description"/>       
+    <context name="WebHelp"/>
+    <defaultfolder name="dialogs"/>
+  </template>
+  <template file="WCS-TPL_TroubleShootingIndex.html">
+    <doctype name="Overview Trouble Shooting"/>       
+    <context name="WebHelp"/>
+    <index value="true"/>
+  </template>
+  <template file="WCS-TPL_TroubleShootingGuide.html">
+    <doctype name="Trouble Shooting Guide"/>       
+    <context name="WebHelp"/>
+  </template>
+  <template file="WCS-TPL_Frame.html">
+    <doctype name="Other Document"/>       
+    <context name="All"/>
+    <defaultfolder name="general"/>
+  </template>
+</docHtmlTemplateSet>

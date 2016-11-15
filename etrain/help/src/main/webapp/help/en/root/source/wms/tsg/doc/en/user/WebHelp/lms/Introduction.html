@@ -1,0 +1,364 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2008. All rights reserved.
+
+  $Id: Introduction.html 27545 2014-05-05 09:58:11Z bernardy $
+-->
+    <title>Logistics Manager (LMS)</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)">
+  <meta name="keywords" content="Dematic, Dematic iQ">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content="WCS-TPL_TroubleShootingIndex.Web">
+  <meta name="author" content="author">
+  <style type="text/css" media="screen">@import url(../../../../../../../common/style_screen.css);</style>
+    <style type="text/css" media="print">@import url(../../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "wms/tsg/doc/en/user/WebHelp/lms/Introduction.html";
+  </script>
+<style type="text/css">
+.style1 {
+  background-color:#DEE7EF;
+}
+</style>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../../index.html?page=source%2Fwms%2Ftsg%2Fdoc%2Fen%2Fuser%2FWebHelp%2Flms%2FIntroduction.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../../index.html?page=source%2Fwms%2Ftsg%2Fdoc%2Fen%2Fuser%2FWebHelp%2Flms%2FIntroduction.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+    <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../index.html">
+          <img class="upLinkImg" id="uplinkO_img" border="0" title="Document Overview" src="../../../../../../../common/img/move_overview.gif"></a>
+        </td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+            <a class="naviBar" href="#Overview">Overview</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#MainServiceDialogs">Main Service Dialogs</a>
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Top navigation bar end -->
+
+  <!-- Map title -->
+  <h1 id="maptitle">Logistics Manager (LMS)</h1>
+  <!-- Block: Introduction -->
+  <div class="block" id="block_introduction">
+    <!-- Content start -->
+    <h5><a name="Introduction"></a>Introduction</h5>
+  <p>Logistics Manager (LMS) as a subsystem of the Dematic iQ<sup><small>&reg;</small></sup> is responsible for nearly all business processes within a warehouse. It manages all key resources, such as 
+	Storage Locations, handling Areas, Load Units and Inventory.</p>
+  <p>Logistics Manager is also responsible for covering <strong>inbound operations </strong>(Receiving and 
+	Put-away), <strong>outbound operations </strong>(Order 
+	Fulfillment Planning and control, Full Load Unit Retrieval and Picking) and 
+  <strong>internal (optimization) operations </strong>(Replenishment, Housekeeping 
+  and Stocktaking). </p>
+  <p>Logistics Manager typically receives Advices and Shipping Orders from a host system. It does the process planning according to given specifications and 
+  restrictions and delegates all required fulfillment transactions to the underlying executing subsystem like Material Flow Controller, Pick Controller or Sortation 
+  Controller.</p>
+  <p>Logistics Manager keeps the data concerning Load Units (LU), Storage Locations and Stock Keeping Units (SKU). LMS can be run in two different modes: &quot;<strong>Stock 
+  Keeping Mode</strong>&quot; and &quot;<strong>Parameter Mode</strong>&quot;. In Parameter Mode LMS does not manage inventory and inventory attributes are stored as generic parameters of 
+  Load Units. In Stock 
+  Keeping Mode Inventory Units are used for management of Inventory. They assign 
+	Inventory attributes like SKU, batch and quantity to a Location.</p>
+  <p>If Dematic Distribution Center Director (Dematic iQ<sup><small>&reg;</small></sup>) keeps Inventory information of Load Units, it is capable to operate more independent of the Host and enables more sophisticated optimization strategies, which make use of this data.</p>
+    <p>&nbsp;</p>
+  <p><strong>In the following an overview of the provided troubleshooting actions within the LMS are given.</strong>&nbsp;</p>
+    <!-- Content end -->
+  </div>
+  <!-- Block: Overview -->
+  <div class="block" id="block_overview">
+    <!-- Navigation line start -->
+    <a name="Overview"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#MainServiceDialogs">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#MainServiceDialogs">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Overview</h5>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Chapter</p>
+        </th>
+        <th>
+          <p class="columnDescription">Description</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">
+          <a href="general/Index.html">General Exceptions</a></p>
+        </td>
+        <td>
+          <p class="tableBodyText">Description of exceptional situations that may occur in LMS in general.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">
+          <a href="receiving/Index.html">Receiving Exceptions</a></p>
+        </td>
+        <td>
+          <p class="tableBodyText">Description of exceptional situations that may occur during receiving related processes.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">
+          <a href="orderFulfillment/Index.html">Order Fulfillment Exceptions</a></p>
+        </td>
+        <td>
+          <p class="tableBodyText">Description of exceptional situations that may occur during order fulfillment related processes.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="materialFlowManagement/Index.html">Transport Execution Exceptions</a></td>
+        <td>
+          <p class="tableBodyText">Description of exceptional situations that may occur during the execution of transports.</p>
+        </td>
+      </tr>
+    </table>
+    <!-- Content end -->
+  </div>
+  <!-- Block: Main Service Dialogs -->
+  <div class="block" id="block_mainservicedialogs">
+    <!-- Navigation line start -->
+    <a name="MainServiceDialogs"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#Overview"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_right.gif">&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../common/img/arrow_right_end.gif">
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Main Service Dialogs</h5>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription" style="width:252px">Dialog</p>
+        </th>
+        <th>
+        <p class="columnDescription">Description</p>
+          </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">
+          <a href="../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/inventory/ui/client/dialog/query/InventoryQueryOverviewDialog.html">Dialog Inventory Query</a></p>
+        </td>
+        <td>
+          <p class="tableBodyText"><strong>List </strong>of the entire, free and reserved quantity per SKU</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">
+          <a href="../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/inventory/ui/client/dialog/journal/InventoryJournalOverviewDialog.html">Dialog Inventory Journal</a></p>
+        </td>
+        <td>
+          <p class="tableBodyText"><strong>List </strong>o<span class="style1">f </span>all Inventory Movements that have been booked within the system</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">
+          <a href="../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/loadunit/ui/client/dialog/admin/LoadUnitOverviewDialog.html">Load Unit Administration</a></p>
+        </td>
+        <td>
+          <p class="tableBodyText"><strong>List </strong>of all available Load Units with possible simple <br>
+          <strong>operations </strong>like retrieval, storage, modification of location o<span class="style1">r </span>lock/unlock</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">          
+          <a href="../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/putaway/ui/client/dialog/putawayanalysis/PutawayAnalysisOverviewDialog.html">Dialog Putaway Analysis</a></p>
+        </td>
+        <td>
+          <p class="tableBodyText">Find a reason why the putaway process is not successful for some Load 
+          Units</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">
+          <a href="../../../../../../../mfc/doc/en/user/WebHelp/dialogs/mfc/core/ui/transportorder/client/dialog/TransportOrderOverviewDialog.html">Dialog Transport Administration</a></p>
+        </td>
+        <td>
+          <p class="tableBodyText">All possible operations regarding transports in the system are provided by this dialog. It combines transports of all levels in one single dialog with consideration of the two provided levels:
+      LMS requests the execution of a transport at the MFC using Transport Requests and
+      MFC executes the transports represented by Transport Orders</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">
+          <a href="../../../../../../../ibd/doc/en/user/WebHelp/dialogs/ibd/receivinggeneral/ui/client/dialog/adviceadmin/AdviceOverviewDialog.html">Dialog Advice Overview</a></p>
+        </td>
+        <td>
+          <p class="tableBodyText"><strong>List </strong>of Advice Lines respectively specific Load Units of Advice Lines</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">
+          <a href="../../../../../../../orp/doc/en/user/WebHelp/dialogs/orp/order/ui/client/dialog/order/OrderOverviewDialog.html">Dialog Order Overview</a></p>
+        </td>
+        <td>
+          <p class="tableBodyText"><strong>List </strong>of all Orders with their appropriate Order Lines</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">
+          <a href="../../../../../../../orp/doc/en/user/WebHelp/dialogs/orp/orderfulfillment/ui/client/dialog/retrievalanalysis/RetrievalAnalysisOverviewDialog.html">Dialog Retrieval Analysis</a></p>
+        </td>
+        <td>
+          <p class="tableBodyText"><strong>Analysis </strong>of possible reasons for the <strong>cancellation of Order Lines</strong></p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">
+          <a href="../../../../../../../oco/doc/en/user/WebHelp/dialogs/oco/general/ui/client/dialog/retrievaladmin/RetrievalOverviewDialog.html">Dialog Retrieval Administration</a></p>
+        </td>
+        <td>
+          <p class="tableBodyText"><b>Most important dialog</b> with various and powerful functionalities to fix various problems around the fulfillment arena with a detailed overview about all main retrieval data of LMS and PIC with additional use of <b>superior filters</b></p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">
+          <a href="../../../../../../../oco/doc/en/user/WebHelp/dialogs/oco/clarificationbin/ui/client/dialog/clarificationbin/ClarificationBinDialog.html">Dialog Clarification Bin</a></p>
+        </td>
+        <td>
+          <p class="tableBodyText">Specific features for clarification of locked 
+			Locations</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">
+          <a href="../../../../../../../oco/doc/en/user/WebHelp/dialogs/oco/general/ui/client/dialog/loadunitguide/LoadUnitGuideOperationDialog.html">Dialog Load Unit Guide</a></p>
+        </td>
+        <td>
+          <p class="tableBodyText">Different (mainly project specific) kind of information and functions for a selected Load Unit and its specific situation which depends on various predefined criteria</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">
+          <a href="../../../../../../../pic/doc/en/user/WebHelp/dialogs/pic/goods2person/ui/client/dialog/pstanalysis/PickStationAnalysisOverviewDialog.html">
+          Dialog Pickstation Analysis</a></p>
+        </td>
+        <td>
+          <p class="tableBodyText">The <strong>Pickstation Analysis</strong> Dialog shows the <strong>actual current situation </strong>of the Pickstations. All 
+          picks according to this Pickstation are shown in the lower detail grid in the <strong>sequence of transport purposes </strong>of the related Source 
+          Load Units.</p>
+        </td>
+      </tr>
+    </table>
+    <!-- Content end -->
+  </div>
+
+  <!-- Footer start -->
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">&copy; Dematic GmbH 2008. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar"><a href="#top">top</a> | <a href="javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

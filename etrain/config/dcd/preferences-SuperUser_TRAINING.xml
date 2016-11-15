@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<app:configuration xmlns:app="http://www.dematic.com/dcdng/wms/app" xmlns:preferences="http://www.dematic.com/dcdng/wms/app-preferences">
+    <preferences:UserPreferences>
+        <Set name="app.gwt_gui.frame.desktop.window.TempGridFilter"/>
+        <Set name="app.gwt_gui.frame.desktop.window.TempGridLayout"/>
+        <Set name="app.gwt_gui.frame.TempDesktopLayouts">
+            <Entry key="NumberOfWindows" value="0"/>
+        </Set>
+        <dimensions>
+            <frameType>DESKTOP</frameType>
+        </dimensions>
+    </preferences:UserPreferences>
+</app:configuration>

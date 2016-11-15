@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='gwt_tablet'>
+  <!-- Inherit the core Web Toolkit stuff.                        -->
+  <inherits name='com.google.gwt.user.User'/>
+  <inherits name='com.dematic.wms.app.base.ui.tablet.AppGWTTablet'/>
+  <inherits name='com.dematic.wms.app.base.ui.AppGWTGui'/>
+  <inherits name='com.dematic.wms.app.AppDialogsTablet'/>
+
+  <inherits name='com.dematic.trainingwarehouse.ui.tablet.DCDt_GWT_Config'/>
+
+  <!-- Specify the app entry point class.                         -->
+  <!-- 
+  <entry-point class='com.dematic.demowarehouse.ui.client.test.TestFrame'/>
+  -->
+  <entry-point class='com.dematic.wms.app.base.ui.tablet.client.frame.TabletFrame'/>
+  
+  <!-- Specify the paths for translatable code                    -->
+  <source path='client'/>
+  <source path='shared'/>
+
+</module>

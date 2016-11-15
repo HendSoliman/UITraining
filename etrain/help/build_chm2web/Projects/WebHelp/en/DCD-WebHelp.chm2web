@@ -1,0 +1,87 @@
+[VAR]
+varPageCaption=Training Warehouse
+varContentswidth=200
+varContents=Content
+varIndex=Index
+varSearch=Search
+varHomeUrl=source/etrain/doc/en/user/WebHelp/index.html
+varHomeCap=Home
+varPrintCap=Print Page
+varPrevCap=Prev Page
+varNextCap=Next Page
+varHome=Goto home page
+varPrevBut=Prev
+varNextBut=Next
+varPrintBut=Print
+varLeftURL=http://www.dematic.com
+varRightURL=http://intranet.emea.tld
+varIndexTit=Type in the keyword to find:
+varSearchTit=Type in the word(s) to search for:
+varEditSource=Edit source document
+varRefresh=Refresh help window after document editing
+varPrint=Print document
+varBack=Go back
+varExit=Close Help Window
+varNext=Show next topic
+varHelp=Usage of Help System
+varClose=Close Help Window
+varEditingTopic=dcd_editinghelptopics.html
+varUp=Show previous topic
+varDown=Show next topic
+varParent=No parent topic available
+varForward=Go forward
+varContentHeader=dcd_contentheader.html
+varHelpHelp=dcd_helphelp.html
+varOverview=No overview topic available
+varIndexBut=Display
+varSearchBut=Search
+varToggleTree=Show/hide navigation area
+varCopyLink=Copy hyperlink target for content page to clipboard
+
+[OPTIONS]
+Template=..\..\..\Templates\dcd_standard_web.cwtpl
+ConvertStyle=0
+HelpSrcFolder=source
+AddAklabsLink=1
+ContentsDoNotWrap=0
+ContentsSmallFont=1
+Keywords=Dematic, Dematic iQ
+UseAdvancedCleaner=0
+DefaultCharset=0
+ContentsSplit=1
+ContentsSplitLn=40
+UseOriginalStyles=1
+AddToStyleSheet=h1,h2,h3,h4 { color: #SCHEMECOLOR4# }
+SEOptimization=1
+CreateHelpIndex=1
+MinQueryLen=2
+UseSpecialChars=1
+SpecialChars=#-/\!@$%&
+ExpandRootNodes=0
+OpenFrameset=1
+ChangeCase=0
+ServerSidePHP=0
+ServerSidePath=http://localhost/
+
+[MAIN]
+SourceFile=DCD-WebHelp.chm
+TargetFolder=root
+IndexFileName=index.html
+HelpChangeExt=0
+HelpChangeExtOn=html
+
+[OPTIONS.ADV]
+ppPagePreprocessing=0
+ppRemoveAllBefore=0
+ppRemoveAllAfter=0
+ppRemoveAllBeforeRE=0
+ppRemoveAllAfterRE=0
+ppRemoveAllBeforeExp=<HR
+ppRemoveAllAfterExp=
+ppRemoveAllBeforeIncl=0
+ppRemoveAllAfterIncl=0
+ppAddHeaderCode=<b>page header</b>
+ppAddFooterCode=<b>page footer</b>
+ppAddHeader=0
+ppAddFooter=0
+

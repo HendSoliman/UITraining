@@ -1,0 +1,236 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2008. All rights reserved.
+
+  $Id: LookaheadAlgorithm.html 27545 2014-05-05 09:58:11Z bernardy $
+-->
+    <title>Lookahead Calculation</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)">
+  <meta name="keywords" content="Dematic, Dematic iQ">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content="WCS-TPL_HelpMenu.Web">
+  <meta name="author" content="author">
+  <style type="text/css" media="screen">@import url(../../../../../../common/style_screen.css);</style>
+    <style type="text/css" media="print">@import url(../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "itl/doc/en/user/WebHelp/usecases/LookaheadAlgorithm.html";
+  </script>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../index.html?page=source%2Fitl%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fusecases%2FLookaheadAlgorithm.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../index.html?page=source%2Fitl%2Fdoc%2Fen%2Fuser%2FWebHelp%2Fusecases%2FLookaheadAlgorithm.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+    <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../index.html">
+          <img class="upLinkImg" id="uplinkO_img" border="0" title="Replenishment" src="../../../../../../common/img/move_overview.gif"></a>
+        </td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+            <a class="naviBar" href="#Overview">Overview</a>
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Top navigation bar end -->
+
+  <!-- Map title -->
+  <h1 id="maptitle">Lookahead Calculation</h1>
+
+  <!-- Block: Purpose -->
+  <div class="block" id="block_purpose">
+    <!-- Content start -->
+    <h5><a name="Purpose"></a>Purpose</h5>
+    <p>This section describes the replenishment calculation for the Lookahead Replenishment; the evaluation of future 
+    demand in a specific Replenishment Destination Disposition Zone <strong>based on pending Orders</strong>.</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Overview -->
+  <div class="block" id="block_overview">
+    <!-- Navigation line start -->
+    <a name="Overview"></a>
+    <table class ="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right.gif">&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../common/img/arrow_right_end.gif">
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Overview</h5>
+    <p><strong>Prerequisites</strong>: </p>
+    <ul class="listBullet1">
+      <li>Configured
+    <a href="../dialogs/itl/replenishmentgeneral/ui/client/dialog/replenishmentconfig/ReplenishmentSupervisedZoneOverviewDialog.html">Replenishment Supervised 
+    Zone</a> (Disposition Zone where Replenishment is heading to)</li>
+      <li>Area Access entries with </li>
+    </ul>
+    <ul class="listBullet2">
+      <li>the flag replenishment set and</li>
+      <li>with a destination area that matches the area of the destination of the
+<a href="../dialogs/itl/replenishmentgeneral/ui/client/dialog/replenishmentconfig/ReplenishmentSupervisedZoneOverviewDialog.html">Replenishment Supervised Zone</a> 
+      (to define possible sources for replenishment)</li>
+    </ul>
+    <ul class="listBullet1">
+      <li>
+<a href="../dialogs/itl/replenishmentgeneral/ui/client/dialog/replenishmentconfig/ReplenishmentThresholdOverviewDialog.html">Replenishment Threshold</a> 
+    configurations for single SKUs are optional.</li>
+    </ul>
+    <table>
+      <tr>
+        <th><p class="columnDescription">Step</p></th>
+        <th><p class="columnDescription">Description</p></th>
+      </tr>
+      <tr>
+		<td><p class="tableBodyText">1.</p></td>
+		<td><p class="tableBodyText">In this calculation, a <b>&quot;number of units&quot;</b> is used to decide if the defined<strong> lookahead workload </strong>will be reached and is initially set to 0.</p></td>
+      </tr>
+      <tr>
+		<td><p class="tableBodyText">2.</p></td>
+		<td><p class="tableBodyText">Get the next (ordered by the urgency of the Order) <b>SKU Quantity Unit</b>, <b>quantity per unit</b> and <b>quantity</b> information for order lines with the following criteria:
+  		  </p>
+  		  <ul class="tableListBullet1">
+            <li>&nbsp;&quot;<a href="../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/sku/ui/client/dialog/admin/SKUQuantityUnitDetailDialog.html">Preferred Fulfillment 
+            Handling type</a>&quot; must be defined for the SKU quantity unit.</li>
+            <li>The quantity unit must be requested by the order line.</li>
+            <li>Destination Disposition Zone must be assigned to a Location with usage type BIN within the Preferred Fulfillment Zone of the SKU.</li>
+            <li>
+            <a href="../../../../../../orp/doc/en/user/WebHelp/dialogs/orp/order/ui/client/dialog/order/OrderDetailDialog.html">Order</a> configuration status must be <strong>complete, </strong>and order type must be <strong>shipping</strong>. With service qualifier 
+            <strong>Rapid Pal</strong> the order status must be <strong>released</strong> or <strong>active</strong>. Otherwise the order status must be <strong>pending</strong>.</li>
+            <li>Latest Start Time or Earliest Start Time must be defined.</li>
+            <li>(Latest Start Time + Earliest Start Time)/2 must be earlier than (now + replenishment lookahead period) configured in the
+            <a href="../dialogs/itl/replenishmentgeneral/ui/client/dialog/replenishmentconfig/ReplenishmentSupervisedZoneOverviewDialog.html">Replenishment 
+            Supervised Zone</a>. If one time is not defined, the considered time period must be earlier than the end of the replenishment lookahead period.</li>
+          </ul>
+          When the SKU Quantity Unit is the base quantity unit the quantity per unit is calculated as the maximum factor to base of a 
+          <a href="../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/sku/ui/client/dialog/admin/SKUQuantityUnitDetailDialog.html">SKU Quantity Unit</a> of the SKU with a
+          <a href="../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/sku/ui/client/dialog/admin/SKUQuantityUnitDetailDialog.html#FieldDescriptions">Preferred Fulfillment Zone</a> whose bins are assigned to the Destination Disposition Zone.</td>
+      </tr>
+      <tr>
+		<td><p class="tableBodyText">3.</p></td>
+		<td><p class="tableBodyText"><strong>Total</strong> the <b>quantity per SKU Quantity Unit</b> in a list.</p></td>
+      </tr>
+      <tr>
+		<td><p class="tableBodyText">4.</p></td>
+		<td><p class="tableBodyText">For each SKU Quantity Unit, the following quantities are considered:
+            </p>
+            <ul class="tableListBullet1">
+              <li>&nbsp;<b>available quantity</b> (<a href="../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/inventory/ui/client/dialog/aggregated/AggregatedInventoryDetailDialog.html#FieldDescriptions">quantity free</a> 
+              of the Aggregated Inventory of the Disposition Zone) in the Replenishment Destination Disposition Zone (will be subtracted)</li>
+              <li><b>quantity already ordered by Replenishment</b> to this Disposition Zone (existing open Orders of type replenishment) (will be subtracted)</li>
+              <li><b>minimum quantity at destination</b>, if a Replenishment Threshold exists for the SKU (will be added)<br></li>
+            </ul></td>
+      </tr>
+      <tr>
+		<td><p class="tableBodyText">5.</p></td>
+		<td><p class="tableBodyText">Add (quantity/quantity per unit) to the &quot;<b>number of units</b>&quot;.</p></td>
+      </tr>
+      <tr>
+		<td><p class="tableBodyText">6.</p></td>
+		<td><p class="tableBodyText">If the &quot;<b>number of units</b>&quot; is smaller than the lookahead workload defined in the 
+            <a href="../dialogs/itl/replenishmentgeneral/ui/client/dialog/replenishmentconfig/ReplenishmentSupervisedZoneOverviewDialog.html">Replenishment 
+            Supervised Zone</a>, <b>continue with step 2</b>.</p></td>
+      </tr>
+      <tr>
+		<td><p class="tableBodyText">7.</p></td>
+		<td><p class="tableBodyText">If a SKU-specific 
+          <a href="../dialogs/itl/replenishmentgeneral/ui/client/dialog/replenishmentconfig/ReplenishmentThresholdOverviewDialog.html">Replenishment Threshold</a> 
+          exists, the following <b>conditions</b> must be 
+          fulfilled. (Otherwise, each calculated quantity greater zero creates a new Replenishment Order Line)</p>
+          <ul class="tableListBullet1">
+            <li>calculated quantity for the SKU must be bigger than Minimum Replenishment Quantity.</li>
+            <li>&quot;sum of quantity free in the Disposition Zone&quot; + &quot;already ordered replenishment to this zone&quot; - &quot;Shipping Orders from that 
+            zone&quot; must be smaller than the threshold quantity.</li>
+          </ul></td>
+      </tr>
+      <tr>
+		<td><p class="tableBodyText">8.</p></td>
+		<td><p class="tableBodyText">The list of SKU Quantity Units to replenish is sorted by Client and destination, so that only one <b>Order</b> with many Order Lines for every Client and destination is <b>created</b>.</p></td>
+      </tr>
+    </table>
+    <!-- Content end -->
+  </div>
+
+  <!-- Footer start -->
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">&copy; Dematic GmbH 2008. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar"><a href="#top">top</a> | <a href="javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

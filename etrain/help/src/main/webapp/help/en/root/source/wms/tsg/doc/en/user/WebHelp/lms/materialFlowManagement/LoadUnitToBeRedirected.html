@@ -1,0 +1,564 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<!--
+  Copyright (c) Dematic GmbH 2008. All rights reserved.
+
+  $Id: LoadUnitToBeRedirected.html 27545 2014-05-05 09:58:11Z bernardy $
+-->
+    <title>Restart of an Inbound Transport</title>
+  <meta name="generator" content="chm2web Pro 2.85 (unicode)">
+  <meta name="keywords" content="Dematic, Dematic iQ">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Template-Type" content="WCS-TPL_TroubleShootingGuide.Web">
+  <meta name="author" content="author">
+  <style type="text/css" media="screen">@import url(../../../../../../../../common/style_screen.css);</style>
+    <style type="text/css" media="print">@import url(../../../../../../../../common/style_print.css);</style>
+  <link id="chm2webcss" rel="stylesheet" href="../../../../../../../../../files/helpindex.css" type="text/css">
+  <script type="text/JavaScript" src="../../../../../../../../../files/supply.js"></script>
+  <script type="text/JavaScript" src="../../../../../../../../../files/dcd_buttons.js"></script>
+  <script type="text/JavaScript">
+    if (window.name == "content")
+      chmtop.c2wtopf.pageid = "wms/tsg/doc/en/user/WebHelp/lms/materialFlowManagement/LoadUnitToBeRedirected.html";
+  </script>
+<style type="text/css">
+.style1 {
+  background-color:#DEE7EF;
+}
+</style>
+</head>
+
+<body>
+  <script type="text/JavaScript">
+    if (window.name != "content")
+      document.write(" <div class=\"chm2webtoolbarhint\"> <table width=\"100%\" bgcolor=\"#e1e1e1\" cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\"> <br>&nbsp;Click <a href=\"../../../../../../../../../index.html?page=source%2Fwms%2Ftsg%2Fdoc%2Fen%2Fuser%2FWebHelp%2Flms%2FmaterialFlowManagement%2FLoadUnitToBeRedirected.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../../../../../index.html?page=source%2Fwms%2Ftsg%2Fdoc%2Fen%2Fuser%2FWebHelp%2Flms%2FmaterialFlowManagement%2FLoadUnitToBeRedirected.html\">show toolbars</a><br>&nbsp;</td></tr></table><br></div> ");
+  </script>
+  <!-- !chm2web! -->
+    <!-- Header start -->
+  <div class="header" id="header">
+    <table class="headerTable" id="headertable">
+      <!-- Logo bar -->
+      <tr class="headLogoBar" id="logobar">
+        <td class="headLogoBarLeft">
+          <a name="top"></a>
+          <img class="logoLeft" src="../../../../../../../../common/img/logo_left.gif">
+        </td>
+        <td class="headLogoBarMiddle">
+        </td>
+        <td class="headLogoBarRight">
+          <img class="logoRight" src="../../../../../../../../common/img/logo_right.gif">
+        </td>
+      </tr>
+    
+      <!-- Info bar -->
+      <tr class="headInfoBarRow" id="infobar">
+        <td class="headInfoBarNavi" colspan="2">
+          <a class="upLink" id="uplinkO" href="../../index.html">
+          <img class="upLinkImg" id="uplinkO_img" border="0" title="Document Overview" src="../../../../../../../../common/img/move_overview.gif"></a>
+          <a class="upLink" id="uplinkP" href="Index.html">
+          <img class="upLinkImg" id="uplinkP_img" border="0" title="Material Flow Management Errors" src="../../../../../../../../common/img/move_up.gif"></a>
+        </td>
+        <td class="headInfoBar" colspan="1">
+          <img class="infoBar" src="../../../../../../../../common/img/dematic_creatinglogresults.gif">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Header end -->
+  
+  <!-- Top navigation bar start -->
+  <div class="header" id="topNaviBar">
+    <table class ="topNaviBarTable">
+      <tr class="naviBarRow">
+        <td class="naviBarCol">&nbsp;</td>
+        <td class="naviBarCell">&nbsp;
+          <span class="naviBarSpan">
+            <a class="naviBar" href="#BriefDescription">Brief Description</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#ProblemAnalysis">Problem Analysis</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#PossibleReasons">Possible Reasons</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#DetailedDescription">Detailed Description</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#TroubleShooting">Trouble Shooting</a>&nbsp;|&nbsp;
+            <a class="naviBar" href="#Sources">Sources</a>
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Top navigation bar end -->
+
+  <!-- Map title -->
+  <h1 id="maptitle">Restart of an Inbound Transport</h1>
+
+  <!-- Block: Purpose -->
+  <div class="block" id="block_purpose">
+    <!-- Content start -->
+    <h5><a name="Purpose"></a>Symptom</h5>
+    <p>Load Units which shall be stored in any desired storage location <strong>report at an unusual transport point</strong>, e.g. at a Clarification Workstation. 
+    In addition the Load Unit may have a <strong>suboptimal current planned destination </strong>which might be unsuitable from the supervisors point of view. This 
+    destination was automatically determined by the system for example in case of the optimal and desired area was temporarily full.</p>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Brief Description -->
+  <div class="block" id="block_briefdescription">
+    <!-- Navigation line start -->
+    <a name="BriefDescription"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#ProblemAnalysis">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Sources">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Brief Description</h5>
+    <p>This topic explains the clarification handling of Load Units with a currently active inbound transport which did not encounter any &quot;standard transport error&quot; 
+    like e.g. &quot;bin occupied&quot;. In general this is how to restart the transport (from the Clarification Workstation) and if required how the System will assign a new 
+    destination to the Load Unit.&nbsp;</p>
+    <!-- Content end -->
+  </div><!-- Block: Problem Analysis -->
+  <div class="block" id="block_problemanalysis">
+    <!-- Navigation line start -->
+    <a name="ProblemAnalysis"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#BriefDescription">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#PossibleReasons">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Sources">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Problem Analysis</h5>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Step</p>
+        </th>
+        <th>
+          <p class="columnDescription">Action</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">1.</p></td>
+        <td>
+          <p class="tableBodyText">Scan the Load Unit at the Workstation in the
+             <a href="../../../../../../../../oco/doc/en/user/WebHelp/dialogs/oco/general/ui/client/dialog/loadunitguide/LoadUnitGuideOperationDialog.html">Load Unit Guide Dialog</a> 
+             and focus on the <strong>following data</strong> in the &quot;<strong>Info</strong>&quot; panel:</p>
+          <ul class="tableListBullet1">
+            <li><strong>Load Unit </strong> </li>
+          </ul>
+          <ul class="tableListBullet2">
+            <li>Location</li>
+            <li>Status</li>
+            <li>Error Code</li>
+          </ul>
+          <ul class="tableListBullet1">
+            <li><strong>Transport Request</strong></li>
+          </ul>
+          <ul class="tableListBullet2">
+            <li>Destination Location</li>
+          </ul>
+          <ul class="tableListBullet1">
+            <li><strong>Transport Order (MFC)</strong></li>
+          </ul>
+          <ul class="tableListBullet2">
+            <li>Status.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">2.</p></td>
+        <td>
+          Additional data is displayed - as far as it applies for the Load Unit. This might be helpful to identify the Load Unit (if required) and to d<span class="style1">etermine 
+          the </span>appropriate <span class="style1">trouble shooting steps</span>:<ul class="tableListBullet1">
+            <li><strong>Inventory Unit</strong></li>
+          </ul>
+          <ul class="tableListBullet2">
+            <li>SKU, Batch, Quantity&nbsp;</li>
+          </ul>
+          <ul class="tableListBullet1">
+            <li><strong>Advice</strong></li>
+          </ul>
+          <ul class="tableListBullet2">
+            <li>&nbsp;ID, Status</li>
+          </ul>
+          <ul class="tableListBullet1">
+            <li><strong>Order</strong></li>
+          </ul>
+          <ul class="tableListBullet2">
+            <li>&nbsp;ID, Status</li>
+          </ul>
+          <ul class="tableListBullet1">
+            <li><strong>Pick Order&nbsp;</strong></li>
+          </ul>
+          <ul class="tableListBullet2">
+            <li>ID, Status</li>
+          </ul>
+          <ul class="tableListBullet1">
+            <li><strong>Full Load Unit Retrieval</strong></li>
+          </ul>
+          <ul class="tableListBullet2">
+            <li>ID, Status</li>
+          </ul>
+          <ul class="tableListBullet1">
+            <li><strong>Pick Container</strong></li>
+          </ul>
+          <ul class="tableListBullet2">
+            <li>ID, Status</li>
+          </ul>
+          <ul class="tableListBullet1">
+            <li><strong>Dispatch Load Unit</strong></li>
+          </ul>
+          <ul class="tableListBullet2">
+            <li>ID, Status.</li>
+          </ul>
+        </td>
+      </tr>
+      </table>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Possible Reasons -->
+  <div class="block" id="block_possiblereasons">
+    <!-- Navigation line start -->
+    <a name="PossibleReasons"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#ProblemAnalysis">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#DetailedDescription">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Sources">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Possible Reasons</h5>
+    <p>When the originally planned destination of a Load Unit is not reachable for various reasons like temporarily blocked aisles or other temporarily faults of the transport 
+    system, the Load Unit will be transported automatically to the configured <strong>Clarification Station </strong>(NIO). </p>
+    <p>Additionally in case of no free Location can be found in the intended destination area the Load Unit could be directed previously to a different area which is configured 
+    as a possible destination area. In this case the Load Unit has an <strong>unsuitable planned destination</strong>.</p>
+  </div>
+
+  <!-- Block: Detailed Description -->
+  <div class="block" id="block_detaileddescription">
+    <!-- Navigation line start -->
+    <a name="DetailedDescription"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#PossibleReasons">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#TroubleShooting">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Sources">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Detailed Description</h5>
+    <ol class="listNumber">
+      <li>The Load Unit is automatically transported to the NIO-Location which is assigned to the transport point where the problem was detected.</li>
+      <li>In case there is no possible transport path from this location to the desired destination the Load Unit has to be transferred manually to a different 
+      location where the inbound transport is executable (for example the related Clarification Station or the next I-Point).</li>
+      <li>The Load Unit has to be analyzed at the Clarification Station and according to the result the transport has to be continued or restarted.</li>
+      <li>In case of the currently planned destination of the Load Unit is not appropriate or desired, the destination selection for the Load Unit can be repeated.</li>
+    </ol>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Trouble Shooting -->
+  <div class="block" id="block_troubleshooting">
+    <!-- Navigation line start -->
+    <a name="TroubleShooting"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#DetailedDescription">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <a class="naviLine" href="#Sources"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right.gif"></a>&nbsp;
+          <a class="naviLine" href="#Sources">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right_end.gif"></a>
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Trouble Shooting</h5>
+    <p>The basic idea of this clarification handling is to restart the transport from the current location. After a detailed analysis of the situation it 
+    might also be required to let the System assign a new destination to the currently active transport.</p>
+    <p><strong>Analysis and clarification handling </strong>can be done with the following dialogs:</p>
+    <ul class="listBullet1">
+      <li>
+      <a href="../../../../../../../../oco/doc/en/user/WebHelp/dialogs/oco/general/ui/client/dialog/loadunitguide/LoadUnitGuideOperationDialog.html">Load Unit Guide Dialog</a></li>
+      <li>
+      <a href="../../../../../../../../mfc/doc/en/user/WebHelp/dialogs/mfc/core/ui/transportorder/client/dialog/TransportOrderOverviewDialog.html">Dialog Transports (MFC)</a></li>
+      <li>
+      <a href="../../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/loadunit/ui/client/dialog/admin/LoadUnitOverviewDialog.html">Load Units</a></li>
+    </ul>
+    <p>For a <strong>more detailed analysis </strong>the following dialogs might be required as well:</p>
+    <ul class="listBullet1">
+      <li>
+          <a href="../../../../../../../../mfc/doc/en/user/WebHelp/dialogs/mfc/core/ui/transportorder/client/dialog/TransportOrderOverviewDialog.html">Dialog Transport Administration</a></li>
+      <li>
+      <a href="../../../../../../../../oco/doc/en/user/WebHelp/dialogs/oco/businessjournal/ui/client/dialog/BusinessJournalOverviewDialog.html">Business Journal (Transports)</a>.</li>
+    </ul>
+    <table>
+      <tr>
+        <th>
+          <p class="columnDescription">Step</p>
+        </th>
+        <th>
+          <p class="columnDescription">Action</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">1.</p>
+        </td>
+        <td>
+          <p class="tableBodyText"><strong>Transport </strong>the Load Unit manually (i.e. without system support) to the next Clarification Station (in case 
+          the Load Unit is not already at a Clarification Station).</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">2.</p>
+        </td>
+        <td>
+          <p class="tableBodyText"><strong>Scan </strong>Load Unit in the
+          <a href="../../../../../../../../oco/doc/en/user/WebHelp/dialogs/oco/general/ui/client/dialog/loadunitguide/LoadUnitGuideOperationDialog.html">Load Unit Guide 
+          Dialog</a> and analyze the displayed data (refer to the &quot;<a href="#ProblemAnalysis">Problem Analysis</a>&quot;).</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">3.</p>
+        </td>
+        <td>
+          In case of the <strong>displayed Location</strong> of the Load Unit <strong>is not</strong> equal to<strong> the actual current Location</strong> of the Load 
+          Unit:<br>
+          <strong>Change the current Location</strong> of the Load Unit <strong>to the actual Location</strong>, e.g. Clarification Station or I-Point <span class="style1">(<strong><em>Function 
+          &quot;F6&quot;</em></strong>)</span>.</td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">4.</p></td>
+        <td>
+          <p class="tableBodyText">The <strong>destination</strong> of the Transport Request<strong> is suitable</strong> and shall not be changed.</p></td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">5.</p></td>
+        <td>
+          <p class="tableBodyText"><strong>Clarify </strong>the Load Unit (i.e. all transport errors will be removed) in case of this function is enabled <span class="style1">(<strong><em>Function
+          &quot;F2&quot;</em></strong>)</span>.</p></td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">6.</p></td>
+        <td>
+          <p class="tableBodyText"><strong>Restart </strong>the Transport (if the Transport is not continued automatically) <span class="style1">(<strong><em>Function 
+          &quot;F3&quot;</em></strong>)</span>.</p>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <p class="columnDescription">Alternate Flows:</p>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">4a1.</p></td>
+        <td>
+          <p class="tableBodyText">The <strong>destination</strong> of the Transport Request <strong>is not suitable</strong>.</p></td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">4a2.</p></td>
+        <td>
+          <p class="tableBodyText"><strong>Cancel the Transport</strong> in the
+          <a href="../../../../../../../../oco/doc/en/user/WebHelp/dialogs/oco/general/ui/client/dialog/loadunitguide/LoadUnitGuideOperationDialog.html">Load Unit Guide 
+          Dialog</a>. <span class="style1">(<strong><em>Function 
+          &quot;F4&quot;</em></strong>)</span>.</p></td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">4a3.</p></td>
+        <td>
+          <strong>Refresh</strong> the data in the Load Unit Guide Dialog <span class="style1">(<strong><em>Function 
+          &quot;F5&quot;</em></strong>)</span>.</td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">4a4.</p></td>
+        <td>
+          <p class="tableBodyText">In case of the cancellation of the Transport Request was <strong>successful</strong> continue with step 5.</p>
+          <p class="tableBodyText">In case of the cancellation of the Transport Request was <strong>not successful</strong> continue with step 5a.</p></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <p class="tableBodyText">&nbsp;</p></td>
+      </tr>
+      <tr>
+        <td>
+          <p class="tableBodyText">5a.</p>
+        </td>
+        <td>
+          <p class="tableBodyText">Check if a Transport Order exists in
+      <a href="../../../../../../../../mfc/doc/en/user/WebHelp/dialogs/mfc/core/ui/transportorder/client/dialog/TransportOrderOverviewDialog.html">Dialog Transports (MFC)</a>. </p>
+          <p class="tableBodyText">In case of yes, <strong>delete the Transport Order </strong>(context menu). </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          6a.</td>
+        <td>
+          <p class="tableBodyText">Check if the Transport Unit exists in
+          <a href="../../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/loadunit/ui/client/dialog/admin/LoadUnitOverviewDialog.html">Load Units</a>.</p>
+          <p class="tableBodyText">In case of yes, <strong>delete the Transport Unit</strong>. </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          7a.</td>
+        <td>
+          <p class="tableBodyText">Check in the appropriate <strong>PLC screen </strong>if there is an active transport for this Transport Unit.</p>
+          <p class="tableBodyText">In case of yes, <strong>delete this PLC transport</strong>. </p>
+          <p class="tableBodyText">Continue with step 4a2.</p>
+        </td>
+      </tr>
+      </table>
+    <!-- Content end -->
+  </div>
+
+  <!-- Block: Sources -->
+  <div class="block" id="block_sources">
+    <!-- Navigation line start -->
+    <a name="Sources"></a>
+    <table class="naviLineTable">
+      <tr class="naviLineRow">
+        <td class="naviLineStart">
+          <hr>
+        </td>
+        <td class="naviLineNavi">
+          <a class="naviLine" href="#top"><img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left_start.gif"></a>&nbsp;
+          <a class="naviLine" href="#TroubleShooting">
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_left.gif"></a>&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right.gif">&nbsp;
+          <img class="naviLine" border="0" width="7" height="8" src="../../../../../../../../common/img/arrow_right_end.gif">
+        </td>
+        <td class="naviLineCell">
+          <hr>
+        </td>
+      </tr>
+    </table>
+    <!-- Navigation line end -->
+
+    <!-- Content start -->
+    <h5>Sources</h5>
+    <ul class="listBullet1">
+      <li>
+          <a href="../../../../../../../../oco/doc/en/user/WebHelp/dialogs/oco/general/ui/client/dialog/loadunitguide/LoadUnitGuideOperationDialog.html">Load Unit Guide 
+          Dialog</a></li>
+      <li>
+          <a href="../../../../../../../../mfc/doc/en/user/WebHelp/dialogs/mfc/core/ui/transportorder/client/dialog/TransportOrderOverviewDialog.html">Dialog Transport Administration</a></li>
+      <li>
+      <a href="../../../../../../../../mfc/doc/en/user/WebHelp/dialogs/mfc/core/ui/transportorder/client/dialog/TransportOrderOverviewDialog.html">Dialog Transports (MFC)</a></li>
+      <li>
+      <a href="../../../../../../../../oco/doc/en/user/WebHelp/dialogs/oco/businessjournal/ui/client/dialog/BusinessJournalOverviewDialog.html">Business Journal (Transports)</a></li>
+      <li>
+      <a href="../../../../../../../../cor/doc/en/user/WebHelp/dialogs/cor/loadunit/ui/client/dialog/admin/LoadUnitOverviewDialog.html">Load Units</a></li>
+    </ul>
+    <!-- Content end -->
+  </div>
+
+  <!-- Footer start -->
+  <div class="footer">
+    <hr class="footerLine">
+    <table class="footerTable" id="footertable">
+      <tr class="footerRow">
+        <td class="footerLeft">
+          <p class="footerPar">© Dematic GmbH 2008. All Rights Reserved. </p>
+        </td>
+        <td class="footerMiddle">
+        </td>
+        <td class="footerRight">
+          <p class="footerPar"><a href="#top">top</a> | <a href="javascript:window.print()">print</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer end -->
+  <script type="text/JavaScript">
+    if (window.name == "content") {
+      var fe = FindFrame("toc", top);
+      if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+        if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+          chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+      }
+      DocLoaded(document, parent.pageheader.document);
+    }
+  </script>
+</body>
+</html>

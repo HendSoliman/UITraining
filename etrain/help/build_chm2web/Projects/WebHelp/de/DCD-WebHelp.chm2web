@@ -1,0 +1,88 @@
+[VAR]
+varPageCaption=Dematic iQ
+varContentswidth=200
+varContents=Inhalt
+varIndex=Index
+varSearch=Suche
+varHomeUrl=source/etraino/doc/de/user/WebHelp/index.html
+varHomeCap=Home
+varPrintCap=Print Page
+varPrevCap=Prev Page
+varNextCap=Next Page
+varHome=Startseite
+varPrevBut=Prev
+varNextBut=Next
+varPrintBut=Print
+varLogoImage=files/logotype.gif
+dbutton=Default
+varLeftURL=http://www.dematic.com
+varRightURL=http://intranet.emea.tld
+varIndexTit=Geben Sie den Begriff an:
+varSearchTit=Geben Sie das zu suchende Wort an:
+varEditSource=Quelldokument editieren
+varRefresh=Aktualisieren des Hilfefensters nach Bearbeitung eines Kapitels
+varPrint=Drucken des Kapitels
+varBack=Zurück
+varClose=Schließen
+varNext=Show next topic
+varHelp=Verwendung des Hilfesystems
+varEditingTopic=dcd_editinghelptopics_de.html
+varUp=Vorheriges Kapitel
+varDown=Nächstes Kapitel
+varParent=Übergeordnetes Kapitel
+varForward=Vor
+varContentHeader=dcd_contentheader_de.html
+varHelpHelp=dcd_helphelp_de.html
+varOverview=Kein Übersichtskapitel vorhanden
+varIndexBut=Anzeigen
+varSearchBut=Suchen
+varToggleTree=Ein-/Ausblenden Navigationsbereich
+varCopyLink=Kopiert Hyperlink-Ziel des Kapitels in die Zwischenablage
+
+[OPTIONS]
+Template=..\..\..\Templates\dcd_standard_web.cwtpl
+ConvertStyle=0
+HelpSrcFolder=source
+AddAklabsLink=1
+ContentsDoNotWrap=0
+ContentsSmallFont=1
+Keywords=Dematic, Dematic iQ
+UseAdvancedCleaner=0
+DefaultCharset=0
+ContentsSplit=1
+ContentsSplitLn=40
+UseOriginalStyles=1
+AddToStyleSheet=h1,h2,h3,h4 { color: #SCHEMECOLOR4# }
+SEOptimization=1
+CreateHelpIndex=1
+MinQueryLen=3
+UseSpecialChars=1
+SpecialChars=#-/\!@$%&
+ExpandRootNodes=0
+OpenFrameset=1
+ChangeCase=0
+ServerSidePHP=0
+ServerSidePath=http://localhost/
+
+[MAIN]
+SourceFile=DCD-WebHelp.chm
+TargetFolder=root
+IndexFileName=index.html
+HelpChangeExt=0
+HelpChangeExtOn=html
+
+[OPTIONS.ADV]
+ppPagePreprocessing=0
+ppRemoveAllBefore=0
+ppRemoveAllAfter=0
+ppRemoveAllBeforeRE=0
+ppRemoveAllAfterRE=0
+ppRemoveAllBeforeExp=<HR
+ppRemoveAllAfterExp=
+ppRemoveAllBeforeIncl=0
+ppRemoveAllAfterIncl=0
+ppAddHeaderCode=<b>page header</b>
+ppAddFooterCode=<b>page footer</b>
+ppAddHeader=0
+ppAddFooter=0
+
